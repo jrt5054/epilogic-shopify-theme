@@ -6,6 +6,7 @@
         "1658159431897185c8-0": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_banner.png",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
