@@ -2219,6 +2219,8 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  height: 0;
+  overflow-y: visible;
 }
 
 .header-wrapper--border-bottom {
@@ -2230,6 +2232,7 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  justify-items: center;
 }
 
 @media screen and (min-width: 990px) {
@@ -2243,7 +2246,7 @@ input[type='checkbox'] {
 
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr auto;
     column-gap: 2rem;
   }
 
