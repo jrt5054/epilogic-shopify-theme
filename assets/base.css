@@ -1,6 +1,13 @@
 /* Color custom properties */
 
 :root,
+.color-announcement-bar {
+  --color-foreground: var(--color-epi-white);
+  --color-background: var(--color-epi-light-purple);
+  --gradient-background: rgb(var(--color-epi-light-purple));
+}
+
+:root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
@@ -284,8 +291,9 @@ body,
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
-  color: rgba(var(--color-foreground), 0.75);
+.color-accent-2,
+.color-announcement-bar {
+  color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
 
@@ -2157,8 +2165,12 @@ input[type='checkbox'] {
 }
 
 .announcement-bar {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   color: rgb(var(--color-foreground));
+}
+
+.announcement-bar__message.h5 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 .announcement-bar__link {
