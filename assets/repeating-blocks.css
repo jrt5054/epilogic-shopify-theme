@@ -1,0 +1,29 @@
+.blocks-wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-row *:empty {
+  display: block;
+}
+
+.block-row {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.colored-block:nth-child(2n) {
+  background-color: red;
+}
+
+.colored-block:nth-child(2n+1) {
+  background-color: blue;
+}
+
+.colored-block {
+  height: 100%;
+}
