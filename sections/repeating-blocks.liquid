@@ -1,22 +1,16 @@
 {{ 'repeating-blocks.css' | asset_url | stylesheet_tag }}
 
-<div class="blocks-wrapper">
-  
-  {%- for block in section.blocks -%}
-    {% case block.type %}
-      {%- when 'colored_blocks' -%}
-      {%- style -%}
-        .colored-block {
-          width: calc(100% / {{ block.settings.block_quantity }});
-        }
-      {%- endstyle -%}
-        <div class="block-row">
-          {% for i in (1..block.settings.block_quantity) %}
-            <div class="colored-block"></div>
-          {% endfor %}
-        </div>
-    {% endcase %}
-  {%- endfor -%}
+<div class="repeating-blocks-wrapper">
+  <div class="block-row-upper">
+    {% for i in (1..12) %}
+      <div class="repeating-block epi-border"></div>
+    {% endfor %}
+  </div>
+  <div class="block-row-lower">
+    {% for i in (1..24) %}
+      <div class="repeating-block epi-border"></div>
+    {% endfor %}
+  </div>
 </div>
 
 {% schema %}
@@ -24,20 +18,6 @@
   "name": "Repeating Blocks",
   "tag": "section",
   "class": "section",
-  "blocks": [
-    {
-      "type": "colored_blocks",
-      "name": "Block Row",
-      "settings": [
-        {
-          "type": "number",
-          "id": "block_quantity",
-          "label": "Number of Blocks",
-          "default": 12
-        }
-      ]
-    }
-  ],
   "presets": [
     {
       "name": "Repeating Blocks"

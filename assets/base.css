@@ -2901,3 +2901,7 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+
+.epi-border {
+  border: 1px dashed rgb(var(--color-epi-border)) !important;
+}
