@@ -4,7 +4,7 @@
 .color-announcement-bar {
   --color-foreground: var(--color-epi-white);
   --color-background: var(--color-epi-light-purple);
-  --gradient-background: rgb(var(--color-epi-light-purple));
+  --gradient-background: rgb(var(--color-epi-light-blue));
 }
 
 :root,
