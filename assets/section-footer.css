@@ -515,7 +515,7 @@ noscript .localization-selector.link {
 }
 
 .subscribe-message-area { 
-  background-color: red;
+  background-color: rgb(var(--color-background-1));
 }
 
 .email-form-area { 
@@ -689,3 +689,24 @@ noscript .localization-selector.link {
   justify-content: end;
 }
 
+.subscribe-message-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 990px) {
+  .subscribe-message-area {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .subscribe-message-area {
+    padding: 0 5%;
+  }
+}
+
+.subscribe-message-area p {
+  text-align: center;
+}

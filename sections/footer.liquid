@@ -116,7 +116,7 @@
         </div>
 
       <div class="subscribe-message-area">
-        <p>subscribe message</p>
+        {{ section.settings.subscribe_message }}
       </div>
 
       <div class="footer-block--newsletter email-form-area epi-border">
@@ -277,6 +277,12 @@
       "type": "header",
       "content": "t:sections.footer.settings.header__2.content",
       "info": "t:sections.footer.settings.header__2.info"
+    },
+    {
+      "type": "richtext",
+      "id": "subscribe_message",
+      "default": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase</p>",
+      "label": "Subscribe Message"
     }
   ],
   "default": {
