@@ -524,7 +524,7 @@ noscript .localization-selector.link {
 }
 
 .deco-triangles-area { 
-  background-color: yellow;
+  background-color: rgb(var(--color-background-1));
 }
 
 .footer-repeating-blocks-area { 
@@ -535,11 +535,24 @@ noscript .localization-selector.link {
   background-color: grey; 
 }
 
+.deco-triangles-area *:empty {
+  display: block;
+}
+
+.deco-triangles-area {
+  display: flex;
+}
+
+.deco-triangles-area svg path {
+  fill: rgb(var(--color-epi-white));
+  stroke: rgb(var(--color-epi-border));
+}
+
 @media screen and (min-width: 990px) {
   .footer-grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr 0.25fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto 2fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -623,5 +636,9 @@ noscript .localization-selector.link {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .triangle-2 {
+    display: none;
   }
 }

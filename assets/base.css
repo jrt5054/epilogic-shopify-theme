@@ -8,6 +8,13 @@
 }
 
 :root,
+.color-epilogic {
+  --color-foreground: var(--color-epi-black);
+  --color-background-1: var(--color-epi-background-yellow);
+  --color-background-2: var(--color-epi-background-pink);
+}
+
+:root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
