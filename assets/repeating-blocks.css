@@ -20,11 +20,11 @@
 }
 
 .repeating-block:nth-child(2n) {
-  background-color: rgb(var(--color-epi-background-pink));
+  background-color: rgb(var(--color-epi-background-yellow));
 }
 
 .repeating-block:nth-child(2n+1) {
-  background-color: rgb(var(--color-epi-background-yellow));
+  background-color: rgb(var(--color-epi-background-pink));
 }
 
 @media screen and (min-width: 990px) {
