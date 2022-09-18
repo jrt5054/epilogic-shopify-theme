@@ -115,7 +115,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 3rem;
 }
 
 .footer-block--newsletter:only-child {
@@ -520,7 +519,7 @@ noscript .localization-selector.link {
 }
 
 .email-form-area { 
-  background-color: blue;
+  background-color: rgb(var(--color-background-2));
 }
 
 .deco-triangles-area { 
@@ -551,14 +550,14 @@ noscript .localization-selector.link {
 @media screen and (min-width: 990px) {
   .footer-grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr 0.25fr;
-    grid-template-rows: auto auto 2fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: auto 3fr 3fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
   .footer-links-area { 
-    grid-area: 1 / 1 / 2 / 4; 
+    grid-area: 1 / 1 / 2 / 3; 
   }
 
   .subscribe-message-area { 
@@ -569,16 +568,12 @@ noscript .localization-selector.link {
     grid-area: 2 / 2 / 3 / 3; 
   }
 
-  .deco-triangles-area { 
-    grid-area: 2 / 3 / 3 / 4; 
-  }
-
   .footer-repeating-blocks-area { 
-    grid-area: 3 / 1 / 4 / 4;
+    grid-area: 3 / 1 / 4 / 3;
   }
 
   .footer-copyright-area { 
-    grid-area: 4 / 1 / 5 / 4;
+    grid-area: 4 / 1 / 5 / 3;
   }
 
   .footer__blocks-wrapper {
@@ -641,4 +636,57 @@ noscript .localization-selector.link {
   .triangle-2 {
     display: none;
   }
+}
+
+.footer-block__newsletter .newsletter-form {
+  max-width: 100%;
+}
+
+.footer-block__newsletter .field:before,
+.footer-block__newsletter .field:after {
+  display: none;
+}
+
+.footer-block__newsletter .field input {
+  background-color: rgb(var(--color-background-2));
+  min-height: 100%;
+}
+
+.footer-block__newsletter,
+.footer-block__newsletter *:not(.field__label) {
+  height: 100%;
+}
+
+.footer-block__newsletter .field__input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.footer-block__newsletter .newsletter-form__button {
+  width: 15%;
+}
+
+.footer-block__newsletter .field__button {
+  justify-content: end;
+}
+
+.footer-block__newsletter .field__label {
+  top: 4rem;
+  transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
+  font-size: 4rem;
+}
+
+.footer-block__newsletter .field__input:focus ~ .field__label {
+  font-size: 1rem;
+  top: calc(var(--inputs-border-width) + 0.5rem);
+  left: calc(var(--inputs-border-width) + 2rem);
+  letter-spacing: 0.04rem;
+}
+
+.footer-block__newsletter .field__input:focus {
+  padding-top: 2rem;
+}
+
+.footer-block__newsletter .field__input {
+  font-size: 5rem;
 }
