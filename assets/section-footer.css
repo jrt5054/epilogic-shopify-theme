@@ -607,17 +607,22 @@ noscript .localization-selector.link {
   
   .footer__blocks-wrapper {
     justify-content: center;
+    max-height: 300px;
   }
 
   .footer__blocks-wrapper {
     justify-content: flex-start;
   }
 
-  .footer__blocks-wrapper ul.footer-block__details-content  {
+  /* .footer-blocks-wrapper ul.footer-block__details-content  {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
+    flex-flow: column wrap !important; 
+  } */
+
+  /* .footer-blocks-wrapper ul.footer-block__details-content li  {
+    display: flex;
+  } */
 
   .triangle-2 {
     display: none;
