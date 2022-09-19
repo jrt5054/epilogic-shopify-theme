@@ -190,8 +190,10 @@
     </div>
   </div>
   <div class="footer__copyright caption footer-copyright-area">
-    <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-    <small class="copyright__content">{{ powered_by_link }}</small>
+    <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}. </small>
+    <small class="copyright__content">{{ section.settings.footer_text }}</small>
+    <small class="copyright__content"><a href="{{ section.settings.privacy_notice }}">Privacy Notice</a> | </small>
+    <small class="copyright__content"><a href="{{ section.settings.terms_of_service }}">Terms of Service</a></small>
   </div>
 </footer>
 
@@ -306,7 +308,25 @@
       "id": "subscribe_message",
       "default": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase</p>",
       "label": "Subscribe Message"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "default": "All rights reserved.",
+      "label": "Footer Text"
+    },
+    {
+      "type": "url",
+      "id": "privacy_notice",
+      "label": "Privacy Notice"
+    },
+    {
+      "type": "url",
+      "id": "terms_of_service",
+      "label": "Terms of Service"
     }
+    
+    
   ],
   "default": {
     "blocks": [
