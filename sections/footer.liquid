@@ -1,5 +1,6 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{{ 'repeating-blocks.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-payment.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -14,9 +15,20 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- style -%}
-{%- endstyle -%}
-
+{%- if section.settings.show_upper_repeating_blocks -%}
+<div class="repeating-blocks-wrapper">
+  <div class="block-row-upper">
+    {% for i in (1..12) %}
+      <div class="repeating-block epi-border"></div>
+    {% endfor %}
+  </div>
+  <div class="block-row-lower">
+    {% for i in (1..24) %}
+      <div class="repeating-block epi-border"></div>
+    {% endfor %}
+  </div>
+</div>
+{%- endif -%}
 <footer class="footer color-epilogic footer-grid-wrapper">
   <div class="footer__blocks-wrapper footer-links-area">
     {%- for block in section.blocks -%}
@@ -115,7 +127,7 @@
     {%- endfor -%}
   </div>
 
-  <div class="subscribe-message-area">
+  <div class="subscribe-message-area epi-border">
     {{ section.settings.subscribe_message }}
   </div>
 
@@ -169,7 +181,13 @@
     </div>
   </div>
   <div class="footer-repeating-blocks-area">
-    repeating blocks
+    <div class="lower-repeating-blocks-wrapper">
+      <div class="lower-block-row">
+        {% for i in (1..48) %}
+          <div class="lower-repeating-block epi-border"></div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
   <div class="footer__copyright caption footer-copyright-area">
     <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
@@ -261,6 +279,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_upper_repeating_blocks",
+      "label": "Show repeating blocks above footer",
+      "default": true
+    },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",

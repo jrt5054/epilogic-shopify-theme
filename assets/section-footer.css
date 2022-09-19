@@ -557,7 +557,7 @@ noscript .localization-selector.link {
   .footer-grid-wrapper {
     display: grid;
     grid-template-columns: 0.3fr 1fr;
-    grid-template-rows: auto 3fr 3fr 1fr;
+    grid-template-rows: auto 158px auto auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
