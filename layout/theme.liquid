@@ -37,8 +37,18 @@
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
-
+    
     {% style %}
+      * {
+        cursor: url({{ 'circle-cursor-no-text.svg' | asset_url }}) 18 18, pointer;
+        }
+
+        .link,
+        .customer a,
+        a * {
+          cursor: url({{ 'circle-cursor-shop-now.svg' | asset_url }}) 18 18, pointer;
+        }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -69,6 +79,7 @@
         --payment-terms-background-color: {{ settings.colors_background_1 }};
         --color-epi-gray-brown: 166, 159, 136;
         --color-epi-red: 225, 6, 0;
+        --color-epi-cursor-red: 211, 80, 20;
         --color-epi-light-purple: 193, 160, 218;
         --color-epi-light-yellow: 241, 230, 178;
         --color-epi-yellow: 225, 224, 0;

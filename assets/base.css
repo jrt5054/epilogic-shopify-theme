@@ -1,3 +1,9 @@
+/* Custom cursor styles */
+
+svg.epi-cursor * {
+  fill: rgb(var(--color-epi-cursor-red));
+}
+
 /* Color custom properties */
 
 :root,
@@ -639,7 +645,6 @@ h6:empty {
 
 .link,
 .customer a {
-  cursor: pointer;
   display: inline-block;
   border: none;
   box-shadow: none;
