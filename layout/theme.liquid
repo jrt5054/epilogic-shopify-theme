@@ -39,17 +39,28 @@
     %}
     
     {% style %}
-    @media screen and (min-width: 990px) {
-      * {
-        cursor: url({{ 'circle-cursor-no-text.svg' | asset_url }}) 18 18, pointer;
-        }
+      @media screen and (min-width: 990px) {
+        * {
+          cursor: url({{ 'circle-cursor-no-text.svg' | asset_url }}) 18 18, pointer;
+          }
 
-      .link,
-      .customer a,
-      a * {
-        cursor: url({{ 'circle-cursor-shop-now.svg' | asset_url }}) 18 18, pointer;
+        .link,
+        .customer a,
+        a * {
+          cursor: url({{ 'circle-cursor-shop-now.svg' | asset_url }}) 18 18, pointer;
+        }
       }
-    }
+
+      @font-face {
+        font-family: "VTCDuBois-Bold";
+        src: url({{ 'VTCDuBois-Bold.woff2' | asset_url }}) format("woff2");
+      }
+
+      @font-face {
+        font-family: "Merchant-Regular";
+        src: url({{ 'Merchant-Regular.otf' | asset_url }}) format("opentype");
+      }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -57,12 +68,12 @@
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       :root {
-        --font-body-family: 'Merchant', {{ settings.type_body_font.fallback_families }};
+        --font-body-family: 'Merchant-Regular', {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: 'VTC Du Bois', {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: 'VTCDuBois-Bold', {{ settings.type_header_font.fallback_families }};
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
