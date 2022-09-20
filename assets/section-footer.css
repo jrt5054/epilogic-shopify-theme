@@ -155,9 +155,6 @@
   display: none;
 }
 
-.footer__list-social.list-social:only-child {
-  justify-content: center;
-}
 
 .footer-block__newsletter {
   text-align: center;
@@ -365,10 +362,6 @@ noscript .localization-selector.link {
   }
 }
 
-.footer-block__details-content {
-  margin-bottom: 4rem;
-}
-
 @media screen and (min-width: 750px) {
   .footer-block__details-content {
     margin-bottom: 0;
@@ -490,16 +483,13 @@ noscript .localization-selector.link {
 
 .footer__blocks-wrapper {
   display: flex;
+  justify-content: center;
   background-color: rgb(var(--color-epi-black));
   color: rgb(var(--color-epi-white));
 }
 
 .footer__blocks-wrapper svg {
   color: rgb(var(--color-epi-white));
-}
-
-.footer__blocks-wrapper ul.footer-block__details-content  {
-  display: flex;
 }
 
 .subscribe-message-area { 
@@ -538,6 +528,10 @@ noscript .localization-selector.link {
 }
 
 @media screen and (min-width: 990px) {
+  .footer__blocks-wrapper ul.footer-block__details-content  {
+    display: flex;
+  }
+
   .footer-grid-wrapper {
     display: grid;
     grid-template-columns: 0.3fr 1fr;
@@ -604,25 +598,35 @@ noscript .localization-selector.link {
     display: flex;
     flex-direction: column;
   }
-  
-  .footer__blocks-wrapper {
-    justify-content: center;
-    max-height: 300px;
+
+  .footer-links-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+    
+  .footer-link-num-1 { grid-area: 1 / 1 / 2 / 2; }
+  .footer-link-num-2 { grid-area: 2 / 1 / 3 / 2; }
+  .footer-link-num-3 { grid-area: 3 / 1 / 4 / 2; }
+  .footer-link-num-4 { grid-area: 1 / 2 / 2 / 3; }
+  .footer-link-num-5 { grid-area: 2 / 2 / 3 / 3; }
+  .footer-link-num-6 { grid-area: 3 / 2 / 4 / 3; }
+  .footer-link-socials { grid-area: 4 / 1 / 5 / 3; }
+
+  .footer__blocks-wrapper ul.list-social {
+    justify-content: space-between;
   }
 
-  .footer__blocks-wrapper {
-    justify-content: flex-start;
+  .footer__blocks-wrapper ul.list-social .list-social__link {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  /* .footer-blocks-wrapper ul.footer-block__details-content  {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column wrap !important; 
-  } */
-
-  /* .footer-blocks-wrapper ul.footer-block__details-content li  {
-    display: flex;
-  } */
+  .footer-block__details-content {
+    margin: 2rem 0;
+  }
 
   .triangle-2 {
     display: none;
