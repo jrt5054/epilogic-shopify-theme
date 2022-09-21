@@ -61,6 +61,11 @@
         src: url({{ 'Merchant-Regular.otf' | asset_url }}) format("opentype");
       }
 
+      @font-face {
+        font-family: "Merchant-Italic";
+        src: url({{ 'Merchant-Italic.otf' | asset_url }}) format("opentype");
+      }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
