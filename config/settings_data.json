@@ -15,7 +15,7 @@
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1600,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 4,
     "spacing_grid_vertical": 4,
@@ -139,7 +139,12 @@
           "footer-0"
         ],
         "settings": {
-          "newsletter_heading": "email address"
+          "show_upper_repeating_blocks": true,
+          "newsletter_heading": "email address",
+          "subscribe_message": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase<\/p>",
+          "footer_text": "All rights reserved.",
+          "privacy_notice": "",
+          "terms_of_service": ""
         }
       },
       "main-password-header": {
