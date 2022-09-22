@@ -96,6 +96,9 @@
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
+}
+
+.product-card .card__content {
   position: absolute;
   bottom: 0;
 }
@@ -314,7 +317,7 @@
   margin-top: 1rem;
 }
 
-h3.product-card {
+h3.product-card-heading {
   font-family: 'Merchant-regular', serif;
 }
 
@@ -323,7 +326,7 @@ h3.product-card {
 }
 
 @media screen and (min-width: 990px) {
-  h3.product-card,
+  h3.product-card-heading,
   .card-information .price {
     font-size: 2rem;
   }
@@ -334,7 +337,7 @@ h3.product-card {
 }
 
 @media screen and (max-width: 989px) {
-  h3.product-card,
+  h3.product-card-heading,
   .card-information .price {
     font-size: 1.6rem;
   }

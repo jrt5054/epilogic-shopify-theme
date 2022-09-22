@@ -23,7 +23,7 @@
   {%- liquid
     assign ratio = 1
     if card_product.featured_media and media_aspect_ratio == 'portrait'
-      assign ratio = 0.8
+      assign ratio = 0.6
     elsif card_product.featured_media and media_aspect_ratio == 'adapt'
       assign ratio = card_product.featured_media.aspect_ratio
     endif
@@ -31,7 +31,7 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper underline-links-hover epi-border">
+  <div class="card-wrapper underline-links-hover epi-border product-card">
     <div class="card
       card--{{ settings.card_style }}
       {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
@@ -126,7 +126,7 @@
       <div class="card__content">
         <div class="card__information">
           <div class="card-heading-price-wrapper">
-            <h3 class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} product-card{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
+            <h3 class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} product-card-heading{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
               <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
                 {{ card_product.title | escape }}
               </a>
