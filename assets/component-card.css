@@ -98,6 +98,11 @@
   flex-grow: 1;
 }
 
+.product-card .card__content {
+  position: absolute;
+  bottom: 0;
+}
+
 .card__content--auto-margins {
   grid-template-rows: minmax(0,auto) max-content minmax(0,auto);
 }
@@ -245,8 +250,8 @@
 }
 
 .card--standard > .card__content .card__information {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
 }
 
 .card--card.card--media .card__inner .card__information,
@@ -310,4 +315,49 @@
 
 .card-article-info {
   margin-top: 1rem;
+}
+
+h3.product-card-heading {
+  font-family: 'Merchant-regular', serif;
+}
+
+.card .card-heading-price-wrapper .card-information .price {
+  margin: 0;
+}
+
+@media screen and (min-width: 990px) {
+  h3.product-card-heading,
+  .card-information .price {
+    font-size: 2rem;
+  }
+
+  .product-card-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  h3.product-card-heading,
+  .card-information .price {
+    font-size: 1.6rem;
+  }
+
+  .product-card-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.card-heading-price-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-heading-price-wrapper > * {
+  width: auto;
+}
+
+.product-card-subtitle {
+  font-family: 'Merchant-Italic', serif;
 }

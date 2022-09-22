@@ -238,7 +238,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   z-index: 2;
 }
@@ -436,3 +436,4 @@
 .banner__box > * + .banner__buttons {
   margin-top: 2rem;
 }
+
