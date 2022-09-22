@@ -190,11 +190,13 @@ p.article-card__excerpt {
   padding-bottom: 0;
 }
 
-.epi-article-excerpt {
-  visibility: hidden;
-}
+
 
 @media screen and (min-width: 990px) {
+  .epi-article-excerpt {
+    visibility: hidden;
+  }
+  
   .blog-card-wrapper:hover .epi-article-excerpt {
     visibility: visible !important;
   }
