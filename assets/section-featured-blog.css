@@ -86,3 +86,10 @@
   }
 }
 
+.blog ul.blog-list {
+  margin-top: 0;
+}
+
+.blog-card-wrapper {
+  padding: 0 1.7rem 1.7rem 1.7rem;
+}

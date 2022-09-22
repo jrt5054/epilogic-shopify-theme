@@ -2936,4 +2936,5 @@ details-disclosure > details {
 
 .epi-border {
   border: 1px dashed rgb(var(--color-epi-border)) !important;
+  background-color: rgb(var(--color-epi-background-yellow));
 }

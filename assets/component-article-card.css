@@ -52,8 +52,8 @@
 
 .blog-articles .article-card .card__information,
 .blog__posts .article-card .card__information {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .article-card__info {
@@ -139,4 +139,24 @@
       margin-bottom: 7rem;
     }
   }
+}
+
+.article-card-background-yellow {
+  background-color: rgb(var(--color-epi-background-yellow));
+}
+
+.article-card-background-gray {
+  background-color: rgb(var(--color-epi-background-gray));
+}
+
+.card__heading.card-article-title {
+  font-family: 'Merchant-Regular', serif;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 10rem;
+  text-align: center;
 }

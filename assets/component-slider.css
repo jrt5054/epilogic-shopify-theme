@@ -373,3 +373,14 @@ slideshow-component .slideshow__controls .slider-button--prev,
 slideshow-component .slideshow__controls .slider-button--next {
   display: none;
 }
+
+@media screen and (max-width: 989px) {
+  .slider.slider--tablet {
+    scroll-padding-left: 0;
+  }
+  
+  .blog__post.article.epi-article {
+    width: 100%;
+  }
+}
+
