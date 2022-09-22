@@ -1,3 +1,9 @@
+/* Custom cursor styles */
+
+svg.epi-cursor * {
+  fill: rgb(var(--color-epi-cursor-red));
+}
+
 /* Color custom properties */
 
 :root,
@@ -5,6 +11,23 @@
   --color-foreground: var(--color-epi-white);
   --color-background: var(--color-epi-light-purple);
   --gradient-background: rgb(var(--color-epi-light-blue));
+}
+
+:root,
+.color-epilogic {
+  --color-foreground: var(--color-epi-black);
+  --color-background-1: var(--color-epi-background-yellow);
+  --color-background-2: var(--color-epi-background-pink);
+}
+
+:root,
+.color-header-white {
+  --color-foreground: var(--color-epi-white);
+}
+
+:root,
+.color-header-black {
+  --color-foreground: var(--color-epi-black);
 }
 
 :root,
@@ -284,6 +307,16 @@ html.no-js .no-js-hidden {
   .element-margin {
     margin-top: calc(5rem + var(--page-width-margin));
   }
+}
+
+.color-header-white,
+.color-header-black {
+  color: rgb(var(--color-foreground));
+}
+
+.color-header-white svg path,
+.color-header-black svg path {
+  fill: rgb(var(--color-foreground));
 }
 
 body,
@@ -612,7 +645,6 @@ h6:empty {
 
 .link,
 .customer a {
-  cursor: pointer;
   display: inline-block;
   border: none;
   box-shadow: none;
@@ -2900,4 +2932,9 @@ details-disclosure > details {
 
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
+}
+
+.epi-border {
+  border: 1px dashed rgb(var(--color-epi-border)) !important;
+  background-color: rgb(var(--color-epi-background-yellow));
 }
