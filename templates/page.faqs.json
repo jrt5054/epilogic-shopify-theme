@@ -2,75 +2,105 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "16639697578b2f468f": {
+    "1663970515a25ac55b": {
       "type": "collapsible-content",
       "blocks": {
-        "16639697574fa4bf57-0": {
+        "16639705144842534a-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "none",
+            "row_content": "<p>We are pleased to offer free USPS shipping on U.S. orders over $100. U.S. orders under $100 incur a flat-rate shipping fee of $8. For expedited shipping, please email hello@epilogicskincare.com. To note: International orders may be subject to import taxes, customs duties and fees levied by the destination country. These fees are the responsibility of the purchaser and are not included in our international shipping fee.<\/p>",
+            "page": ""
+          }
+        },
+        "16639705144842534a-1": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
         },
-        "16639697574fa4bf57-1": {
+        "16639705144842534a-2": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
         },
-        "16639697574fa4bf57-2": {
+        "16639705144842534a-3": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "16639697574fa4bf57-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
         }
       },
       "block_order": [
-        "16639697574fa4bf57-0",
-        "16639697574fa4bf57-1",
-        "16639697574fa4bf57-2",
-        "16639697574fa4bf57-3"
+        "16639705144842534a-0",
+        "16639705144842534a-1",
+        "16639705144842534a-2",
+        "16639705144842534a-3"
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "FAQs",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "color_scheme": "faqs",
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 36
+      }
+    },
+    "16639745946ce98f81": {
+      "type": "rich-text",
+      "blocks": {
+        "1663974594ff7414b7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Additional Questions?<\/p>",
+            "heading_size": "rich-text-faqs"
+          }
+        },
+        "1663974594ff7414b7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Email hello@epilogicskincare.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663974594ff7414b7-0",
+        "1663974594ff7414b7-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "faqs",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
-    "16639697578b2f468f"
+    "1663970515a25ac55b",
+    "16639745946ce98f81"
   ]
 }
