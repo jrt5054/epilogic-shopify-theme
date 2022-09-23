@@ -1,0 +1,28 @@
+.scrolling-marquee-section {
+  height: 50px;
+  background-color: rgb(var(--color-epi-black));
+}
+
+.scrolling-text-intro,
+.scrolling-text-subject {
+  color: rgb(var(--color-epi-white));
+  display: flex;
+  justify-content: center;
+}
+
+.marquee-group {
+  width: 285px;
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+}
+
+@media screen and (max-width: 749px) {
+
+}
+
+
+

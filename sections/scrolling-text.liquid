@@ -1,84 +1,118 @@
+{{ 'scrolling-text.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign block_width = section.settings.image_width | plus: section.settings.image_margin | plus: section.settings.image_margin
+  assign group_width = block_width | times: section.blocks.size
+  assign foo1 = 1920 | plus: block_width | plus: block_width
+  assign number_to_repeat = foo1 | divided_by: group_width | floor
+  assign total_length = number_to_repeat | times: group_width | append: 'px'
+  assign total_length_triple = number_to_repeat | times: 3
+  assign speed = section.settings.animation_speed
+  assign animation_time = total_length | divided_by: speed | append: 's'
+  
+-%}
+
 {%- style -%}
-.section-{{ section.id }}-padding {
-  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  :root {
+    --marquee-boxes-width: {{ section.settings.image_width }}px;
+    --marquee-boxes-margin: {{ section.settings.image_margin }}px;
+    --marquee-total-number: {{ section.blocks.size }};
+  }
+
+  @keyframes marquee {
+  from {right: 0px;}
+  to {right: {{ total_length }};}
 }
 
-@media screen and (min-width: 750px) {
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
-  }
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100vw;
 }
+
+/* .marquee-inner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  animation: marquee {{ animation_time }} linear infinite;
+  animation-name: marquee;
+} */
+
+
 {%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
-    {{ section.settings.custom_liquid }}
+
+<div class="scrolling-marquee-section">
+  <div class="marquee-wrapper">
+      <div class="marquee-group">
+      {% for block in section.blocks %}
+        <div class="scrolling-text-intro">
+          free from
+        </div>
+        <div class="scrolling-text-subject">
+          {{ block.settings.free-from-text }}
+        </div>
+      {% endfor %}
+      </div> 
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.custom-liquid.name",
+  "name": "Scrolling Text",
   "tag": "section",
   "class": "section",
   "settings": [
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "type": "range",
+      "id": "image_margin",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Image Margin (left and right)",
+      "default": 0
     },
     {
       "type": "range",
-      "id": "padding_top",
+      "id": "animation_speed",
       "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 40
-    },
+      "max": 200,
+      "step": 5,
+      "unit": "p/s",
+      "label": "Animation Speed (pixels/second)",
+      "default": 100
+    }
+  ],
+  "blocks": [
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 52
+      "name": "Text Block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "free-from-text",
+          "label": "Free From Text",
+          "default": "TEXT"
+        }    
+      ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.custom-liquid.presets.name"
+      "name": "Scrolling Text",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        }
+      ]
     }
   ]
 }
