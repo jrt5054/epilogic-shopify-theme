@@ -119,3 +119,24 @@
     }
   }
 }
+
+.collapsible-content__header h2 {
+  font-family: 'Merchant-Regular', serif;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 750px) {
+  .collapsible-content__header h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .collapsible-content__header h2 {
+    font-size: 2.4rem;
+  }
+
+  .collapsible-content__heading.faq-heading {
+    margin-bottom: 0;
+  }
+}
