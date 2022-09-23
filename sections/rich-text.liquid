@@ -29,11 +29,11 @@
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h2>
             {%- when 'caption' -%}
-              <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
+              <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.caption_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
-              <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+              <div class="rich-text__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
             {%- when 'button' -%}
@@ -103,6 +103,10 @@
       "type": "select",
       "id": "color_scheme",
       "options": [
+        {
+          "value": "faqs",
+          "label": "FAQs"
+        },
         {
           "value": "accent-1",
           "label": "t:sections.all.colors.accent_1.label"
@@ -175,6 +179,10 @@
           "id": "heading_size",
           "options": [
             {
+              "value": "rich-text-faqs-heading",
+              "label": "FAQs"
+            },
+            {
               "value": "h2",
               "label": "t:sections.all.heading_size.options__1.label"
             },
@@ -225,8 +233,12 @@
         },
         {
           "type": "select",
-          "id": "text_size",
+          "id": "caption_size",
           "options": [
+            {
+              "value": "rich-text-faqs-text",
+              "label": "FAQs"
+            },
             {
               "value": "small",
               "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__1.label"
@@ -255,6 +267,18 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "rich-text-faqs-text",
+              "label": "FAQs"
+            }
+          ],
+          "default": "rich-text-faqs-text",
+          "label": "Text Size"
         }
       ]
     },

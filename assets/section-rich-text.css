@@ -84,3 +84,23 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+h2.rich-text-faqs-heading {
+  font-family: 'Merchant-Regular', serif !important;
+}
+
+.rich-text-faqs-text {
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 750px) {
+  .rich-text-faqs-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .rich-text-faqs-heading {
+    font-size: 2.6rem;
+  }
+}
