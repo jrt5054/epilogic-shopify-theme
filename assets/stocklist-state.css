@@ -1,0 +1,48 @@
+.stocklist-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.stocklist-state h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.stocklist-state svg {
+  transform: rotate(90deg) scale(0.8);
+}
+
+.stocklist-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.stocklist-address p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.stocklist-address p:not(:first-child) {
+  font-family: 'Merchant-Italic', serif;
+}
+
+/*  */
+
+@media screen and (min-width: 750px) {
+  .stocklist-address p {
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .stocklist-address p {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
