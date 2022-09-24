@@ -16,7 +16,7 @@
           "settings": {
             "heading": "Shipping",
             "icon": "none",
-            "row_content": "<p>We are pleased to offer free USPS shipping on U.S. orders over $100. U.S. orders under $100 incur a flat-rate shipping fee of $8. For expedited shipping, please email hello@epilogicskincare.com. To note: International orders may be subject to import taxes, customs duties and fees levied by the destination country. These fees are the responsibility of the purchaser and are not included in our international shipping fee.<\/p>",
+            "row_content": "<p>We are pleased to offer free USPS shipping on U.S. orders over $100. U.S. orders under $100 incur a flat-rate shipping fee of $8. For expedited shipping, please email <a href=\"mailto:hello@epilogicskincare.com\" title=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>. To note: International orders may be subject to import taxes, customs duties and fees levied by the destination country. These fees are the responsibility of the purchaser and are not included in our international shipping fee.<\/p>",
             "page": ""
           }
         },
@@ -25,7 +25,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
             "page": ""
           }
         },
@@ -34,7 +34,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
             "page": ""
           }
         },
@@ -43,7 +43,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
             "page": ""
           }
         }
@@ -74,13 +74,14 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Additional Questions?<\/p>",
-            "heading_size": "rich-text-faqs"
+            "heading_size": "rich-text-faqs-heading"
           }
         },
         "1663974594ff7414b7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Email hello@epilogicskincare.com<\/p>"
+            "text": "<p>Email <a href=\"mailto:hello@epilogicskincare.com\" title=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a><\/p>",
+            "text_size": "rich-text-faqs-text"
           }
         }
       },
