@@ -15,20 +15,6 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- if section.settings.show_upper_repeating_blocks -%}
-<div class="repeating-blocks-wrapper">
-  <div class="block-row-upper">
-    {% for i in (1..12) %}
-      <div class="repeating-block epi-border"></div>
-    {% endfor %}
-  </div>
-  <div class="block-row-lower">
-    {% for i in (1..24) %}
-      <div class="repeating-block epi-border"></div>
-    {% endfor %}
-  </div>
-</div>
-{%- endif -%}
 <footer class="footer color-epilogic footer-grid-wrapper">
   <div class="footer__blocks-wrapper footer-links-area">
     {%- for block in section.blocks -%}
@@ -281,12 +267,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "show_upper_repeating_blocks",
-      "label": "Show repeating blocks above footer",
-      "default": true
-    },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
