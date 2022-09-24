@@ -4,7 +4,7 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "padding_top": 28,
+        "padding_top": 100,
         "padding_bottom": 28
       }
     },
@@ -17,34 +17,112 @@
             "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
           }
-        },
-        "166397034682e41dbe-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "166397034682e41dbe-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "166397034682e41dbe-0",
-        "166397034682e41dbe-1",
-        "166397034682e41dbe-2"
+        "166397034682e41dbe-0"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "stocklists",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
+    },
+    "166403850947f3cfbb": {
+      "type": "stocklist-state",
+      "blocks": {
+        "54186e7c-e52c-488b-9d9f-fca49fd893e4": {
+          "type": "text",
+          "settings": {
+            "store_name": "STORE NAME",
+            "address_line_1": "123 STATE STREET",
+            "address_line_2": "",
+            "address_line_3": "Brooklyn, NY 11217"
+          }
+        },
+        "8bae7919-324f-4e00-90f7-4677dda2f72e": {
+          "type": "text",
+          "settings": {
+            "store_name": "STORE NAME",
+            "address_line_1": "123 STATE STREET",
+            "address_line_2": "",
+            "address_line_3": "Brooklyn, NY 11217"
+          }
+        }
+      },
+      "block_order": [
+        "54186e7c-e52c-488b-9d9f-fca49fd893e4",
+        "8bae7919-324f-4e00-90f7-4677dda2f72e"
+      ],
+      "settings": {
+        "state": "New York",
+        "color_scheme": "stocklists",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "16640393739e2deb23": {
+      "type": "stocklist-state",
+      "blocks": {
+        "830666f9-0f6a-4ed8-91a6-c4492400fb0c": {
+          "type": "text",
+          "settings": {
+            "store_name": "STORE NAME",
+            "address_line_1": "123 STATE STREET",
+            "address_line_2": "",
+            "address_line_3": "Brooklyn, NY 11217"
+          }
+        },
+        "d9f50c09-fef2-4508-a7d1-fb36cd3bc262": {
+          "type": "text",
+          "settings": {
+            "store_name": "STORE NAME",
+            "address_line_1": "123 STATE STREET",
+            "address_line_2": "",
+            "address_line_3": "Brooklyn, NY 11217"
+          }
+        }
+      },
+      "block_order": [
+        "830666f9-0f6a-4ed8-91a6-c4492400fb0c",
+        "d9f50c09-fef2-4508-a7d1-fb36cd3bc262"
+      ],
+      "settings": {
+        "state": "California",
+        "color_scheme": "stocklists",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16640409529b20012c": {
+      "type": "rich-text",
+      "blocks": {
+        "1664040952ec4cb2c0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Want to work with us?<\/p>",
+            "heading_size": "rich-text-stocklists-heading"
+          }
+        },
+        "1664040952ec4cb2c0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Email <a href=\"mailto:hello@epilogicskincare.com\" title=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a><\/p>",
+            "text_size": "rich-text-stocklists-text"
+          }
+        }
+      },
+      "block_order": [
+        "1664040952ec4cb2c0-0",
+        "1664040952ec4cb2c0-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "stocklists",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -53,6 +131,9 @@
   },
   "order": [
     "main",
-    "16639703469c144965"
+    "16639703469c144965",
+    "166403850947f3cfbb",
+    "16640393739e2deb23",
+    "16640409529b20012c"
   ]
 }

@@ -139,7 +139,6 @@
           "footer-0"
         ],
         "settings": {
-          "show_upper_repeating_blocks": true,
           "newsletter_heading": "email address",
           "subscribe_message": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase<\/p>",
           "footer_text": "All rights reserved.",
