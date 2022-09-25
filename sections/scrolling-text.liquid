@@ -1,0 +1,119 @@
+{{ 'scrolling-text.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign block_width = section.settings.image_width | plus: section.settings.image_margin | plus: section.settings.image_margin
+  assign group_width = block_width | times: section.blocks.size
+  assign foo1 = 1920 | plus: block_width | plus: block_width
+  assign number_to_repeat = foo1 | divided_by: group_width | floor
+  assign total_length = number_to_repeat | times: group_width | append: 'px'
+  assign total_length_triple = number_to_repeat | times: 3
+  assign speed = section.settings.animation_speed
+  assign animation_time = total_length | divided_by: speed | append: 's'
+  
+-%}
+
+{%- style -%}
+  :root {
+    --marquee-boxes-width: {{ section.settings.image_width }}px;
+    --marquee-boxes-margin: {{ section.settings.image_margin }}px;
+    --marquee-total-number: {{ section.blocks.size }};
+  }
+
+  @keyframes marquee {
+  from {right: 0px;}
+  to {right: {{ total_length }};}
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* .marquee-inner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  animation: marquee {{ animation_time }} linear infinite;
+  animation-name: marquee;
+} */
+
+
+{%- endstyle -%}
+
+<div class="scrolling-marquee-section">
+  <div class="marquee-wrapper">
+      <div class="marquee-group">
+      {% for block in section.blocks %}
+        <div class="scrolling-text-intro">
+          free from
+        </div>
+        <div class="scrolling-text-subject">
+          {{ block.settings.free-from-text }}
+        </div>
+      {% endfor %}
+      </div> 
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Scrolling Text",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "image_margin",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Image Margin (left and right)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "animation_speed",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "p/s",
+      "label": "Animation Speed (pixels/second)",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Text Block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "free-from-text",
+          "label": "Free From Text",
+          "default": "TEXT"
+        }    
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling Text",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

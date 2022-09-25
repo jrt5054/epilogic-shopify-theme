@@ -31,6 +31,27 @@ svg.epi-cursor * {
 }
 
 :root,
+.color-skincare-evolved {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-light-purple);
+  --gradient-background: rgb(var(--color-epi-light-purple));
+}
+
+:root,
+.color-faqs {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-pink);
+  --gradient-background: rgb(var(--color-epi-background-pink));
+}
+
+:root,
+.color-stocklists {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-pink);
+  --gradient-background: rgb(var(--color-epi-background-pink));
+}
+
+:root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
@@ -325,7 +346,10 @@ body,
 .color-inverse,
 .color-accent-1,
 .color-accent-2,
-.color-announcement-bar {
+.color-announcement-bar, 
+.color-skincare-evolved,
+.color-faqs,
+.color-stocklists {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }

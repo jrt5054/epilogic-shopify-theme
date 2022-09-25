@@ -46,6 +46,18 @@
   transform: rotate(180deg);
 }
 
+.accordion details > summary .icon-minus {
+  display: none;
+}
+
+.accordion details[open] > summary .icon-plus {
+  display: none;
+}
+
+.accordion details[open] > summary .icon-minus {
+  display: block;
+}
+
 .accordion__content {
   margin-bottom: 1.5rem;
   word-break: break-word;
@@ -55,4 +67,25 @@
 
 .accordion__content img {
   max-width: 100%;
+}
+
+.accordion.faq-no-border {
+  border: none;
+}
+
+summary .icon-plus {
+  height: 1.5rem;
+}
+
+summary .icon-minus {
+  width: 1.5rem;
+}
+
+.accordion summary.faq-summary {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__content.faq-content {
+  padding: 0;
 }

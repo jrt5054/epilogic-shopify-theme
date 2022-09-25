@@ -139,7 +139,6 @@
           "footer-0"
         ],
         "settings": {
-          "show_upper_repeating_blocks": true,
           "newsletter_heading": "email address",
           "subscribe_message": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase<\/p>",
           "footer_text": "All rights reserved.",
@@ -164,7 +163,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {

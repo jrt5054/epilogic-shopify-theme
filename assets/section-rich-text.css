@@ -84,3 +84,31 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+h2.rich-text-faqs-heading,
+h2.rich-text-stocklists-heading {
+  font-family: 'Merchant-Regular', serif;
+}
+
+.rich-text-faqs-text,
+.rich-text-stocklists-text {
+  font-size: 1.7rem;
+}
+
+.rich-text-stocklists-text {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 750px) {
+  h2.rich-text-faqs-heading,
+  h2.rich-text-stocklists-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h2.rich-text-faqs-heading,
+  h2.rich-text-stocklists-heading {
+    font-size: 2.6rem;
+  }
+}

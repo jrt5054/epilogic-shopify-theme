@@ -114,54 +114,95 @@
         "show_text_below": true
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "166404188942f9e548": {
+      "type": "collection-list",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "166404188902abb026-0": {
+          "type": "featured_collection",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "collection": "serums"
           }
         },
-        "column2": {
-          "type": "column",
+        "166404188902abb026-1": {
+          "type": "featured_collection",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "collection": "cleansers-toners"
+          }
+        },
+        "166404188902abb026-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "moisturizers"
+          }
+        },
+        "718b204e-9f88-4679-ae53-294dcfe38272": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "eye-cream"
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2"
+        "166404188902abb026-0",
+        "166404188902abb026-1",
+        "166404188902abb026-2",
+        "718b204e-9f88-4679-ae53-294dcfe38272"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "background-1",
+        "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "166396197322c3a763": {
+      "type": "image-with-text",
+      "blocks": {
+        "1663961973a778e767-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Clinical Skincare, Evolved.",
+            "heading_size": "skincare-evolved-heading"
+          }
+        },
+        "1663961973a778e767-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A board-certified oculofacial plastic surgeon dedicated to holistic facial refinement, Dr. Chaneve Jeanniton created epi.logic skincare by uniting patient needs with her medical expertise. Doubling down on empirical data and eliminating potentially reactive additives<\/p>",
+            "text_style": "skincare-evolved-text"
+          }
+        }
+      },
+      "block_order": [
+        "1663961973a778e767-0",
+        "1663961973a778e767-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/skincare-evolved.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "skincare-evolved",
+        "mobile_image_second": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "1663848200cce2702d": {
       "type": "section-divider",
       "settings": {
-        "divider_text": "Divider",
-        "padding_top": 40,
+        "divider_text": "Doctor's Notes",
+        "padding_top": 52,
         "padding_bottom": 52
       }
     },
@@ -189,69 +230,16 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "165764096204816f03": {
-      "type": "multicolumn",
-      "blocks": {
-        "165764096284e76a2c-0": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "165764096284e76a2c-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "165764096284e76a2c-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "165764096284e76a2c-0",
-        "165764096284e76a2c-1",
-        "165764096284e76a2c-2"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "16581594311840984f",
     "featured_collection",
     "16637976921c274cfd",
-    "multicolumn",
+    "166404188942f9e548",
+    "166396197322c3a763",
     "1663848200cce2702d",
     "16576409066cb8e9d7",
-    "16638521984266bd8d",
-    "165764096204816f03"
+    "16638521984266bd8d"
   ]
 }
