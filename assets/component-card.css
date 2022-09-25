@@ -405,5 +405,13 @@ span.collection-list-description {
 
 .card__content.collections-list {
   position: absolute;
+  top: 0;
   bottom: 0;
+  
+}
+
+.card__information.collections-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
