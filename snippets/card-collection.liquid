@@ -17,6 +17,8 @@
     assign ratio = 0.8
   elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
     assign ratio = card_collection.featured_image.aspect_ratio
+  elsif card_collection.featured_image and media_aspect_ratio == 'landscape'
+    assign ratio = 1.5
   endif
   if ratio == 0 or ratio == nil
     assign ratio = 1
