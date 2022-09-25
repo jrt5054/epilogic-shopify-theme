@@ -100,16 +100,16 @@
       </div>
     </div>
     {% if settings.card_style == 'card' or card_collection.featured_image %} 
-      <div class="card__content">
+      <div class="card__content collections-list">
         <div class="card__information">
           <h3 class="card__heading">
-            <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
+            <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link collection-list-name">
               {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
+                <span class="collection-list-title">{{- card_collection.title | escape -}}</span>
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-              {%- if card_collection.featured_image or card_collection.description == blank -%}<span class="icon-wrap">{% render 'icon-arrow' %}</span>{% endif %}
+                <span class="collection-list-description">{{ card_collection.metafields.collections.description }}</span>
             </a>
           </h3>
           {%- if card_collection.featured_image == nil and card_collection.description != blank -%}
