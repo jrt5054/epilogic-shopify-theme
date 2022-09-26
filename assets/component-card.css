@@ -403,14 +403,16 @@ span.collection-list-description {
   }
 }
 
-.card__content.collections-list {
+.card__content.epi-collections-list,
+.card__content.epi-featured-product-link {
   position: absolute;
   top: 0;
   bottom: 0;
   
 }
 
-.card__information.collections-list {
+.card__content.epi-collections-list .card__information,
+.card__content.epi-featured-product-link .card__information {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
