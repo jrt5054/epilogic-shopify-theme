@@ -52,6 +52,27 @@ svg.epi-cursor * {
 }
 
 :root,
+.color-dr-jeanniton {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-pink);
+  --gradient-background: rgb(var(--color-epi-background-pink));
+}
+
+:root,
+.color-the-logic {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-yellow);
+  --gradient-background: rgb(var(--color-epi-background-yellow));
+}
+
+:root,
+.color-surface-shape {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-brown);
+  --gradient-background: rgb(var(--color-epi-brown));
+}
+
+:root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
@@ -349,7 +370,10 @@ body,
 .color-announcement-bar, 
 .color-skincare-evolved,
 .color-faqs,
-.color-stocklists {
+.color-stocklists,
+.color-dr-jeanniton,
+.color-the-logic,
+.color-surface-shape {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
@@ -2960,5 +2984,5 @@ details-disclosure > details {
 
 .epi-border {
   border: 1px dashed rgb(var(--color-epi-border)) !important;
-  background-color: rgb(var(--color-epi-background-yellow));
+  background-color: rgb(var(--color-background));
 }
