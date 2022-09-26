@@ -1,0 +1,14 @@
+{% comment %}
+    Renders a circle
+
+    Accepts:
+    - diameter
+    
+    Usage:
+    {% render 'icon-circle' %}
+{% endcomment %}
+
+
+<svg width="{{ diameter }}" height="{{ diameter }}" viewBox="0 0 {{ diameter }} {{ diameter }}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="{{ diameter | divided_by: 2 }}" cy="{{ diameter | divided_by: 2 }}" r="{{ diameter | divided_by: 2 }}"/>
+</svg>
