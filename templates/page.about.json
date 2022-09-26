@@ -14,7 +14,7 @@
         "1658176414699a2881-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Luxury clinical skincare, born in Brooklyn",
             "heading_size": "h1"
           }
         }
@@ -25,14 +25,14 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/about-main.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
@@ -42,14 +42,14 @@
         "165817653794ffcb41-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Meet Dr. Jeanniton",
             "heading_size": "h1"
           }
         },
         "165817653794ffcb41-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>As a board-certified oculofacial plastic surgeon dedicated to holistic facial refinement, specializing in eye aesthetics, Dr. Chaneve Jeanniton’s work is measured in millimeters, which means there isn’t room for compromise. She created epi.logic skincare with this same obsession with details in mind.<\/p>",
             "text_style": "body"
           }
         }
@@ -64,11 +64,11 @@
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "color_scheme": "dr-jeanniton",
         "mobile_image_second": true,
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -76,23 +76,15 @@
     "16642010269896ab92": {
       "type": "image-with-text",
       "blocks": {
-        "1664201025cde66333-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
         "1664201025cde66333-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>In response to patient requests for simple, effective daily skincare that addresses common complexion concerns and maximizes treatment results, Dr. Jeanniton formulated a meticulously edited line of powerful skincare products with essential actives. Ranging from retinol to vitamin C to human growth factors, they are scientifically proven to improve skin in both the long and short term. Relying on industry-leading research and data, she balances these actives with complementary ingredients to amplify their efficacy while neutralizing potential irritants.<br\/><br\/>As a result, epi.logic products cater to nearly all skin types, including sensitive and post-treatment skin, and are designed to exponentially combine.<\/p>",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "1664201025cde66333-0",
         "1664201025cde66333-1"
       ],
       "settings": {
@@ -116,14 +108,14 @@
         "1664201045643ef114-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "surface, shape & structure",
             "heading_size": "h1"
           }
         },
         "1664201045643ef114-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>epi.logic skincare plays an integral role in the Surface, Shape<br\/>and Structure™ philosophy that underpins Dr. Jeanniton’s work<br\/>at Brooklyn Face & Eye. This signature approach to facial<br\/>rejuvenation conscientiously considers each element of your<br\/>face to enhance and maintain your natural beauty while<br\/>aligning with your lifestyle and aesthetic vision.<\/p>",
             "text_style": "body"
           }
         }
