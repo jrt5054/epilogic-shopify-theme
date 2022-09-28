@@ -35,9 +35,17 @@
   flex-direction: row;
 }
 
+.lower-block-row {
+  position: relative;
+}
+
 .block-row-upper,
 .block-row-lower {
   height: 50%;
+}
+
+.lower-repeating-block {
+  position: relative;
 }
 
 .repeating-block:nth-child(2n),

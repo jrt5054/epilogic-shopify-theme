@@ -113,12 +113,14 @@
     {%- endfor -%}
   </div>
 
-  <div class="subscribe-message-area epi-border">
-    {{ section.settings.subscribe_message }}
+  <div class="subscribe-message-area">
+    <div class="epi-border-top epi-border-left footer-border-mobile">
+      {{ section.settings.subscribe_message }}
+    </div>
   </div>
 
-  <div class="footer-block--newsletter email-form-area epi-border">
-    <div class="footer-block__newsletter">
+  <div class="footer-block--newsletter email-form-area">
+    <div class="footer-block__newsletter epi-border-top epi-border-right epi-border-left">
       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
         <input type="hidden" name="contact[tags]" value="newsletter">
         <div class="newsletter-form__field-wrapper">
@@ -168,9 +170,9 @@
   </div>
   <div class="footer-repeating-blocks-area">
     <div class="lower-repeating-blocks-wrapper">
-      <div class="lower-block-row">
+      <div class="lower-block-row epi-border-top epi-border-left">
         {% for i in (1..48) %}
-          <div class="lower-repeating-block epi-border"></div>
+          <div class="lower-repeating-block epi-border-right epi-border-bottom"></div>
         {% endfor %}
       </div>
     </div>

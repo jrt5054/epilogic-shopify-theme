@@ -39,6 +39,17 @@
     %}
     
     {% style %}
+
+      .epi-border::after,
+      .epi-border-top::after,
+      .epi-border-right::after,
+      .epi-border-bottom::after,
+      .epi-border-left::after,
+      .epi-border-list-item::after,
+      .epi-border-grid-item::after {
+        border-image: url("{{ 'border-dash.png' | asset_url }}") 2 round;
+      }
+     
       /* @media screen and (min-width: 990px) {
         * {
           cursor: url({{ 'circle-cursor-no-text.svg' | asset_url }}) 18 18, pointer;

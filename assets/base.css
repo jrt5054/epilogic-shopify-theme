@@ -2982,7 +2982,64 @@ details-disclosure > details {
   font-weight: var(--font-body-weight-bold);
 }
 
-.epi-border {
-  border: 1px dashed rgb(var(--color-epi-border)) !important;
-  background-color: rgb(var(--color-background));
+.epi-border::after,
+.epi-border-top::after,
+.epi-border-right::after,
+.epi-border-bottom::after,
+.epi-border-left::after,
+.epi-border-list-item::after,
+.epi-border-grid-item::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.epi-border::after {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.epi-border-top::after {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.epi-border-right::after {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.epi-border-bottom::after {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.epi-border-left::after {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.epi-border-grid-item:after {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+ul.epi-border-list-item:after {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+ul.epi-border-list-item li:after {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
