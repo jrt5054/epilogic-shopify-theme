@@ -184,6 +184,7 @@
         "1663961973a778e767-1"
       ],
       "settings": {
+        "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/skincare-evolved.png",
         "height": "adapt",
         "desktop_image_width": "small",
@@ -230,6 +231,12 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "166447374489de05ba": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
     }
   },
   "order": [
@@ -240,6 +247,7 @@
     "166396197322c3a763",
     "1663848200cce2702d",
     "16576409066cb8e9d7",
-    "16638521984266bd8d"
+    "16638521984266bd8d",
+    "166447374489de05ba"
   ]
 }
