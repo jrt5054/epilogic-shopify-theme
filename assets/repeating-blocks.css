@@ -12,6 +12,7 @@
 
 .repeating-blocks-wrapper {
   flex-direction: column;
+  position: relative;
 }
 
 .lower-repeating-blocks-wrapper {
@@ -44,7 +45,8 @@
   height: 50%;
 }
 
-.lower-repeating-block {
+.lower-repeating-block,
+.repeating-block {
   position: relative;
 }
 

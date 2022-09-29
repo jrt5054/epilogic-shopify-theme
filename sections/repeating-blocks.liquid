@@ -1,23 +1,34 @@
 {{ 'repeating-blocks.css' | asset_url | stylesheet_tag }}
 
-<div class="repeating-blocks-wrapper">
-  <div class="block-row-upper">
+<div class="repeating-blocks-wrapper {% if section.settings.show_top_border %} epi-border-top {% endif %}">
+  <div class="block-row-upper epi-border-left">
     {% for i in (1..12) %}
-      <div class="repeating-block epi-border"></div>
+      <div class="repeating-block epi-border-right epi-border-bottom"></div>
     {% endfor %}
   </div>
-  <div class="block-row-lower">
+  <div class="block-row-lower epi-border-left">
     {% for i in (1..24) %}
-      <div class="repeating-block epi-border"></div>
+      <div class="repeating-block epi-border-right epi-border-bottom"></div>
     {% endfor %}
   </div>
 </div>
+
+{% comment %}  {% endcomment %}
+
 
 {% schema %}
 {
   "name": "Repeating Blocks",
   "tag": "section",
   "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_top_border",
+      "label": "Show Top Border",
+      "default": false
+    }
+  ],
   "presets": [
     {
       "name": "Repeating Blocks"
