@@ -43,7 +43,7 @@
     </div>
     <div class="image-with-text__text-item grid__item {% if section.settings.show_three_dots %} three-dots-styling{% endif %}">
       {%- if section.settings.show_three_dots -%}
-        <div class="three-dots-wrapper color-{{ section.settings.color_scheme }}">
+        <div class="three-dots-wrapper color-{{ section.settings.color_scheme }} epi-border-bottom">
           {% render 'icon-circle', diameter: 100 %}
           {% render 'icon-circle', diameter: 100 %}
           {% render 'icon-circle', diameter: 100 %}

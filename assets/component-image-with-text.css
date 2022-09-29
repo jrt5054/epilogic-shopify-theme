@@ -361,6 +361,10 @@
   display: flex;
 }
 
+.image-with-text__text-item.three-dots-styling > div {
+  position: relative;
+}
+
 .image-with-text__text-item.three-dots-styling .image-with-text__content {
   width: 100%;
 }
