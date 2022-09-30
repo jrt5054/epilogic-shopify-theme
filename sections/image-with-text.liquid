@@ -66,6 +66,34 @@
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
+            {%- when 'breakdown' -%}
+              
+              <div class="breakdown_wrapper">
+                <div class="breakdown_ingredients">
+                    {%- assign breakdown_title_id = product.metafields.epilogic.sanity_product_data.value.result[0].ingredient[0]['_ref'] | json -%}
+                    {%- assign breakdown_ingredient_array = product.metafields.epilogic.sanity_product_data.value.result[0].ingredient -%}
+
+                    {%- for element in breakdown_ingredient_array -%}
+                      {% assign foobar = element['_ref'] | json%}
+                      {% if foobar == breakdown_title_id %}
+                        <div>yup</div>
+                        <div>element['_ref']: {{ element['_ref'] | json }}</div>
+                        <div>breakdown_title_id: {{ breakdown_title_id }}</div>
+                      {% else %}
+                        <div>nope</div>
+                        <div>element['_ref']: {{ element['_ref'] }}</div>
+                        <div>breakdown_title_id: {{ breakdown_title_id }}</div>
+                      {% endif %}
+                      
+                    {%- endfor -%}
+                </div>
+                <div class="breakdown_descriptions">
+                
+                </div>
+              </div>
+
+
+
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -436,6 +464,10 @@
           "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
         }
       ]
+    },
+    {
+      "type": "breakdown",
+      "name": "The Breakdown"
     }
   ],
   "presets": [
