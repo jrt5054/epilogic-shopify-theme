@@ -90,14 +90,20 @@
 
               {% assign breakdown_ingredient_id_array = ingredient_id_list | split: '::' %} 
 
-
-              {% comment %} 
-                - take the first id in the id array and iterate through the ingredient id array 
-                - compare the id to the _id value in the ingredient array.
-                - if they are not equal, move onto the next array ingredient array element. 
-                - If they are equal, pull out the title value and the text value and break the loop
-                - repeat for the next element in the id array
-              {% endcomment %}
+              {% capture ingredient_title_list %}
+                {% for id_number in breakdown_ingredient_id_array %}
+                  {% assign stripped_id_number = id_number | strip %}
+                  {% for ingredient_info_element in metafield_ingredient_info_array %}
+                    {% assign stripped_ingredient_info_id = ingredient_info_element['_id'] | strip %}
+                    {% if stripped_ingredient_info_id == stripped_id_number %}
+                      {{ ingredient_info_element.title }}
+                    {% endif %}
+                  {% endfor %}
+                  {% if forloop.last == false %}::{% endif %}
+                {% endfor %}
+              {% endcapture %}
+              {% assign breakdown_title_array = ingredient_title_list | split: '::' %} 
+            
 
               {% capture ingredient_info_list %}
                 {% for id_number in breakdown_ingredient_id_array %}
@@ -105,28 +111,52 @@
                   {% for ingredient_info_element in metafield_ingredient_info_array %}
                     {% assign stripped_ingredient_info_id = ingredient_info_element['_id'] | strip %}
                     {% if stripped_ingredient_info_id == stripped_id_number %}
-                      {{ ingredient_info_element.title }}|{{ ingredient_info_element.body[0].children[0].text }}
+                      {{ ingredient_info_element.body[0].children[0].text }}
                     {% endif %}
                   {% endfor %}
                   {% if forloop.last == false %}::{% endif %}
                 {% endfor %}
               {% endcapture %}
               {% assign breakdown_info_array = ingredient_info_list | split: '::' %} 
-              {% for item in breakdown_info_array %}
-                {% assign info_vals = item | split: '|' %}
-              {% endfor %}
               
-              
-              <div class="breakdown_wrapper">
-                <div class="breakdown_ingredients">
-                  
+              <div class="breakdown-wrapper">
+                <div class="breakdown-ingredients">
+                  {% for title in breakdown_title_array %}
+                    <div 
+                      id="{{ "breakdown_title_" | append: forloop.index }}"
+                      class="breakdown-ingredient-title"
+                      onclick="showBreakdownItem({{ 'breakdown_title_' | append: forloop.index }}, {{ 'breakdown_description_' | append: forloop.index }})"
+                    >
+                      {{ title }}
+                    </div>
+                  {% endfor %}
                 </div>
-                <div class="breakdown_descriptions">
-                
+                <div class="breakdown-descriptions">
+                  {% for description in breakdown_info_array %}
+                    <div
+                      id="{{ "breakdown_description_" | append: forloop.index }}"
+                      class="breakdown-ingredient-description"
+                    >
+                      {{ description }}
+                    </div>
+                  {% endfor %}
                 </div>
               </div>
-
-
+              <script>
+                function showBreakdownItem(clickedDiv, targetDiv) {
+                  const allBreakdownTitles = document.querySelectorAll(".breakdown-ingredient-title");
+                  const allBreakdownDescriptions = document.querySelectorAll(".breakdown-ingredient-description");
+                  allBreakdownTitles.forEach((element_title) => {element_title.style.textDecoration = 'none'});
+                  allBreakdownDescriptions.forEach((element_desc) => {element_desc.style.display = 'none'});
+                  const compStyles = window.getComputedStyle(targetDiv);
+                  if (compStyles.display == "none") {
+                    targetDiv.style.display = "block";
+                    clickedDiv.style.textDecoration = 'underline'
+                  } else {
+                    targetDiv.style.display = "none";
+                  }
+                }
+              </script>
 
           {%- endcase -%}
         {%- endfor -%}
