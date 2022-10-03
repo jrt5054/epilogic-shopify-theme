@@ -145,7 +145,8 @@
                       class="breakdown-ingredient-title"
                       onclick="showBreakdownItem({{ 'breakdown_title_' | append: forloop.index }}, {{ 'breakdown_description_' | append: forloop.index }})"
                     >
-                      {{ forloop.index }}{{ title }}
+                      
+                        {{ forloop.index | append: "&nbsp &nbsp" }}{{ title }}
                     </div>
                   {% endfor %}
                 </div>

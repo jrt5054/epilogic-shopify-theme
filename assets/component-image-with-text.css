@@ -447,3 +447,12 @@
     flex-direction: column;
   }
 }
+
+.breakdown-ingredients {
+  font-family: 'VTCDuBois-Bold', serif;
+  text-transform: uppercase;
+}
+
+.breakdown-ingredient-description {
+  font-family: 'Merchant-Italic', serif;
+}
