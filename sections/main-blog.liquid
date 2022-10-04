@@ -16,21 +16,38 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary">{{ blog.title | escape }}</h1>
+{%- paginate blog.articles by 12 -%}
+  <div class="main-blog section-{{ section.id }}-padding">
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
+        {%- liquid
+          assign odd_check = forloop.index | modulo: 2
+          assign swap_color_check = forloop.index | modulo: 4
+          if odd_check != 0
+            assign odd_position = true
+          else
+          assign odd_position = false
+          endif
+
+          assign swap_color_check = forloop.index0 | modulo: 8 | minus: 4
+          if swap_color_check >= 0
+            assign color_swap = true
+          else
+            assign color_swap = false
+          endif
+        -%}
         <div class="blog-articles__article article">
           {%- render 'article-card',
-            article: article,
-            media_height: section.settings.image_height,
-            media_aspect_ratio: article.image.aspect_ratio,
-            show_image: section.settings.show_image,
-            show_date: section.settings.show_date,
-            show_author: section.settings.show_author,
-            show_excerpt: true 
+            blog: section.settings.blog, 
+            article: article, 
+            media_aspect_ratio: 0.6, 
+            show_image: section.settings.show_image, 
+            show_date: section.settings.show_date, 
+            show_author: section.settings.show_author, 
+            show_excerpt: true,
+            is_odd: odd_position,
+            color_swap: color_swap
           -%}
         </div>
       {%- endfor -%}

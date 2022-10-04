@@ -24,7 +24,16 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="card-wrapper underline-links-hover epi-border-right epi-border-bottom blog-card-wrapper {% if is_odd %}article-card-background-yellow{% else %} article-card-background-gray{% endif %}">
+  <div class="card-wrapper underline-links-hover epi-border-right epi-border-bottom blog-card-wrapper 
+    {% if is_odd == true and color_swap == false %}
+      article-card-background-yellow
+    {% elsif is_odd == false and color_swap == false %}
+      article-card-background-gray 
+    {% elsif is_odd == true and color_swap == true %}
+      article-card-background-gray 
+    {% elsif is_odd == false and color_swap == true %}
+      article-card-background-yellow
+    {% endif %}">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div class="card article-card
       card--{{ settings.card_style }}
