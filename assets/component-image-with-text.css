@@ -33,6 +33,10 @@
   .image-with-text__media--large {
     height: 69.5rem;
   }
+
+  .image-with-text__media--the-breakdown {
+    height: 55rem;
+  }
 }
 
 .image-with-text__media--placeholder {
@@ -263,6 +267,10 @@
 
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__grid--reverse .image-with-text__content {
     border-right: 0;
+  }
+
+  .grid--3-col-tablet .grid__item.image-with-text__media-item--the-breakdown {
+    width: 0;
   }
 }
 
