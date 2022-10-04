@@ -114,6 +114,45 @@
         "show_text_below": true
       }
     },
+    "1664905047dd6c265f": {
+      "type": "scrolling-text",
+      "blocks": {
+        "166490504772b32324-0": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "parabens"
+          }
+        },
+        "166490504772b32324-1": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "cruelty"
+          }
+        },
+        "166490504772b32324-2": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "sulfates"
+          }
+        },
+        "166490504772b32324-3": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "ARTIFICIAL FRAGRANCE"
+          }
+        }
+      },
+      "block_order": [
+        "166490504772b32324-0",
+        "166490504772b32324-1",
+        "166490504772b32324-2",
+        "166490504772b32324-3"
+      ],
+      "settings": {
+        "image_margin": 0,
+        "animation_speed": 100
+      }
+    },
     "166404188942f9e548": {
       "type": "collection-list",
       "blocks": {
@@ -249,6 +288,7 @@
     "16581594311840984f",
     "featured_collection",
     "16637976921c274cfd",
+    "1664905047dd6c265f",
     "166404188942f9e548",
     "166396197322c3a763",
     "1663848200cce2702d",
