@@ -42,9 +42,9 @@
             blog: section.settings.blog, 
             article: article, 
             media_aspect_ratio: 0.6, 
-            show_image: section.settings.show_image, 
-            show_date: section.settings.show_date, 
-            show_author: section.settings.show_author, 
+            show_image: true, 
+            show_date: false, 
+            show_author: false, 
             show_excerpt: true,
             is_odd: odd_position,
             color_swap: color_swap
@@ -87,12 +87,6 @@
       "info": "t:sections.main-blog.settings.layout.info"
     },
     {
-      "type": "checkbox",
-      "id": "show_image",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_image.label"
-    },
-    {
       "type": "select",
       "id": "image_height",
       "options": [
@@ -116,18 +110,6 @@
       "default": "medium",
       "label": "t:sections.main-blog.settings.image_height.label",
       "info": "t:sections.main-blog.settings.image_height.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_date",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_date.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_author",
-      "default": false,
-      "label": "t:sections.main-blog.settings.show_author.label"
     },
     {
       "type": "paragraph",
