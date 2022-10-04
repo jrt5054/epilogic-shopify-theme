@@ -1,5 +1,68 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
+
+{% comment %} 
+  Assign ingredient array to a variable. this array contains the _ref number that we want along with other information
+{% endcomment %}
+
+{%- assign metafield_ingredient_id_array = product.metafields.epilogic.sanity_product_data.value.result[0].ingredient -%}
+{%- assign metafield_ingredient_info_array = product.metafields.epilogic.sanity_ingredient_data.value.result -%}
+{%- assign metafield_colortheme_id = product.metafields.epilogic.sanity_product_data.value.result[0].colorTheme['_ref'] | strip -%}
+{%- assign metafield_colortheme_array = product.metafields.epilogic.sanity_product_color_theme.value.result -%}
+{% comment %} 
+  Capture string of the _ref number in each element and separate them with a "::" character
+{% endcomment %}
+
+{% capture ingredient_id_list %}
+  {% for element in metafield_ingredient_id_array %}
+    {{ element['_ref'] }}
+    {% if forloop.last == false %}::{% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% comment %} 
+  convert string to an array by splitting the string using the "::" character 
+{% endcomment %}
+
+{% assign breakdown_ingredient_id_array = ingredient_id_list | split: '::' %} 
+
+{% capture ingredient_title_list %}
+  {% for id_number in breakdown_ingredient_id_array %}
+    {% assign stripped_id_number = id_number | strip %}
+    {% for ingredient_info_element in metafield_ingredient_info_array %}
+      {% assign stripped_ingredient_info_id = ingredient_info_element['_id'] | strip %}
+      {% if stripped_ingredient_info_id == stripped_id_number %}
+        {{ ingredient_info_element.title }}
+      {% endif %}
+    {% endfor %}
+    {% if forloop.last == false %}::{% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign breakdown_title_array = ingredient_title_list | split: '::' %} 
+
+
+{% capture ingredient_info_list %}
+  {% for id_number in breakdown_ingredient_id_array %}
+    {% assign stripped_id_number = id_number | strip %}
+    {% for ingredient_info_element in metafield_ingredient_info_array %}
+      {% assign stripped_ingredient_info_id = ingredient_info_element['_id'] | strip %}
+      {% if stripped_ingredient_info_id == stripped_id_number %}
+        {{ ingredient_info_element.body[0].children[0].text }}
+      {% endif %}
+    {% endfor %}
+    {% if forloop.last == false %}::{% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign breakdown_info_array = ingredient_info_list | split: '::' %} 
+
+{% for element in metafield_colortheme_array %}
+  {% assign stripped_element_id = element['_id'] | strip %}
+  {% if stripped_element_id == metafield_colortheme_id %}
+    {% assign background_color_hex = element.background.hex %}
+    {% assign text_color_hex = element.text.hex %}
+  {% endif %}
+{% endfor %}
+              
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,12 +75,19 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .color-breakdown,
+  .color-breakdown h2 {
+    background-color: {{ background_color_hex }};
+    color: {{ text_color_hex }};
+  }
+  
 {%- endstyle -%}
 
-<div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding epi-border color-{{ section.settings.color_scheme }}">
-  <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}{% if section.settings.mobile_image_second %} mobile-image-second{% endif %}">
+<div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} epi-border-left epi-border-right epi-border-bottom">
+  <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}{% if section.settings.mobile_image_second %} mobile-image-second{% endif %} ">
     <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
-      <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %} epi-border"
+      <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
         {%- if section.settings.image != blank -%}
@@ -43,13 +113,13 @@
     </div>
     <div class="image-with-text__text-item grid__item {% if section.settings.show_three_dots %} three-dots-styling{% endif %}">
       {%- if section.settings.show_three_dots -%}
-        <div class="three-dots-wrapper color-{{ section.settings.color_scheme }} epi-border">
+        <div class="three-dots-wrapper color-{{ section.settings.color_scheme }} epi-border-bottom">
           {% render 'icon-circle', diameter: 100 %}
           {% render 'icon-circle', diameter: 100 %}
           {% render 'icon-circle', diameter: 100 %}
         </div>
       {%- endif -%}
-      <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container">
+      <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-bottom epi-border-left epi-border-right">
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
@@ -66,6 +136,47 @@
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
+            {%- when 'breakdown' -%}
+              <div class="breakdown-wrapper">
+                <div class="breakdown-ingredients">
+                  {% for title in breakdown_title_array %}
+                    <div 
+                      id="{{ "breakdown_title_" | append: forloop.index }}"
+                      class="breakdown-ingredient-title"
+                      onclick="showBreakdownItem({{ 'breakdown_title_' | append: forloop.index }}, {{ 'breakdown_description_' | append: forloop.index }})"
+                    >
+                      
+                        {{ forloop.index | append: "&nbsp &nbsp" }}{{ title }}
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="breakdown-descriptions">
+                  {% for description in breakdown_info_array %}
+                    <div
+                      id="{{ "breakdown_description_" | append: forloop.index }}"
+                      class="breakdown-ingredient-description"
+                    >
+                      {{ description }}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <script>
+                function showBreakdownItem(clickedDiv, targetDiv) {
+                  const allBreakdownTitles = document.querySelectorAll(".breakdown-ingredient-title");
+                  const allBreakdownDescriptions = document.querySelectorAll(".breakdown-ingredient-description");
+                  allBreakdownTitles.forEach((element_title) => {element_title.style.textDecoration = 'none'});
+                  allBreakdownDescriptions.forEach((element_desc) => {element_desc.style.display = 'none'});
+                  const compStyles = window.getComputedStyle(targetDiv);
+                  if (compStyles.display == "none") {
+                    targetDiv.style.display = "block";
+                    clickedDiv.style.textDecoration = 'underline'
+                  } else {
+                    targetDiv.style.display = "none";
+                  }
+                }
+              </script>
+
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -207,6 +318,10 @@
       "type": "select",
       "id": "color_scheme",
       "options": [
+        {
+          "value": "breakdown",
+          "label": "The Breakdown"
+        },
         {
           "value": "skincare-evolved",
           "label": "Skincare Evolved"
@@ -436,6 +551,10 @@
           "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
         }
       ]
+    },
+    {
+      "type": "breakdown",
+      "name": "The Breakdown"
     }
   ],
   "presets": [

@@ -48,7 +48,7 @@
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
       <slider-component class="slider-mobile-gutter">
         <ul id="Slider-{{ section.id }}"
-          class="blog__posts blog-list articles-wrapper contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+          class="blog__posts blog-list articles-wrapper contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %} epi-border-top epi-border-left"
           role="list"
         >
           {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
@@ -65,11 +65,12 @@
                 blog: section.settings.blog, 
                 article: article, 
                 media_aspect_ratio: 0.6, 
-                show_image: section.settings.show_image, 
-                show_date: section.settings.show_date, 
-                show_author: section.settings.show_author, 
+                show_image: true, 
+                show_date: false, 
+                show_author: false, 
                 show_excerpt: true,
-                is_odd: odd_position 
+                is_odd: odd_position,
+                color_swap: false
               %}
             </li>
           {%- endfor -%}
@@ -196,31 +197,6 @@
       "default": "background-1",
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_image",
-      "default": true,
-      "label": "t:sections.featured-blog.settings.show_image.label",
-      "info": "t:sections.featured-blog.settings.show_image.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_date",
-      "default": true,
-      "label": "t:sections.featured-blog.settings.show_date.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_author",
-      "default": false,
-      "label": "t:sections.featured-blog.settings.show_author.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": true,
-      "label": "t:sections.featured-blog.settings.show_view_all.label"
     },
     {
       "type": "header",

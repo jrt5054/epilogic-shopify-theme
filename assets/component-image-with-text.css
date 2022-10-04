@@ -117,6 +117,7 @@
 
 .image-with-text .global-media-settings {
   overflow: hidden !important;
+  border: none;
 }
 
 .image-with-text .image-with-text__text-item > * {
@@ -360,6 +361,10 @@
   display: flex;
 }
 
+.image-with-text__text-item.three-dots-styling > div {
+  position: relative;
+}
+
 .image-with-text__text-item.three-dots-styling .image-with-text__content {
   width: 100%;
 }
@@ -401,3 +406,53 @@
   }
 }
 
+.breakdown-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.breakdown-ingredients{
+  display: flex;
+  flex-direction: column;
+}
+
+.breakdown-descriptions div:not(#breakdown_description_1) {
+  display: none;
+}
+
+#breakdown_title_1 {
+  text-decoration: underline;
+}
+
+.breakdown-ingredient-title:hover {
+  text-decoration: underline !important;
+}
+
+.breakdown-ingredient-title {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 990px){
+  .breakdown-wrapper {
+    flex-direction: row;
+  }
+
+  .breakdown-ingredients {
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 989px){
+  .breakdown-wrapper {
+    flex-direction: column;
+  }
+}
+
+.breakdown-ingredients {
+  font-family: 'VTCDuBois-Bold', serif;
+  text-transform: uppercase;
+}
+
+.breakdown-ingredient-description {
+  font-family: 'Merchant-Italic', serif;
+}

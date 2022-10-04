@@ -59,6 +59,7 @@
         "165817653794ffcb41-1"
       ],
       "settings": {
+        "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/dr-jeanniton.png",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -88,6 +89,7 @@
         "1664201025cde66333-1"
       ],
       "settings": {
+        "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/about-1.png",
         "height": "adapt",
         "desktop_image_width": "small",
@@ -125,8 +127,9 @@
         "1664201045643ef114-1"
       ],
       "settings": {
+        "show_three_dots": true,
         "image": "shopify:\/\/shop_images\/about-2.png",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -167,6 +170,7 @@
     "166420258197c62037": {
       "type": "repeating-blocks",
       "settings": {
+        "show_top_border": false
       }
     }
   },

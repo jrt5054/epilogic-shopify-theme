@@ -12,6 +12,7 @@
     - show_badge: {String} The setting either show the blog badge or not.
     - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
     - is_odd: {Boolean} Indicates that the card's index is an odd number
+    - color_swap: {Boolean} Indicates that the card's index is an odd multiple of 4
 
     Usage:
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
@@ -24,7 +25,16 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="card-wrapper underline-links-hover epi-border blog-card-wrapper {% if is_odd %}article-card-background-yellow{% else %} article-card-background-gray{% endif %}">
+  <div class="card-wrapper underline-links-hover epi-border-right epi-border-bottom blog-card-wrapper 
+    {% if is_odd == true and color_swap == false %}
+      article-card-background-yellow
+    {% elsif is_odd == false and color_swap == false %}
+      article-card-background-gray 
+    {% elsif is_odd == true and color_swap == true %}
+      article-card-background-gray 
+    {% elsif is_odd == false and color_swap == true %}
+      article-card-background-yellow
+    {% endif %}">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div class="card article-card
       card--{{ settings.card_style }}

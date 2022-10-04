@@ -12,6 +12,7 @@
 
 .repeating-blocks-wrapper {
   flex-direction: column;
+  position: relative;
 }
 
 .lower-repeating-blocks-wrapper {
@@ -35,9 +36,18 @@
   flex-direction: row;
 }
 
+.lower-block-row {
+  position: relative;
+}
+
 .block-row-upper,
 .block-row-lower {
   height: 50%;
+}
+
+.lower-repeating-block,
+.repeating-block {
+  position: relative;
 }
 
 .repeating-block:nth-child(2n),
