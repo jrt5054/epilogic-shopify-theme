@@ -74,6 +74,14 @@
   }
 </style>
 
+{%- liquid
+  if request.path == "/collections/all" or request.page_type == "index"
+    assign header_color_scheme = "white"
+  else
+    assign header_color_scheme = "black"
+  endif
+-%}
+
 {%- style -%}
   .header {
     padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
@@ -104,14 +112,6 @@
 {%- if settings.cart_type == "drawer" -%}
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
-
-{%- liquid
-  if request.path == "/collections/all" or request.page_type == "index"
-    assign header_color_scheme = "white"
-  else
-    assign header_color_scheme = "black"
-  endif
--%}
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
@@ -446,13 +446,7 @@
       </details-modal>
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%}
+        {%- render 'icon-circle', diameter: 30 -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
