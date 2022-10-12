@@ -14,6 +14,7 @@
   }  
 {%- endstyle -%}
 
+<div class="header-background"></div>
 <div class="contact-epilogic contact-epilogic--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} epi-border-left epi-border-right epi-border-bottom">
   <div class="contact-epilogic__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %} contact-epilogic__grid--reverse">
     <div class="contact-epilogic__media-item contact-epilogic__media-item--{{ section.settings.desktop_image_width }} contact-epilogic__media-item--{{ section.settings.desktop_content_position }} grid__item">

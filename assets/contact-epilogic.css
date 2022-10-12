@@ -1,7 +1,3 @@
-.contact-epilogic {
-  margin-top: 6rem;
-}
-
 .contact-epilogic .grid {
   margin-bottom: 0;
 }
@@ -467,4 +463,16 @@
 
 .breakdown-ingredient-description {
   font-family: 'Merchant-Italic', serif;
+}
+
+@media screen and (min-width: 750px){
+  .header-background:empty {
+    display: block;    
+  }
+
+  .header-background {
+    height: 6rem;
+    width: 100%;
+    background-color: rgb(var(--color-epi-background-pink));
+  }
 }
