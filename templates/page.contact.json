@@ -10,44 +10,8 @@
     },
     "48a57bc2-7eb7-48ca-b768-a1cea79c2268": {
       "type": "contact-epilogic",
-      "blocks": {
-        "template--15753419653260__48a57bc2-7eb7-48ca-b768-a1cea79c2268-166559650647863d4a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--15753419653260__48a57bc2-7eb7-48ca-b768-a1cea79c2268-166559650647863d4a-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--15753419653260__48a57bc2-7eb7-48ca-b768-a1cea79c2268-166559650647863d4a-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "fcda9252-1165-4914-a10f-b305bccfaf18": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "template--15753419653260__48a57bc2-7eb7-48ca-b768-a1cea79c2268-166559650647863d4a-0",
-        "template--15753419653260__48a57bc2-7eb7-48ca-b768-a1cea79c2268-166559650647863d4a-1",
-        "template--15753419653260__48a57bc2-7eb7-48ca-b768-a1cea79c2268-166559650647863d4a-2",
-        "fcda9252-1165-4914-a10f-b305bccfaf18"
-      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/contact-us-image.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -55,7 +19,6 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "mobile_image_second": true,
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0
