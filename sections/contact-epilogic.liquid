@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="contact-epilogic contact-epilogic--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} epi-border-left epi-border-right epi-border-bottom">
-  <div class="contact-epilogic__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} contact-epilogic__grid--reverse{% endif %}{% if section.settings.mobile_image_second %} mobile-image-second{% endif %} ">
+  <div class="contact-epilogic__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %} contact-epilogic__grid--reverse">
     <div class="contact-epilogic__media-item contact-epilogic__media-item--{{ section.settings.desktop_image_width }} contact-epilogic__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div class="contact-epilogic__media contact-epilogic__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}contact-epilogic__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
@@ -43,24 +43,32 @@
     </div>
     <div class="contact-epilogic__text-item grid__item">
       <div id="ImageWithText--{{ section.id }}" class="contact-epilogic__content contact-epilogic__content--{{ section.settings.desktop_content_position }} contact-epilogic__content--desktop-{{ section.settings.desktop_content_alignment }} contact-epilogic__content--mobile-{{ section.settings.mobile_content_alignment }} contact-epilogic__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-bottom epi-border-left epi-border-right">
-        {%- for block in section.blocks -%}
-          {% case block.type %}
-            {%- when 'heading' -%}
-              <h2 class="contact-epilogic__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                {{ block.settings.heading | escape }}
-              </h2>
-            {%- when 'caption' -%}
-              <p class="contact-epilogic__text contact-epilogic__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
-            {%- when 'text' -%}
-              <div class="contact-epilogic__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-            {%- when 'button' -%}
-              {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
-                </a>
-              {%- endif -%}
-          {%- endcase -%}
-        {%- endfor -%}
+        <div class="contact-epilogic__upper">
+          <h2 class="contact-epilogic__heading" {{ block.shopify_attributes }}>
+            static title
+          </h2>
+          <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
+            static text
+          </div>
+          {%- if block.settings.button_label != blank -%}
+            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+              {{ block.settings.button_label | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+        <div class="contact-epilogic__lower">
+          <h2 class="contact-epilogic__heading" {{ block.shopify_attributes }}>
+            static title
+          </h2>
+          <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
+            static text
+          </div>
+          {%- if block.settings.button_label != blank -%}
+            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+              {{ block.settings.button_label | escape }}
+            </a>
+          {%- endif -%}
+        </div>
       </div>
     </div>
   </div>
@@ -124,23 +132,6 @@
       "default": "medium",
       "label": "t:sections.image-with-text.settings.desktop_image_width.label",
       "info": "t:sections.image-with-text.settings.desktop_image_width.info"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "image_first",
-          "label": "t:sections.image-with-text.settings.layout.options__1.label"
-        },
-        {
-          "value": "text_first",
-          "label": "t:sections.image-with-text.settings.layout.options__2.label"
-        }
-      ],
-      "default": "image_first",
-      "label": "t:sections.image-with-text.settings.layout.label",
-      "info": "t:sections.image-with-text.settings.layout.info"
     },
     {
       "type": "select",
@@ -244,13 +235,12 @@
     },
     {
       "type": "header",
-      "content": "Mobile layout"
+      "content": "Upper Section"
     },
+    
     {
-      "type": "checkbox",
-      "id": "mobile_image_second",
-      "label": "Image Second on Mobile",
-      "default": true
+      "type": "header",
+      "content": "Mobile layout"
     },
     {
       "type": "select",
