@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/homepage.png",
-            "heading": "Singularly Powerful. Designed to Combine.",
+            "heading": "<p>Singularly Powerful. <\/p><p>Designed to Combine.<\/p>",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
@@ -24,7 +24,7 @@
         "1658159431897185c8-1": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "heading": "<p>Image slide<\/p>",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "",
@@ -41,7 +41,7 @@
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "heading": "<p>Image slide<\/p>",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "",
