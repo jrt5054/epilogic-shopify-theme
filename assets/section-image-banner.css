@@ -437,3 +437,6 @@
   margin-top: 2rem;
 }
 
+.slideshow__text-wrapper .h1.banner__heading p {
+  margin: 0;
+}
