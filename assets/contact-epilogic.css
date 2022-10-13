@@ -286,15 +286,13 @@
     rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
-@media screen and (min-width: 990px) {
-  .contact-epilogic__content {
-    padding: 6rem 7rem 7rem;
-  }
+.contact-epilogic__content {
+  padding: 0;
 }
 
-.contact-epilogic__content > * + * {
+/* .contact-epilogic__content > * + * {
   margin-top: 2rem;
-}
+} */
 
 .contact-epilogic__content > .contact-epilogic__text:empty ~ a {
   margin-top: 2rem;
@@ -465,14 +463,88 @@
   font-family: 'Merchant-Italic', serif;
 }
 
+.contact-epilogic__upper {
+  position: relative;
+}
+
+.contact-epilogic__content > * {
+  width: 100%;
+}
+
+.contact-epilogic__upper,
+.contact-epilogic__lower {
+  padding: 6rem;
+}
+
+.contact-epilogic__upper h2,
+.contact-epilogic__lower h2 {
+  margin: 0;
+}
+
+.contact-epilogic__upper {
+  background-color: rgb(var(--color-epi-background-yellow));
+}
+
+.contact-epilogic__lower {
+  background-color: rgb(var(--color-epi-background-pink));
+}
+
+.header-background:empty {
+  display: block;    
+}
+
+.header-background {
+  height: 6rem;
+  width: 100%;
+  background-color: rgb(var(--color-epi-background-pink));
+  position: relative;
+}
+
 @media screen and (min-width: 750px){
-  .header-background:empty {
-    display: block;    
+  .contact-epilogic__content {
+    display: flex;
+    flex-direction: column;
   }
 
-  .header-background {
-    height: 6rem;
+  .upper-section-button-wrapper,
+  .lower-section-button-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1%;
+  }
+
+  .upper-section-button-wrapper a,
+  .lower-section-button-wrapper a {
+    width: 33%;
+    text-align: center;
+  }
+
+  .contact-epilogic__content > * {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 749px){
+  .upper-section-button-wrapper,
+  .lower-section-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .upper-section-button-wrapper a,
+  .lower-section-button-wrapper a {
     width: 100%;
-    background-color: rgb(var(--color-epi-background-pink));
+    text-align: center;
+  }
+
+  .contact-epilogic__content > * {
+    height: auto;
+  }
+
+  .upper-section-button-wrapper a,
+  .lower-section-button-wrapper a {
+    height: 2rem;
+    text-align: center;
   }
 }

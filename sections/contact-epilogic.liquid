@@ -14,7 +14,7 @@
   }  
 {%- endstyle -%}
 
-<div class="header-background"></div>
+<div class="header-background epi-border-bottom"></div>
 <div class="contact-epilogic contact-epilogic--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} epi-border-left epi-border-right epi-border-bottom">
   <div class="contact-epilogic__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %} contact-epilogic__grid--reverse">
     <div class="contact-epilogic__media-item contact-epilogic__media-item--{{ section.settings.desktop_image_width }} contact-epilogic__media-item--{{ section.settings.desktop_content_position }} grid__item">
@@ -44,31 +44,38 @@
     </div>
     <div class="contact-epilogic__text-item grid__item">
       <div id="ImageWithText--{{ section.id }}" class="contact-epilogic__content contact-epilogic__content--{{ section.settings.desktop_content_position }} contact-epilogic__content--desktop-{{ section.settings.desktop_content_alignment }} contact-epilogic__content--mobile-{{ section.settings.mobile_content_alignment }} contact-epilogic__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-bottom epi-border-left epi-border-right">
-        <div class="contact-epilogic__upper">
+        <div class="contact-epilogic__upper epi-border-bottom">
           <h2 class="contact-epilogic__heading" {{ block.shopify_attributes }}>
-            static title
+            {{ section.settings.upper_section_title }}
           </h2>
           <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
-            static text
+            {{ section.settings.upper_section_text }}
           </div>
-          {%- if block.settings.button_label != blank -%}
-            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-              {{ block.settings.button_label | escape }}
+          <div class="upper-section-button-wrapper">
+            <a href="{{ section.settings.upper_section_button_1_url }}" class="button button--primary " {{ block.shopify_attributes }}>
+              {{ section.settings.upper_section_button_1_label | escape }}
             </a>
-          {%- endif -%}
+            <a href="{{ section.settings.upper_section_button_2_url }}" class="button button--primary" {{ block.shopify_attributes }}>
+              {{ section.settings.upper_section_button_2_label | escape }}
+            </a>
+            <a href="{{ section.settings.upper_section_button_3_url }}" class="button button--primary" {{ block.shopify_attributes }}>
+              {{ section.settings.upper_section_button_3_label | escape }}
+            </a>
+          </div>
         </div>
         <div class="contact-epilogic__lower">
           <h2 class="contact-epilogic__heading" {{ block.shopify_attributes }}>
-            static title
+            {{ section.settings.lower_section_title }}
           </h2>
           <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
-            static text
+            {{ section.settings.lower_section_text }}
           </div>
-          {%- if block.settings.button_label != blank -%}
-            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-              {{ block.settings.button_label | escape }}
-            </a>
-          {%- endif -%}
+          <a href="{{ section.settings.lower_section_button_1_url }}" class="button button--primary" {{ block.shopify_attributes }}>
+            {{ section.settings.lower_section_button_1_label | escape }}
+          </a>
+          <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
+            {{ section.settings.lower_section_lower_text }}
+          </div>
         </div>
       </div>
     </div>
@@ -238,7 +245,84 @@
       "type": "header",
       "content": "Upper Section"
     },
-    
+    {
+      "type": "text",
+      "id": "upper_section_title",
+      "label": "Upper Section Title",
+      "default": "Upper Title"
+    },
+    {
+      "type": "richtext",
+      "id": "upper_section_text",
+      "label": "Upper Section Body Text",
+      "default": "<p>Upper Body Text</p>"
+    },
+    {
+      "type": "text",
+      "id": "upper_section_button_1_label",
+      "label": "Upper Section Button 1 Label",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "upper_section_button_1_url",
+      "label": "Button 1 link"
+    },
+    {
+      "type": "text",
+      "id": "upper_section_button_2_label",
+      "label": "Upper Section Button 1 Label",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "upper_section_button_2_url",
+      "label": "Button 2 link"
+    },
+    {
+      "type": "text",
+      "id": "upper_section_button_3_label",
+      "label": "Upper Section Button 3 Label",
+      "default": "Button 3"
+    },
+    {
+      "type": "url",
+      "id": "upper_section_button_3_url",
+      "label": "Button 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Lower Section"
+    },
+    {
+      "type": "text",
+      "id": "lower_section_title",
+      "label": "Lower Section Title",
+      "default": "Lower Title"
+    },
+    {
+      "type": "richtext",
+      "id": "lower_section_text",
+      "label": "Lower Section Body Text",
+      "default": "<p>Lower Body Text</p>"
+    },
+    {
+      "type": "text",
+      "id": "lower_section_button_1_label",
+      "label": "Lower Section Button 1 Label",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "lower_section_button_1_url",
+      "label": "Button 3 link"
+    },
+    {
+      "type": "richtext",
+      "id": "lower_section_lower_text",
+      "label": "Lower Section Lower Body Text",
+      "default": "<p>Lower Section Lower Body Text</p>"
+    },
     {
       "type": "header",
       "content": "Mobile layout"
