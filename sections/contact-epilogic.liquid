@@ -70,9 +70,11 @@
           <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
             {{ section.settings.lower_section_text }}
           </div>
-          <a href="{{ section.settings.lower_section_button_1_url }}" class="button button--primary" {{ block.shopify_attributes }}>
-            {{ section.settings.lower_section_button_1_label | escape }}
-          </a>
+          <div class="lower-section-button-wrapper">
+            <a href="{{ section.settings.lower_section_button_1_url }}" class="button button--primary" {{ block.shopify_attributes }}>
+              {{ section.settings.lower_section_button_1_label | escape }}
+            </a>
+          </div>
           <div class="contact-epilogic__text rte" {{ block.shopify_attributes }}>
             {{ section.settings.lower_section_lower_text }}
           </div>
@@ -248,20 +250,17 @@
     {
       "type": "text",
       "id": "upper_section_title",
-      "label": "Upper Section Title",
-      "default": "Upper Title"
+      "label": "Upper Section Title"
     },
     {
       "type": "richtext",
       "id": "upper_section_text",
-      "label": "Upper Section Body Text",
-      "default": "<p>Upper Body Text</p>"
+      "label": "Upper Section Body Text"
     },
     {
       "type": "text",
       "id": "upper_section_button_1_label",
-      "label": "Upper Section Button 1 Label",
-      "default": "Button 1"
+      "label": "Upper Section Button 1 Label"
     },
     {
       "type": "url",
@@ -271,8 +270,7 @@
     {
       "type": "text",
       "id": "upper_section_button_2_label",
-      "label": "Upper Section Button 1 Label",
-      "default": "Button 2"
+      "label": "Upper Section Button 1 Label"
     },
     {
       "type": "url",
@@ -282,8 +280,7 @@
     {
       "type": "text",
       "id": "upper_section_button_3_label",
-      "label": "Upper Section Button 3 Label",
-      "default": "Button 3"
+      "label": "Upper Section Button 3 Label"
     },
     {
       "type": "url",
@@ -297,20 +294,17 @@
     {
       "type": "text",
       "id": "lower_section_title",
-      "label": "Lower Section Title",
-      "default": "Lower Title"
+      "label": "Lower Section Title"
     },
     {
       "type": "richtext",
       "id": "lower_section_text",
-      "label": "Lower Section Body Text",
-      "default": "<p>Lower Body Text</p>"
+      "label": "Lower Section Body Text"
     },
     {
       "type": "text",
       "id": "lower_section_button_1_label",
-      "label": "Lower Section Button 1 Label",
-      "default": "Button 1"
+      "label": "Lower Section Button 1 Label"
     },
     {
       "type": "url",
@@ -320,8 +314,7 @@
     {
       "type": "richtext",
       "id": "lower_section_lower_text",
-      "label": "Lower Section Lower Body Text",
-      "default": "<p>Lower Section Lower Body Text</p>"
+      "label": "Lower Section Lower Body Text"
     },
     {
       "type": "header",

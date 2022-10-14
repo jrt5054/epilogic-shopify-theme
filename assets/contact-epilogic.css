@@ -471,11 +471,6 @@
   width: 100%;
 }
 
-.contact-epilogic__upper,
-.contact-epilogic__lower {
-  padding: 6rem;
-}
-
 .contact-epilogic__upper h2,
 .contact-epilogic__lower h2 {
   margin: 0;
@@ -500,10 +495,42 @@
   position: relative;
 }
 
+.contact-epilogic__heading {
+  font-family: 'Merchant-Regular', serif;
+}
+
+.upper-section-button-wrapper a,
+.lower-section-button-wrapper a {
+  font-family: 'VTCDuBois-Regular', serif;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 750px){
   .contact-epilogic__content {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact-epilogic__upper,
+  .contact-epilogic__lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .contact-epilogic__upper,
+  .contact-epilogic__lower {
+    padding: 5rem;
+  }
+
+  .contact-epilogic__upper > *:last-child,
+  .contact-epilogic__lower > *:last-child {
+    padding-bottom: 0;
+  }
+
+  .contact-epilogic__upper > *,
+  .contact-epilogic__lower > * {
+    padding: 1rem 0;
   }
 
   .upper-section-button-wrapper,
@@ -520,7 +547,22 @@
   }
 
   .contact-epilogic__content > * {
-    height: 50%;
+    min-height: 50%;
+    height: auto;
+  }
+
+  .contact-epilogic__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .contact-epilogic__content .contact-epilogic__text {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .contact-epilogic__content .contact-epilogic__upper .contact-epilogic__text {
+    width: 66%;
   }
 }
 
@@ -530,6 +572,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+  }
+
+  .contact-epilogic__upper,
+  .contact-epilogic__lower {
+    padding: 3rem;
   }
 
   .upper-section-button-wrapper a,
@@ -546,5 +593,20 @@
   .lower-section-button-wrapper a {
     height: 2rem;
     text-align: center;
+  }
+
+  .contact-epilogic__heading {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+
+  .contact-epilogic__content .contact-epilogic__text {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+  .contact-epilogic__upper > *,
+  .contact-epilogic__lower > * {
+    padding: 1rem 0;
   }
 }
