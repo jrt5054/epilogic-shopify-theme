@@ -86,8 +86,13 @@
 }
 
 h2.rich-text-faqs-heading,
-h2.rich-text-stocklists-heading {
+h2.rich-text-stocklists-heading,
+h2.rich-text-blogs-heading {
   font-family: 'Merchant-Regular', serif;
+}
+
+h2.rich-text-blogs-heading {
+  text-transform: uppercase;
 }
 
 .rich-text-faqs-text,
@@ -101,7 +106,8 @@ h2.rich-text-stocklists-heading {
 
 @media screen and (min-width: 750px) {
   h2.rich-text-faqs-heading,
-  h2.rich-text-stocklists-heading {
+  h2.rich-text-stocklists-heading,
+  h2.rich-text-blogs-heading {
     font-size: 4rem;
   }
 }
@@ -110,5 +116,9 @@ h2.rich-text-stocklists-heading {
   h2.rich-text-faqs-heading,
   h2.rich-text-stocklists-heading {
     font-size: 2.6rem;
+  }
+
+  h2.rich-text-blogs-heading {
+    font-size: 2.4rem;
   }
 }

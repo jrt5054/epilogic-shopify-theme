@@ -83,6 +83,13 @@ svg.epi-cursor * {
 }
 
 :root,
+.color-blogs {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-tan-yellow);
+  --gradient-background: rgb(var(--color-epi-tan-yellow));
+}
+
+:root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
@@ -384,7 +391,8 @@ body,
 .color-dr-jeanniton,
 .color-the-logic,
 .color-surface-shape,
-.color-featured-article {
+.color-featured-article,
+.color-blogs {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
