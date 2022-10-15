@@ -6,8 +6,8 @@
         "1658256345c5d5d593-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
+            "heading": "<p>Doctor’s Notes<\/p>",
+            "heading_size": "rich-text-blogs-heading"
           }
         }
       },
@@ -17,10 +17,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "blogs",
         "full_width": true,
-        "padding_top": 88,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 76
       }
     },
     "16648022227a635c8b": {
