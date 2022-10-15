@@ -83,6 +83,14 @@ svg.epi-cursor * {
 }
 
 :root,
+.color-article-heading {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-gray);
+  --gradient-background: rgb(var(--color-epi-background-gray));
+  --color-circle: var(--color-epi-light-tan);
+}
+
+:root,
 .color-blogs {
   --color-foreground: var(--color-epi-black);
   --color-background: var(--color-epi-tan-yellow);
@@ -392,6 +400,7 @@ body,
 .color-the-logic,
 .color-surface-shape,
 .color-featured-article,
+.color-article-heading,
 .color-blogs {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
