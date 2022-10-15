@@ -373,6 +373,14 @@
   font-family: 'Merchant-Italic', serif;
 }
 
+.two-circles svg {
+  fill: rgb(var(--color-circle));
+}
+
+.two-circles-right {
+  align-items: flex-end;
+}
+
 @media screen and (min-width: 750px){
   .article-heading-heading-size {
     font-size: 6rem;
@@ -398,24 +406,12 @@
     margin: 0 5rem;
   }
 
-  .two-circles svg {
-    fill: rgb(var(--color-circle));
-  }
-
-  .two-circles-right {
-    align-items: flex-end;
-  }
-
   .article-heading-featured {
     height: 100%;
   }
 }
 
 @media screen and (max-width: 749px){
-  .article-heading__media-item--article-heading {
-    display: none;
-  }
-
   .article-heading-heading-size {
     font-size: 3rem;
     line-height: 3rem;
