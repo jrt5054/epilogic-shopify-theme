@@ -117,6 +117,9 @@ It may be overwritten and any customizations would be lost.
         window.BOLD.common.Shopify.metafields[{{ namespace | json }}] = {{ shop.metafields[namespace] | json }};
     {%- endfor -%}
 
+    window.BOLD.common.cacheParams = window.BOLD.common.cacheParams || {};
+    window.BOLD.common.cacheParams.bundles = 1666115760;
+
 </script>
 
 {{ 'https://bundles.boldapps.net/js/bundles.js' | script_tag }}
