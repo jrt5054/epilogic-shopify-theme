@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/homepage.png",
-            "heading": "Singularly Powerful. Designed to Combine.",
+            "heading": "<p>Singularly Powerful. <\/p><p>Designed to Combine.<\/p>",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
@@ -24,7 +24,7 @@
         "1658159431897185c8-1": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "heading": "<p>Image slide<\/p>",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "",
@@ -41,7 +41,7 @@
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "heading": "<p>Image slide<\/p>",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "",
@@ -112,6 +112,45 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "1664905047dd6c265f": {
+      "type": "scrolling-text",
+      "blocks": {
+        "166490504772b32324-0": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "parabens"
+          }
+        },
+        "166490504772b32324-1": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "cruelty"
+          }
+        },
+        "166490504772b32324-2": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "sulfates"
+          }
+        },
+        "166490504772b32324-3": {
+          "type": "text",
+          "settings": {
+            "free-from-text": "ARTIFICIAL FRAGRANCE"
+          }
+        }
+      },
+      "block_order": [
+        "166490504772b32324-0",
+        "166490504772b32324-1",
+        "166490504772b32324-2",
+        "166490504772b32324-3"
+      ],
+      "settings": {
+        "image_margin": 0,
+        "animation_speed": 100
       }
     },
     "166404188942f9e548": {
@@ -203,6 +242,7 @@
       "type": "section-divider",
       "settings": {
         "divider_text": "Doctor's Notes",
+        "divider_link": "shopify:\/\/blogs\/doctors-notes",
         "padding_top": 52,
         "padding_bottom": 52
       }
@@ -224,6 +264,7 @@
       "type": "section-divider",
       "settings": {
         "divider_text": "From The Community",
+        "divider_link": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -247,6 +288,7 @@
     "16581594311840984f",
     "featured_collection",
     "16637976921c274cfd",
+    "1664905047dd6c265f",
     "166404188942f9e548",
     "166396197322c3a763",
     "1663848200cce2702d",

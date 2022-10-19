@@ -23,11 +23,13 @@ svg.epi-cursor * {
 :root,
 .color-header-white {
   --color-foreground: var(--color-epi-white);
+  --color-cart-text: var(--color-epi-black);
 }
 
 :root,
 .color-header-black {
   --color-foreground: var(--color-epi-black);
+  --color-cart-text: var(--color-epi-white);
 }
 
 :root,
@@ -78,6 +80,21 @@ svg.epi-cursor * {
   --color-background: var(--color-epi-green);
   --gradient-background: rgb(var(--color-epi-green));
   --color-circle: var(--color-epi-tan-yellow);
+}
+
+:root,
+.color-article-heading {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-gray);
+  --gradient-background: rgb(var(--color-epi-background-gray));
+  --color-circle: var(--color-epi-light-tan);
+}
+
+:root,
+.color-blogs {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-tan-yellow);
+  --gradient-background: rgb(var(--color-epi-tan-yellow));
 }
 
 :root,
@@ -382,7 +399,9 @@ body,
 .color-dr-jeanniton,
 .color-the-logic,
 .color-surface-shape,
-.color-featured-article {
+.color-featured-article,
+.color-article-heading,
+.color-blogs {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
@@ -2234,18 +2253,14 @@ input[type='checkbox'] {
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
+  color: rgb(var(--color-cart-text));
   height: 1.7rem;
   width: 1.7rem;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
-  line-height: calc(1 + 0.1 / var(--font-body-scale));
+  font-size: 1.3rem;
 }
 
 /* section-announcement-bar */
@@ -2294,6 +2309,11 @@ input[type='checkbox'] {
 }
 
 /* section-header */
+
+.header__icon svg {
+  fill: rgb(var(--color-foreground));
+}
+
 #shopify-section-header {
   z-index: 3;
 }
@@ -2695,7 +2715,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 1.2rem 2.3rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }

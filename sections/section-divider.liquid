@@ -1,46 +1,56 @@
 {%- style -%}
-
-.divider-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.divider-text h3 {
-  margin: 0 2rem;
-  text-transform: uppercase;
-  font-family: 'Merchant-Regular', serif;
-}
-
-.divider-wrapper svg {
-  transform: rotate(90deg);
-}
-
-.divider-wrapper,
-.divider-wrapper h3  {
-  background-color: rgb(var(--color-epi-black));
-  color: rgb(var(--color-epi-white));
-}
-
-@media screen and (min-width: 990px) {
-  .divider-text h3 {
-    font-size: 2rem;
+  .divider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
   }
-}
 
-@media screen and (min-width: 989px) {
-  .divider-text h3 {
-    font-size: 1.6rem;
+  .divider-text h3,
+  .divider-text a {
+    margin: 0 2rem;
+    text-transform: uppercase;
+    font-family: 'Merchant-Regular', serif;
   }
-}
 
+  .divider-wrapper svg {
+    transform: rotate(90deg);
+  }
 
+  .divider-wrapper,
+  .divider-wrapper h3,
+  .divider-wrapper a {
+    background-color: rgb(var(--color-epi-black));
+    color: rgb(var(--color-epi-white));
+  }
+
+  .divider-wrapper a {
+    text-decoration: none;
+  }
+
+  .divider-wrapper a:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 990px) {
+    .divider-text h3,
+    .divider-text a {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 989px) {
+    .divider-text h3,
+    .divider-text a {
+      font-size: 1.6rem;
+    }
+  }
 {%- endstyle -%}
+
 <div class="divider-wrapper">
   {%- render 'icon-arrow' -%}
   <div class="divider-text">
-    <h3>{{ section.settings.divider_text }}</h3>
+    {% if section.settings.divider_link != nil %}<a href="{{section.settings.divider_link}}">{% else %}<h3>{% endif %}{{ section.settings.divider_text }}{% if section.settings.divider_link != nil %}</a>{% else %}</h3>{% endif %}
   </div>
   {%- render 'icon-arrow' -%}
 </div>
@@ -56,6 +66,11 @@
       "id": "divider_text",
       "label": "Divider Text",
       "default": "Divider"
+    },
+    {
+      "type": "url",
+      "id": "divider_link",
+      "label": "Divider Link"
     },
     {
       "type": "header",

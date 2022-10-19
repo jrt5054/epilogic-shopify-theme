@@ -1,0 +1,569 @@
+.contact-epilogic .grid {
+  margin-bottom: 0;
+}
+
+.contact-epilogic .grid__item {
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .contact-epilogic__grid--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.contact-epilogic__media {
+  min-height: 100%;
+  overflow: visible;
+}
+
+.contact-epilogic__media--small {
+  height: 19.4rem;
+}
+
+.contact-epilogic__media--large {
+  height: 43.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact-epilogic__media--small {
+    height: 31.4rem;
+  }
+
+  .contact-epilogic__media--large {
+    height: 69.5rem;
+  }
+
+  .contact-epilogic__media--the-breakdown {
+    height: 55rem;
+  }
+}
+
+.contact-epilogic__media--placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-epilogic__media--placeholder:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.contact-epilogic__media--placeholder.contact-epilogic__media--adapt {
+  height: 20rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact-epilogic__media--placeholder.contact-epilogic__media--adapt {
+    height: 30rem;
+  }
+}
+
+.contact-epilogic__media--placeholder > svg {
+  position: absolute;
+  left: 50%;
+  max-width: 80rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  fill: currentColor;
+}
+
+.contact-epilogic__content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+  padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-epilogic .grid__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contact-epilogic:not(.contact-epilogic--overlap) .contact-epilogic__media-item:after {
+  border-radius: var(--media-radius);
+  box-shadow: var(--media-shadow-horizontal-offset)
+    var(--media-shadow-vertical-offset)
+    var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.contact-epilogic:not(.contact-epilogic--overlap) .contact-epilogic__text-item:after {
+  border-radius: var(--text-boxes-radius);
+  box-shadow: var(--text-boxes-shadow-horizontal-offset)
+    var(--text-boxes-shadow-vertical-offset)
+    var(--text-boxes-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+}
+
+.contact-epilogic .contact-epilogic__media-item > * {
+  border-radius: var(--media-radius);
+  overflow: hidden;
+  box-shadow: var(--media-shadow-horizontal-offset)
+    var(--media-shadow-vertical-offset)
+    var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.contact-epilogic .global-media-settings {
+  overflow: hidden !important;
+  border: none;
+}
+
+.contact-epilogic .contact-epilogic__text-item > * {
+  border-radius: var(--text-boxes-radius);
+  overflow: hidden;
+  box-shadow: var(--text-boxes-shadow-horizontal-offset)
+    var(--text-boxes-shadow-vertical-offset)
+    var(--text-boxes-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+}
+
+.contact-epilogic:not(.contact-epilogic--overlap) .contact-epilogic__media-item > *,
+.contact-epilogic:not(.contact-epilogic--overlap) .contact-epilogic__text-item > * {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 749px) {
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__media-item:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid__item .contact-epilogic__media,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__media img {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__text-item:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid__item .contact-epilogic__content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .contact-epilogic.collapse-borders:not(.contact-epilogic--overlap) .contact-epilogic__content {
+    border-top: 0;
+  }
+}
+
+.contact-epilogic__content--mobile-right > * {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.contact-epilogic__content--mobile-center > * {
+  align-self: center;
+  text-align: center;
+}
+
+.contact-epilogic--overlap .contact-epilogic__content {
+  width: 90%;
+  margin: -3rem auto 0;
+}
+
+@media screen and (min-width: 750px) {
+  .contact-epilogic__grid--reverse .contact-epilogic__content {
+    margin-left: auto;
+  }
+
+  .contact-epilogic__content--bottom {
+    justify-content: flex-end;
+    align-self: flex-end;
+  }
+
+  .contact-epilogic__content--top {
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+
+  .contact-epilogic__content--desktop-right > * {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .contact-epilogic__content--desktop-left > * {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .contact-epilogic__content--desktop-center > * {
+    align-self: center;
+    text-align: center;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__text-item {
+    display: flex;
+    padding: 3rem 0;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__content {
+    height: auto;
+    width: calc(100% + 4rem);
+    min-width: calc(100% + 4rem);
+    margin-top: 0;
+    margin-left: -4rem;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__grid--reverse .contact-epilogic__content {
+    margin-left: 0;
+    margin-right: -4rem;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__grid--reverse .contact-epilogic__text-item {
+    justify-content: flex-end;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__media-item--top {
+    align-self: flex-start;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__media-item--middle {
+    align-self: center;
+  }
+
+  .contact-epilogic--overlap .contact-epilogic__media-item--bottom {
+    align-self: flex-end;
+  }
+
+  .contact-epilogic__media-item--small,
+  .contact-epilogic__media-item--large + .contact-epilogic__text-item {
+    flex-grow: 0;
+  }
+
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__media-item:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__media,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__media img,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__text-item:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__content,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__content:after {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__text-item:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__content,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__content:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__media-item:after,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__media,
+  .contact-epilogic.collapse-corners:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__media img {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .contact-epilogic.collapse-borders:not(.contact-epilogic--overlap) .grid:not(.contact-epilogic__grid--reverse) .contact-epilogic__content {
+    border-left: 0;
+  }
+
+  .contact-epilogic.collapse-borders:not(.contact-epilogic--overlap) .contact-epilogic__grid--reverse .contact-epilogic__content {
+    border-right: 0;
+  }
+
+  .grid--3-col-tablet .grid__item.contact-epilogic__media-item--contact-us {
+    width: 0;
+  }
+}
+
+.contact-epilogic:not(.collapse-corners, .contact-epilogic--overlap) .contact-epilogic__media-item {
+  z-index: 2;
+}
+
+.contact-epilogic__content {
+  border-radius: var(--text-boxes-radius);
+  box-shadow: var(--text-boxes-shadow-horizontal-offset)
+    var(--text-boxes-shadow-vertical-offset)
+    var(--text-boxes-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+}
+
+.contact-epilogic__content {
+  padding: 0;
+}
+
+.contact-epilogic__content > .contact-epilogic__text:empty ~ a {
+  margin-top: 2rem;
+}
+
+.contact-epilogic__content > :first-child:is(.contact-epilogic__heading),
+.contact-epilogic__text--caption + .contact-epilogic__heading,
+.contact-epilogic__text--caption:first-child {
+  margin-top: 0;
+}
+
+.contact-epilogic__content :last-child:is(.contact-epilogic__heading),
+.contact-epilogic__text--caption {
+  margin-bottom: 0;
+}
+
+.contact-epilogic__content .button + .contact-epilogic__text {
+  margin-top: 2rem;
+}
+
+.contact-epilogic__content .contact-epilogic__text + .button {
+  margin-top: 3rem;
+}
+
+.contact-epilogic__heading {
+  word-break: break-word;
+  margin-bottom: 0;
+}
+
+.contact-epilogic__text p {
+  word-break: break-word;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* check for flexbox gap in older Safari versions */
+@supports not (inset: 10px) {
+  .contact-epilogic .grid {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .skincare-evolved-heading {
+    font-size: 5.8rem;
+    line-height: 5.9rem;
+  }
+
+  .skincare-evolved-text {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 749px){
+  .contact-epilogic .mobile-image-second {
+    flex-direction: column-reverse;
+  }
+
+  .skincare-evolved-heading {
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+  }
+
+  .skincare-evolved-text {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+}
+
+.breakdown-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.breakdown-ingredients{
+  display: flex;
+  flex-direction: column;
+}
+
+.breakdown-descriptions div:not(#breakdown_description_1) {
+  display: none;
+}
+
+#breakdown_title_1 {
+  text-decoration: underline;
+}
+
+.breakdown-ingredient-title:hover {
+  text-decoration: underline !important;
+}
+
+.breakdown-ingredient-title {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 990px){
+  .breakdown-wrapper {
+    flex-direction: row;
+  }
+
+  .breakdown-ingredients {
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 989px){
+  .breakdown-wrapper {
+    flex-direction: column;
+  }
+}
+
+.breakdown-ingredients {
+  font-family: 'VTCDuBois-Bold', serif;
+  text-transform: uppercase;
+}
+
+.breakdown-ingredient-description {
+  font-family: 'Merchant-Italic', serif;
+}
+
+.contact-epilogic__upper {
+  position: relative;
+}
+
+.contact-epilogic__content > * {
+  width: 100%;
+}
+
+.contact-epilogic__upper h2,
+.contact-epilogic__lower h2 {
+  margin: 0;
+}
+
+.contact-epilogic__upper {
+  background-color: rgb(var(--color-epi-background-yellow));
+}
+
+.contact-epilogic__lower {
+  background-color: rgb(var(--color-epi-background-pink));
+}
+
+.header-background:empty {
+  display: block;    
+}
+
+.header-background {
+  height: 6rem;
+  width: 100%;
+  background-color: rgb(var(--color-epi-background-pink));
+  position: relative;
+}
+
+.contact-epilogic__heading {
+  font-family: 'Merchant-Regular', serif;
+}
+
+.upper-section-button-wrapper a,
+.lower-section-button-wrapper a {
+  font-family: 'VTCDuBois-Regular', serif;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 750px){
+  .contact-epilogic__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-epilogic__upper,
+  .contact-epilogic__lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .contact-epilogic__upper,
+  .contact-epilogic__lower {
+    padding: 5rem;
+  }
+
+  .contact-epilogic__upper > *:last-child,
+  .contact-epilogic__lower > *:last-child {
+    padding-bottom: 0;
+  }
+
+  .contact-epilogic__upper > *,
+  .contact-epilogic__lower > * {
+    padding: 1rem 0;
+  }
+
+  .upper-section-button-wrapper,
+  .lower-section-button-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1%;
+  }
+
+  .upper-section-button-wrapper a,
+  .lower-section-button-wrapper a {
+    width: 33%;
+    text-align: center;
+  }
+
+  .contact-epilogic__content > * {
+    min-height: 50%;
+    height: auto;
+  }
+
+  .contact-epilogic__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .contact-epilogic__content .contact-epilogic__text {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .contact-epilogic__content .contact-epilogic__upper .contact-epilogic__text {
+    width: 66%;
+  }
+
+  .contact-epilogic__text.contact-epilogic__text-lower {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 749px){
+  .upper-section-button-wrapper,
+  .lower-section-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .contact-epilogic__upper,
+  .contact-epilogic__lower {
+    padding: 3rem;
+  }
+
+  .upper-section-button-wrapper a,
+  .lower-section-button-wrapper a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-epilogic__content > * {
+    height: auto;
+  }
+
+  .upper-section-button-wrapper a,
+  .lower-section-button-wrapper a {
+    height: 2rem;
+    text-align: center;
+  }
+
+  .contact-epilogic__heading {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+
+  .contact-epilogic__content .contact-epilogic__text {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+  .contact-epilogic__upper > *,
+  .contact-epilogic__lower > * {
+    padding: 1rem 0;
+  }
+
+  .contact-epilogic__text.contact-epilogic__text-lower {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}

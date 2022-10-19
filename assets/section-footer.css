@@ -735,3 +735,7 @@ noscript .localization-selector.link {
   align-items: center;
   gap: 5px;
 }
+
+.footer-block__newsletter form {
+  z-index: 10;
+}
