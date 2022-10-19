@@ -195,7 +195,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 slideshow-component .slideshow__controls {
   position: absolute;
   bottom: 0;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
 }
 

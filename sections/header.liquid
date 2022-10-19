@@ -202,7 +202,6 @@
                 <div class="menu-drawer__utility-links">
                   {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
-                      {% render 'icon-account' %}
                       {%- liquid
                         if customer
                           echo 'customer.account_fallback' | t
@@ -212,7 +211,10 @@
                       -%}
                     </a>
                   {%- endif -%}
-                  <ul class="list list-social list-unstyled" role="list">
+                  <a href="#" class="menu-drawer__account link focus-inset h5">
+                    cart{% if cart.item_count > 0 %} *{{ cart.item_count }}*{% endif %}
+                  </a>
+                  {% comment %} <ul class="list list-social list-unstyled" role="list">
                     {%- if settings.social_twitter_link != blank -%}
                       <li class="list-social__item">
                         <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
@@ -285,7 +287,7 @@
                         </a>
                       </li>
                     {%- endif -%}
-                  </ul>
+                  </ul> {% endcomment %}
                 </div>
               </div>
             </div>
