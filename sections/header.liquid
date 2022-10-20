@@ -321,8 +321,16 @@
                     {%- if link.title == 'New' -%}
                     <div class="header-new-products">
                       <div class="header-new-product-wrapper">
-                        <div class="header-new-product-1">product 1</div>
-                        <div class="header-new-product-1">product 2</div>
+                        <div class="header-new-product-1">
+                          {% render 'card-product-header',
+                            card_product: section.settings.header_new_product_1
+                           %}
+                        </div>
+                        <div class="header-new-product-1">
+                          {% render 'card-product-header',
+                            card_product: section.settings.header_new_product_2
+                           %}
+                        </div>
                       </div>
                       <div class="header-new-product-shop-all">
                         shop all

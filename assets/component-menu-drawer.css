@@ -276,16 +276,37 @@ ul header-menu details ul {
 }
 
 .header-new-products {
-  width: 100vw;
+  width: 100%;
   background-color: blue;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  height: 200px;
+  /* height: 200px; */
   padding-top: 75px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.header-new-product-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card-header-product-wrapper img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-header-product-wrapper a::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
