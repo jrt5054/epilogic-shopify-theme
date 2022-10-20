@@ -318,6 +318,17 @@
                       <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
                     </summary>
+                    {%- if link.title == 'New' -%}
+                    <div class="header-new-products">
+                      <div class="header-new-product-wrapper">
+                        <div class="header-new-product-1">product 1</div>
+                        <div class="header-new-product-1">product 2</div>
+                      </div>
+                      <div class="header-new-product-shop-all">
+                        shop all
+                      </div>
+                    </div> 
+                    {%- else -%}
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure gradient caption-large motion-reduce global-settings-popup" role="list" tabindex="-1">
                       {%- for childlink in link.links -%}
                         <li>
@@ -325,7 +336,7 @@
                             <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                               {{ childlink.title | escape }}
                             </a>
-                          {%- else -%}
+                            {%- else -%}
                             <details id="Details-HeaderSubMenu-{{ forloop.index }}">
                               <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
                                 <span>{{ childlink.title | escape }}</span>
@@ -345,6 +356,7 @@
                         </li>
                       {%- endfor -%}
                     </ul>
+                  {%- endif -%}
                   </details>
                 </header-menu>
               {%- else -%}
@@ -606,6 +618,16 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "product",
+      "id": "header_new_product_1",
+      "label": "Header New Product 1"
+    },
+    {
+      "type": "product",
+      "id": "header_new_product_2",
+      "label": "Header New Product 2"
     }
   ]
 }

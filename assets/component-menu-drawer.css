@@ -265,3 +265,27 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__utility-links {
   color: rgb(var(--color-epi-black));
 }
+
+ul header-menu details {
+  position: static;
+}
+
+ul header-menu details ul {
+  left: 0;
+  top: 0;
+}
+
+.header-new-products {
+  width: 100vw;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 200px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
