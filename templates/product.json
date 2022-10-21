@@ -154,6 +154,41 @@
         "padding_bottom": 52
       }
     },
+    "77e556bd-88c9-4df2-b071-0aee5b168c5f": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "the results",
+        "divider_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "8804a3f1-959a-4df9-b075-33270366cc97": {
+      "type": "the-results",
+      "blocks": {
+        "template--15621874385036__8804a3f1-959a-4df9-b075-33270366cc97-166637799655b0cefb-0": {
+          "type": "the_results",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15621874385036__8804a3f1-959a-4df9-b075-33270366cc97-166637799655b0cefb-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_image_second": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -207,6 +242,8 @@
     "1664554840b6268192",
     "1658244391d4f32ed8",
     "b3b2fc15-5c91-475d-9110-79e64dd2ea1d",
+    "77e556bd-88c9-4df2-b071-0aee5b168c5f",
+    "8804a3f1-959a-4df9-b075-33270366cc97",
     "product-recommendations",
     "1664477477ab0ad040",
     "1664851608b17df8c1"
