@@ -98,6 +98,13 @@ svg.epi-cursor * {
 }
 
 :root,
+.color-generic {
+  --color-foreground: var(--color-epi-black);
+  --color-background: var(--color-epi-background-yellow);
+  --gradient-background: rgb(var(--color-epi-background-yellow));
+}
+
+:root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
@@ -401,7 +408,8 @@ body,
 .color-surface-shape,
 .color-featured-article,
 .color-article-heading,
-.color-blogs {
+.color-blogs,
+.color-generic {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
