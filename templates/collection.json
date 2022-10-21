@@ -6,41 +6,22 @@
         "1658173215ab6ec11c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Singularly Powerful. Designed to Combine",
             "heading_size": "h1"
-          }
-        },
-        "1658173215ab6ec11c-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "1658173215ab6ec11c-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "1658173215ab6ec11c-0",
-        "1658173215ab6ec11c-1",
-        "1658173215ab6ec11c-2"
+        "1658173215ab6ec11c-0"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/shop-hero.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -91,7 +72,7 @@
             "text_style": "body"
           }
         },
-        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-2": {
+        "18ce2929-6995-4459-b4ee-18acf25c46f7": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
@@ -102,7 +83,7 @@
       "block_order": [
         "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-0",
         "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-1",
-        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-2"
+        "18ce2929-6995-4459-b4ee-18acf25c46f7"
       ],
       "settings": {
         "show_three_dots": false,
