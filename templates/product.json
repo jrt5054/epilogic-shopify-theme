@@ -216,6 +216,15 @@
         "padding_bottom": 52
       }
     },
+    "a57b7031-a221-43fc-8eb3-46bd351de3e6": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "doctor's notes",
+        "divider_link": "shopify:\/\/blogs\/doctors-notes",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1664477477ab0ad040": {
       "type": "featured-blog",
       "settings": {
@@ -256,6 +265,7 @@
     "8804a3f1-959a-4df9-b075-33270366cc97",
     "product-recommendations",
     "5aac0244-353e-4b6e-a7e3-4a6666da194b",
+    "a57b7031-a221-43fc-8eb3-46bd351de3e6",
     "1664477477ab0ad040",
     "1664851608b17df8c1"
   ]
