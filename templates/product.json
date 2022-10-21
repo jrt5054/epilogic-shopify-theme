@@ -47,6 +47,24 @@
           "type": "description",
           "settings": {
           }
+        },
+        "784a15ce-7758-4137-8d6a-f317bb130c76": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DETAILS",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "8019405c-ea8f-428e-aee2-27d262a51499": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -57,7 +75,9 @@
         "quantity_selector",
         "buy_buttons",
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a",
-        "description"
+        "description",
+        "784a15ce-7758-4137-8d6a-f317bb130c76",
+        "8019405c-ea8f-428e-aee2-27d262a51499"
       ],
       "settings": {
         "enable_sticky_info": true,
