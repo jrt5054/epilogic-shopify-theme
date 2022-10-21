@@ -6,45 +6,26 @@
         "1658173215ab6ec11c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Singularly Powerful. Designed to Combine",
             "heading_size": "h1"
-          }
-        },
-        "1658173215ab6ec11c-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "1658173215ab6ec11c-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "1658173215ab6ec11c-0",
-        "1658173215ab6ec11c-1",
-        "1658173215ab6ec11c-2"
+        "1658173215ab6ec11c-0"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/shop-hero.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "banner": {
@@ -59,7 +40,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 24,
         "columns_desktop": 4,
         "image_ratio": "adapt",
         "show_secondary_image": false,
@@ -70,8 +51,54 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "a9ed977c-3fe2-441b-b377-a448667c349a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEW ADDITION",
+            "heading_size": "h1"
+          }
+        },
+        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>",
+            "text_style": "body"
+          }
+        },
+        "18ce2929-6995-4459-b4ee-18acf25c46f7": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN MORE",
+            "button_link": "shopify:\/\/pages\/about"
+          }
+        }
+      },
+      "block_order": [
+        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-0",
+        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-1",
+        "18ce2929-6995-4459-b4ee-18acf25c46f7"
+      ],
+      "settings": {
+        "show_three_dots": false,
+        "image": "shopify:\/\/shop_images\/skincare-evolved.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "dr-jeanniton",
+        "mobile_image_second": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "166491142373676740": {
@@ -118,6 +145,7 @@
     "165817321535e740ec",
     "banner",
     "product-grid",
+    "a9ed977c-3fe2-441b-b377-a448667c349a",
     "166491142373676740"
   ]
 }

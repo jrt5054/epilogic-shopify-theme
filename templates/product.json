@@ -47,6 +47,24 @@
           "type": "description",
           "settings": {
           }
+        },
+        "784a15ce-7758-4137-8d6a-f317bb130c76": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DETAILS",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "8019405c-ea8f-428e-aee2-27d262a51499": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -57,7 +75,9 @@
         "quantity_selector",
         "buy_buttons",
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a",
-        "description"
+        "description",
+        "784a15ce-7758-4137-8d6a-f317bb130c76",
+        "8019405c-ea8f-428e-aee2-27d262a51499"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -67,111 +87,6 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "show_three_dots": false,
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_image_second": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1658244391d4f32ed8": {
-      "type": "image-with-text",
-      "blocks": {
-        "1658244390c89c4306-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "1658244390c89c4306-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "1658244390c89c4306-0",
-        "1658244390c89c4306-1"
-      ],
-      "settings": {
-        "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/dr-jeanniton-2.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "dr-jeanniton",
-        "mobile_image_second": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
-    "1664477477ab0ad040": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "blog": "doctors-notes",
-        "post_limit": 4,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -212,6 +127,137 @@
         "padding_bottom": 0
       }
     },
+    "1658244391d4f32ed8": {
+      "type": "image-with-text",
+      "blocks": {
+        "1658244390c89c4306-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1658244390c89c4306-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1658244390c89c4306-0",
+        "1658244390c89c4306-1"
+      ],
+      "settings": {
+        "show_three_dots": false,
+        "image": "shopify:\/\/shop_images\/dr-jeanniton-2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "dr-jeanniton",
+        "mobile_image_second": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b3b2fc15-5c91-475d-9110-79e64dd2ea1d": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "case studies",
+        "divider_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "77e556bd-88c9-4df2-b071-0aee5b168c5f": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "the results",
+        "divider_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "8804a3f1-959a-4df9-b075-33270366cc97": {
+      "type": "the-results",
+      "blocks": {
+        "template--15621874385036__8804a3f1-959a-4df9-b075-33270366cc97-166637799655b0cefb-0": {
+          "type": "the_results",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15621874385036__8804a3f1-959a-4df9-b075-33270366cc97-166637799655b0cefb-0"
+      ],
+      "settings": {
+        "height": "the-breakdown",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_image_second": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "5aac0244-353e-4b6e-a7e3-4a6666da194b": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "use it with",
+        "divider_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "a57b7031-a221-43fc-8eb3-46bd351de3e6": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "doctor's notes",
+        "divider_link": "shopify:\/\/blogs\/doctors-notes",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1664477477ab0ad040": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "blog": "doctors-notes",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "1664851608b17df8c1": {
       "type": "apps",
       "blocks": {
@@ -232,11 +278,15 @@
   },
   "order": [
     "main",
-    "image-with-text",
-    "1658244391d4f32ed8",
-    "product-recommendations",
-    "1664477477ab0ad040",
     "1664554840b6268192",
+    "1658244391d4f32ed8",
+    "b3b2fc15-5c91-475d-9110-79e64dd2ea1d",
+    "77e556bd-88c9-4df2-b071-0aee5b168c5f",
+    "8804a3f1-959a-4df9-b075-33270366cc97",
+    "product-recommendations",
+    "5aac0244-353e-4b6e-a7e3-4a6666da194b",
+    "a57b7031-a221-43fc-8eb3-46bd351de3e6",
+    "1664477477ab0ad040",
     "1664851608b17df8c1"
   ]
 }
