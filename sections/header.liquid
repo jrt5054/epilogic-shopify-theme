@@ -142,12 +142,35 @@
                     {%- for link in section.settings.menu.links -%}
                       <li>
                         {%- if link.links != blank -%}
-                          <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                          <details id="Details-menu-drawer-menu-item-{{ forloop.index }}" class="{%- if link.title == 'New' -%} mobile-detail-new-products{%- endif -%}">
                             <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                               {{ link.title | escape }}
                               {% render 'icon-arrow' %}
                               {% render 'icon-caret' %}
                             </summary>
+                            {%- if link.title == 'New' -%}
+                              <div class="mobile-header-new-product-wrapper">
+                                <div class="mobile-header-new-product-1">
+                                  <div class="mobile-header-new-product-content">
+                                    {% render 'card-product-header',
+                                      card_product: section.settings.header_new_product_1
+                                    %}
+                                  </div>
+                                </div>
+                                <div class="mobile-header-new-product-2">
+                                  <div class="mobile-header-new-product-content">
+                                    {% render 'card-product-header',
+                                      card_product: section.settings.header_new_product_2
+                                    %}
+                                  </div>
+                                </div>
+                                <div class="header-new-product-shop-all">
+                                  <a href="/collections/all" class="full-unstyled-link">
+                                    shop all
+                                  </a>
+                                </div>
+                              </div>
+                            {%- else -%}
                             <div id="link-{{ link.title | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
                               <div class="menu-drawer__inner-submenu">
                                 <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
@@ -190,6 +213,7 @@
                                 </ul>
                               </div>
                             </div>
+                          {%- endif -%}
                           </details>
                         {%- else -%}
                           <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
@@ -320,54 +344,58 @@
                       {% comment %} {% render 'icon-caret' %} {% endcomment %}
                     </summary>
                     {%- if link.title == 'New' -%}
-                    <div class="header-new-products epi-border">
-                      <div class="header-new-product-wrapper">
-                        <div class="header-new-product-1">
-                          {% render 'card-product-header',
-                            card_product: section.settings.header_new_product_1
-                           %}
+                      <div class="header-new-products epi-border">
+                        <div class="header-new-product-wrapper">
+                          <div class="header-new-product-1">
+                            <div class="card-header-product-wrapper">
+                              {% render 'card-product-header',
+                                card_product: section.settings.header_new_product_1
+                              %}
+                            </div>
+                          </div>
+                          <div class="header-new-product-1">
+                            <div class="card-header-product-wrapper">
+                              {% render 'card-product-header',
+                                card_product: section.settings.header_new_product_2
+                              %}
+                            </div>
+                          </div>
                         </div>
-                        <div class="header-new-product-1">
-                          {% render 'card-product-header',
-                            card_product: section.settings.header_new_product_2
-                           %}
+                        <div class="header-new-product-shop-all">
+                          <a href="/collections/all" class="full-unstyled-link">
+                            shop all
+                          </a>
                         </div>
-                      </div>
-                      <div class="header-new-product-shop-all">
-                        <a href="/collections/all" class="full-unstyled-link">
-                          shop all
-                        </a>
-                      </div>
-                    </div> 
+                      </div> 
                     {%- else -%}
-                    <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure gradient caption-large motion-reduce global-settings-popup" role="list" tabindex="-1">
-                      {%- for childlink in link.links -%}
-                        <li>
-                          {%- if childlink.links == blank -%}
-                            <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                              {{ childlink.title | escape }}
-                            </a>
-                            {%- else -%}
-                            <details id="Details-HeaderSubMenu-{{ forloop.index }}">
-                              <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                                <span>{{ childlink.title | escape }}</span>
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
-                                {%- for grandchildlink in childlink.links -%}
-                                  <li>
-                                    <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                      {{ grandchildlink.title | escape }}
-                                    </a>
-                                  </li>
-                                {%- endfor -%}
-                              </ul>
-                            </details>
-                          {%- endif -%}
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
+                      <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure gradient caption-large motion-reduce global-settings-popup" role="list" tabindex="-1">
+                        {%- for childlink in link.links -%}
+                          <li>
+                            {%- if childlink.links == blank -%}
+                              <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                {{ childlink.title | escape }}
+                              </a>
+                              {%- else -%}
+                              <details id="Details-HeaderSubMenu-{{ forloop.index }}">
+                                <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+                                  <span>{{ childlink.title | escape }}</span>
+                                  {% render 'icon-caret' %}
+                                </summary>
+                                <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
+                                  {%- for grandchildlink in childlink.links -%}
+                                    <li>
+                                      <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                        {{ grandchildlink.title | escape }}
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              </details>
+                            {%- endif -%}
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
                   </details>
                 </header-menu>
               {%- else -%}

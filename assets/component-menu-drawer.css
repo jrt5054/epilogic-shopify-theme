@@ -71,7 +71,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .js .menu-drawer__navigation .submenu-open {
-  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
+  /* visibility: hidden; /* hide menus from screen readers when hidden by submenu */
 }
 
 @media screen and (min-width: 750px) {
@@ -297,6 +297,12 @@ ul header-menu details ul {
   gap: 5rem;
 }
 
+.mobile-header-new-product-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
 .card-header-product-wrapper {
   display: flex;
   align-items: center;
@@ -366,4 +372,44 @@ ul header-menu details ul {
 
 .header-new-product-shop-all a:hover {
   text-decoration: underline;
+}
+
+.mobile-header-new-product-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.mobile-header-new-product-1,
+.mobile-header-new-product-2,
+.header-new-product-shop-all {
+  width: 30%;
+}
+
+.mobile-header-new-product-1 img,
+.mobile-header-new-product-2 img {
+  height: auto;  
+  width: 100%;
+}
+
+.mobile-header-new-product-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-new-product-shop-all {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+}
+
+.header-new-product-shop-all a {
+  position: relative;
+  top: 30%;
+}
+
+details.mobile-detail-new-products .icon-plus {
+  
 }
