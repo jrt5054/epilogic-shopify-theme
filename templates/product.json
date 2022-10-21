@@ -71,41 +71,40 @@
         "padding_bottom": 0
       }
     },
-    "image-with-text": {
+    "1664554840b6268192": {
       "type": "image-with-text",
       "blocks": {
-        "image-with-text-0": {
+        "1664554839ebba4a97-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "THE BREAKDOWN",
             "heading_size": "h1"
           }
         },
-        "image-with-text-1": {
-          "type": "text",
+        "a9ac0687-4950-463b-9166-ad0cb168adad": {
+          "type": "breakdown",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "1664554839ebba4a97-0",
+        "a9ac0687-4950-463b-9166-ad0cb168adad"
       ],
       "settings": {
         "show_three_dots": false,
-        "height": "small",
-        "desktop_image_width": "medium",
+        "image": "shopify:\/\/shop_images\/breakdown-image.png",
+        "height": "the-breakdown",
+        "desktop_image_width": "the-breakdown",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "breakdown",
         "mobile_image_second": true,
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "1658244391d4f32ed8": {
@@ -146,6 +145,15 @@
         "padding_bottom": 0
       }
     },
+    "b3b2fc15-5c91-475d-9110-79e64dd2ea1d": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "case studies",
+        "divider_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -176,42 +184,6 @@
         "padding_bottom": 0
       }
     },
-    "1664554840b6268192": {
-      "type": "image-with-text",
-      "blocks": {
-        "1664554839ebba4a97-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "THE BREAKDOWN",
-            "heading_size": "h1"
-          }
-        },
-        "a9ac0687-4950-463b-9166-ad0cb168adad": {
-          "type": "breakdown",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1664554839ebba4a97-0",
-        "a9ac0687-4950-463b-9166-ad0cb168adad"
-      ],
-      "settings": {
-        "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/breakdown-image.png",
-        "height": "the-breakdown",
-        "desktop_image_width": "the-breakdown",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "breakdown",
-        "mobile_image_second": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1664851608b17df8c1": {
       "type": "apps",
       "blocks": {
@@ -232,11 +204,11 @@
   },
   "order": [
     "main",
-    "image-with-text",
+    "1664554840b6268192",
     "1658244391d4f32ed8",
+    "b3b2fc15-5c91-475d-9110-79e64dd2ea1d",
     "product-recommendations",
     "1664477477ab0ad040",
-    "1664554840b6268192",
     "1664851608b17df8c1"
   ]
 }
