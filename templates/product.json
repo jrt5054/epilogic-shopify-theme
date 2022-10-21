@@ -191,6 +191,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -204,6 +205,15 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
+      }
+    },
+    "5aac0244-353e-4b6e-a7e3-4a6666da194b": {
+      "type": "section-divider",
+      "settings": {
+        "divider_text": "use it with",
+        "divider_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "1664477477ab0ad040": {
@@ -245,6 +255,7 @@
     "77e556bd-88c9-4df2-b071-0aee5b168c5f",
     "8804a3f1-959a-4df9-b075-33270366cc97",
     "product-recommendations",
+    "5aac0244-353e-4b6e-a7e3-4a6666da194b",
     "1664477477ab0ad040",
     "1664851608b17df8c1"
   ]
