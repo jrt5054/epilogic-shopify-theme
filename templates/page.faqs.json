@@ -46,13 +46,23 @@
             "row_content": "<p>We are pleased to accept all major credit cards and debit cards. Unfortunately we are unable to accept prepaid gift cards, checks or money orders.<\/p>",
             "page": ""
           }
+        },
+        "dbd46411-4dec-43a3-a2a5-45b666b02e24": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cancellations",
+            "icon": "none",
+            "row_content": "<p>We cannot guarantee any cancellations or changes once your order is complete, but we are sometimes able to make changes to orders that have not yet shipped. Orders that have already shipped cannot be changed or canceled. If your order has already been dispatched, we will be happy to set up a return for unopened products, within 15 days of receipt. Please email<a href=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>for more information.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "16639705144842534a-0",
         "16639705144842534a-1",
         "16639705144842534a-2",
-        "16639705144842534a-3"
+        "16639705144842534a-3",
+        "dbd46411-4dec-43a3-a2a5-45b666b02e24"
       ],
       "settings": {
         "caption": "",
