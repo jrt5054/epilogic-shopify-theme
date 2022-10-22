@@ -55,6 +55,15 @@
             "row_content": "<p>We cannot guarantee any cancellations or changes once your order is complete, but we are sometimes able to make changes to orders that have not yet shipped. Orders that have already shipped cannot be changed or canceled. If your order has already been dispatched, we will be happy to set up a return for unopened products, within 15 days of receipt. Please email<a href=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>for more information.<\/p>",
             "page": ""
           }
+        },
+        "86353dc2-c11e-4323-bd84-d27ad7218275": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use epi.logic products while pregnant or nursing?",
+            "icon": "none",
+            "row_content": "<p>While retinol (present in Double Feature and The Total Package) is not recommended for pregnant or nursing women, the majority of epi.logic products are safe. Please note that Eye Contact does contain retinyl palmitate. While the concentration of the ingredient used in Eye Contact is classified as safe for pregnant women, it is up to you to decide whether you would like to use the product during this time, as some women prefer to avoid it when pregnant, postpartum and\/or while breastfeeding. If you have any questions or concerns, we recommend speaking to your primary care provider prior to use.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -62,7 +71,8 @@
         "16639705144842534a-1",
         "16639705144842534a-2",
         "16639705144842534a-3",
-        "dbd46411-4dec-43a3-a2a5-45b666b02e24"
+        "dbd46411-4dec-43a3-a2a5-45b666b02e24",
+        "86353dc2-c11e-4323-bd84-d27ad7218275"
       ],
       "settings": {
         "caption": "",
