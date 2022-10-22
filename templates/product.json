@@ -12,7 +12,12 @@
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text_style": "epilogic-product-subtitle"
+          }
+        },
+        "cd27c9af-f229-40da-8c7f-2395d497a2b3": {
+          "type": "weight",
+          "settings": {
           }
         },
         "price": {
@@ -20,21 +25,9 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "60047dfa-acc4-426b-8b2d-e44eb21bbbab": {
+          "type": "product_tag_lines",
           "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
           }
         },
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a": {
@@ -48,12 +41,18 @@
           "settings": {
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
         "784a15ce-7758-4137-8d6a-f317bb130c76": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "DETAILS",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.epilogic.product_details | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -62,7 +61,7 @@
           "settings": {
             "heading": "INGREDIENTS",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.epilogic.product_ingedients | metafield_tag }}<\/p>",
             "page": ""
           }
         }
@@ -70,12 +69,12 @@
       "block_order": [
         "title",
         "caption",
+        "cd27c9af-f229-40da-8c7f-2395d497a2b3",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
+        "60047dfa-acc4-426b-8b2d-e44eb21bbbab",
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a",
         "description",
+        "buy_buttons",
         "784a15ce-7758-4137-8d6a-f317bb130c76",
         "8019405c-ea8f-428e-aee2-27d262a51499"
       ],

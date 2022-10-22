@@ -1,1 +1,26 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 28
+      }
+    },
+    "26e731e7-4c92-43b3-b345-c862c697cfe3": {
+      "type": "page",
+      "settings": {
+        "page": "shipping-returns",
+        "heading_size": "h1",
+        "color_scheme": "generic",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "26e731e7-4c92-43b3-b345-c862c697cfe3"
+  ]
+}
