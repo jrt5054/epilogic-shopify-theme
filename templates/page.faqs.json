@@ -64,6 +64,15 @@
             "row_content": "<p>While retinol (present in Double Feature and The Total Package) is not recommended for pregnant or nursing women, the majority of epi.logic products are safe. Please note that Eye Contact does contain retinyl palmitate. While the concentration of the ingredient used in Eye Contact is classified as safe for pregnant women, it is up to you to decide whether you would like to use the product during this time, as some women prefer to avoid it when pregnant, postpartum and\/or while breastfeeding. If you have any questions or concerns, we recommend speaking to your primary care provider prior to use.<\/p>",
             "page": ""
           }
+        },
+        "585e2119-20f5-40a4-86a5-254338829ec3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What should I do if I experience irritation after using epi.logic products?",
+            "icon": "none",
+            "row_content": "<p>Immediately stop using a product if irritation occurs. Please also note product directions on the package. Specifically, you should limit initial use of Double Feature to once or twice a week, gradually increasing frequency to every other night as retinol can lead to dryness. Additionally, retinol and AHA (both present in Double Feature) may increase sensitivity to sunburn, therefore a broad-spectrum sunscreen should always be worn when using the product. Actually, as Dr. Jeanniton would say: A broad-spectrum sunscreen should be worn every day, regardless of your epi.logic routine!<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -72,7 +81,8 @@
         "16639705144842534a-2",
         "16639705144842534a-3",
         "dbd46411-4dec-43a3-a2a5-45b666b02e24",
-        "86353dc2-c11e-4323-bd84-d27ad7218275"
+        "86353dc2-c11e-4323-bd84-d27ad7218275",
+        "585e2119-20f5-40a4-86a5-254338829ec3"
       ],
       "settings": {
         "caption": "",
