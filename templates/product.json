@@ -12,7 +12,12 @@
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text_style": "epilogic-product-subtitle"
+          }
+        },
+        "cd27c9af-f229-40da-8c7f-2395d497a2b3": {
+          "type": "weight",
+          "settings": {
           }
         },
         "price": {
@@ -20,21 +25,9 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "60047dfa-acc4-426b-8b2d-e44eb21bbbab": {
+          "type": "product_tag_lines",
           "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
           }
         },
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a": {
@@ -48,12 +41,18 @@
           "settings": {
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
         "784a15ce-7758-4137-8d6a-f317bb130c76": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "DETAILS",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.epilogic.product_details | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -62,7 +61,7 @@
           "settings": {
             "heading": "INGREDIENTS",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.epilogic.product_ingedients | metafield_tag }}<\/p>",
             "page": ""
           }
         }
@@ -70,12 +69,12 @@
       "block_order": [
         "title",
         "caption",
+        "cd27c9af-f229-40da-8c7f-2395d497a2b3",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
+        "60047dfa-acc4-426b-8b2d-e44eb21bbbab",
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a",
         "description",
+        "buy_buttons",
         "784a15ce-7758-4137-8d6a-f317bb130c76",
         "8019405c-ea8f-428e-aee2-27d262a51499"
       ],
@@ -236,6 +235,33 @@
         "padding_bottom": 52
       }
     },
+    "5f5321a6-651d-4d1e-88c5-c1b924f284c4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "a57b7031-a221-43fc-8eb3-46bd351de3e6": {
       "type": "section-divider",
       "settings": {
@@ -285,6 +311,7 @@
     "8804a3f1-959a-4df9-b075-33270366cc97",
     "product-recommendations",
     "5aac0244-353e-4b6e-a7e3-4a6666da194b",
+    "5f5321a6-651d-4d1e-88c5-c1b924f284c4",
     "a57b7031-a221-43fc-8eb3-46bd351de3e6",
     "1664477477ab0ad040",
     "1664851608b17df8c1"

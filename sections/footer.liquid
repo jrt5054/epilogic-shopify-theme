@@ -1,4 +1,3 @@
-{%- if request.page_type == 'index' -%}<div class="yotpo yotpo-pictures-widget" data-gallery-id="632a092df539c01f7e9b66a9"></div>{%- endif -%}
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
 {{ 'repeating-blocks.css' | asset_url | stylesheet_tag }}
@@ -26,7 +25,10 @@
               <ul class="footer-block__details-content list-unstyled footer-links-ul">
                 {%- for link in block.settings.menu.links -%}
                   <li class="footer-link-num-{{ forloop.index }}">
-                    <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                    <a 
+                      href="{{ link.url }}" 
+                      class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                      {% if link.title == "Brooklyn Face & Eye" %} target="_blank"{% endif %}>
                       {{ link.title }}
                     </a>
                   </li>

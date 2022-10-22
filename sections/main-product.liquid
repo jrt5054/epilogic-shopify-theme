@@ -214,7 +214,7 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle {% elsif block.settings.text_style == 'epilogic-product-subtitle' %} epilogic-product-subtitle{% endif %}" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
@@ -227,7 +227,7 @@
               </a>
             </div>
           {%- when 'price' -%}
-            <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+            <div class="no-js-hidden product__price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
@@ -256,7 +256,7 @@
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
-            <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+            <div class="product__accordion accordion quick-add-hidden " {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}">
                 <summary>
                   <div class="summary__title">
@@ -417,7 +417,7 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
-            <div {{ block.shopify_attributes }}>
+            <div {{ block.shopify_attributes }} class="product-form-block">
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -503,6 +503,21 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
+            {%- when 'weight' -%}
+              {%- liquid
+               assign var = product.variants | first
+                if var.weight_unit == 'g' 
+                assign weight_in_oz = var.weight_in_unit | times: 0.035
+                endif
+              -%}
+              <p class="product__text epilogic-product-weight" {{ block.shopify_attributes }}>
+                {{ var.weight_in_unit }}{{ var.weight_unit }} / {{ weight_in_oz | append: 'oz' }}
+              </p>
+            {%- when 'product_tag_lines' -%}
+              <div class="product__text epilogic-product-tag-lines" {{ block.shopify_attributes }}>
+                {% render 'icon-arrow' %}
+                {{ product.metafields.epilogic.product_tag_lines }}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -667,6 +682,10 @@
           "type": "select",
           "id": "text_style",
           "options": [
+            {
+              "value": "epilogic-product-subtitle",
+              "label": "epi.logic Product Subtitle"
+            },
             {
               "value": "body",
               "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
@@ -1009,7 +1028,15 @@
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
         }
       ]
-    }
+    },
+    {
+      "type": "weight",
+      "name": "Weight"
+    },
+    {
+      "type": "product_tag_lines",
+      "name": "Product Tag Lines"
+    }    
   ],
   "settings": [
     {
