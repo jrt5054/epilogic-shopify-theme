@@ -6,7 +6,7 @@
         "1658159431897185c8-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage.png",
+            "image": "shopify:\/\/shop_images\/epilogic-even-balance-home.jpg",
             "heading": "<p>Singularly Powerful. <\/p><p>Designed to Combine.<\/p>",
             "heading_size": "h1",
             "subheading": "",
@@ -63,7 +63,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
