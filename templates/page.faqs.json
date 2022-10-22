@@ -82,6 +82,15 @@
             "row_content": "<p>epi.logic products are never tested on animals.<\/p>",
             "page": ""
           }
+        },
+        "4e1cd541-1d85-43b8-9eef-9dde8c9acfd8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are epi.logic products vegan?",
+            "icon": "none",
+            "row_content": "<p>The growth factors in Master Plan are derived from human adipose (fat), but there is no cellular matter in the product. All other epi.logic products are vegan.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -92,7 +101,8 @@
         "dbd46411-4dec-43a3-a2a5-45b666b02e24",
         "86353dc2-c11e-4323-bd84-d27ad7218275",
         "585e2119-20f5-40a4-86a5-254338829ec3",
-        "ba5817f5-8f51-4d1f-98fe-7d4fff975f2c"
+        "ba5817f5-8f51-4d1f-98fe-7d4fff975f2c",
+        "4e1cd541-1d85-43b8-9eef-9dde8c9acfd8"
       ],
       "settings": {
         "caption": "",
