@@ -13,46 +13,84 @@
   }
 }
 {%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
-    
+
+{%- liquid
+  assign case_study = product.metafields.epilogic.sanity_product_casestudy.value[0]
+
+  assign case_study_intro = case_study.intro
+  assign case_study_description = case_study.description
+
+  assign case_study_age = case_study.age
+  assign case_study_name = case_study.name
+  assign case_study_skintype = case_study.skintype
+
+  assign case_study_image_1_ref = case_study.caseStudy_image_1.asset._ref
+  assign case_study_image_2_ref = case_study.caseStudy_image_2.asset._ref
+  assign case_study_image_3_ref = case_study.caseStudy_image_3.asset._ref
+-%}
+
+{% capture case_study_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture case_study_image_2_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_2_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture case_study_image_3_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_3_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+<div class="color-case-study gradient">
+  <div class="section-{{ section.id }}-padding case-study-wrapper">
+    <div class="case-study-intro">
+      <div class="case-study-intro-heading">
+        <h2 class="">case studies</h2>
+        <p>{{ case_study_intro }}</p>
+      </div>
+      <div class="case-study-intro-images">
+      
+      </div>
+    </div>
+    <div class="case-study-results epi-border-top epi-border-left">
+      <div class="case-study-results-text epi-border-right epi-border-bottom">
+        <p>NAME: {{ case_study_name }}</p>
+        <p>AGE: {{ case_study_age }}</p>
+        <p>SKINTYPE: {{ case_study_skintype }}</p>
+        {% render 'icon-arrow' %}
+        <p>{{ case_study_description }}</p>
+      </div>
+      <div class="case-study-results-image-1 epi-border-right epi-border-bottom">
+        <img
+          src="{{ case_study_image_1_url }}"
+          alt="test"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-2 epi-border-right epi-border-bottom">
+        <img
+          src="{{ case_study_image_2_url }}"
+          alt="test"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-3 epi-border-right epi-border-bottom">
+        <img
+          src="{{ case_study_image_3_url }}"
+          alt="test"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+    </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.custom-liquid.name",
+  "name": "Case Study",
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
-    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
@@ -80,7 +118,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.custom-liquid.presets.name"
+      "name": "Case Study"
     }
   ]
 }
