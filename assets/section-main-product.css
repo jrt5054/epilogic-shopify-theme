@@ -42,7 +42,7 @@
   .product--stacked .product__info-container--sticky {
     display: block;
     position: sticky;
-    top: 3rem;
+    top: 15vh;
     z-index: 2;
   }
 
@@ -1300,10 +1300,6 @@ a.product__text {
 .product__accordion {
   margin-top: 0 !important;
   position: relative;
-}
-
-.product__accordion details {
-  z-index: 50;
 }
 
 .product__accordion.accordion {
