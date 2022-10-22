@@ -103,7 +103,7 @@
       "settings": {
         "image_2": "shopify:\/\/shop_images\/epilogic-skincare-model_acd8fdf4-dad5-4c8f-896a-c73876abfabc.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
