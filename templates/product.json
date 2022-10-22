@@ -173,6 +173,14 @@
         "padding_bottom": 52
       }
     },
+    "7d5e5f87-494e-465c-9288-32bdb6b487c2": {
+      "type": "case-study",
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "77e556bd-88c9-4df2-b071-0aee5b168c5f": {
       "type": "section-divider",
       "settings": {
@@ -307,6 +315,7 @@
     "1664554840b6268192",
     "1658244391d4f32ed8",
     "b3b2fc15-5c91-475d-9110-79e64dd2ea1d",
+    "7d5e5f87-494e-465c-9288-32bdb6b487c2",
     "77e556bd-88c9-4df2-b071-0aee5b168c5f",
     "8804a3f1-959a-4df9-b075-33270366cc97",
     "product-recommendations",

@@ -371,6 +371,11 @@ span.collection-list-description {
   font-family: 'Merchant-Italic', serif;
 }
 
+.collection-list-title {
+  text-transform: uppercase;
+  font-family: 'VTCDuBois-Regular', serif;
+}
+
 @media screen and (min-width: 750px) {
   span.collection-list-title {
     font-size: 3rem;

@@ -18,6 +18,8 @@
 .scrolling-text-intro,
 .scrolling-text-subject {
   color: rgb(var(--color-epi-white));
+  display: flex;
+  justify-content: center;
 }
 
 .scrolling-text-intro {

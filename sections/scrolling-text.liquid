@@ -8,23 +8,19 @@
   assign total_length = number_to_repeat | times: group_width | append: 'px'
   assign speed = section.settings.animation_speed
   assign animation_time = total_length | divided_by: speed | append: 's'
-  
 -%}
 
 {%- style -%}
-
   @keyframes marquee {
-  from {right: 0px;}
-  to {right: {{ total_length }};}
-}
+    from {right: 0px;}
+    to {right: {{ total_length }};}
+  }
 
-.marquee-wrapper {
-  position: relative;
-  animation: marquee {{ animation_time }} linear infinite;
-  animation-name: marquee;
-}
-
-
+  .marquee-wrapper {
+    position: relative;
+    animation: marquee {{ animation_time }} linear infinite;
+    animation-name: marquee;
+  }
 {%- endstyle -%}
 
 <div class="scrolling-marquee-section">

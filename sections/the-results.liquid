@@ -9,10 +9,6 @@
 {%- assign metafield_result_image_url = product.metafields.epilogic.sanity_product_results.value[0].results_image.asset._ref -%}
 
 {% capture image_path %}https://cdn.sanity.io/images/s76uh1eo/production/{{ metafield_result_image_url | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
-
-{% comment %} 
-  Capture string of the _ref number in each element and separate them with a "::" character
-{% endcomment %}
               
 {%- style -%}
   .section-{{ section.id }}-padding {

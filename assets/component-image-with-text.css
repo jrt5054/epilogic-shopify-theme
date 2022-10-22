@@ -337,6 +337,10 @@
   }
 }
 
+.skincare-evolved-heading {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 750px){
   .skincare-evolved-heading {
     font-size: 5.8rem;

@@ -1,0 +1,125 @@
+{{ 'case-study.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+{%- endstyle -%}
+
+{%- liquid
+  assign case_study = product.metafields.epilogic.sanity_product_casestudy.value[0]
+
+  assign case_study_intro = case_study.intro
+  assign case_study_description = case_study.description
+
+  assign case_study_age = case_study.age
+  assign case_study_name = case_study.name
+  assign case_study_skintype = case_study.skintype
+
+  assign case_study_image_1_ref = case_study.caseStudy_image_1.asset._ref
+  assign case_study_image_2_ref = case_study.caseStudy_image_2.asset._ref
+  assign case_study_image_3_ref = case_study.caseStudy_image_3.asset._ref
+-%}
+
+{% capture case_study_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture case_study_image_2_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_2_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture case_study_image_3_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_3_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+<div class="color-case-study gradient">
+  <div class="section-{{ section.id }}-padding case-study-wrapper">
+    <div class="case-study-intro">
+      <div class="case-study-intro-heading">
+        <h2 class="">case studies</h2>
+        <p>{{ case_study_intro }}</p>
+      </div>
+      <div class="case-study-intro-images">
+      
+      </div>
+    </div>
+    <div class="case-study-results epi-border-top epi-border-left">
+      <div class="case-study-results-text epi-border-right epi-border-bottom">
+        <p>NAME: {{ case_study_name }}</p>
+        <p>AGE: {{ case_study_age }}</p>
+        <p>SKINTYPE: {{ case_study_skintype }}</p>
+        {% render 'icon-arrow' %}
+        <p>{{ case_study_description }}</p>
+      </div>
+      <div class="case-study-results-image-1 epi-border-right epi-border-bottom">
+        <img
+          src="{{ case_study_image_1_url }}"
+          alt="test"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-2 epi-border-right epi-border-bottom">
+        <img
+          src="{{ case_study_image_2_url }}"
+          alt="test"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-3 epi-border-right epi-border-bottom">
+        <img
+          src="{{ case_study_image_3_url }}"
+          alt="test"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Case Study",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Case Study"
+    }
+  ]
+}
+{% endschema %}
