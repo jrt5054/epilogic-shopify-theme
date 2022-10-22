@@ -41,9 +41,9 @@
         "16639705144842534a-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Payment",
             "icon": "none",
-            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
+            "row_content": "<p>We are pleased to accept all major credit cards and debit cards. Unfortunately we are unable to accept prepaid gift cards, checks or money orders.<\/p>",
             "page": ""
           }
         }
