@@ -6,7 +6,7 @@
         "1658159431897185c8-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage.png",
+            "image": "shopify:\/\/shop_images\/epilogic-even-balance-home.jpg",
             "heading": "<p>Singularly Powerful. <\/p><p>Designed to Combine.<\/p>",
             "heading_size": "h1",
             "subheading": "",
@@ -24,6 +24,7 @@
         "1658159431897185c8-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/epilogic-skincare-breaking-barriers.jpg",
             "heading": "<p>Image slide<\/p>",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -41,6 +42,7 @@
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/epilogic-skincare-model_acd8fdf4-dad5-4c8f-896a-c73876abfabc.jpg",
             "heading": "<p>Image slide<\/p>",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -63,7 +65,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -101,9 +103,9 @@
     "16637976921c274cfd": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/woman.png",
+        "image_2": "shopify:\/\/shop_images\/epilogic-skincare-model_acd8fdf4-dad5-4c8f-896a-c73876abfabc.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -224,7 +226,7 @@
       ],
       "settings": {
         "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/skincare-evolved.png",
+        "image": "shopify:\/\/shop_images\/epilogic-clinical-skincare.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
