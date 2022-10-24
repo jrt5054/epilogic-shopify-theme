@@ -2,6 +2,8 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'scrolling-text.css' | asset_url | stylesheet_tag }}
+{{ 'main-collection-product-grid.css' | asset_url | stylesheet_tag }}
 
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -12,7 +14,33 @@
 {%- endif -%}
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- capture scrolling_text -%}parabens,cruelty,sulfates,ARTIFICIAL FRAGRANCE{%- endcapture -%}
+{%- assign scrolling_text_array = scrolling_text | split: ',' -%}
+
+{%- liquid
+  assign block_width = 350
+  assign group_width = block_width | times: scrolling_text_array.size
+  assign foo1 = 1920 | plus: block_width | plus: block_width
+  assign number_to_repeat = foo1 | divided_by: group_width | floor
+  assign total_length = number_to_repeat | times: group_width | append: 'px'
+  assign speed = section.settings.animation_speed
+  assign animation_time = total_length | divided_by: speed | append: 's'
+-%}
+
+
+
 {%- style -%}
+  @keyframes marquee {
+    from {right: 0px;}
+    to {right: {{ total_length }};}
+  }
+
+  .marquee-wrapper {
+    position: relative;
+    animation: marquee {{ animation_time }} linear infinite;
+    animation-name: marquee;
+  }
+  
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -95,19 +123,27 @@
             </div>
           </div>
         {%- else -%}
-          <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
+          <div class="collection">
             <div class="loading-overlay gradient"></div>
     
-            <ul id="product-grid" data-id="{{ section.id }}" class="
+            <ul id="product-grid" data-id="{{ section.id }}" class=" epi-border-top epi-border-left
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-              grid--{{ section.settings.columns_desktop }}-col-desktop">
-              {%- for product in collection.products -%}
+              grid--{{ section.settings.columns_desktop }}-col-desktop epilogic-product-grid-upper">
+              {%- for product in collection.products offset: 4 -%}
+                {%- liquid
+                  assign odd_check = forloop.index | modulo: 2
+                  if odd_check != 0
+                    assign odd_position = true
+                  else
+                  assign odd_position = false
+                  endif
+                -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="grid__item">
-                  {% render 'card-product',
+                  {% render 'card-product-featured-collection',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,
@@ -115,13 +151,61 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
-
+                    section_id: section.id,
+                    is_odd: odd_position
                   %}
                 </li>
               {%- endfor -%}
             </ul>
-    
+            <div class="scrolling-marquee-section">
+              <div class="marquee-wrapper">
+                  <div class="marquee-group">
+                    {% for i in (1..4) %}
+                      {% for text in scrolling_text_array %}
+                        <div class="marquee-block">
+                          <div class="scrolling-text-intro">
+                            free from
+                          </div>
+                          <div class="scrolling-text-subject">
+                            {{ text }}
+                          </div>
+                        </div>
+                      {% endfor %}
+                    {% endfor %}
+                  </div> 
+              </div>
+            </div>
+            <ul id="product-grid-lower" data-id="{{ section.id }}-lower" class="epi-border-top epi-border-left
+              grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+              grid--{{ section.settings.columns_desktop }}-col-desktop epilogic-product-grid-lower">
+              {%- for product in collection.products limit: 4 -%}
+                {%- liquid
+                  assign odd_check = forloop.index | modulo: 2
+                  if odd_check != 0
+                    assign odd_position = true
+                  else
+                  assign odd_position = false
+                  endif
+                -%}
+                {% assign lazy_load = false %}
+                {%- if forloop.index > 2 -%}
+                  {%- assign lazy_load = true -%}
+                {%- endif -%}
+                <li class="grid__item">
+                  {% render 'card-product-featured-collection',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id,
+                    is_odd: odd_position
+                  %}
+                </li>
+              {%- endfor -%}
+            </ul>
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
@@ -262,6 +346,20 @@
           "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Scrolling Text"
+    },
+    {
+      "type": "range",
+      "id": "animation_speed",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "p/s",
+      "label": "Animation Speed (pixels/second)",
+      "default": 100
     },
     {
       "type": "header",

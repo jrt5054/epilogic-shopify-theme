@@ -1,0 +1,10 @@
+ul.grid.epilogic-product-grid-upper,
+ul.grid.epilogic-product-grid-lower {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.epilogic-product-grid-upper,
+.epilogic-product-grid-lower {
+  position: relative;
+}
