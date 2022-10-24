@@ -80,19 +80,19 @@
         "830666f9-0f6a-4ed8-91a6-c4492400fb0c": {
           "type": "text",
           "settings": {
-            "store_name": "STORE NAME",
-            "address_line_1": "123 STATE STREET",
+            "store_name": "KNOCKOUT BEAUTY",
+            "address_line_1": "11724 BARRINGTON CT",
             "address_line_2": "",
-            "address_line_3": "Brooklyn, NY 11217"
+            "address_line_3": "LOS ANGELES, CA 90049"
           }
         },
         "d9f50c09-fef2-4508-a7d1-fb36cd3bc262": {
           "type": "text",
           "settings": {
-            "store_name": "STORE NAME",
-            "address_line_1": "123 STATE STREET",
+            "store_name": "VIOLET GREY",
+            "address_line_1": "8452 MELROSE PLACE",
             "address_line_2": "",
-            "address_line_3": "Brooklyn, NY 11217"
+            "address_line_3": "LOS ANGELES, CA 90069"
           }
         }
       },
