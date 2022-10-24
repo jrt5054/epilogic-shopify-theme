@@ -51,7 +51,6 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "animation_speed": 100,
         "padding_top": 0,
         "padding_bottom": 0
       }
