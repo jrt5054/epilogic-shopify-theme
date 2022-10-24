@@ -150,7 +150,7 @@
       ],
       "settings": {
         "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/dr-jeanniton-2.png",
+        "image": "shopify:\/\/shop_images\/Dr-Chaneve-Jeanniton.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -176,7 +176,6 @@
     "7d5e5f87-494e-465c-9288-32bdb6b487c2": {
       "type": "case-study",
       "settings": {
-        "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
       }

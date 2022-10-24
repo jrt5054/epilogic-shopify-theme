@@ -23,9 +23,9 @@
         "1658176414699a2881-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/about-main.png",
+        "image": "shopify:\/\/shop_images\/About-epilogic.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -60,7 +60,7 @@
       ],
       "settings": {
         "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/dr-jeanniton.png",
+        "image": "shopify:\/\/shop_images\/Dr-Chaneve-Jeanniton_1911482a-5e20-4ff0-8344-ebc70a92f6ba.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -90,7 +90,7 @@
       ],
       "settings": {
         "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/about-1.png",
+        "image": "shopify:\/\/shop_images\/epilogic-logic.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -128,7 +128,7 @@
       ],
       "settings": {
         "show_three_dots": true,
-        "image": "shopify:\/\/shop_images\/about-2.png",
+        "image": "shopify:\/\/shop_images\/epilogic-skincare-model.jpg",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",

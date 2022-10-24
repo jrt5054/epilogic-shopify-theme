@@ -15,7 +15,7 @@
         "1658173215ab6ec11c-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/shop-hero.png",
+        "image": "shopify:\/\/shop_images\/epilogic-shop-all.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -42,8 +42,8 @@
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
@@ -51,6 +51,7 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
+        "animation_speed": 100,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -100,52 +101,12 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "166491142373676740": {
-      "type": "scrolling-text",
-      "blocks": {
-        "1664911423831b446a-0": {
-          "type": "text",
-          "settings": {
-            "free-from-text": "parabens"
-          }
-        },
-        "1664911423831b446a-1": {
-          "type": "text",
-          "settings": {
-            "free-from-text": "cruelty"
-          }
-        },
-        "1664911423831b446a-2": {
-          "type": "text",
-          "settings": {
-            "free-from-text": "sulfates"
-          }
-        },
-        "1664911423831b446a-3": {
-          "type": "text",
-          "settings": {
-            "free-from-text": "ARTIFICIAL FRAGRANCE"
-          }
-        }
-      },
-      "block_order": [
-        "1664911423831b446a-0",
-        "1664911423831b446a-1",
-        "1664911423831b446a-2",
-        "1664911423831b446a-3"
-      ],
-      "settings": {
-        "image_margin": 0,
-        "animation_speed": 100
-      }
     }
   },
   "order": [
     "165817321535e740ec",
     "banner",
     "product-grid",
-    "a9ed977c-3fe2-441b-b377-a448667c349a",
-    "166491142373676740"
+    "a9ed977c-3fe2-441b-b377-a448667c349a"
   ]
 }

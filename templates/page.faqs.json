@@ -23,27 +23,72 @@
         "16639705144842534a-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Returns",
             "icon": "none",
-            "row_content": "<p>Lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
+            "row_content": "<p>Unopened epi.logic products may be returned for a full item refund (less shipping) to your original form of payment within 15 days of receipt. Opened products or those received over 15 days prior are not eligible for return. To process a return, please email<a href=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>. Please note that we are unable to accept returns for shipments to Canada, Europe or other international destinations.<\/p>",
             "page": ""
           }
         },
         "16639705144842534a-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Exchanges",
             "icon": "none",
-            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
+            "row_content": "<p>Unfortunately we do not accept exchanges.<\/p>",
             "page": ""
           }
         },
         "16639705144842534a-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Payment",
             "icon": "none",
-            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed. Accumsan sit amet nulla facilisi. Quis enim lobortis scelerisque fermentum. Enim nunc faucibus a pellentesque sit. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Tincidunt dui ut ornare lectus sit amet est placerat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sit amet dictum sit amet justo donec enim diam vulputate. Laoreet suspendisse interdum consectetur libero id.<\/p>",
+            "row_content": "<p>We are pleased to accept all major credit cards and debit cards. Unfortunately we are unable to accept prepaid gift cards, checks or money orders.<\/p>",
+            "page": ""
+          }
+        },
+        "dbd46411-4dec-43a3-a2a5-45b666b02e24": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cancellations",
+            "icon": "none",
+            "row_content": "<p>We cannot guarantee any cancellations or changes once your order is complete, but we are sometimes able to make changes to orders that have not yet shipped. Orders that have already shipped cannot be changed or canceled. If your order has already been dispatched, we will be happy to set up a return for unopened products, within 15 days of receipt. Please email<a href=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>for more information.<\/p>",
+            "page": ""
+          }
+        },
+        "86353dc2-c11e-4323-bd84-d27ad7218275": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use epi.logic products while pregnant or nursing?",
+            "icon": "none",
+            "row_content": "<p>While retinol (present in Double Feature and The Total Package) is not recommended for pregnant or nursing women, the majority of epi.logic products are safe. Please note that Eye Contact does contain retinyl palmitate. While the concentration of the ingredient used in Eye Contact is classified as safe for pregnant women, it is up to you to decide whether you would like to use the product during this time, as some women prefer to avoid it when pregnant, postpartum and\/or while breastfeeding. If you have any questions or concerns, we recommend speaking to your primary care provider prior to use.<\/p>",
+            "page": ""
+          }
+        },
+        "585e2119-20f5-40a4-86a5-254338829ec3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What should I do if I experience irritation after using epi.logic products?",
+            "icon": "none",
+            "row_content": "<p>Immediately stop using a product if irritation occurs. Please also note product directions on the package. Specifically, you should limit initial use of Double Feature to once or twice a week, gradually increasing frequency to every other night as retinol can lead to dryness. Additionally, retinol and AHA (both present in Double Feature) may increase sensitivity to sunburn, therefore a broad-spectrum sunscreen should always be worn when using the product. Actually, as Dr. Jeanniton would say: A broad-spectrum sunscreen should be worn every day, regardless of your epi.logic routine!<\/p>",
+            "page": ""
+          }
+        },
+        "ba5817f5-8f51-4d1f-98fe-7d4fff975f2c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are epi.logic products ever tested on animals?",
+            "icon": "none",
+            "row_content": "<p>epi.logic products are never tested on animals.<\/p>",
+            "page": ""
+          }
+        },
+        "4e1cd541-1d85-43b8-9eef-9dde8c9acfd8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are epi.logic products vegan?",
+            "icon": "none",
+            "row_content": "<p>The growth factors in Master Plan are derived from human adipose (fat), but there is no cellular matter in the product. All other epi.logic products are vegan.<\/p>",
             "page": ""
           }
         }
@@ -52,7 +97,12 @@
         "16639705144842534a-0",
         "16639705144842534a-1",
         "16639705144842534a-2",
-        "16639705144842534a-3"
+        "16639705144842534a-3",
+        "dbd46411-4dec-43a3-a2a5-45b666b02e24",
+        "86353dc2-c11e-4323-bd84-d27ad7218275",
+        "585e2119-20f5-40a4-86a5-254338829ec3",
+        "ba5817f5-8f51-4d1f-98fe-7d4fff975f2c",
+        "4e1cd541-1d85-43b8-9eef-9dde8c9acfd8"
       ],
       "settings": {
         "caption": "",

@@ -507,11 +507,17 @@
               {%- liquid
                assign var = product.variants | first
                 if var.weight_unit == 'g' 
-                assign weight_in_oz = var.weight_in_unit | times: 0.035
+                  assign weight_in_oz = var.weight_in_unit | times: 0.035
+                elsif var.weight_unit == 'oz' 
+                  assign weight_in_g = var.weight_in_unit | times: 28.3
                 endif
               -%}
               <p class="product__text epilogic-product-weight" {{ block.shopify_attributes }}>
-                {{ var.weight_in_unit }}{{ var.weight_unit }} / {{ weight_in_oz | append: 'oz' }}
+                {% if var.weight_unit == 'g' %}
+                  {{ var.weight_in_unit }}{{ var.weight_unit }} / {{ weight_in_oz | append: 'oz' }}
+                {% elsif var.weight_unit == 'oz' %}
+                  {{ var.weight_in_unit }}{{ var.weight_unit }} / {{ weight_in_g | append: 'g' }}
+                {% endif %}
               </p>
             {%- when 'product_tag_lines' -%}
               <div class="product__text epilogic-product-tag-lines" {{ block.shopify_attributes }}>

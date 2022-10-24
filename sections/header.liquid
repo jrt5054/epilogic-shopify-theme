@@ -75,7 +75,7 @@
 </style>
 
 {%- liquid
-  if request.path == "/collections/all" or request.page_type == "index"
+  if request.page_type == "index" or request.path == "/pages/about"
     assign header_color_scheme = "white"
   else
     assign header_color_scheme = "black"

@@ -27,6 +27,10 @@
   assign case_study_image_1_ref = case_study.caseStudy_image_1.asset._ref
   assign case_study_image_2_ref = case_study.caseStudy_image_2.asset._ref
   assign case_study_image_3_ref = case_study.caseStudy_image_3.asset._ref
+
+  assign case_study_image_1_alt_text = case_study.caseStudy_image_1.alt
+  assign case_study_image_2_alt_text = case_study.caseStudy_image_2.alt
+  assign case_study_image_3_alt_text = case_study.caseStudy_image_3.alt
 -%}
 
 {% capture case_study_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
@@ -57,7 +61,7 @@
       <div class="case-study-results-image-1 epi-border-right epi-border-bottom">
         <img
           src="{{ case_study_image_1_url }}"
-          alt="test"
+          alt="{{ case_study_image_1_alt_text }}"
           loading="lazy"
           width="auto"
           height="auto"
@@ -66,7 +70,7 @@
       <div class="case-study-results-image-2 epi-border-right epi-border-bottom">
         <img
           src="{{ case_study_image_2_url }}"
-          alt="test"
+          alt="{{ case_study_image_2_alt_text }}"
           loading="lazy"
           width="auto"
           height="auto"
@@ -75,7 +79,7 @@
       <div class="case-study-results-image-3 epi-border-right epi-border-bottom">
         <img
           src="{{ case_study_image_3_url }}"
-          alt="test"
+          alt="{{ case_study_image_3_alt_text }}"
           loading="lazy"
           width="auto"
           height="auto"
