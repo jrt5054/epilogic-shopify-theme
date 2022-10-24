@@ -107,6 +107,29 @@
         "padding_bottom": 52
       }
     },
+    "fed2f64b-4fcf-4384-9522-58f041cecaea": {
+      "type": "stocklist-state",
+      "blocks": {
+        "ec722fad-6749-4ff4-aaca-9dd037937974": {
+          "type": "text",
+          "settings": {
+            "store_name": "farfetch.com",
+            "address_line_1": "",
+            "address_line_2": "",
+            "address_line_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "ec722fad-6749-4ff4-aaca-9dd037937974"
+      ],
+      "settings": {
+        "state": "Online",
+        "color_scheme": "stocklists",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "16640409529b20012c": {
       "type": "rich-text",
       "blocks": {
@@ -144,6 +167,7 @@
     "16639703469c144965",
     "166403850947f3cfbb",
     "16640393739e2deb23",
+    "fed2f64b-4fcf-4384-9522-58f041cecaea",
     "16640409529b20012c"
   ]
 }
