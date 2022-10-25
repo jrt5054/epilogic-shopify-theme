@@ -195,35 +195,57 @@
                 </li>
                 {% endif %}
                 {% if forloop.index == 4 %}
-                <li>
-                  <div class="scrolling-marquee-section">
-                    <div class="marquee-wrapper">
-                        <div class="marquee-group">
-                          {% for i in (1..4) %}
-                            {% for text in scrolling_text_array %}
-                              <div class="marquee-block">
-                                <div class="scrolling-text-intro">
-                                  free from
-                                </div>
-                                <div class="scrolling-text-subject">
-                                  {{ text }}
-                                </div>
+                <li class="scrolling-marquee-section">
+                  <div class="marquee-wrapper">
+                      <div class="marquee-group">
+                        {% for i in (1..4) %}
+                          {% for text in scrolling_text_array %}
+                            <div class="marquee-block">
+                              <div class="scrolling-text-intro">
+                                free from
                               </div>
-                            {% endfor %}
+                              <div class="scrolling-text-subject">
+                                {{ text }}
+                              </div>
+                            </div>
                           {% endfor %}
-                        </div> 
-                    </div>
+                        {% endfor %}
+                      </div> 
                   </div>
                 </li>
-                  
                 {% endif %}
               {%- endfor -%}
               <li class="grid__item main-grid-new-addition">
                 <div class="new-addition-text">
-                  test
+                  <div class="new-addition-text-header">
+                    new addition
+                  </div>
+                  <div class="new-addition-text-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, reiciendis commodi nostrum magni necessitatibus id ea, soluta quis blanditiis eos ullam odit quaerat vel iusto perferendis ipsam. Esse quidem nihil aliquam illum non id dolorem quibusdam dolores a tempora alias iste rem molestiae voluptatem, placeat hic in velit mollitia repellendus obcaecati exercitationem. Omnis distinctio, fuga enim corrupti cum natus quam neque dolor impedit voluptatibus. Molestiae totam nulla culpa beatae labore dolore officiis, dolorum voluptatem ullam! A quis odit aut dolores. Dolor enim maiores odio distinctio? Esse eius cupiditate odit maxime porro nostrum sapiente et odio commodi quisquam, assumenda natus delectus!
+                  </div>
+                  <div class="new-addition-link">
+                    <a href="#" class="button button--primary new-addition-button">
+                      read more
+                    </a>
+                  </div>
                 </div>
                 <div class="new-addition-image">
-                  test
+                  <img
+                    srcset="{%- if section.settings.new_addition_image.width >= 165 -%}{{ section.settings.new_addition_image | image_url: width: 165 }} 165w,{%- endif -%}
+                      {%- if section.settings.new_addition_image.width >= 360 -%}{{ section.settings.new_addition_image | image_url: width: 360 }} 360w,{%- endif -%}
+                      {%- if section.settings.new_addition_image.width >= 533 -%}{{ section.settings.new_addition_image | image_url: width: 533 }} 533w,{%- endif -%}
+                      {%- if section.settings.new_addition_image.width >= 720 -%}{{ section.settings.new_addition_image | image_url: width: 720 }} 720w,{%- endif -%}
+                      {%- if section.settings.new_addition_image.width >= 940 -%}{{ section.settings.new_addition_image | image_url: width: 940 }} 940w,{%- endif -%}
+                      {%- if section.settings.new_addition_image.width >= 1066 -%}{{ section.settings.new_addition_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                      {{ section.settings.new_addition_image | image_url }} {{ section.settings.new_addition_image.width }}w"
+                    src="{{ section.settings.new_addition_image | image_url: width: 533 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                    alt="{{ section.settings.new_addition_image.alt | escape }}"
+                    class="motion-reduce"
+                    loading="lazy"
+                    width="{{ section.settings.new_addition_image.width }}"
+                    height="{{ section.settings.new_addition_image.height }}"
+                    >
                 </div>
               </li>
               {%- for product in only_bundle_products -%}
@@ -350,6 +372,15 @@
       "type": "image_picker",
       "id": "grid_image_2",
       "label": "Grid Image 2"
+    },
+    {
+      "type": "header",
+      "content": "New Addition Section Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "new_addition_image",
+      "label": "New Addition Section Image"
     },
     {
       "type": "header",
