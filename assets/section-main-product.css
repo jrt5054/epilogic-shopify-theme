@@ -1305,3 +1305,20 @@ a.product__text {
 .product__accordion.accordion {
   border-width: 0;
 }
+
+.product-info-background::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(var(--color-epi-background-gray));
+  z-index: -1;
+}
+
+.accordion__content.epi-product-info {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
