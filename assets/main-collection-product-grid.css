@@ -57,6 +57,11 @@ ul.grid.epilogic-product-grid-lower {
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
+  .grid--4-col-desktop .grid__item.epi-bundle-item {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
   .grid--4-col-desktop .grid__item.main-grid-new-addition {
     width: 100%;
     max-width: 100%;
@@ -100,6 +105,11 @@ ul.grid.epilogic-product-grid-lower {
   }
 
   .grid--2-col-tablet-down .grid__item.main-grid-new-addition {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grid--2-col-tablet-down .grid__item.epi-bundle-item {
     width: 100%;
     max-width: 100%;
   }

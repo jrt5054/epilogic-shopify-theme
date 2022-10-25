@@ -144,7 +144,7 @@
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="grid__item">
-                  {% render 'card-product-featured-collection',
+                  {% render 'card-product-main-product-grid',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,
@@ -261,8 +261,8 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item">
-                  {% render 'card-product-featured-collection',
+                <li class="grid__item epi-bundle-item">
+                  {% render 'card-product-main-product-grid',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,
