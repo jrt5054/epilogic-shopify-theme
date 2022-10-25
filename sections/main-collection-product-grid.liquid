@@ -27,7 +27,8 @@
   assign animation_time = total_length | divided_by: speed | append: 's'
 -%}
 
-
+{%- assign only_single_products = collection.products | where: "type", "single" -%}
+{%- assign only_bundle_products = collection.products | where: "type", "bundle" -%}
 
 {%- style -%}
   @keyframes marquee {
@@ -129,7 +130,103 @@
             <ul id="product-grid" data-id="{{ section.id }}" class=" epi-border-top epi-border-left
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ section.settings.columns_desktop }}-col-desktop epilogic-product-grid-upper">
-              {%- for product in collection.products offset: 4 -%}
+              {%- for product in only_single_products -%}
+                {%- liquid
+                  assign odd_check = forloop.index | modulo: 2
+                  if odd_check != 0
+                    assign odd_position = true
+                  else
+                  assign odd_position = false
+                  endif
+                -%}
+                {% assign lazy_load = false %}
+                {%- if forloop.index > 2 -%}
+                  {%- assign lazy_load = true -%}
+                {%- endif -%}
+                <li class="grid__item">
+                  {% render 'card-product-featured-collection',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id,
+                    is_odd: odd_position
+                  %}
+                </li>
+                {% if forloop.index == 2 %}
+                <li class="grid__item epi-grid-picture">
+                  <img
+                    srcset="{%- if section.settings.grid_image_1.width >= 165 -%}{{ section.settings.grid_image_1 | image_url: width: 165 }} 165w,{%- endif -%}
+                      {%- if section.settings.grid_image_1.width >= 360 -%}{{ section.settings.grid_image_1 | image_url: width: 360 }} 360w,{%- endif -%}
+                      {%- if section.settings.grid_image_1.width >= 533 -%}{{ section.settings.grid_image_1 | image_url: width: 533 }} 533w,{%- endif -%}
+                      {%- if section.settings.grid_image_1.width >= 720 -%}{{ section.settings.grid_image_1 | image_url: width: 720 }} 720w,{%- endif -%}
+                      {%- if section.settings.grid_image_1.width >= 940 -%}{{ section.settings.grid_image_1 | image_url: width: 940 }} 940w,{%- endif -%}
+                      {%- if section.settings.grid_image_1.width >= 1066 -%}{{ section.settings.grid_image_1 | image_url: width: 1066 }} 1066w,{%- endif -%}
+                      {{ section.settings.grid_image_1 | image_url }} {{ section.settings.grid_image_1.width }}w"
+                    src="{{ section.settings.grid_image_1 | image_url: width: 533 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                    alt="{{ section.settings.grid_image_1.alt | escape }}"
+                    class="motion-reduce"
+                    loading="lazy"
+                    width="{{ section.settings.grid_image_1.width }}"
+                    height="{{ section.settings.grid_image_1.height }}"
+                    >
+                </li>
+                <li class="grid__item epi-grid-picture">
+                  <img
+                    srcset="{%- if section.settings.grid_image_2.width >= 165 -%}{{ section.settings.grid_image_2 | image_url: width: 165 }} 165w,{%- endif -%}
+                      {%- if section.settings.grid_image_2.width >= 360 -%}{{ section.settings.grid_image_2 | image_url: width: 360 }} 360w,{%- endif -%}
+                      {%- if section.settings.grid_image_2.width >= 533 -%}{{ section.settings.grid_image_2 | image_url: width: 533 }} 533w,{%- endif -%}
+                      {%- if section.settings.grid_image_2.width >= 720 -%}{{ section.settings.grid_image_2 | image_url: width: 720 }} 720w,{%- endif -%}
+                      {%- if section.settings.grid_image_2.width >= 940 -%}{{ section.settings.grid_image_2 | image_url: width: 940 }} 940w,{%- endif -%}
+                      {%- if section.settings.grid_image_2.width >= 1066 -%}{{ section.settings.grid_image_2 | image_url: width: 1066 }} 1066w,{%- endif -%}
+                      {{ section.settings.grid_image_2 | image_url }} {{ section.settings.grid_image_2.width }}w"
+                    src="{{ section.settings.grid_image_2 | image_url: width: 533 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                    alt="{{ section.settings.grid_image_2.alt | escape }}"
+                    class="motion-reduce"
+                    loading="lazy"
+                    width="{{ section.settings.grid_image_2.width }}"
+                    height="{{ section.settings.grid_image_2.height }}"
+                    >
+                </li>
+                {% endif %}
+                {% if forloop.index == 4 %}
+                <li>
+                  <div class="scrolling-marquee-section">
+                    <div class="marquee-wrapper">
+                        <div class="marquee-group">
+                          {% for i in (1..4) %}
+                            {% for text in scrolling_text_array %}
+                              <div class="marquee-block">
+                                <div class="scrolling-text-intro">
+                                  free from
+                                </div>
+                                <div class="scrolling-text-subject">
+                                  {{ text }}
+                                </div>
+                              </div>
+                            {% endfor %}
+                          {% endfor %}
+                        </div> 
+                    </div>
+                  </div>
+                </li>
+                  
+                {% endif %}
+              {%- endfor -%}
+              <li class="grid__item main-grid-new-addition">
+                <div class="new-addition-text">
+                  test
+                </div>
+                <div class="new-addition-image">
+                  test
+                </div>
+              </li>
+              {%- for product in only_bundle_products -%}
                 {%- liquid
                   assign odd_check = forloop.index | modulo: 2
                   if odd_check != 0
@@ -157,7 +254,7 @@
                 </li>
               {%- endfor -%}
             </ul>
-            <div class="scrolling-marquee-section">
+            {% comment %} <div class="scrolling-marquee-section">
               <div class="marquee-wrapper">
                   <div class="marquee-group">
                     {% for i in (1..4) %}
@@ -174,8 +271,8 @@
                     {% endfor %}
                   </div> 
               </div>
-            </div>
-            <ul id="product-grid-lower" data-id="{{ section.id }}-lower" class="epi-border-top epi-border-left
+            </div> {% endcomment %}
+            {% comment %} <ul id="product-grid-lower" data-id="{{ section.id }}-lower" class="epi-border-top epi-border-left
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ section.settings.columns_desktop }}-col-desktop epilogic-product-grid-lower">
               {%- for product in collection.products limit: 4 -%}
@@ -205,7 +302,7 @@
                   %}
                 </li>
               {%- endfor -%}
-            </ul>
+            </ul> {% endcomment %}
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
@@ -239,6 +336,20 @@
       "step": 1,
       "default": 4,
       "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
+    },
+    {
+      "type": "header",
+      "content": "Grid Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid_image_1",
+      "label": "Grid Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid_image_2",
+      "label": "Grid Image 2"
     },
     {
       "type": "header",

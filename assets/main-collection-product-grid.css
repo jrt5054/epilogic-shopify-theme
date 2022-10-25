@@ -8,3 +8,37 @@ ul.grid.epilogic-product-grid-lower {
 .epilogic-product-grid-lower {
   position: relative;
 }
+
+.main-grid-new-addition {
+  display: flex;
+  height: 300px;
+}
+
+@media screen and (min-width: 990px) {
+  .grid--4-col-desktop .grid__item.epi-grid-picture {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
+  .grid--4-col-desktop .grid__item.main-grid-new-addition {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-grid-new-addition {
+    flex-direction: row;
+
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .main-grid-new-addition {
+    flex-direction: column;
+  }
+}
+
+.epi-grid-picture img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
