@@ -44,6 +44,7 @@
         "columns_desktop": 4,
         "grid_image_1": "shopify:\/\/shop_images\/epilogic-skincare-breaking-barriers.jpg",
         "grid_image_2": "shopify:\/\/shop_images\/epilogic-moisturizers-model.jpg",
+        "new_addition_image": "shopify:\/\/shop_images\/new-addition.png",
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -57,58 +58,11 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "a9ed977c-3fe2-441b-b377-a448667c349a": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "NEW ADDITION",
-            "heading_size": "h1"
-          }
-        },
-        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>",
-            "text_style": "body"
-          }
-        },
-        "18ce2929-6995-4459-b4ee-18acf25c46f7": {
-          "type": "button",
-          "settings": {
-            "button_label": "LEARN MORE",
-            "button_link": "shopify:\/\/pages\/about"
-          }
-        }
-      },
-      "block_order": [
-        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-0",
-        "template--15621875007628__a9ed977c-3fe2-441b-b377-a448667c349a-16663785074b6e5e93-1",
-        "18ce2929-6995-4459-b4ee-18acf25c46f7"
-      ],
-      "settings": {
-        "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/skincare-evolved.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "dr-jeanniton",
-        "mobile_image_second": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "165817321535e740ec",
     "banner",
-    "product-grid",
-    "a9ed977c-3fe2-441b-b377-a448667c349a"
+    "product-grid"
   ]
 }
