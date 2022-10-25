@@ -11,10 +11,47 @@ ul.grid.epilogic-product-grid-lower {
 
 .main-grid-new-addition {
   display: flex;
-  height: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.new-addition-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--color-epi-light-yellow));
+}
+
+.new-addition-text-text {
+  text-align: center;
+}
+
+.new-addition-link {
+  position: absolute;
+}
+
+.new-addition-text-header {
+  font-family: 'VTCDuBois-Regular', serif;
+  text-transform: uppercase;
+}
+
+.new-addition-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.button.new-addition-button {
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 990px) {
+  .epi-grid-picture {
+    overflow: hidden;
+  }
+
   .grid--4-col-desktop .grid__item.epi-grid-picture {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
@@ -27,7 +64,33 @@ ul.grid.epilogic-product-grid-lower {
 
   .main-grid-new-addition {
     flex-direction: row;
+  }
 
+  .new-addition-text {
+    width: 60%;
+  }
+
+  .new-addition-image {
+    width: 40%;
+  }
+
+  .new-addition-text-header {
+    font-size: 6.4rem;
+    line-height: 59.9px;
+    margin-bottom: 3rem;
+  }
+
+  .new-addition-text-text {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .new-addition-text {
+    padding: 10rem 10rem;
+  }
+
+  .new-addition-link {
+    bottom: 5rem;
   }
 }
 
@@ -35,10 +98,34 @@ ul.grid.epilogic-product-grid-lower {
   .main-grid-new-addition {
     flex-direction: column;
   }
+
+  .grid--2-col-tablet-down .grid__item.main-grid-new-addition {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .new-addition-text {
+    padding: 15rem 4rem;
+  }
+
+  .new-addition-link {
+    bottom: 3rem;
+  }
+
+  .new-addition-text-header {
+    font-size: 3.5rem;
+    line-height: 59.9px;
+    margin-bottom: 3rem;
+  }
+
+  .new-addition-text-text {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
 }
 
 .epi-grid-picture img {
-  width: auto;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
