@@ -51,6 +51,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "DETAILS",
+            "show_background_color": false,
             "icon": "none",
             "content": "<p>{{ product.metafields.epilogic.product_details | metafield_tag }}<\/p>",
             "page": ""
@@ -60,6 +61,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "INGREDIENTS",
+            "show_background_color": true,
             "icon": "none",
             "content": "<p>{{ product.metafields.epilogic.product_ingedients | metafield_tag }}<\/p>",
             "page": ""
