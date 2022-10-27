@@ -32,6 +32,12 @@ const subject_3 = {
 
 const elementArray = [subject_1, subject_2, subject_3]
 
+function allSelectsGray() {
+  elementArray.forEach((element) => {
+    element.select.classList.add("gray-overlay");
+  });
+}
+
 function hideAll() {
   elementArray.forEach((element) => {
     element.info.classList.add("hide-case-study");
@@ -39,19 +45,15 @@ function hideAll() {
 }
 
 function showCaseStudy() {
+  allSelectsGray();
   hideAll();
   // get element clicked
   const elementClickedId = this.id;
   // alert(elementClicked);
   elementArray.forEach((element) => {
     if (elementClickedId == element.select.id) {
+      element.select.classList.remove("gray-overlay");
       element.info.classList.remove("hide-case-study");
     }
   });
 }
-
-/* 
-
-When i click this thing -> go find that thing -> unhide it -> hide everything else
-
-*/
