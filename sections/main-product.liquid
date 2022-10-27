@@ -21,12 +21,7 @@
       }
     }
 
-    .product__info-wrapper{
-      background-image: url("{{ section.settings.background_image | img_url: '1366x1692' }}");
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover; /* Resize the background image to cover the entire container */
-    }
+    
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -210,6 +205,24 @@
       </media-gallery>
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
+      <div class="product-info-background-image">
+        
+        <img
+          srcset="{%- if section.settings.background_image.width >= 165 -%}{{ section.settings.background_image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if section.settings.background_image.width >= 360 -%}{{ section.settings.background_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if section.settings.background_image.width >= 535 -%}{{ section.settings.background_image | image_url: width: 535 }} 535w,{%- endif -%}
+            {%- if section.settings.background_image.width >= 750 -%}{{ section.settings.background_image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if section.settings.background_image.width >= 1070 -%}{{ section.settings.background_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+            {%- if section.settings.background_image.width >= 1500 -%}{{ section.settings.background_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {{ section.settings.background_image | image_url }} {{ section.settings.background_image.width }}w"
+          src="{{ section.settings.background_image | image_url: width: 1500 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ section.settings.background_image.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.background_image.width }}"
+          height="{{ section.settings.background_image.height }}"
+        >
+      </div>
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 

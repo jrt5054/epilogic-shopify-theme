@@ -43,8 +43,8 @@
     display: block;
     position: sticky;
     /* top: 15vh; */
-    top: 50px;
-    /* bottom: 0; */
+    top: 26%;
+    bottom: 0;
     z-index: 2;
   }
 
@@ -1323,4 +1323,22 @@ a.product__text {
 .accordion__content.epi-product-info {
   margin-bottom: 0;
   padding-bottom: 1rem;
+}
+
+.product-info-background-image {
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.product-info-background-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
