@@ -1,3 +1,5 @@
+{% if product.metafields.epilogic.show_case_study %}
+  
 {{ 'case-study.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -18,26 +20,68 @@
   assign case_study = product.metafields.epilogic.sanity_product_casestudy.value[0]
 
   assign case_study_intro = case_study.intro
-  assign case_study_description = case_study.description
 
-  assign case_study_age = case_study.age
-  assign case_study_name = case_study.name
-  assign case_study_skintype = case_study.skintype
+  assign subject_1_description = case_study.subject_1_description
+  assign subject_2_description = case_study.subject_2_description
+  assign subject_3_description = case_study.subject_3_description
 
-  assign case_study_image_1_ref = case_study.caseStudy_image_1.asset._ref
-  assign case_study_image_2_ref = case_study.caseStudy_image_2.asset._ref
-  assign case_study_image_3_ref = case_study.caseStudy_image_3.asset._ref
+  assign subject_1_age = case_study.subject_1_age
+  assign subject_2_age = case_study.subject_2_age
+  assign subject_3_age = case_study.subject_3_age
 
-  assign case_study_image_1_alt_text = case_study.caseStudy_image_1.alt
-  assign case_study_image_2_alt_text = case_study.caseStudy_image_2.alt
-  assign case_study_image_3_alt_text = case_study.caseStudy_image_3.alt
+  assign subject_1_name = case_study.subject_1_name
+  assign subject_2_name = case_study.subject_2_name
+  assign subject_3_name = case_study.subject_3_name
+
+  assign subject_1_skintype = case_study.subject_1_skintype
+  assign subject_2_skintype = case_study.subject_2_skintype
+  assign subject_3_skintype = case_study.subject_3_skintype
+
+  assign subject_1_image_1_ref = case_study.subject_1_image_1.asset._ref
+  assign subject_1_image_2_ref = case_study.subject_1_image_2.asset._ref
+  assign subject_1_image_3_ref = case_study.subject_1_image_3.asset._ref
+
+  assign subject_2_image_1_ref = case_study.subject_2_image_1.asset._ref
+  assign subject_2_image_2_ref = case_study.subject_2_image_2.asset._ref
+  assign subject_2_image_3_ref = case_study.subject_2_image_3.asset._ref
+  
+  assign subject_3_image_1_ref = case_study.subject_3_image_1.asset._ref
+  assign subject_3_image_2_ref = case_study.subject_3_image_2.asset._ref
+  assign subject_3_image_3_ref = case_study.subject_3_image_3.asset._ref
+
+  assign subject_1_image_1_alt = case_study.subject_1_image_1.alt
+  assign subject_1_image_2_alt = case_study.subject_1_image_2.alt
+  assign subject_1_image_3_alt = case_study.subject_1_image_3.alt
+
+  assign subject_2_image_1_alt = case_study.subject_2_image_1.alt
+  assign subject_2_image_2_alt = case_study.subject_2_image_2.alt
+  assign subject_2_image_3_alt = case_study.subject_2_image_3.alt
+  
+  assign subject_3_image_1_alt = case_study.subject_3_image_1.alt
+  assign subject_3_image_2_alt = case_study.subject_3_image_2.alt
+  assign subject_3_image_3_alt = case_study.subject_3_image_3.alt
+
 -%}
 
-{% capture case_study_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+{% capture subject_1_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_1_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
 
-{% capture case_study_image_2_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_2_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+{% capture subject_1_image_2_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_1_image_2_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
 
-{% capture case_study_image_3_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ case_study_image_3_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+{% capture subject_1_image_3_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_1_image_3_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+
+{% capture subject_2_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_2_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture subject_2_image_2_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_2_image_2_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture subject_2_image_3_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_2_image_3_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+
+{% capture subject_3_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_3_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture subject_3_image_2_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_3_image_2_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture subject_3_image_3_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_3_image_3_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
 
 <div class="color-case-study gradient">
   <div class="section-{{ section.id }}-padding case-study-wrapper">
@@ -47,21 +91,50 @@
         <p>{{ case_study_intro }}</p>
       </div>
       <div class="case-study-intro-images">
-      
+        <div id="subject-1-select" class="case-study-intro-image-1 case-study-select-image case-study-circle-border">
+          <img
+            src="{{ subject_1_image_1_url }}"
+            alt="{{ subject_1_image_1_alt }}"
+            loading="lazy"
+            width="auto"
+            height="auto"
+          >
+        </div>
+        <div id="subject-2-select" class="case-study-intro-image-2 case-study-select-image case-study-circle-border">
+          <img
+            src="{{ subject_2_image_1_url }}"
+            alt="{{ subject_2_image_1_alt }}"
+            loading="lazy"
+            width="auto"
+            height="auto"
+          >
+        </div>
+        <div id="subject-3-select" class="case-study-intro-image-3 case-study-select-image case-study-circle-border">
+          <img
+            src="{{ subject_3_image_1_url }}"
+            alt="{{ subject_3_image_1_alt }}"
+            loading="lazy"
+            width="auto"
+            height="auto"
+          >
+        </div>
       </div>
     </div>
-    <div class="case-study-results epi-border-top epi-border-left">
+
+    {% comment %} SUBJECT 1 {% endcomment %}
+
+    <div id="subject-1-info" class="case-study-results epi-border-top epi-border-left">
       <div class="case-study-results-text epi-border-right epi-border-bottom">
-        <p>NAME: {{ case_study_name }}</p>
-        <p>AGE: {{ case_study_age }}</p>
-        <p>SKINTYPE: {{ case_study_skintype }}</p>
+        <p>NAME: {{ subject_1_name }}</p>
+        <p>AGE: {{ subject_1_age }}</p>
+        <p>SKINTYPE: {{ subject_1_skintype }}</p>
         {% render 'icon-arrow' %}
-        <p>{{ case_study_description }}</p>
+        <p>{{ subject_1_description }}</p>
       </div>
       <div class="case-study-results-image-1 epi-border-right epi-border-bottom">
         <img
-          src="{{ case_study_image_1_url }}"
-          alt="{{ case_study_image_1_alt_text }}"
+          src="{{ subject_1_image_1_url }}"
+          alt="{{ subject_1_image_1_alt }}"
           loading="lazy"
           width="auto"
           height="auto"
@@ -69,8 +142,8 @@
       </div>
       <div class="case-study-results-image-2 epi-border-right epi-border-bottom">
         <img
-          src="{{ case_study_image_2_url }}"
-          alt="{{ case_study_image_2_alt_text }}"
+          src="{{ subject_1_image_2_url }}"
+          alt="{{ subject_1_image_2_alt }}"
           loading="lazy"
           width="auto"
           height="auto"
@@ -78,8 +151,86 @@
       </div>
       <div class="case-study-results-image-3 epi-border-right epi-border-bottom">
         <img
-          src="{{ case_study_image_3_url }}"
-          alt="{{ case_study_image_3_alt_text }}"
+          src="{{ subject_1_image_3_url }}"
+          alt="{{ subject_1_image_3_alt }}"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+    </div>
+
+    {% comment %} SUBJECT 2 {% endcomment %}
+
+    <div id="subject-2-info" class="case-study-results epi-border-top epi-border-left hide-case-study">
+      <div class="case-study-results-text epi-border-right epi-border-bottom">
+        <p>NAME: {{ subject_2_name }}</p>
+        <p>AGE: {{ subject_2_age }}</p>
+        <p>SKINTYPE: {{ subject_2_skintype }}</p>
+        {% render 'icon-arrow' %}
+        <p>{{ subject_2_description }}</p>
+      </div>
+      <div class="case-study-results-image-1 epi-border-right epi-border-bottom">
+        <img
+          src="{{ subject_2_image_1_url }}"
+          alt="{{ subject_2_image_1_alt }}"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-2 epi-border-right epi-border-bottom">
+        <img
+          src="{{ subject_2_image_2_url }}"
+          alt="{{ subject_2_image_2_alt }}"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-3 epi-border-right epi-border-bottom">
+        <img
+          src="{{ subject_2_image_3_url }}"
+          alt="{{ subject_2_image_3_alt }}"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+    </div>
+
+    {% comment %} SUBJECT 3 {% endcomment %}
+
+    <div id="subject-3-info" class="case-study-results epi-border-top epi-border-left hide-case-study">
+      <div class="case-study-results-text epi-border-right epi-border-bottom">
+        <p>NAME: {{ subject_3_name }}</p>
+        <p>AGE: {{ subject_3_age }}</p>
+        <p>SKINTYPE: {{ subject_3_skintype }}</p>
+        {% render 'icon-arrow' %}
+        <p>{{ subject_3_description }}</p>
+      </div>
+      <div class="case-study-results-image-1 epi-border-right epi-border-bottom">
+        <img
+          src="{{ subject_3_image_1_url }}"
+          alt="{{ subject_3_image_1_alt }}"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-2 epi-border-right epi-border-bottom">
+        <img
+          src="{{ subject_3_image_2_url }}"
+          alt="{{ subject_3_image_2_alt }}"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        >
+      </div>
+      <div class="case-study-results-image-3 epi-border-right epi-border-bottom">
+        <img
+          src="{{ subject_3_image_3_url }}"
+          alt="{{ subject_3_image_3_alt }}"
           loading="lazy"
           width="auto"
           height="auto"
@@ -88,6 +239,10 @@
     </div>
   </div>
 </div>
+
+<script src="{{ 'case-study.js' | asset_url }}" defer="defer"></script>
+
+{% endif %}
 
 {% schema %}
 {
