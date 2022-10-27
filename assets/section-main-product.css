@@ -1342,3 +1342,7 @@ a.product__text {
   width: 100%;
   object-fit: cover;
 }
+
+ul.product__media-list {
+  margin-bottom: 0;
+}
