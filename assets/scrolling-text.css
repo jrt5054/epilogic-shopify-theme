@@ -24,6 +24,7 @@
 
 .scrolling-text-intro {
   width: 40%;
+  text-transform: uppercase;
 }
 
 .scrolling-text-subject {
@@ -36,7 +37,7 @@
 
 .scrolling-text-subject {
   font-family: 'VTCDuBois-Regular', serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   white-space: nowrap;
 }
 
