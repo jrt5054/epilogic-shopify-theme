@@ -1,0 +1,5 @@
+.awt-style-1 .bundleapp-wrapper .bundleapp-plan-selector-group.bundleapp-plan-selector-group--selected {
+  background-color: rgb(var(--color-epi-background-yellow));
+  /* border-color: var(--awt-selected-plan-border-color); */
+  /* background-color: var(--awt-selected-plan-background); */
+}

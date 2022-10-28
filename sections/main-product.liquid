@@ -7,11 +7,16 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'awtomic-overrides.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    .awt-style-1 .bundleapp-wrapper .bundleapp-plan-selector-group.bundleapp-plan-selector-group--selected {
+      border-image: url("{{ 'big-dash-dark.png' | asset_url }}") 2 round;
     }
 
     @media screen and (min-width: 750px) {
