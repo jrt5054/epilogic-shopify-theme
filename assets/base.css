@@ -3159,3 +3159,7 @@ details-disclosure > details {
   font-family: 'VTCDuBois-Bold', serif;
   font-size: 1.6rem;
 }
+
+.unclickable {
+  pointer-events: none;
+}

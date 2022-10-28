@@ -105,13 +105,16 @@
       <div class="card__content epi-collections-list">
         <div class="card__information">
           <h3 class="card__heading">
-            <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link collection-list-name">
+            <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link collection-list-name {% if card_collection.metafields.epilogic.coming_soon %} unclickable{% endif %}">
               {%- if card_collection.title != blank -%}
                 <span class="collection-list-title">{{- card_collection.title | escape -}}</span>
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
+              {% if card_collection.metafields.epilogic.coming_soon %}
                 <span class="collection-list-description">{{ card_collection.metafields.collections.description }}</span>
+              {% endif %}
+                
             </a>
           </h3>
           {%- if card_collection.featured_image == nil and card_collection.description != blank -%}
