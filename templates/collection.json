@@ -46,7 +46,7 @@
         "grid_image_2": "shopify:\/\/shop_images\/epilogic-moisturizers-model.jpg",
         "new_addition_image": "shopify:\/\/shop_images\/new-addition.png",
         "image_ratio": "portrait",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
@@ -54,7 +54,7 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "animation_speed": 100,
+        "animation_speed": 50,
         "padding_top": 0,
         "padding_bottom": 0
       }
