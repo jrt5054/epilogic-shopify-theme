@@ -43,7 +43,7 @@
     display: block;
     position: sticky;
     /* top: 15vh; */
-    top: 28%;
+    top: 25%;
     bottom: 0;
     z-index: 2;
   }
@@ -53,7 +53,7 @@
   }
 
   .product__info-wrapper {
-    padding-top: 20rem;
+    padding-top: 5rem;
   }
 
   .product__info-wrapper--extra-padding {
