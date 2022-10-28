@@ -41,7 +41,7 @@
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
-          <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile" role="list">
+          <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list epi-product-image-list contains-media grid grid--peek list-unstyled slider slider--mobile" role="list">
             {%- liquid
               assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
               assign media_count = product.media.size
@@ -83,7 +83,7 @@
               {%- endunless -%}
             {%- endfor -%}
           </ul>
-          <div class="slider-buttons no-js-hidden quick-add-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
+          <div class="epi-product-slider slider-buttons no-js-hidden quick-add-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
             <div class="slider-counter caption">
               <span class="slider-counter--current">1</span>
@@ -273,7 +273,7 @@
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
-            <div class="product__accordion accordion quick-add-hidden epi-border {% if block.settings.show_background_color %} product-info-background{% endif %}" {{ block.shopify_attributes }}>
+            <div class="product__accordion accordion quick-add-hidden epi-border epi-product-info-full-width {% if block.settings.show_background_color %} product-info-background{% endif %}" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}">
                 <summary>
                   <div class="summary__title">
@@ -434,7 +434,7 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
-            <div {{ block.shopify_attributes }} class="product-form-block">
+            <div {{ block.shopify_attributes }} class="product-form-block epi-product-info-full-width">
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
