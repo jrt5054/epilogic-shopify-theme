@@ -43,7 +43,7 @@
     display: block;
     position: sticky;
     /* top: 15vh; */
-    top: 26%;
+    top: 28%;
     bottom: 0;
     z-index: 2;
   }
@@ -1352,8 +1352,6 @@ ul.product__media-list.epi-product-image-list {
     position: fixed;
     top: 0;
   }
-
-  
 }
 
 @media screen and (max-width: 749px) {
