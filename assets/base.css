@@ -3145,3 +3145,17 @@ details-disclosure > details {
   text-transform: uppercase;
   padding: .5rem 1rem
 }
+
+.product-card-tag {
+  display: flex;
+  justify-content: right;
+  margin-top: 2rem;
+  margin-right: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  color: rgb(var(--color-epi-white));
+  font-family: 'VTCDuBois-Bold', serif;
+  font-size: 1.6rem;
+}

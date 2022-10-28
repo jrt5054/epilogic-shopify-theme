@@ -1,3 +1,5 @@
+{% unless product.metafields.epilogic.show_case_study and request.page_type == 'product' and section.settings.divider_text == 'case studies' %}
+
 {%- style -%}
   .divider-wrapper {
     display: flex;
@@ -54,6 +56,8 @@
   </div>
   {%- render 'icon-arrow' -%}
 </div>
+
+{% endunless %}
 
 {% schema %}
 {
