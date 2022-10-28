@@ -4,10 +4,18 @@
   Assign ingredient array to a variable. this array contains the _ref number that we want along with other information
 {% endcomment %}
 
-{%- assign metafield_ingredient_id_array = product.metafields.epilogic.sanity_product_data.value.ingredient -%}
-{%- assign metafield_ingredient_info_array = product.metafields.epilogic.sanity_ingredient_data.value -%}
-{%- assign metafield_colortheme_id = product.metafields.epilogic.sanity_product_data.value.colorTheme._ref | strip -%}
-{%- assign metafield_colortheme_array = product.metafields.epilogic.sanity_product_color_theme.value -%}
+{%- liquid 
+  assign metafield_ingredient_id_array = product.metafields.epilogic.sanity_product_data.value.ingredient
+  assign metafield_ingredient_info_array = product.metafields.epilogic.sanity_ingredient_data.value
+  assign metafield_colortheme_id = product.metafields.epilogic.sanity_product_data.value.colorTheme._ref | strip
+  assign metafield_colortheme_array = product.metafields.epilogic.sanity_product_color_theme.value
+
+  assign breakdown = product.metafields.epilogic.sanity_product_data.value
+  assign breakdown_image_ref = breakdown.breakdown_image.asset._ref
+
+-%}
+
+{% capture breakdown_image_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ breakdown_image_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
 
 {% comment %} 
   Capture string of the _ref number in each element and separate them with a "::" character
@@ -90,7 +98,17 @@
       <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
-        {%- if section.settings.image != blank -%}
+        {% if section.settings.show_breakdown_image %}
+          <img
+            src="{{ breakdown_image_url }}"
+            alt="product ingredient"
+            loading="lazy"
+            width="auto"
+            height="auto"
+          >
+        {% endif %}
+        
+        {%- if section.settings.image != blank and section.settings.show_breakdown_image == false -%}
           <img
             srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
               {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
@@ -106,7 +124,7 @@
             width="{{ section.settings.image.width }}"
             height="{{ section.settings.image.height }}"
           >
-        {%- else -%}
+        {%- elsif section.settings.image == blank and section.settings.show_breakdown_image == false -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
@@ -145,8 +163,7 @@
                       class="breakdown-ingredient-title"
                       onclick="showBreakdownItem({{ 'breakdown_title_' | append: forloop.index }}, {{ 'breakdown_description_' | append: forloop.index }})"
                     >
-                      
-                        {{ forloop.index | append: "&nbsp &nbsp" }}{{ title }}
+                      {{ forloop.index | append: "&nbsp &nbsp" }}{{ title }}
                     </div>
                   {% endfor %}
                 </div>
@@ -188,6 +205,12 @@
   "name": "t:sections.image-with-text.name",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_breakdown_image",
+      "label": "Show Breakdown Image",
+      "default": false
+    },
     {
       "type": "checkbox",
       "id": "show_three_dots",
