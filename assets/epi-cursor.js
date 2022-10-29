@@ -11,6 +11,8 @@ const hoverLearnMore = document.querySelectorAll('.epi-cursor-hover_learnmore');
 const hoverReadMore = document.querySelectorAll('.epi-cursor-hover_readmore');
 const hoverShopNow = document.querySelectorAll('.epi-cursor-hover_shopnow');
 
+const hoverAllLinks = document.querySelectorAll('a');
+
 document.addEventListener('mousemove', function(e){
   let x = e.clientX;
   let y = e.clientY;
@@ -45,6 +47,21 @@ document.addEventListener('mouseup', function(){
 });
 
 // Hover functions
+
+hoverAllLinks.forEach(item => {
+  if (
+    !(item.classList.contains('epi-cursor-hover_learnmore') || 
+    item.classList.contains('epi-cursor-hover_readmore') ||
+    item.classList.contains('epi-cursor-hover_shopnow'))
+    ) {
+      item.addEventListener('mouseover', () => {
+        textClickMe.classList.add('epi-cursor-hover');
+      });
+      item.addEventListener('mouseleave', () => {
+        textClickMe.classList.remove('epi-cursor-hover');
+      });
+    }
+})
 
 hoverClickMe.forEach(item => {
   item.addEventListener('mouseover', () => {
