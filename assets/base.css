@@ -15,7 +15,7 @@
   pointer-events: none;
   left: 0;
   top: 0;
-  z-index: 998;
+  z-index: 9998;
   transform: translate(calc(var(--cursor-diameter) / -2), calc(var(--cursor-diameter) / -2));
 }
 
@@ -28,7 +28,7 @@
   pointer-events: none;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
   transform: translate(-50%, -50%);
   transition: width .1s, height .1s;
 }
