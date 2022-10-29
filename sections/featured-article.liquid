@@ -63,7 +63,7 @@
               <div class="featured-article__text rte featured-article-text-style" {{ block.shopify_attributes }}>{{ section.settings.featured_article.excerpt_or_content }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a href="{{ section.settings.featured_article.url }}" class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} epi-button" {{ block.shopify_attributes }}>
+                <a href="{{ section.settings.featured_article.url }}" class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} epi-button epi-cursor-hover_readmore" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}

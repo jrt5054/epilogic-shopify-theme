@@ -34,7 +34,6 @@
 
   {% include 'bold-common' %}
 
-
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
@@ -42,6 +41,10 @@
     %}
     
     {% style %}
+
+      * {
+        cursor: none !important;
+      }
 
       .epi-border::after,
       .epi-border-top::after,
@@ -56,18 +59,6 @@
         border-image: url("{{ 'big-dash-dark.png' | asset_url }}") 2 round;
         pointer-events: none;
       }
-     
-      /* @media screen and (min-width: 990px) {
-        * {
-          cursor: url({{ 'circle-cursor-no-text.svg' | asset_url }}) 18 18, pointer;
-          }
-
-        .link,
-        .customer a,
-        a * {
-          cursor: url({{ 'circle-cursor-shop-now.svg' | asset_url }}) 18 18, pointer;
-        }
-      } */
 
       @font-face {
         font-family: "VTCDuBois-Regular";
@@ -120,6 +111,7 @@
         --color-epi-gray-brown: 166, 159, 136;
         --color-epi-red: 225, 6, 0;
         --color-epi-cursor-red: 211, 80, 20;
+        --color-epi-cursorclick-red: 184, 70, 17;
         --color-epi-light-purple: 193, 160, 218;
         --color-epi-light-yellow: 241, 230, 178;
         --color-epi-yellow: 225, 224, 0;
@@ -302,6 +294,12 @@
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
+    <div class="epi-cursor-js"></div>
+    <div class="epi-cursorinner-js"></div>
+    <div class="epi-cursor-text_clickme">click me</div>
+    <div class="epi-cursor-text_learnmore">learn more</div>
+    <div class="epi-cursor-text_readmore">read more</div>
+    <div class="epi-cursor-text_shopnow">shop now</div>
 
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
@@ -348,6 +346,8 @@
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
     </script>
+
+    <script src="{{ 'epi-cursor.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>

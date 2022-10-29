@@ -160,7 +160,7 @@
                   {% for title in breakdown_title_array %}
                     <div 
                       id="{{ "breakdown_title_" | append: forloop.index }}"
-                      class="breakdown-ingredient-title"
+                      class="breakdown-ingredient-title epi-cursor-hover_readmore"
                       onclick="showBreakdownItem({{ 'breakdown_title_' | append: forloop.index }}, {{ 'breakdown_description_' | append: forloop.index }})"
                     >
                       {{ forloop.index | append: "&nbsp &nbsp" }}{{ title }}
