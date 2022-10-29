@@ -1,9 +1,5 @@
 /* Custom cursor styles */
 
-* {
-  cursor: none !important;
-}
-
 .epi-cursor-js:empty,
 .epi-cursorinner-js:empty {
   display: block;

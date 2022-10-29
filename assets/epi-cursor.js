@@ -12,6 +12,8 @@ const hoverReadMore = document.querySelectorAll('.epi-cursor-hover_readmore');
 const hoverShopNow = document.querySelectorAll('.epi-cursor-hover_shopnow');
 
 const hoverAllLinks = document.querySelectorAll('a');
+const hoverAllButtons = document.querySelectorAll('button');
+const hoverDetails = document.querySelectorAll('details:not(header-menu *)');
 
 document.addEventListener('mousemove', function(e){
   let x = e.clientX;
@@ -49,6 +51,36 @@ document.addEventListener('mouseup', function(){
 // Hover functions
 
 hoverAllLinks.forEach(item => {
+  if (
+    !(item.classList.contains('epi-cursor-hover_learnmore') || 
+    item.classList.contains('epi-cursor-hover_readmore') ||
+    item.classList.contains('epi-cursor-hover_shopnow'))
+    ) {
+      item.addEventListener('mouseover', () => {
+        textClickMe.classList.add('epi-cursor-hover');
+      });
+      item.addEventListener('mouseleave', () => {
+        textClickMe.classList.remove('epi-cursor-hover');
+      });
+    }
+})
+
+hoverAllButtons.forEach(item => {
+  if (
+    !(item.classList.contains('epi-cursor-hover_learnmore') || 
+    item.classList.contains('epi-cursor-hover_readmore') ||
+    item.classList.contains('epi-cursor-hover_shopnow'))
+    ) {
+      item.addEventListener('mouseover', () => {
+        textClickMe.classList.add('epi-cursor-hover');
+      });
+      item.addEventListener('mouseleave', () => {
+        textClickMe.classList.remove('epi-cursor-hover');
+      });
+    }
+})
+
+hoverDetails.forEach(item => {
   if (
     !(item.classList.contains('epi-cursor-hover_learnmore') || 
     item.classList.contains('epi-cursor-hover_readmore') ||
