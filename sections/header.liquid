@@ -322,10 +322,10 @@
     {%- endif -%}
 
     {%- if request.page_type == 'index' -%}
-      <h1 class="header__heading">
+      <h1 class="header__heading epi-cursor-hover_clickme">
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-          <span class="h2">{%- render 'logo' -%}</span>
+          <span class="h2 epi-cursor-hover_clickme">{%- render 'logo' -%}</span>
         </a>
     {%- if request.page_type == 'index' -%}
       </h1>
