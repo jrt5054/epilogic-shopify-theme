@@ -1,8 +1,69 @@
 /* Custom cursor styles */
 
-svg.epi-cursor * {
-  fill: rgb(var(--color-epi-cursor-red));
+* {
+  cursor: none !important;
 }
+
+.epi-cursor-js:empty,
+.epi-cursorinner-js:empty {
+  display: block;
+}
+
+.epi-cursor-js {
+  --cursor-diameter: 36px;
+  width: var(--cursor-diameter);
+  height: var(--cursor-diameter);
+  border-radius: 100%; 
+  background-color: rgb(var(--color-epi-cursor-red));
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 998;
+  transform: translate(calc(var(--cursor-diameter) / -2), calc(var(--cursor-diameter) / -2));
+}
+
+.epi-cursorinner-js {
+  width: 0;
+  height: 0;
+  border-radius: 100%; 
+  background-color: rgb(var(--color-epi-cursorclick-red));
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  transition: width .1s, height .1s;
+}
+
+.epi-cursor-text_clickme,
+.epi-cursor-text_learnmore,
+.epi-cursor-text_readmore,
+.epi-cursor-text_shopnow {
+  font-family: 'VTCDuBois-Bold', serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: rgb(var(--color-epi-cursor-red));
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transform: translate(25px, -50%);
+  display: none;
+  white-space: nowrap;
+}
+
+.epi-cursorinner-click-js {
+  width: 36px;
+  height: 36px;
+}
+
+.epi-cursor-hover {
+  display: block;
+}
+
 
 /* Color custom properties */
 
