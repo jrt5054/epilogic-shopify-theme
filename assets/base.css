@@ -1,8 +1,20 @@
 /* Custom cursor styles */
 
-.epi-cursor-js:empty,
-.epi-cursorinner-js:empty {
-  display: block;
+@media screen and (min-width: 990px) {
+  .epi-cursor-js:empty,
+  .epi-cursorinner-js:empty {
+    display: block;
+  }
+
+  .epi-cursor-hover {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .hide-cursor-mobile {
+    display: none;
+  }
 }
 
 .epi-cursor-js {
@@ -55,11 +67,6 @@
   width: 36px;
   height: 36px;
 }
-
-.epi-cursor-hover {
-  display: block;
-}
-
 
 /* Color custom properties */
 
