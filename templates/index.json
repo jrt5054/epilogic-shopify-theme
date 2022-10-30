@@ -271,14 +271,6 @@
         "padding_bottom": 52
       }
     },
-    "166485079581d926cf": {
-      "type": "yotpo-ugc",
-      "settings": {
-        "color_scheme": "the-logic",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "166447374489de05ba": {
       "type": "repeating-blocks",
       "settings": {
@@ -296,7 +288,6 @@
     "1663848200cce2702d",
     "16576409066cb8e9d7",
     "16638521984266bd8d",
-    "166485079581d926cf",
     "166447374489de05ba"
   ]
 }

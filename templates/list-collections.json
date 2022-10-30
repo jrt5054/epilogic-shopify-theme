@@ -1,1 +1,24 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"title":"Collections","sort":"alphabetical","image_ratio":"square"}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "75d31f20-3652-47dc-ac89-e417ec6cd3ce": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "75d31f20-3652-47dc-ac89-e417ec6cd3ce"
+  ]
+}
