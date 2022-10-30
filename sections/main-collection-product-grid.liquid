@@ -221,10 +221,10 @@
                     new addition
                   </div>
                   <div class="new-addition-text-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, reiciendis commodi nostrum magni necessitatibus id ea, soluta quis blanditiis eos ullam odit quaerat vel iusto perferendis ipsam. Esse quidem nihil aliquam illum non id dolorem quibusdam dolores a tempora alias iste rem molestiae voluptatem, placeat hic in velit mollitia repellendus obcaecati exercitationem. Omnis distinctio, fuga enim corrupti cum natus quam neque dolor impedit voluptatibus. Molestiae totam nulla culpa beatae labore dolore officiis, dolorum voluptatem ullam! A quis odit aut dolores. Dolor enim maiores odio distinctio? Esse eius cupiditate odit maxime porro nostrum sapiente et odio commodi quisquam, assumenda natus delectus!
+                    {{ section.settings.new_addition_text }}
                   </div>
                   <div class="new-addition-link">
-                    <a href="#" class="button button--primary new-addition-button">
+                    <a href="{{ section.settings.new_addition_product.url }}" class="button button--primary new-addition-button">
                       read more
                     </a>
                   </div>
@@ -333,6 +333,17 @@
       "type": "image_picker",
       "id": "new_addition_image",
       "label": "New Addition Section Image"
+    },
+    {
+      "type": "richtext",
+      "id": "new_addition_text",
+      "label": "New Addition text",
+      "default": "<p>We all have growth factors. They repair our bodies and nurture cell turnover, restoring skin to its optimal health. When we're young we have a lot. As we get older, we have fewer — hence Master Plan, which is clinically proven to improve hydration, firmness and elasticity.</p>"
+    },
+    {
+      "type": "product",
+      "id": "new_addition_product",
+      "label": "Product Link"
     },
     {
       "type": "header",
