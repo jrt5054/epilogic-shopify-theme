@@ -100,6 +100,58 @@
         "padding_bottom": 0
       }
     },
+    "6885135d-6ee1-4ee6-8cbb-af9634f75763": {
+      "type": "press-slideshow",
+      "blocks": {
+        "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.png",
+            "press_text_copy": "<p>Epi.logic skincare’s Rosehip cleanser is perfect for sensitive skin as it’s filled with nourishing ingredients like rosehip seed oil, aloe, and hyaluronic acid, making it the perfect concoction to take skin from dry and inflamed to hydrated and supple.<\/p>",
+            "press_link": "https:\/\/www.google.com"
+          }
+        },
+        "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.png",
+            "press_text_copy": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis, autem iusto beatae facilis rerum, possimus amet delectus ipsum corporis ex laborum, quisquam qui quia.<\/p>",
+            "press_link": ""
+          }
+        },
+        "2adc9509-ad3d-403f-b345-74b1972caeaa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.png",
+            "press_text_copy": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis, autem iusto beatae facilis rerum, possimus amet delectus ipsum corporis ex laborum, quisquam qui quia.<\/p>",
+            "press_link": ""
+          }
+        },
+        "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.png",
+            "press_text_copy": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis, autem iusto beatae facilis rerum, possimus amet delectus ipsum corporis ex laborum, quisquam qui quia.<\/p>",
+            "press_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-0",
+        "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1",
+        "2adc9509-ad3d-403f-b345-74b1972caeaa",
+        "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "16637976921c274cfd": {
       "type": "image-banner",
       "settings": {
@@ -281,6 +333,7 @@
   "order": [
     "16581594311840984f",
     "featured_collection",
+    "6885135d-6ee1-4ee6-8cbb-af9634f75763",
     "16637976921c274cfd",
     "1664905047dd6c265f",
     "166404188942f9e548",
