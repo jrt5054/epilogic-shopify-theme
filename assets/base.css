@@ -7,7 +7,7 @@
   }
 
   .epi-cursor-hover {
-    display: block;
+    display: block !important;
   }
 }
 
