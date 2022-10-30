@@ -369,11 +369,6 @@ slider-component.slider-component-full-width {
   transform: rotate(90deg) scale(1.1);
 }
 
-slideshow-component .slideshow__controls .slider-button--prev,
-slideshow-component .slideshow__controls .slider-button--next {
-  display: none;
-}
-
 @media screen and (max-width: 989px) {
   .slider.slider--tablet {
     scroll-padding-left: 0;
