@@ -27,8 +27,8 @@
   assign animation_time = total_length | divided_by: speed | append: 's'
 -%}
 
-{%- assign only_single_products = collection.products | where: "type", "single" -%}
-{%- assign only_bundle_products = collection.products | where: "type", "bundle" -%}
+{%- assign only_single_products = section.settings.ordered_collection.products | where: "type", "single" -%}
+{%- assign only_bundle_products = section.settings.ordered_collection.products | where: "type", "bundle" -%}
 
 {%- style -%}
   @keyframes marquee {
@@ -293,6 +293,11 @@
   "name": "t:sections.main-collection-product-grid.name",
   "class": "section",
   "settings": [
+    {
+      "type": "collection",
+      "id": "ordered_collection",
+      "label": "Ordered Collection"
+    },    
     {
       "type": "range",
       "id": "products_per_page",
