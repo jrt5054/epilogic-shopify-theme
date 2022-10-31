@@ -15,7 +15,7 @@
           "type": "heading",
           "settings": {
             "heading": "Luxury clinical skincare, born in Brooklyn",
-            "heading_size": "h1"
+            "heading_size": "about-hero"
           }
         }
       },
@@ -59,6 +59,7 @@
         "165817653794ffcb41-1"
       ],
       "settings": {
+        "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/Dr-Chaneve-Jeanniton_1911482a-5e20-4ff0-8344-ebc70a92f6ba.jpg",
@@ -90,6 +91,7 @@
         "1664201025cde66333-1"
       ],
       "settings": {
+        "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/epilogic-logic.jpg",
@@ -129,6 +131,7 @@
         "1664201045643ef114-1"
       ],
       "settings": {
+        "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": true,
         "image": "shopify:\/\/shop_images\/epilogic-skincare-model.jpg",
