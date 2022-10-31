@@ -43,14 +43,14 @@
           "type": "heading",
           "settings": {
             "heading": "Meet Dr. Jeanniton",
-            "heading_size": "h1"
+            "heading_size": "created-by-dr-heading"
           }
         },
         "165817653794ffcb41-1": {
           "type": "text",
           "settings": {
             "text": "<p>As a board-certified oculofacial plastic surgeon dedicated to holistic facial refinement, specializing in eye aesthetics, Dr. Chaneve Jeanniton’s work is measured in millimeters, which means there isn’t room for compromise. She created epi.logic skincare with this same obsession with details in mind.<\/p>",
-            "text_style": "body"
+            "text_style": "created-by-dr-text"
           }
         }
       },
@@ -59,14 +59,14 @@
         "165817653794ffcb41-1"
       ],
       "settings": {
-        "separate_text": false,
+        "separate_text": true,
         "show_breakdown_image": false,
         "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/Dr-Chaneve-Jeanniton_1911482a-5e20-4ff0-8344-ebc70a92f6ba.jpg",
+        "image": "shopify:\/\/shop_images\/Dr-Chaneve-Jeanniton.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "color_scheme": "dr-jeanniton",
