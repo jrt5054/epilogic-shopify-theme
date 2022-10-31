@@ -41,6 +41,14 @@
   .image-with-text__media--the-breakdown img {
     object-position: top;
   }
+
+  .image-with-text__media--surface {
+    height: 65rem;
+  }
+
+  .image-with-text__media--surface img {
+    object-position: top;
+  }
 }
 
 .image-with-text__media--placeholder {
@@ -380,6 +388,16 @@
     font-size: 2.4rem;
     line-height: 3rem;
   }
+
+  .surface-heading {
+    font-size: 6.4rem;
+    line-height: 6rem;
+  }
+
+  .surface-text {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 @media screen and (max-width: 749px){
@@ -410,6 +428,16 @@
   .the-logic-text {
     font-size: 1.8rem;
     line-height: 2.6rem;
+  }
+
+  .surface-heading {
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+  }
+
+  .surface-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 }
 
