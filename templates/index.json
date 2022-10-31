@@ -6,10 +6,12 @@
         "1658159431897185c8-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/epilogic-even-balance-home.jpg",
-            "heading": "<p>Singularly Powerful. <\/p><p>Designed to Combine.<\/p>",
+            "featured_product_on_slide": "",
+            "slide_link": "shopify:\/\/collections\/all",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_1.jpg",
+            "heading": "<p>Beauty Beyond Barriers<\/p>",
             "heading_size": "h1",
-            "subheading": "",
+            "subheading": "<p>Luxury clinical skincare designed for melanin-rich and hyperpigmentation-prone skin<\/p>",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -24,10 +26,12 @@
         "1658159431897185c8-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/epilogic-skincare-breaking-barriers.jpg",
-            "heading": "<p>Image slide<\/p>",
+            "featured_product_on_slide": "the-total-package",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_2.jpg",
+            "heading": "<p>Tis’ the season for extra hydration<\/p>",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "<p>THE TOTAL PACKAGE<\/p><p><em>Fortifying Peptide Cream<\/em><\/p><p>PEPTIDES + BAKUCHIOL + NIACINAMIDE + MILK THISTLE<\/p>",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -42,10 +46,12 @@
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/epilogic-skincare-model_acd8fdf4-dad5-4c8f-896a-c73876abfabc.jpg",
-            "heading": "<p>Image slide<\/p>",
+            "featured_product_on_slide": "master-plan",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_3.jpg",
+            "heading": "<p>Tis’ the season for extra hydration<\/p>",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "<p>MASTER PLAN<br\/><em>Collagen Renew Growth Factor Serum<\/em><\/p><p><em>CELL SERVICE™ + HYALURONIC ACID + SEA KELP BIOFERMENT + SKIN-LOVING ADAPTOGENS<\/em><\/p>",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -56,12 +62,33 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "left"
           }
+        },
+        "2f5226b1-af57-42ea-8d42-80ba3c3c93b0": {
+          "type": "slide",
+          "settings": {
+            "featured_product_on_slide": "master-plan",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_4.jpg",
+            "heading": "<p>Tis’ the season for extra hydration<\/p>",
+            "heading_size": "h1",
+            "subheading": "<p>MASTER PLAN<br\/><em>Collagen Renew Growth Factor Serum<\/em><\/p><p><em>CELL SERVICE™ + HYALURONIC ACID + SEA KELP BIOFERMENT + SKIN-LOVING ADAPTOGENS<\/em><\/p>",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "1658159431897185c8-0",
         "1658159431897185c8-1",
-        "dd41c71e-62cb-4590-85b2-2a286b24a0a3"
+        "dd41c71e-62cb-4590-85b2-2a286b24a0a3",
+        "2f5226b1-af57-42ea-8d42-80ba3c3c93b0"
       ],
       "settings": {
         "layout": "full_bleed",
