@@ -103,41 +103,41 @@
     "6885135d-6ee1-4ee6-8cbb-af9634f75763": {
       "type": "press-slideshow",
       "blocks": {
-        "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-0": {
+        "28ae4786-d056-409c-a825-b7650eb1ec9b": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/vogue.png",
-            "press_text_copy": "<p>Epi.logic skincare’s Rosehip cleanser is perfect for sensitive skin as it’s filled with nourishing ingredients like rosehip seed oil, aloe, and hyaluronic acid, making it the perfect concoction to take skin from dry and inflamed to hydrated and supple.<\/p>",
-            "press_link": "https:\/\/www.google.com"
+            "press_text_copy": "<p>\"Epi.logic skincare’s Rosehip cleanser is perfect for sensitive skin as it’s filled with nourishing ingredients like rosehip seed oil, aloe, and hyaluronic acid, making it the perfect concoction to take skin from dry and inflamed to hydrated and supple.\"<\/p>",
+            "press_link": "https:\/\/www.vogue.com\/slideshow\/how-seasonal-allergies-affect-your-skin-and-what-to-do-about-it"
           }
         },
         "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/vogue.png",
-            "press_text_copy": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis, autem iusto beatae facilis rerum, possimus amet delectus ipsum corporis ex laborum, quisquam qui quia.<\/p>",
-            "press_link": ""
+            "press_text_copy": "<p>\"Looks like water, smells like nothing, contains over 300 epidermal growth factors, potent peptides, and hyaluronic acid to transform and renew tired skin.\"<\/p>",
+            "press_link": "https:\/\/www.refinery29.com\/en-us\/skin-care-awards-2020"
           }
         },
         "2adc9509-ad3d-403f-b345-74b1972caeaa": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/vogue.png",
-            "press_text_copy": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis, autem iusto beatae facilis rerum, possimus amet delectus ipsum corporis ex laborum, quisquam qui quia.<\/p>",
-            "press_link": ""
+            "press_text_copy": "<p>I wanted a hydrating toner that would keep my skin dewy after cleansing. <a href=\"https:\/\/www.brooklynfaceandeye.com\/epilogic-skincare\/even-balance-coq10-facial-toning-formula?utm_source=narrativ\" target=\"_blank\">Epi.Logic’s Even Balance Toner<\/a> takes off anything I missed and leaves my skin with a nice, hydrated sheen… though I prefer to splash it on and tap it in like an essence. My skin loves the extra hydration,\" - Utibe Mbagwu.<\/p>",
+            "press_link": "https:\/\/intothegloss.com\/2019\/11\/best-beauty-products-for-november-2019\/"
           }
         },
         "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/vogue.png",
-            "press_text_copy": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis, autem iusto beatae facilis rerum, possimus amet delectus ipsum corporis ex laborum, quisquam qui quia.<\/p>",
-            "press_link": ""
+            "press_text_copy": "<p>\"It rejuvenates, hydrates, firms, and evens out skin tone in just one step.\" -Kayla Greaves<\/p>",
+            "press_link": "https:\/\/www.instyle.com\/beauty\/best-firming-serum-epilogic-master-plan"
           }
         }
       },
       "block_order": [
-        "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-0",
+        "28ae4786-d056-409c-a825-b7650eb1ec9b",
         "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1",
         "2adc9509-ad3d-403f-b345-74b1972caeaa",
         "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c"
