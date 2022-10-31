@@ -88,7 +88,7 @@
           "type": "text",
           "settings": {
             "text": "<p>In response to patient requests for simple, effective daily skincare that addresses common complexion concerns and maximizes treatment results, Dr. Jeanniton formulated a meticulously edited line of powerful skincare products with essential actives. Ranging from retinol to vitamin C to human growth factors, they are scientifically proven to improve skin in both the long and short term. Relying on industry-leading research and data, she balances these actives with complementary ingredients to amplify their efficacy while neutralizing potential irritants.<br\/><br\/>As a result, epi.logic products cater to nearly all skin types, including sensitive and post-treatment skin, and are designed to exponentially combine.<\/p>",
-            "text_style": "body"
+            "text_style": "the-logic-text"
           }
         }
       },
@@ -141,10 +141,10 @@
         "show_breakdown_image": false,
         "show_three_dots": true,
         "image": "shopify:\/\/shop_images\/epilogic-skincare-model.jpg",
-        "height": "small",
+        "height": "surface",
         "desktop_image_width": "small",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "surface-shape",
