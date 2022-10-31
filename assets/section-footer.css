@@ -738,3 +738,7 @@ noscript .localization-selector.link {
 .footer-block__newsletter form {
   z-index: 10;
 }
+
+.subscribe-message-area p {
+  line-height: 20px;
+}
