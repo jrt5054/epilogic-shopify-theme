@@ -176,8 +176,8 @@
         "padding_bottom": 0
       }
     },
-    "b3b2fc15-5c91-475d-9110-79e64dd2ea1d": {
-      "type": "section-divider",
+    "d2af6fee-f85c-4613-b771-9911fde9443f": {
+      "type": "section-divider-casestudy",
       "settings": {
         "divider_text": "case studies",
         "divider_link": "",
@@ -192,8 +192,8 @@
         "padding_bottom": 0
       }
     },
-    "77e556bd-88c9-4df2-b071-0aee5b168c5f": {
-      "type": "section-divider",
+    "f63013fd-9b59-4ff5-bb51-3cb2f6e863f3": {
+      "type": "section-divider-casestudy",
       "settings": {
         "divider_text": "the results",
         "divider_link": "",
@@ -201,28 +201,47 @@
         "padding_bottom": 52
       }
     },
-    "8804a3f1-959a-4df9-b075-33270366cc97": {
-      "type": "the-results",
+    "04f0f582-8b27-44ee-8cf0-102303e1f224": {
+      "type": "multicolumn-results",
       "blocks": {
-        "template--15621874385036__8804a3f1-959a-4df9-b075-33270366cc97-166637799655b0cefb-0": {
-          "type": "the_results",
+        "template--15753422700684__04f0f582-8b27-44ee-8cf0-102303e1f224-16672423304f95f819-0": {
+          "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MP_results_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15753422700684__04f0f582-8b27-44ee-8cf0-102303e1f224-16672423304f95f819-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MP_results_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--15621874385036__8804a3f1-959a-4df9-b075-33270366cc97-166637799655b0cefb-0"
+        "template--15753422700684__04f0f582-8b27-44ee-8cf0-102303e1f224-16672423304f95f819-0",
+        "template--15753422700684__04f0f582-8b27-44ee-8cf0-102303e1f224-16672423304f95f819-1"
       ],
       "settings": {
-        "height": "the-breakdown",
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
         "color_scheme": "background-1",
-        "mobile_image_second": true,
-        "mobile_content_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -321,10 +340,10 @@
     "main",
     "1664554840b6268192",
     "1658244391d4f32ed8",
-    "b3b2fc15-5c91-475d-9110-79e64dd2ea1d",
+    "d2af6fee-f85c-4613-b771-9911fde9443f",
     "7d5e5f87-494e-465c-9288-32bdb6b487c2",
-    "77e556bd-88c9-4df2-b071-0aee5b168c5f",
-    "8804a3f1-959a-4df9-b075-33270366cc97",
+    "f63013fd-9b59-4ff5-bb51-3cb2f6e863f3",
+    "04f0f582-8b27-44ee-8cf0-102303e1f224",
     "product-recommendations",
     "5aac0244-353e-4b6e-a7e3-4a6666da194b",
     "c2aa293b-9811-4273-9136-1fabd9b6f644",
