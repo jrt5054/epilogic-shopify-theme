@@ -129,7 +129,7 @@
             {%- endif -%}
             {%- if block.settings.subheading != blank -%}
               <div class="banner__text" {{ block.shopify_attributes }}>
-                <span>{{ block.settings.subheading | escape }}</span>
+                {{ block.settings.subheading }}
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
@@ -342,9 +342,9 @@
           "label": "t:sections.all.heading_size.label"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "subheading",
-          "default": "Tell your brand's story through images",
+          "default": "<p>Tell your brand's story through images</p>",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
         },
         {

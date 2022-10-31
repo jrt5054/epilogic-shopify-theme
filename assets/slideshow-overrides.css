@@ -16,3 +16,12 @@ slideshow-component .slideshow__controls .slider-button--next.epi-slideshow {
   top: 0;
   z-index: 200;
 }
+
+.slideshow__text .banner__text p {
+  margin: 0;
+  line-height: 2rem;
+}
+
+.slideshow__text .banner__text p:last-child {
+  margin-top: 2rem;
+}
