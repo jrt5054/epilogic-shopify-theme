@@ -160,6 +160,12 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "8e89f61e-3773-4d78-9906-769846ac0b12": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
     }
   },
   "order": [
@@ -168,6 +174,7 @@
     "166403850947f3cfbb",
     "16640393739e2deb23",
     "fed2f64b-4fcf-4384-9522-58f041cecaea",
-    "16640409529b20012c"
+    "16640409529b20012c",
+    "8e89f61e-3773-4d78-9906-769846ac0b12"
   ]
 }

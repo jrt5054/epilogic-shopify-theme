@@ -309,6 +309,12 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "5d06710f-5bc8-447f-a4c8-a33d2218e259": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
     }
   },
   "order": [
@@ -324,6 +330,7 @@
     "c2aa293b-9811-4273-9136-1fabd9b6f644",
     "a57b7031-a221-43fc-8eb3-46bd351de3e6",
     "1664477477ab0ad040",
-    "1664851608b17df8c1"
+    "1664851608b17df8c1",
+    "5d06710f-5bc8-447f-a4c8-a33d2218e259"
   ]
 }

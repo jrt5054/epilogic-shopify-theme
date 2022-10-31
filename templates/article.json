@@ -44,10 +44,17 @@
       ],
       "settings": {
       }
+    },
+    "c4e19ef1-fcd1-4423-a767-560553df2f56": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
     }
   },
   "order": [
     "86144dd5-53f6-4d14-b7b1-f4571cc6ed1b",
-    "main"
+    "main",
+    "c4e19ef1-fcd1-4423-a767-560553df2f56"
   ]
 }

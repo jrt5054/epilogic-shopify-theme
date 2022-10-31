@@ -17,10 +17,17 @@
         "padding_top": 100,
         "padding_bottom": 36
       }
+    },
+    "85115293-163d-4ce0-a5d8-a52c23e4aa92": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
     }
   },
   "order": [
     "main",
-    "26e731e7-4c92-43b3-b345-c862c697cfe3"
+    "26e731e7-4c92-43b3-b345-c862c697cfe3",
+    "85115293-163d-4ce0-a5d8-a52c23e4aa92"
   ]
 }

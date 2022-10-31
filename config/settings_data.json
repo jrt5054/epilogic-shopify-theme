@@ -122,8 +122,8 @@
         "type": "header",
         "settings": {
           "menu": "main-menu",
-          "header_new_product_1": "product-1",
-          "header_new_product_2": "product-2"
+          "header_new_product_1": "master-plan",
+          "header_new_product_2": "the-total-package"
         }
       },
       "footer": {
@@ -144,8 +144,8 @@
           "newsletter_heading": "email address",
           "subscribe_message": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase<\/p>",
           "footer_text": "All rights reserved.",
-          "privacy_notice": "",
-          "terms_of_service": ""
+          "privacy_notice": "shopify:\/\/pages\/privacy-notice",
+          "terms_of_service": "shopify:\/\/pages\/terms-of-service"
         }
       },
       "main-password-header": {

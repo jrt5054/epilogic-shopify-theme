@@ -43,7 +43,7 @@
     display: block;
     position: sticky;
     /* top: 15vh; */
-    top: 25%;
+    top: 15%;
     bottom: 0;
     z-index: 2;
   }

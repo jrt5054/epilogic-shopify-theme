@@ -40,11 +40,14 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
+        "ordered_collection": "all",
         "products_per_page": 24,
         "columns_desktop": 4,
-        "grid_image_1": "shopify:\/\/shop_images\/epilogic-skincare-breaking-barriers.jpg",
-        "grid_image_2": "shopify:\/\/shop_images\/epilogic-moisturizers-model.jpg",
+        "grid_image_1": "shopify:\/\/shop_images\/Shop_All_1.png",
+        "grid_image_2": "shopify:\/\/shop_images\/Shop_All_2.png",
         "new_addition_image": "shopify:\/\/shop_images\/new-addition.png",
+        "new_addition_text": "<p>We all have growth factors. They repair our bodies and nurture cell turnover, restoring skin to its optimal health. When we're young we have a lot. As we get older, we have fewer — hence Master Plan, which is clinically proven to improve hydration, firmness and elasticity.<\/p>",
+        "new_addition_product": "master-plan",
         "image_ratio": "portrait",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -58,11 +61,18 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "e463191b-20b8-44bf-8f83-29850a7d8676": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
     }
   },
   "order": [
     "165817321535e740ec",
     "banner",
-    "product-grid"
+    "product-grid",
+    "e463191b-20b8-44bf-8f83-29850a7d8676"
   ]
 }

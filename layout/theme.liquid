@@ -139,7 +139,7 @@
         --color-epi-background-gray: 226, 221, 213;
         --color-epi-white: 255, 255, 255;
         --color-epi-black: 0, 0, 0;
-        --color-epi-border: 151, 151, 151;
+        --color-epi-border: 116, 116, 116;
         --color-epi-slider-dot-active: 220, 81, 26;
         --color-epi-tan-yellow: 241, 232,186;
 
@@ -294,12 +294,12 @@
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
-    <div class="epi-cursor-js"></div>
-    <div class="epi-cursorinner-js"></div>
-    <div class="epi-cursor-text_clickme">click me</div>
-    <div class="epi-cursor-text_learnmore">learn more</div>
-    <div class="epi-cursor-text_readmore">read more</div>
-    <div class="epi-cursor-text_shopnow">shop now</div>
+    <div class="epi-cursor-js hide-cursor-mobile"></div>
+    <div class="epi-cursorinner-js hide-cursor-mobile"></div>
+    <div class="epi-cursor-text_clickme hide-cursor-mobile">click me</div>
+    <div class="epi-cursor-text_learnmore hide-cursor-mobile">learn more</div>
+    <div class="epi-cursor-text_readmore hide-cursor-mobile">read more</div>
+    <div class="epi-cursor-text_shopnow hide-cursor-mobile">shop now</div>
 
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
