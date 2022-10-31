@@ -382,6 +382,8 @@ noscript .localization-selector.link {
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
   color: rgb(var(--color-epi-white));
+  transition: color 0.3s ease;
+  
 }
 
 .footer-block__details-content .list-menu__item--active {
@@ -392,12 +394,8 @@ noscript .localization-selector.link {
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
-    text-decoration: underline;
+    color: rgb(var(--color-epi-gray-tan-2));
     text-underline-offset: 0.3rem;
-  }
-
-  .footer-block__details-content .list-menu__item--active:hover {
-    text-decoration-thickness: 0.2rem;
   }
 }
 
@@ -491,6 +489,7 @@ noscript .localization-selector.link {
 
 .footer__blocks-wrapper svg {
   color: rgb(var(--color-epi-white));
+  transition: color 0.3s ease;
 }
 
 .subscribe-message-area { 
