@@ -142,11 +142,11 @@
 }
 
 .article-card-background-yellow {
-  background-color: rgb(var(--color-epi-background-yellow));
+  background-color: rgb(var(--color-epi-blog-yellow));
 }
 
 .article-card-background-gray {
-  background-color: rgb(var(--color-epi-background-gray));
+  background-color: rgb(var(--color-epi-blog-pink));
 }
 
 .card__heading.card-article-title {

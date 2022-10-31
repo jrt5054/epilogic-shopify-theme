@@ -518,7 +518,7 @@ noscript .localization-selector.link {
 }
 
 .deco-triangles-area svg path {
-  fill: rgb(var(--color-epi-white));
+  fill: rgb(var(--color-epi-triangle));
   stroke: rgb(var(--color-epi-border));
 }
 
