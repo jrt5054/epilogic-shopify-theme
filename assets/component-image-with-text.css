@@ -37,6 +37,10 @@
   .image-with-text__media--the-breakdown {
     height: 55rem;
   }
+
+  .image-with-text__media--the-breakdown img {
+    object-position: top;
+  }
 }
 
 .image-with-text__media--placeholder {
@@ -501,4 +505,18 @@
 
 .breakdown-ingredient-description {
   font-family: 'Merchant-Italic', serif;
+}
+
+.the-logic-tag {
+  color: rgb(var(--color-epi-white));
+  background-color: rgb(var(--color-epi-black));
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.3rem 1.5rem;
+}
+
+.the-logic-tag p {
+  position: relative;
+  bottom: -2px;
+  margin: 0;
 }
