@@ -79,6 +79,11 @@
     "16642010269896ab92": {
       "type": "image-with-text",
       "blocks": {
+        "c91f41ff-5591-4502-b9fa-34fa6f61ccce": {
+          "type": "logic",
+          "settings": {
+          }
+        },
         "1664201025cde66333-1": {
           "type": "text",
           "settings": {
@@ -88,6 +93,7 @@
         }
       },
       "block_order": [
+        "c91f41ff-5591-4502-b9fa-34fa6f61ccce",
         "1664201025cde66333-1"
       ],
       "settings": {
@@ -95,7 +101,7 @@
         "show_breakdown_image": false,
         "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/epilogic-logic.jpg",
-        "height": "adapt",
+        "height": "the-breakdown",
         "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
