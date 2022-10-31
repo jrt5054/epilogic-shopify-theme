@@ -742,3 +742,11 @@ noscript .localization-selector.link {
 .subscribe-message-area p {
   line-height: 20px;
 }
+
+.newsletter-form__message {
+  margin: 1rem;
+  position: absolute;
+  right: 13%;
+  bottom: -50%;
+  text-transform: uppercase;
+}
