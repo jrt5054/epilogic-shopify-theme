@@ -122,8 +122,8 @@
         "type": "header",
         "settings": {
           "menu": "main-menu",
-          "header_new_product_1": "product-1",
-          "header_new_product_2": "product-2"
+          "header_new_product_1": "master-plan",
+          "header_new_product_2": "the-total-package"
         }
       },
       "footer": {
