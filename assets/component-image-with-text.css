@@ -375,6 +375,11 @@
     font-size: 1.8rem;
     line-height: 2.6rem;
   }
+
+  .the-logic-text {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
 }
 
 @media screen and (max-width: 749px){
@@ -400,6 +405,11 @@
   .created-by-dr-text {
     font-size: 1.6rem;
     line-height: 2.2rem;
+  }
+
+  .the-logic-text {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
   }
 }
 
