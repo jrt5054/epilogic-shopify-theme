@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  z-index: 2;
 }
 
 .slideshow__controls.epi-press-slider {
@@ -100,8 +101,3 @@ slideshow-component .slideshow__controls.epi-press-slider {
     padding: 0 2rem;
   }
 }
-
-/* .epi-press-section .slideshow :not(.full-unstyled-link) {
-  pointer-events: none;
-} */
-
