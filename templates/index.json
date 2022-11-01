@@ -357,23 +357,24 @@
         "3e946ad9-1516-4636-b84f-0fe29dacdd40": {
           "type": "picture_quote",
           "settings": {
-            "image_upper": "shopify:\/\/shop_images\/hover_b72699ff-28c0-43b4-9e25-381dd03f03ee.png",
-            "quote_upper": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "image_lower": "shopify:\/\/shop_images\/true_calm_grey.jpg",
+            "image_upper": "shopify:\/\/shop_images\/unnamed.jpg",
+            "quote_upper": "<p>@mieshafrempong <br\/><br\/>Master Plan serum improves my skin so much I use less make up and feel comfortable going makeup free. <br\/><\/p>",
             "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "c468889e-8a9d-472d-a5e6-2e3e13380383": {
           "type": "picture_quote",
           "settings": {
-            "quote_upper": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image_upper": "shopify:\/\/shop_images\/unnamed_2.jpg",
+            "quote_upper": "<p>@kelseydashmarie           <br\/><br\/>I love Master Plan and can see the difference after putting it on. My breakouts have been getting a lot better. I'm working on getting rid of my hyperpigmentation. I think Master Plan is helping with my dark spots.<\/p>",
             "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "8aedafb8-ed3d-44d7-a5dc-d9e7bd9ad401": {
           "type": "picture_quote",
           "settings": {
-            "quote_upper": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image_upper": "shopify:\/\/shop_images\/unnamed_1.jpg",
+            "quote_upper": "<p>@shanihillian<br\/><br\/>(on Master Plan)<br\/>I’ve enjoyed this serum.  it makes my skin feel more hydrated, tighter and brighter. Very light, texture is great and not irritating at all.<\/p>",
             "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         }
@@ -392,7 +393,7 @@
     "166447374489de05ba": {
       "type": "repeating-blocks",
       "settings": {
-        "show_top_border": true
+        "show_top_border": false
       }
     }
   },
