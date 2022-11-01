@@ -52,15 +52,17 @@
             {{ section.settings.upper_section_text }}
           </div>
           <div class="upper-section-button-wrapper">
-            <a href="{{ section.settings.upper_section_button_1_url }}" class="button button--primary " {{ block.shopify_attributes }}>
-              {{ section.settings.upper_section_button_1_label | escape }}
-            </a>
-            <a href="{{ section.settings.upper_section_button_2_url }}" class="button button--primary" {{ block.shopify_attributes }}>
-              {{ section.settings.upper_section_button_2_label | escape }}
-            </a>
-            <a href="{{ section.settings.upper_section_button_3_url }}" class="button button--primary" {{ block.shopify_attributes }}>
-              {{ section.settings.upper_section_button_3_label | escape }}
-            </a>
+            {% if section.settings.upper_section_button_1_label != nil %}
+              <a href="{{ section.settings.upper_section_button_1_url }}" class="button button--primary " {{ block.shopify_attributes }}>
+                {{ section.settings.upper_section_button_1_label | escape }}
+              </a>
+            {% endif %}
+
+            {% if section.settings.upper_section_button_2_label != nil %}
+              <a href="{{ section.settings.upper_section_button_2_url }}" class="button button--primary" {{ block.shopify_attributes }}>
+                {{ section.settings.upper_section_button_2_label | escape }}
+              </a>
+            {% endif %}
           </div>
         </div>
         <div class="contact-epilogic__lower epi-border-left epi-border-right">
@@ -276,16 +278,6 @@
       "type": "url",
       "id": "upper_section_button_2_url",
       "label": "Button 2 link"
-    },
-    {
-      "type": "text",
-      "id": "upper_section_button_3_label",
-      "label": "Upper Section Button 3 Label"
-    },
-    {
-      "type": "url",
-      "id": "upper_section_button_3_url",
-      "label": "Button 3 link"
     },
     {
       "type": "header",
