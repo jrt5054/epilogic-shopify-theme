@@ -357,7 +357,8 @@
   font-family: 'Merchant-Regular', serif;
 }
 
-.skincare-evolved-heading {
+.skincare-evolved-heading,
+.the-breakdown-heading {
   text-transform: uppercase;
   font-family: 'VTCDuBois-BoldWide', serif;
 }
@@ -403,6 +404,21 @@
     font-size: 2rem;
     line-height: 3rem;
   }
+
+  .the-breakdown-heading {
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+  }
+
+  .breakdown-ingredient-title {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
+
+  .breakdown-ingredient-description {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
 }
 
 @media screen and (max-width: 749px){
@@ -443,6 +459,21 @@
   .surface-text {
     font-size: 1.8rem;
     line-height: 2.8rem;
+  }
+
+  .the-breakdown-heading {
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+  }
+
+  .breakdown-ingredient-title {
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+  }
+
+  .breakdown-ingredient-description {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
   }
 }
 
@@ -518,7 +549,7 @@
 }
 
 .breakdown-ingredient-title {
-  cursor: pointer;
+  font-family: 'VTCDuBois-Light', serif;
 }
 
 @media screen and (min-width: 990px){
