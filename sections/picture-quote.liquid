@@ -16,11 +16,11 @@
 }
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding picture-quote-container grid grid--3-col-desktop grid--1-col-tablet-down">
+  <div class="section-{{ section.id }}-padding picture-quote-container grid grid--3-col-desktop grid--1-col-tablet-down epi-border-top epi-border-left">
     {%- for block in section.blocks -%}
       <div class="picture-quote-block grid__item">
         <div class="picture-quote-upper">
-          <div class="picture-quote-upper-image-wrapper">
+          <div class="picture-quote-upper-image-wrapper epi-border-right epi-border-bottom">
             <img
               srcset="{%- if block.settings.image_upper.width >= 275 -%}{{ block.settings.image_upper | image_url: width: 275 }} 275w,{%- endif -%}
                 {%- if block.settings.image_upper.width >= 550 -%}{{ block.settings.image_upper | image_url: width: 550 }} 550w,{%- endif -%}
@@ -37,11 +37,11 @@
               loading="lazy"
             >
           </div>
-          <div class="picture-quote-upper-text">
+          <div class="picture-quote-upper-text epi-border-right epi-border-bottom">
             {{ block.settings.quote_upper }}
           </div>
         </div>
-        <div class="picture-quote-lower">
+        {% comment %} <div class="picture-quote-lower">
           <div class="picture-quote-lower-image-wrapper">
             <img
               srcset="{%- if block.settings.image_lower.width >= 275 -%}{{ block.settings.image_lower | image_url: width: 275 }} 275w,{%- endif -%}
@@ -62,7 +62,7 @@
           <div class="picture-quote-lower-text">
             {{ block.settings.quote_lower }}
           </div>
-        </div>
+        </div> {% endcomment %}
       </div>
     {% endfor %}
   </div>

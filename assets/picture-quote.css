@@ -1,16 +1,35 @@
 .picture-quote-container {
   width: 100%;
+  min-height: 300px;
+  position: relative;
 }
 
 .picture-quote-upper,
 .picture-quote-lower {
   display: flex;
-  height: 50%;
+  /* height: 50%; */
+  height: 100%;
 }
 
 .picture-quote-upper-image-wrapper,
 .picture-quote-lower-image-wrapper {
+  height: 100%;
+  width: 50%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.picture-quote-upper-text {
   width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.picture-quote-upper-text p {
+  margin: 0;
 }
 
 .picture-quote-upper-image-wrapper img,
@@ -18,4 +37,23 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* scale: 1.1; */
+}
+
+@media screen and (min-width: 750px) {
+  .picture-quote-upper-text {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .picture-quote-block:nth-child(even) > * {
+    flex-direction: row-reverse;
+  }
+
+  .picture-quote-upper-text {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
 }
