@@ -38,10 +38,12 @@
     border-top: none;
     width: calc(100% + 0.2rem);
   }
+}
 
-  .header predictive-search {
-    position: relative;
-  }
+.header predictive-search,
+.header button.search-modal__close-button {
+  position: relative;
+  top: 40px
 }
 
 predictive-search[open] .predictive-search,
