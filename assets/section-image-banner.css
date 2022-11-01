@@ -415,20 +415,8 @@
   font-family: 'Merchant-Regular', serif;
 }
 
-@media screen and (max-width: 749px) {
-  .banner--content-align-mobile-right .banner__buttons--multiple {
-    justify-content: flex-end;
-  }
-
-  .banner--content-align-mobile-center .banner__buttons--multiple > * {
-    flex-grow: 1;
-    min-width: 22rem;
-  }
-
-  h2.about-hero {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
-  }
+.collection-hero {
+  font-family: 'Merchant-Regular', serif;
 }
 
 @media screen and (min-width: 750px) {
@@ -445,6 +433,32 @@
     font-size: 3.5rem;
     line-height: 3.7rem;
   }
+
+  h2.collection-hero {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .banner--content-align-mobile-right .banner__buttons--multiple {
+    justify-content: flex-end;
+  }
+
+  .banner--content-align-mobile-center .banner__buttons--multiple > * {
+    flex-grow: 1;
+    min-width: 22rem;
+  }
+
+  h2.about-hero {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  h2.collection-hero {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
 }
 
 .banner__box > * + .banner__buttons {
@@ -452,5 +466,9 @@
 }
 
 .slideshow__text-wrapper .h1.banner__heading p {
+  margin: 0;
+}
+
+.banner__heading p {
   margin: 0;
 }

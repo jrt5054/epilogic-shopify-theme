@@ -92,7 +92,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading | escape }}</span>
+              <span>{{ block.settings.heading }}</span>
             </h2>
           {%- when 'text' -%}
             <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -311,15 +311,19 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "heading",
-          "default": "Image banner",
+          "default": "<p>Image banner</p>",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
         },
         {
           "type": "select",
           "id": "heading_size",
           "options": [
+            {
+              "value": "collection-hero",
+              "label": "Collection Hero"
+            },
             {
               "value": "about-hero",
               "label": "About Hero"
