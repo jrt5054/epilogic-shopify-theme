@@ -156,7 +156,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item:hover,
 .menu-drawer__close-button:hover {
   color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-foreground), 0.04);
+  /* background-color: rgba(var(--color-foreground), 0.04); */
 }
 
 .menu-drawer__menu-item--active:hover {
@@ -407,9 +407,23 @@ ul header-menu details ul {
 
 .header-new-product-shop-all a {
   position: relative;
-  top: 30%;
+  top: 20%;
 }
 
-details.mobile-detail-new-products .icon-plus {
-  
+.menu-drawer__menu {
+  color: rgb(var(--color-epi-black));
+}
+
+.menu-drawer__menu svg path {
+  fill: rgb(var(--color-epi-black));
+}
+
+@media screen and (max-width: 989px) {
+  .header-product-title {
+    margin: 0.5rem 0;
+  }
+}
+
+#menu-drawer {
+  border-right: 0;
 }
