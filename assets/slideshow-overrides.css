@@ -2,3 +2,26 @@ slideshow-component .slideshow__controls .slider-button--prev.epi-slideshow,
 slideshow-component .slideshow__controls .slider-button--next.epi-slideshow {
   display: none;
 }
+
+.slideshow__text-wrapper.banner__content a:empty {
+  display: block;
+}
+
+.slideshow__text-wrapper.banner__content a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 200;
+}
+
+.slideshow__text .banner__text p {
+  margin: 0;
+  line-height: 2rem;
+}
+
+.slideshow__text .banner__text p:last-child {
+  margin-top: 2rem;
+}

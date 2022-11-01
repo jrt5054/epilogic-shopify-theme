@@ -1,3 +1,5 @@
+{% if product.metafields.epilogic.show_case_study %}
+
 {%- style -%}
   .divider-wrapper {
     display: flex;
@@ -55,9 +57,11 @@
   {%- render 'icon-arrow' -%}
 </div>
 
+{% endif %}
+
 {% schema %}
 {
-  "name": "Section Divider",
+  "name": "Case Study Divider",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -99,7 +103,7 @@
   ],
   "presets": [
     {
-      "name": "Section Divider"
+      "name": "Case Study Divider"
     }
   ]
 }

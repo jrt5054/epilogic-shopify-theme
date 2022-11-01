@@ -55,9 +55,12 @@
   background-color: rgb(var(--color-epi-background-yellow));
 }
 
-.repeating-block:nth-child(2n+1),
-.lower-repeating-block:nth-child(2n+1) {
+.repeating-block:nth-child(2n+1) {
   background-color: rgb(var(--color-epi-background-pink));
+}
+
+.lower-repeating-block:nth-child(2n+1) {
+  background-color: rgb(var(--color-epi-lower-repeating-block));
 }
 
 @media screen and (min-width: 990px) {

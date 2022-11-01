@@ -61,6 +61,11 @@
       }
 
       @font-face {
+        font-family: "VTCDuBois-RegularWide";
+        src: url({{ 'VTCDuBois-RegularWide.woff2' | asset_url }}) format("woff2");
+      }
+
+      @font-face {
         font-family: "VTCDuBois-Regular";
         src: url({{ 'VTCDuBois-Regular.woff2' | asset_url }}) format("woff2");
       }
@@ -68,6 +73,16 @@
       @font-face {
         font-family: "VTCDuBois-Bold";
         src: url({{ 'VTCDuBois-Bold.woff2' | asset_url }}) format("woff2");
+      }
+
+      @font-face {
+        font-family: "VTCDuBois-Light";
+        src: url({{ 'VTCDuBois-Light.woff2' | asset_url }}) format("woff2");
+      }
+
+      @font-face {
+        font-family: "VTCDuBois-BoldWide";
+        src: url({{ 'VTCDuBois-BoldWide.woff2' | asset_url }}) format("woff2");
       }
 
       @font-face {
@@ -108,7 +123,7 @@
         --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
         --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
-        --color-epi-gray-brown: 166, 159, 136;
+        /* --color-epi-gray-brown: 166, 159, 136;
         --color-epi-red: 225, 6, 0;
         --color-epi-cursor-red: 211, 80, 20;
         --color-epi-cursorclick-red: 184, 70, 17;
@@ -141,7 +156,46 @@
         --color-epi-black: 0, 0, 0;
         --color-epi-border: 116, 116, 116;
         --color-epi-slider-dot-active: 220, 81, 26;
-        --color-epi-tan-yellow: 241, 232,186;
+        --color-epi-tan-yellow: 241, 232, 186; */
+
+        --color-epi-gray-brown: 166, 159, 136;
+        --color-epi-red: 225, 6, 0;
+        --color-epi-cursor-red: 211, 80, 20;
+        --color-epi-cursorclick-red: 184, 70, 17;
+        --color-epi-light-purple: 193, 160, 218;
+        --color-epi-light-yellow: 241, 230, 178;
+        --color-epi-yellow: 225, 224, 0;
+        --color-epi-brown: 140, 94, 77;
+        --color-epi-brown-green: 103, 130, 58;
+        --color-epi-brown-red: 151, 27, 47;
+        --color-epi-white: 255, 255, 255;
+        --color-epi-tan: 234, 230, 221;
+        --color-epi-orange-red: 196, 99, 22;
+        --color-epi-dark-purple: 98, 18, 68;
+        --color-epi-light-purple: 193, 160, 218;
+        --color-epi-purple: 131, 0, 101;
+        --color-epi-green: 64, 135, 66;
+        --color-epi-light-green: 110, 158, 44;
+        --color-epi-dark-tan-1: 209, 201, 182;
+        --color-epi-dark-tan-2: 208, 214, 191;
+        --color-epi-light-tan: 225, 230, 207;
+        --color-epi-gray-tan-1: 229, 225, 218;
+        --color-epi-gray-tan-2: 201, 197, 189;
+        --color-epi-gray: 223, 223, 223;
+        --color-epi-light-gray: 125, 125, 125;
+        --color-epi-light-blue: 144, 180, 197;
+        --color-epi-background-yellow: 200, 206, 183; 
+        --color-epi-background-pink: 201, 193, 174; 
+        --color-epi-background-gray: 226, 221, 213;
+        --color-epi-white: 255, 255, 255;
+        --color-epi-black: 0, 0, 0;
+        --color-epi-border: 116, 116, 116;
+        --color-epi-slider-dot-active: 220, 81, 26;
+        --color-epi-tan-yellow: 241, 232, 186;
+        --color-epi-triangle: 221, 217, 210;
+        --color-epi-lower-repeating-block: 193, 189, 181;
+        --color-epi-blog-yellow: 225, 230, 207;
+        --color-epi-blog-pink: 216, 208, 196;
 
 
         --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};

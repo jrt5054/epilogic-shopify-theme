@@ -56,7 +56,7 @@ button.epi-press-next {
 
 .epi-press-prev svg path,
 .epi-press-next svg path {
-  fill: rgb(var(--color-epi-gray-tan-1));
+  fill: rgb(var(--color-epi-triangle));
   stroke: rgb(var(--color-epi-border));
 }
 

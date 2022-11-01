@@ -37,6 +37,18 @@
   .image-with-text__media--the-breakdown {
     height: 55rem;
   }
+
+  .image-with-text__media--the-breakdown img {
+    object-position: top;
+  }
+
+  .image-with-text__media--surface {
+    height: 65rem;
+  }
+
+  .image-with-text__media--surface img {
+    object-position: top;
+  }
 }
 
 .image-with-text__media--placeholder {
@@ -82,6 +94,10 @@
   padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
   position: relative;
   z-index: 1;
+}
+
+.image-with-text__content-separate {
+  justify-content: space-around !important;
 }
 
 .image-with-text .grid__item::after {
@@ -341,8 +357,15 @@
   font-family: 'Merchant-Regular', serif;
 }
 
-.skincare-evolved-heading {
+.skincare-evolved-heading,
+.the-breakdown-heading {
   text-transform: uppercase;
+  font-family: 'VTCDuBois-BoldWide', serif;
+}
+
+.surface-heading {
+  text-transform: uppercase;
+  font-family: 'VTCDuBois-Regular', serif;
 }
 
 @media screen and (min-width: 750px){
@@ -363,6 +386,36 @@
   }
 
   .created-by-dr-text {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  .the-logic-text {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .surface-heading {
+    font-size: 6.4rem;
+    line-height: 6rem;
+  }
+
+  .surface-text {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .the-breakdown-heading {
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+  }
+
+  .breakdown-ingredient-title {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
+
+  .breakdown-ingredient-description {
     font-size: 1.8rem;
     line-height: 2.6rem;
   }
@@ -391,6 +444,36 @@
   .created-by-dr-text {
     font-size: 1.6rem;
     line-height: 2.2rem;
+  }
+
+  .the-logic-text {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  .surface-heading {
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+  }
+
+  .surface-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .the-breakdown-heading {
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+  }
+
+  .breakdown-ingredient-title {
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+  }
+
+  .breakdown-ingredient-description {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
   }
 }
 
@@ -466,7 +549,7 @@
 }
 
 .breakdown-ingredient-title {
-  cursor: pointer;
+  font-family: 'VTCDuBois-Light', serif;
 }
 
 @media screen and (min-width: 990px){
@@ -496,4 +579,18 @@
 
 .breakdown-ingredient-description {
   font-family: 'Merchant-Italic', serif;
+}
+
+.the-logic-tag {
+  color: rgb(var(--color-epi-white));
+  background-color: rgb(var(--color-epi-black));
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.3rem 1.5rem;
+}
+
+.the-logic-tag p {
+  position: relative;
+  bottom: -2px;
+  margin: 0;
 }

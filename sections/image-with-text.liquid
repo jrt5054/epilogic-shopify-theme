@@ -137,7 +137,7 @@
           {% render 'icon-circle', diameter: 100 %}
         </div>
       {%- endif -%}
-      <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-bottom epi-border-left epi-border-right">
+      <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-bottom epi-border-left epi-border-right {% if section.settings.separate_text %} image-with-text__content-separate{% endif %}">
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
@@ -193,6 +193,10 @@
                   }
                 }
               </script>
+            {%- when 'logic' -%}
+              <div class="the-logic-tag">
+                <p>The Logic</p>
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -205,6 +209,12 @@
   "name": "t:sections.image-with-text.name",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "separate_text",
+      "label": "Separate Title and Text",
+      "default": false
+    },
     {
       "type": "checkbox",
       "id": "show_breakdown_image",
@@ -226,6 +236,10 @@
       "type": "select",
       "id": "height",
       "options": [
+        {
+          "value": "surface",
+          "label": "Surface, Shape & Structure"
+        },
         {
           "value": "the-breakdown",
           "label": "The Breakdown"
@@ -460,6 +474,14 @@
           "id": "heading_size",
           "options": [
             {
+              "value": "the-breakdown-heading",
+              "label": "The Breakdown"
+            },
+            {
+              "value": "surface-heading",
+              "label": "Surface, Shape & Structure"
+            },
+            {
               "value": "created-by-dr-heading",
               "label": "Created By A Doctor"
             },
@@ -550,6 +572,14 @@
           "id": "text_style",
           "options": [
             {
+              "value": "surface-text",
+              "label": "Surface, Shape & Structure"
+            },
+            {
+              "value": "the-logic-text",
+              "label": "The Logic"
+            },
+            {
               "value": "created-by-dr-text",
               "label": "Created By A Doctor"
             },
@@ -593,6 +623,10 @@
     {
       "type": "breakdown",
       "name": "The Breakdown"
+    },
+    {
+      "type": "logic",
+      "name": "The Logic Tag"
     }
   ],
   "presets": [
