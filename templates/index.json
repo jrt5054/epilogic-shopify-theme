@@ -303,7 +303,7 @@
         "1663961973a778e767-1"
       ],
       "settings": {
-        "separate_text": true,
+        "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/epilogic-clinical-skincare.jpg",
