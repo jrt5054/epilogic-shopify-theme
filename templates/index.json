@@ -351,6 +351,44 @@
         "padding_bottom": 52
       }
     },
+    "bd09c40a-e285-4eb4-8e15-24a54235b604": {
+      "type": "picture-quote",
+      "blocks": {
+        "3e946ad9-1516-4636-b84f-0fe29dacdd40": {
+          "type": "picture_quote",
+          "settings": {
+            "image_upper": "shopify:\/\/shop_images\/hover_b72699ff-28c0-43b4-9e25-381dd03f03ee.png",
+            "quote_upper": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image_lower": "shopify:\/\/shop_images\/true_calm_grey.jpg",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "c468889e-8a9d-472d-a5e6-2e3e13380383": {
+          "type": "picture_quote",
+          "settings": {
+            "quote_upper": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "8aedafb8-ed3d-44d7-a5dc-d9e7bd9ad401": {
+          "type": "picture_quote",
+          "settings": {
+            "quote_upper": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3e946ad9-1516-4636-b84f-0fe29dacdd40",
+        "c468889e-8a9d-472d-a5e6-2e3e13380383",
+        "8aedafb8-ed3d-44d7-a5dc-d9e7bd9ad401"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "166447374489de05ba": {
       "type": "repeating-blocks",
       "settings": {
@@ -369,6 +407,7 @@
     "1663848200cce2702d",
     "16576409066cb8e9d7",
     "16638521984266bd8d",
+    "bd09c40a-e285-4eb4-8e15-24a54235b604",
     "166447374489de05ba"
   ]
 }
