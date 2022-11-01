@@ -142,7 +142,7 @@
         ],
         "settings": {
           "newsletter_heading": "email address",
-          "subscribe_message": "<p>Subscribe to the epi.logic newsletter and receive 15% off our first purchase<\/p>",
+          "subscribe_message": "<p>Sign up for the epi.logic newsletter to receive expert skin tips, exclusive content and 15% off your first order.<\/p>",
           "footer_text": "All rights reserved.",
           "privacy_notice": "shopify:\/\/pages\/privacy-notice",
           "terms_of_service": "shopify:\/\/pages\/terms-of-service"
