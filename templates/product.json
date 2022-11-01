@@ -99,7 +99,7 @@
           "type": "heading",
           "settings": {
             "heading": "THE BREAKDOWN",
-            "heading_size": "h1"
+            "heading_size": "the-breakdown-heading"
           }
         },
         "a9ac0687-4950-463b-9166-ad0cb168adad": {
@@ -113,6 +113,7 @@
         "a9ac0687-4950-463b-9166-ad0cb168adad"
       ],
       "settings": {
+        "separate_text": true,
         "show_breakdown_image": true,
         "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/breakdown-image.png",
@@ -160,6 +161,7 @@
         "7e386f05-1b5d-4b29-a2f7-4cca00d36ab4"
       ],
       "settings": {
+        "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": false,
         "image": "shopify:\/\/shop_images\/Dr-Chaneve-Jeanniton.jpg",
