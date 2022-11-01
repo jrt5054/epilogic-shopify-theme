@@ -104,7 +104,8 @@ ul.grid.epilogic-product-grid-lower {
     flex-direction: column;
   }
 
-  .grid--2-col-tablet-down .grid__item.main-grid-new-addition {
+  .grid--2-col-tablet-down .grid__item.main-grid-new-addition,
+  .grid--4-col-desktop .grid__item.epi-grid-picture {
     width: 100%;
     max-width: 100%;
   }
