@@ -1,0 +1,228 @@
+.picture-quote .title {
+  margin: 0;
+}
+
+.picture-quote.no-heading .title {
+  display: none;
+}
+
+.picture-quote .title-wrapper-with-link {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .picture-quote .title-wrapper-with-link {
+    margin-bottom: 3rem;
+  }
+
+  .picture-quote .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.picture-quote-card__image-wrapper--third-width {
+  width: 33%;
+}
+
+.picture-quote-card__image-wrapper--half-width {
+  width: 50%;
+}
+
+.picture-quote-list__item.center
+  .picture-quote-card__image-wrapper:not(.picture-quote-card__image-wrapper--full-width),
+.picture-quote-list__item:only-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picture-quote .button {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .picture-quote .button {
+    margin-top: 4rem;
+  }
+}
+
+.picture-quote-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.picture-quote-list__item:only-child {
+  max-width: 72rem;
+}
+
+.picture-quote-list__item--empty {
+  display: none;
+}
+
+.picture-quote:not(.background-none) .picture-quote-card {
+  background: rgb(var(--color-background));
+  height: 100%;
+}
+
+.picture-quote.background-primary .picture-quote-card {
+  background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+}
+
+.picture-quote-list h3 {
+  line-height: calc(1 + 0.5 / max(1, var(--font-heading-scale)));
+}
+
+.picture-quote-list h3,
+.picture-quote-list p {
+  margin: 0;
+}
+
+.picture-quote-card-spacing {
+  padding-top: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.picture-quote-card__info > :nth-child(2) {
+  margin-top: 1rem;
+}
+
+.picture-quote-list__item.center .media--adapt,
+.picture-quote-list__item .media--adapt .picture-quote-card__image {
+  width: auto;
+}
+
+.picture-quote-list__item.center .media--adapt img {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 749px) {
+  .picture-quote-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .picture-quote-list:not(.slider) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+
+@media screen and (min-width: 750px) {
+  .picture-quote-list.slider,
+  .picture-quote-list.grid--4-col-desktop {
+    padding: 0;
+  }
+
+  .picture-quote-list__item,
+  .grid--4-col-desktop .picture-quote-list__item {
+    padding-bottom: 0;
+  }
+
+  .background-none .grid--2-col-tablet .picture-quote-list__item {
+    margin-top: 4rem;
+  }
+}
+
+.background-none .picture-quote-card-spacing {
+  padding: 0;
+  margin: 0;
+}
+
+.picture-quote-card__info {
+  padding: 2.5rem;
+}
+
+.background-none .picture-quote-card__info {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.background-none .slider .picture-quote-card__info {
+  padding-bottom: 0;
+}
+
+.background-none .picture-quote-card__image-wrapper + .picture-quote-card__info {
+  padding-top: 2.5rem;
+}
+
+.background-none .slider .picture-quote-card__info {
+  padding-left: 0.5rem;
+}
+
+.background-none
+  .slider
+  .picture-quote-card__image-wrapper
+  + .picture-quote-card__info {
+  padding-left: 1.5rem;
+}
+
+.background-none
+  .picture-quote-list:not(.slider)
+  .center
+  .picture-quote-card__info {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media screen and (max-width: 749px) {
+  .background-none .slider .picture-quote-card__info {
+    padding-bottom: 1rem;
+  }
+
+  .picture-quote.background-none .slider.slider--mobile {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .background-none .picture-quote-card__image-wrapper {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .background-none .picture-quote-list .picture-quote-card__info,
+  .background-none
+    .picture-quote-list:not(.slider)
+    .center
+    .picture-quote-card__info {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.picture-quote-card {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.picture-quote-card > .picture-quote-card__image-wrapper--full-width:not(.picture-quote-card-spacing) {
+  border-top-left-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
+  border-top-right-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
+  overflow: hidden;
+}
+
+.picture-quote.background-none .picture-quote-card {
+  border-radius: 0;
+}
+
+.picture-quote-card__info .link {
+  text-decoration: none;
+  font-size: inherit;
+  margin-top: 1.5rem;
+}
+
+.picture-quote-card__info .icon-wrap {
+  margin-left: 0.8rem;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 990px) {
+  .picture-quote-list__item--empty {
+    display: list-item;
+  }
+}
