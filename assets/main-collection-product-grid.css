@@ -139,3 +139,7 @@ ul.grid.epilogic-product-grid-lower {
   height: 100%;
   object-fit: cover;
 }
+
+.card__content .white-text {
+  color: rgb(var(--color-epi-white));
+}
