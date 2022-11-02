@@ -14,7 +14,7 @@
         "1658176414699a2881-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Luxury clinical skincare, born in Brooklyn</p>",
+            "heading": "<p>Luxury clinical skincare, born in Brooklyn<\/p>",
             "heading_size": "about-hero"
           }
         }
@@ -59,6 +59,8 @@
         "165817653794ffcb41-1"
       ],
       "settings": {
+        "show_top_border_mobile": true,
+        "show_top_border_desktop": true,
         "separate_text": true,
         "show_breakdown_image": false,
         "show_three_dots": false,
@@ -97,6 +99,8 @@
         "1664201025cde66333-1"
       ],
       "settings": {
+        "show_top_border_mobile": false,
+        "show_top_border_desktop": false,
         "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": false,
@@ -137,6 +141,8 @@
         "1664201045643ef114-1"
       ],
       "settings": {
+        "show_top_border_mobile": false,
+        "show_top_border_desktop": false,
         "separate_text": false,
         "show_breakdown_image": false,
         "show_three_dots": true,
