@@ -178,8 +178,7 @@
 .blog-content-wrapper {
   height: 100%;
   display: flex;
-  justify-content: left;
-  flex-direction: row-reverse;
+  /* justify-content: left; */
 }
 
 .article-side-section {
@@ -208,4 +207,20 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (min-width: 750px) {
+  .blog-content-wrapper {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .blog-content-wrapper {
+    flex-direction: column;
+  }
+
+  .article-side-section {
+    width: 100%;
+  }
 }
