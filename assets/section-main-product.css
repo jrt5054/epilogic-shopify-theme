@@ -1397,5 +1397,5 @@ ul.product__media-list.epi-product-image-list button {
 div form.installment {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
-
