@@ -65,7 +65,7 @@ slideshow-component .slideshow__controls.epi-press-slider {
 }
 
 .slider-counter__link.epi-press-dots {
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .slider-counter__link--active.slider-counter__link--dots.epi-press-dots .dot {
@@ -104,4 +104,13 @@ slideshow-component .slideshow__controls.epi-press-slider {
   .press-text p {
     margin-bottom: 5rem;
   }
+}
+
+.slider-counter__link--dots.epi-press-dots .dot {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.slideshow__control-wrapper {
+  margin-bottom: 1rem;
 }
