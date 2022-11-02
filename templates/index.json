@@ -8,7 +8,7 @@
           "settings": {
             "featured_product_on_slide": "",
             "slide_link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_1.jpg",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_1_4019c827-7867-48f8-8590-f09178e76807.jpg",
             "heading": "<p>Beauty Beyond Barriers<\/p>",
             "heading_size": "h1",
             "subheading": "<p>Luxury clinical skincare designed for melanin-rich and hyperpigmentation-prone skin<\/p>",
@@ -28,7 +28,7 @@
           "settings": {
             "featured_product_on_slide": "the-total-package",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_2.jpg",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_2_17395fd5-7f75-476a-91e0-76b2748788c4.jpg",
             "heading": "<p>Tis’ the season for extra hydration<\/p>",
             "heading_size": "h1",
             "subheading": "<p>THE TOTAL PACKAGE<\/p><p><em>Fortifying Peptide Cream<\/em><\/p><p>PEPTIDES + BAKUCHIOL + NIACINAMIDE + MILK THISTLE<\/p>",
@@ -48,7 +48,7 @@
           "settings": {
             "featured_product_on_slide": "master-plan",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_3.jpg",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_3_8b54e70f-2676-4aa8-88ea-1d235d3ee1a3.jpg",
             "heading": "<p>Tis’ the season for extra hydration<\/p>",
             "heading_size": "h1",
             "subheading": "<p>MASTER PLAN<br\/><em>Collagen Renew Growth Factor Serum<\/em><\/p><p><em>CELL SERVICE™ + HYALURONIC ACID + SEA KELP BIOFERMENT + SKIN-LOVING ADAPTOGENS<\/em><\/p>",
@@ -62,33 +62,12 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "left"
           }
-        },
-        "2f5226b1-af57-42ea-8d42-80ba3c3c93b0": {
-          "type": "slide",
-          "settings": {
-            "featured_product_on_slide": "master-plan",
-            "slide_link": "",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_4.jpg",
-            "heading": "<p>Tis’ the season for extra hydration<\/p>",
-            "heading_size": "h1",
-            "subheading": "<p>MASTER PLAN<br\/><em>Collagen Renew Growth Factor Serum<\/em><\/p><p><em>CELL SERVICE™ + HYALURONIC ACID + SEA KELP BIOFERMENT + SKIN-LOVING ADAPTOGENS<\/em><\/p>",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "1658159431897185c8-0",
         "1658159431897185c8-1",
-        "dd41c71e-62cb-4590-85b2-2a286b24a0a3",
-        "2f5226b1-af57-42ea-8d42-80ba3c3c93b0"
+        "dd41c71e-62cb-4590-85b2-2a286b24a0a3"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -133,7 +112,7 @@
         "28ae4786-d056-409c-a825-b7650eb1ec9b": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.png",
+            "image": "shopify:\/\/shop_images\/Vogue_9a793eac-8666-477a-8bc5-dc61c69ee7ac.png",
             "press_text_copy": "<p>\"Epi.logic skincare’s Rosehip cleanser is perfect for sensitive skin as it’s filled with nourishing ingredients like rosehip seed oil, aloe, and hyaluronic acid, making it the perfect concoction to take skin from dry and inflamed to hydrated and supple.\"<\/p>",
             "press_link": "https:\/\/www.vogue.com\/slideshow\/how-seasonal-allergies-affect-your-skin-and-what-to-do-about-it"
           }
@@ -141,7 +120,7 @@
         "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.png",
+            "image": "shopify:\/\/shop_images\/refinery-29.png",
             "press_text_copy": "<p>\"Looks like water, smells like nothing, contains over 300 epidermal growth factors, potent peptides, and hyaluronic acid to transform and renew tired skin.\"<\/p>",
             "press_link": "https:\/\/www.refinery29.com\/en-us\/skin-care-awards-2020"
           }
@@ -149,16 +128,16 @@
         "2adc9509-ad3d-403f-b345-74b1972caeaa": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.png",
-            "press_text_copy": "<p>I wanted a hydrating toner that would keep my skin dewy after cleansing. <a href=\"https:\/\/www.brooklynfaceandeye.com\/epilogic-skincare\/even-balance-coq10-facial-toning-formula?utm_source=narrativ\" target=\"_blank\">Epi.Logic’s Even Balance Toner<\/a> takes off anything I missed and leaves my skin with a nice, hydrated sheen… though I prefer to splash it on and tap it in like an essence. My skin loves the extra hydration,\" - Utibe Mbagwu.<\/p>",
+            "image": "shopify:\/\/shop_images\/into-the-gloss.png",
+            "press_text_copy": "<p>I wanted a hydrating toner that would keep my skin dewy after cleansing. Epi.Logic’s Even Balance Toner takes off anything I missed and leaves my skin with a nice, hydrated sheen… though I prefer to splash it on and tap it in like an essence. My skin loves the extra hydration.\"<\/p>",
             "press_link": "https:\/\/intothegloss.com\/2019\/11\/best-beauty-products-for-november-2019\/"
           }
         },
         "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.png",
-            "press_text_copy": "<p>\"It rejuvenates, hydrates, firms, and evens out skin tone in just one step.\" -Kayla Greaves<\/p>",
+            "image": "shopify:\/\/shop_images\/instyle.png",
+            "press_text_copy": "<p>\"It rejuvenates, hydrates, firms, and evens out skin tone in just one step.\" <\/p>",
             "press_link": "https:\/\/www.instyle.com\/beauty\/best-firming-serum-epilogic-master-plan"
           }
         }
@@ -351,10 +330,49 @@
         "padding_bottom": 52
       }
     },
+    "bd09c40a-e285-4eb4-8e15-24a54235b604": {
+      "type": "picture-quote",
+      "blocks": {
+        "3e946ad9-1516-4636-b84f-0fe29dacdd40": {
+          "type": "picture_quote",
+          "settings": {
+            "image_upper": "shopify:\/\/shop_images\/unnamed.jpg",
+            "quote_upper": "<p>@mieshafrempong <br\/><br\/>Master Plan serum improves my skin so much I use less make up and feel comfortable going makeup free. <br\/><\/p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "c468889e-8a9d-472d-a5e6-2e3e13380383": {
+          "type": "picture_quote",
+          "settings": {
+            "image_upper": "shopify:\/\/shop_images\/unnamed_2.jpg",
+            "quote_upper": "<p>@kelseydashmarie           <br\/><br\/>I love Master Plan and can see the difference after putting it on. My breakouts have been getting a lot better. I'm working on getting rid of my hyperpigmentation. I think Master Plan is helping with my dark spots.<\/p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "8aedafb8-ed3d-44d7-a5dc-d9e7bd9ad401": {
+          "type": "picture_quote",
+          "settings": {
+            "image_upper": "shopify:\/\/shop_images\/unnamed_1.jpg",
+            "quote_upper": "<p>@shanihillian<br\/><br\/>(on Master Plan)<br\/>I’ve enjoyed this serum.  it makes my skin feel more hydrated, tighter and brighter. Very light, texture is great and not irritating at all.<\/p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3e946ad9-1516-4636-b84f-0fe29dacdd40",
+        "c468889e-8a9d-472d-a5e6-2e3e13380383",
+        "8aedafb8-ed3d-44d7-a5dc-d9e7bd9ad401"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "166447374489de05ba": {
       "type": "repeating-blocks",
       "settings": {
-        "show_top_border": true
+        "show_top_border": false
       }
     }
   },
@@ -369,6 +387,7 @@
     "1663848200cce2702d",
     "16576409066cb8e9d7",
     "16638521984266bd8d",
+    "bd09c40a-e285-4eb4-8e15-24a54235b604",
     "166447374489de05ba"
   ]
 }

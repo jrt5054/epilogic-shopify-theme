@@ -32,8 +32,6 @@
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
-  {% include 'bold-common' %}
-
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
@@ -52,7 +50,15 @@
       .epi-border-bottom::after,
       .epi-border-left::after,
       .epi-border-list-item::after,
-      .epi-border-grid-item::after {
+      .epi-border-grid-item::after,
+      .epi-border-desktop-top::after,
+      .epi-border-desktop-right::after,
+      .epi-border-desktop-bottom::after,
+      .epi-border-desktop-left::after,
+      .epi-border-mobile-top::after,
+      .epi-border-mobile-right::after,
+      .epi-border-mobile-bottom::after,
+      .epi-border-mobile-left::after {
         /* border-image: url("{{ 'border-dash.png' | asset_url }}") 2 round; */
         /* border-image: url("{{ 'big-dash.png' | asset_url }}") 2 round; */
         /* border-image: url("{{ 'big-dash-1.png' | asset_url }}") 2 round; */
@@ -160,8 +166,8 @@
 
         --color-epi-gray-brown: 166, 159, 136;
         --color-epi-red: 225, 6, 0;
-        --color-epi-cursor-red: 211, 80, 20;
-        --color-epi-cursorclick-red: 184, 70, 17;
+        --color-epi-cursor-red: 225, 6, 0;
+        --color-epi-cursorclick-red: 255, 0, 0;
         --color-epi-light-purple: 193, 160, 218;
         --color-epi-light-yellow: 241, 230, 178;
         --color-epi-yellow: 225, 224, 0;
@@ -350,7 +356,7 @@
     </a>
     <div class="epi-cursor-js hide-cursor-mobile"></div>
     <div class="epi-cursorinner-js hide-cursor-mobile"></div>
-    <div class="epi-cursor-text_clickme hide-cursor-mobile">click me</div>
+    <div class="epi-cursor-text_clickme hide-cursor-mobile">click</div>
     <div class="epi-cursor-text_learnmore hide-cursor-mobile">learn more</div>
     <div class="epi-cursor-text_readmore hide-cursor-mobile">read more</div>
     <div class="epi-cursor-text_shopnow hide-cursor-mobile">shop now</div>

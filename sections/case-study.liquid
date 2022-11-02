@@ -37,6 +37,10 @@
   assign subject_2_skintype = case_study.subject_2_skintype
   assign subject_3_skintype = case_study.subject_3_skintype
 
+  assign subject_1_thumbnail_ref = case_study.subject_1_thumbnail.asset._ref
+  assign subject_2_thumbnail_ref = case_study.subject_2_thumbnail.asset._ref
+  assign subject_3_thumbnail_ref = case_study.subject_3_thumbnail.asset._ref
+
   assign subject_1_image_1_ref = case_study.subject_1_image_1.asset._ref
   assign subject_1_image_2_ref = case_study.subject_1_image_2.asset._ref
   assign subject_1_image_3_ref = case_study.subject_1_image_3.asset._ref
@@ -48,6 +52,10 @@
   assign subject_3_image_1_ref = case_study.subject_3_image_1.asset._ref
   assign subject_3_image_2_ref = case_study.subject_3_image_2.asset._ref
   assign subject_3_image_3_ref = case_study.subject_3_image_3.asset._ref
+
+  assign subject_1_thumbnail_alt = case_study.subject_1_thumbnail.alt
+  assign subject_2_thumbnail_alt = case_study.subject_2_thumbnail.alt
+  assign subject_3_thumbnail_alt = case_study.subject_3_thumbnail.alt
 
   assign subject_1_image_1_alt = case_study.subject_1_image_1.alt
   assign subject_1_image_2_alt = case_study.subject_1_image_2.alt
@@ -62,6 +70,12 @@
   assign subject_3_image_3_alt = case_study.subject_3_image_3.alt
 
 -%}
+
+{% capture subject_1_thumbnail_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_1_thumbnail_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture subject_2_thumbnail_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_2_thumbnail_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
+
+{% capture subject_3_thumbnail_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_3_thumbnail_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
 
 {% capture subject_1_image_1_url %}https://cdn.sanity.io/images/s76uh1eo/production/{{ subject_1_image_1_ref | replace: 'image-', '' | replace: '-png', '.png' | replace: '-jpg', '.jpg' | replace: '-gif', '.gif' }}{% endcapture %}
 
@@ -95,8 +109,8 @@
       <div class="case-study-intro-images">
         <div id="subject-1-select" class="case-study-intro-image-1 case-study-select-image case-study-circle-border">
           <img
-            src="{{ subject_1_image_1_url }}"
-            alt="{{ subject_1_image_1_alt }}"
+            src="{{ subject_1_thumbnail_url }}"
+            alt="{{ subject_1_thumbnail_alt }}"
             loading="lazy"
             width="auto"
             height="auto"
@@ -104,8 +118,8 @@
         </div>
         <div id="subject-2-select" class="case-study-intro-image-2 case-study-select-image case-study-circle-border gray-overlay">
           <img
-            src="{{ subject_2_image_1_url }}"
-            alt="{{ subject_2_image_1_alt }}"
+            src="{{ subject_2_thumbnail_url }}"
+            alt="{{ subject_2_thumbnail_alt }}"
             loading="lazy"
             width="auto"
             height="auto"
@@ -113,8 +127,8 @@
         </div>
         <div id="subject-3-select" class="case-study-intro-image-3 case-study-select-image case-study-circle-border gray-overlay">
           <img
-            src="{{ subject_3_image_1_url }}"
-            alt="{{ subject_3_image_1_alt }}"
+            src="{{ subject_3_thumbnail_url }}"
+            alt="{{ subject_3_thumbnail_alt }}"
             loading="lazy"
             width="auto"
             height="auto"

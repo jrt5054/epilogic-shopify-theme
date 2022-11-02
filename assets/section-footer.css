@@ -714,11 +714,6 @@ noscript .localization-selector.link {
   .footer__copyright small {
     font-size: 0.8rem;
   }
-
-  .footer-border-mobile:after {
-    border-right-width: 1px;
-    border-right-style: solid;
-  }
 }
 
 .subscribe-message-area p {

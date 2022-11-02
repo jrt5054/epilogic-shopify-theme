@@ -117,17 +117,17 @@
   </div>
 
   <div class="subscribe-message-area">
-    <div class="epi-border-top epi-border-left footer-border-mobile">
+    <div class="epi-border-desktop-top epi-border-desktop-left epi-border-desktop-right epi-border-mobile-top epi-border-mobile-left epi-border-mobile-right epi-border-mobile-bottom">
       {{ section.settings.subscribe_message }}
     </div>
   </div>
 
   <div class="footer-block--newsletter email-form-area">
-    <div class="footer-block__newsletter epi-border-top epi-border-right epi-border-left">
+    <div class="footer-block__newsletter ">
       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
         <input type="hidden" name="contact[tags]" value="newsletter">
-        <div class="newsletter-form__field-wrapper">
-          <div class="field">
+        <div class="newsletter-form__field-wrapper epi-border-desktop-top epi-border-desktop-right ">
+          <div class="field epi-border-desktop-bottom epi-border-mobile-right epi-border-mobile-left epi-border-mobile-bottom">
             <input
               id="NewsletterForm--{{ section.id }}"
               type="email"
@@ -173,7 +173,7 @@
   </div>
   <div class="footer-repeating-blocks-area">
     <div class="lower-repeating-blocks-wrapper">
-      <div class="lower-block-row epi-border-top epi-border-left">
+      <div class="lower-block-row epi-border-top epi-border-left epi-border-mobile-top">
         {% for i in (1..48) %}
           <div class="lower-repeating-block epi-border-right epi-border-bottom"></div>
         {% endfor %}

@@ -17,7 +17,7 @@
 <div class="article-heading article-heading--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-article-heading epi-border-top epi-border-left epi-border-right epi-border-bottom">
   <div class="article-heading__grid grid grid--gapless grid--1-col grid--3-col-tablet{% if section.settings.layout == 'text_first' %} article-heading__grid--reverse{% endif %}{% if section.settings.mobile_image_second %} mobile-image-second{% endif %} ">
     <div class="article-heading__media-item article-heading__media-item--article-heading article-heading__media-item--{{ section.settings.desktop_content_position }} grid__item">
-      <div class="two-circles">
+      <div class="two-circles two-circles-mobile-bottom">
         {% render 'icon-circle', diameter: 42 %}
         {% render 'icon-circle', diameter: 42 %}
       </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="article-heading__text-item grid__item">
       <div id="ImageWithText--{{ section.id }}" class="article-heading__content article-heading__content--{{ section.settings.desktop_content_position }} article-heading__content--desktop-{{ section.settings.desktop_content_alignment }} article-heading__content--mobile-{{ section.settings.mobile_content_alignment }} article-heading__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-top epi-border-bottom epi-border-left epi-border-right">
-        <div class="two-circles two-circles-right">
+        <div class="two-circles two-circles-right two-circles-mobile-top">
           {% render 'icon-circle', diameter: 42 %}
           {% render 'icon-circle', diameter: 42 %}
         </div>
