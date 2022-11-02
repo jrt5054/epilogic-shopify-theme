@@ -2395,6 +2395,10 @@ input[type='checkbox'] {
   font-size: 1.4rem;
 }
 
+.header__icon h5.account-format {
+  margin-right: 2rem;
+}
+
 a.header__icon {
   text-decoration: none;
 }
