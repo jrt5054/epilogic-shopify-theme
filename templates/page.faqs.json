@@ -16,7 +16,7 @@
           "settings": {
             "heading": "Shipping",
             "icon": "none",
-            "row_content": "<p>We are pleased to offer free USPS shipping on U.S. orders over $100. U.S. orders under $100 incur a flat-rate shipping fee of $8. For expedited shipping, please email <a href=\"mailto:hello@epilogicskincare.com\" title=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>. To note: International orders may be subject to import taxes, customs duties and fees levied by the destination country. These fees are the responsibility of the purchaser and are not included in our international shipping fee.<\/p>",
+            "row_content": "<p>We are pleased to offer free ground shipping on U.S. orders over $75. U.S. orders under $75 incur a flat-rate shipping fee of $6. For expedited shipping, please email <a href=\"mailto:hello@epilogicskincare.com\" title=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>. To note: International orders may be subject to import taxes, customs duties and fees levied by the destination country. These fees are the responsibility of the purchaser and are not included in our international shipping fee.<\/p>",
             "page": ""
           }
         },
@@ -25,7 +25,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "none",
-            "row_content": "<p>Unopened epi.logic products may be returned for a full item refund (less shipping) to your original form of payment within 15 days of receipt. Opened products or those received over 15 days prior are not eligible for return. To process a return, please email<a href=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>. Please note that we are unable to accept returns for shipments to Canada, Europe or other international destinations.<\/p>",
+            "row_content": "<p>Unopened epi.logic products may be returned for a full item refund (less shipping) to your original form of payment within 30 days of receipt. Opened products or those received over 30 days prior are not eligible for return. To process a return, please email<a href=\"mailto:hello@epilogicskincare.com\">hello@epilogicskincare.com<\/a>. Please note that we are unable to accept returns for shipments to Canada, Europe or other international destinations.<\/p>",
             "page": ""
           }
         },
