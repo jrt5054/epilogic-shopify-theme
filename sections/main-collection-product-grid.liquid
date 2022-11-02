@@ -127,7 +127,7 @@
           <div class="collection">
             <div class="loading-overlay gradient"></div>
     
-            <ul id="product-grid" data-id="{{ section.id }}" class=" epi-border-top epi-border-left
+            <ul id="product-grid" data-id="{{ section.id }}" class="
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ section.settings.columns_desktop }}-col-desktop epilogic-product-grid-upper">
               {%- for product in only_single_products -%}
@@ -143,7 +143,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item">
+                <li class="grid__item epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-desktop-top epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
                   {% render 'card-product-main-product-grid',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -157,7 +157,7 @@
                   %}
                 </li>
                 {% if forloop.index == 6 %}
-                <li class="grid__item epi-grid-picture">
+                <li class="grid__item epi-grid-picture epi-border-desktop-top epi-border-desktop-left epi-border-desktop-right epi-border-mobile-top epi-border-mobile-right epi-border-mobile-left">
                   <img
                     srcset="{%- if section.settings.grid_image_1.width >= 165 -%}{{ section.settings.grid_image_1 | image_url: width: 165 }} 165w,{%- endif -%}
                       {%- if section.settings.grid_image_1.width >= 360 -%}{{ section.settings.grid_image_1 | image_url: width: 360 }} 360w,{%- endif -%}
@@ -175,7 +175,7 @@
                     height="{{ section.settings.grid_image_1.height }}"
                     >
                 </li>
-                <li class="grid__item epi-grid-picture">
+                <li class="grid__item epi-grid-picture epi-border-desktop-left epi-border-desktop-bottom epi-border-mobile-top epi-border-mobile-right epi-border-mobile-left">
                   <img
                     srcset="{%- if section.settings.grid_image_2.width >= 165 -%}{{ section.settings.grid_image_2 | image_url: width: 165 }} 165w,{%- endif -%}
                       {%- if section.settings.grid_image_2.width >= 360 -%}{{ section.settings.grid_image_2 | image_url: width: 360 }} 360w,{%- endif -%}
@@ -195,7 +195,7 @@
                 </li>
                 {% endif %}
                 {% if forloop.index == 4 %}
-                <li class="scrolling-marquee-section">
+                <li class="scrolling-marquee-section epi-border-mobile-top">
                   <div class="marquee-wrapper">
                       <div class="marquee-group">
                         {% for i in (1..4) %}
@@ -215,8 +215,8 @@
                 </li>
                 {% endif %}
               {%- endfor -%}
-              <li class="grid__item main-grid-new-addition">
-                <div class="new-addition-text">
+              <li class="grid__item main-grid-new-addition epi-border-desktop-right epi-border-desktop-left epi-border-mobile-top epi-border-mobile-right epi-border-mobile-left">
+                <div class="new-addition-text epi-border-desktop-right epi-border-mobile-bottom">
                   <div class="new-addition-text-header">
                     new addition
                   </div>

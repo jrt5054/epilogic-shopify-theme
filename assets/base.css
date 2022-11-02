@@ -3262,3 +3262,14 @@ details-disclosure > details {
 .unclickable {
   pointer-events: none;
 }
+
+.epi-border-desktop-top::after,
+.epi-border-desktop-right::after,
+.epi-border-desktop-bottom::after,
+.epi-border-desktop-left::after,
+.epi-border-mobile-top::after,
+.epi-border-mobile-right::after,
+.epi-border-mobile-bottom::after,
+.epi-border-mobile-left::after {
+  z-index: 100;
+}

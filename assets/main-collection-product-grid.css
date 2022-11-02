@@ -11,7 +11,6 @@ ul.grid.epilogic-product-grid-lower {
 
 .main-grid-new-addition {
   display: flex;
-  height: auto;
   overflow: hidden;
 }
 
@@ -48,6 +47,10 @@ ul.grid.epilogic-product-grid-lower {
 }
 
 @media screen and (min-width: 990px) {
+  .main-grid-new-addition {
+    height: 60rem;
+  }
+
   .epi-grid-picture {
     overflow: hidden;
   }
@@ -116,11 +119,11 @@ ul.grid.epilogic-product-grid-lower {
   }
 
   .new-addition-text {
-    padding: 15rem 4rem;
+    padding: 10rem 4rem;
   }
 
   .new-addition-link {
-    bottom: 3rem;
+    bottom: 4rem;
   }
 
   .new-addition-text-header {
@@ -143,4 +146,8 @@ ul.grid.epilogic-product-grid-lower {
 
 .card__content .white-text {
   color: rgb(var(--color-epi-white));
+}
+
+.collection ul li {
+  position: relative;
 }

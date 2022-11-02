@@ -20,7 +20,7 @@
     {%- for block in section.blocks -%}
       <div class="picture-quote-block grid__item">
         <div class="picture-quote-upper">
-          <div class="picture-quote-upper-image-wrapper epi-border-right epi-border-bottom">
+          <div class="picture-quote-upper-image-wrapper epi-border-desktop-right epi-border-desktop-bottom epi-border-mobile-right epi-border-mobile-bottom">
             <img
               srcset="{%- if block.settings.image_upper.width >= 275 -%}{{ block.settings.image_upper | image_url: width: 275 }} 275w,{%- endif -%}
                 {%- if block.settings.image_upper.width >= 550 -%}{{ block.settings.image_upper | image_url: width: 550 }} 550w,{%- endif -%}
@@ -37,7 +37,7 @@
               loading="lazy"
             >
           </div>
-          <div class="picture-quote-upper-text epi-border-right epi-border-bottom">
+          <div class="picture-quote-upper-text epi-border-desktop-right epi-border-desktop-bottom epi-border-mobile-right epi-border-mobile-bottom">
             {{ block.settings.quote_upper }}
           </div>
         </div>
