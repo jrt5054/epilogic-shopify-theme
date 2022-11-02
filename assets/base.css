@@ -3285,5 +3285,5 @@ details-disclosure > details {
 .epi-border-mobile-right::after,
 .epi-border-mobile-bottom::after,
 .epi-border-mobile-left::after {
-  z-index: 100;
+  z-index: 2;
 }
