@@ -1217,6 +1217,10 @@ a.product__text {
   flex-shrink: 0;
 }
 
+.product__description {
+  text-align: center;
+}
+
 @media screen and (min-width: 750px) {
   .product__title h1 {
     font-size: 4rem;
@@ -1239,9 +1243,10 @@ a.product__text {
   }
 
   .product__description {
-    text-align: center;
     padding-left: 15%;
     padding-right: 15%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -1266,6 +1271,10 @@ a.product__text {
     line-height: 2.9rem;
   }
 
+  .product__description {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
 }
 
 .epilogic-product-subtitle,
@@ -1397,5 +1406,5 @@ ul.product__media-list.epi-product-image-list button {
 div form.installment {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
-
