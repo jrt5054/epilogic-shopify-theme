@@ -14,14 +14,14 @@
   }
 {%- endstyle -%}
 
-<div class="featured-article featured-article--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-featured-article epi-border-top epi-border-left epi-border-right epi-border-bottom">
+<div class="featured-article featured-article--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding color-featured-article epi-border-desktop-right epi-border-desktop-left">
   <div class="featured-article__grid grid grid--gapless grid--1-col grid--3-col-tablet{% if section.settings.layout == 'text_first' %} featured-article__grid--reverse{% endif %}{% if section.settings.mobile_image_second %} mobile-image-second{% endif %} ">
     <div class="featured-article__media-item featured-article__media-item--featured-article featured-article__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div class="two-circles">
         {% render 'icon-circle', diameter: 42 %}
         {% render 'icon-circle', diameter: 42 %}
       </div>
-      <div class="featured-article__media featured-article__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.featured_article.image != blank %}media{% else %}featured-article__media--placeholder placeholder{% endif %}"
+      <div class="featured-article__media featured-article__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.featured_article.image != blank %}media{% else %}featured-article__media--placeholder placeholder{% endif %} epi-border-desktop-left epi-border-desktop-bottom"
       >
         {%- if section.settings.featured_article.image != blank -%}
           <img
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="featured-article__text-item grid__item {% if section.settings.show_three_dots %} three-dots-styling{% endif %}">
-      <div id="ImageWithText--{{ section.id }}" class="featured-article__content featured-article__content--{{ section.settings.desktop_content_position }} featured-article__content--desktop-{{ section.settings.desktop_content_alignment }} featured-article__content--mobile-{{ section.settings.mobile_content_alignment }} featured-article__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-top epi-border-bottom epi-border-left epi-border-right">
+      <div id="ImageWithText--{{ section.id }}" class="featured-article__content featured-article__content--{{ section.settings.desktop_content_position }} featured-article__content--desktop-{{ section.settings.desktop_content_alignment }} featured-article__content--mobile-{{ section.settings.mobile_content_alignment }} featured-article__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container epi-border-desktop-bottom epi-border-desktop-left">
         <div class="two-circles two-circles-right">
           {% render 'icon-circle', diameter: 42 %}
           {% render 'icon-circle', diameter: 42 %}
