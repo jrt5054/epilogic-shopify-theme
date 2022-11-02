@@ -681,10 +681,6 @@ noscript .localization-selector.link {
   box-shadow: none;
 }
 
-.footer-block__newsletter .newsletter-form__button {
-  width: auto;
-}
-
 .footer-block__newsletter .field__button {
   justify-content: end;
 }
@@ -744,4 +740,17 @@ noscript .localization-selector.link {
   right: 13%;
   bottom: -50%;
   text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 750px) {
+  .footer-block__newsletter .newsletter-form__button {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .footer-block__newsletter .newsletter-form__button {
+    width: 100px;
+  }
 }
