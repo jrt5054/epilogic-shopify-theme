@@ -3097,7 +3097,15 @@ details-disclosure > details {
 .epi-border-bottom::after,
 .epi-border-left::after,
 .epi-border-list-item::after,
-.epi-border-grid-item::after {
+.epi-border-grid-item::after,
+.epi-border-desktop-top::after,
+.epi-border-desktop-right::after,
+.epi-border-desktop-bottom::after,
+.epi-border-desktop-left::after,
+.epi-border-mobile-top::after,
+.epi-border-mobile-right::after,
+.epi-border-mobile-bottom::after,
+.epi-border-mobile-left::after {
   display: block;
   content: '';
   position: absolute;
@@ -3107,28 +3115,32 @@ details-disclosure > details {
   bottom: 0px;
 }
 
-@media screen and (min-width: 750px) {
-  .epi-border::after {
-    border-width: 2px;
-    border-style: solid;
-  }
+.epi-border::after {
+  border-width: 2px;
+  border-style: solid;
+}
 
-  .epi-border-top::after {
+@media screen and (min-width: 750px) {
+  .epi-border-top::after,
+  .epi-border-desktop-top::after {
     border-top-width: 2px;
     border-top-style: solid;
   }
 
-  .epi-border-right::after {
+  .epi-border-right::after,
+  .epi-border-desktop-right::after {
     border-right-width: 2px;
     border-right-style: solid;
   }
 
-  .epi-border-bottom::after {
+  .epi-border-bottom::after,
+  .epi-border-desktop-bottom::after {
     border-bottom-width: 2px;
     border-bottom-style: solid;
   }
 
-  .epi-border-left::after {
+  .epi-border-left::after,
+  .epi-border-desktop-left::after {
     border-left-width: 2px;
     border-left-style: solid;
   }
@@ -3156,7 +3168,30 @@ details-disclosure > details {
 }
 
 @media screen and (max-width: 749px) {
-  .epi-border::after {
+  .epi-border-top::after,
+  .epi-border-mobile-top::after {
+    border-top-width: 2px;
+    border-top-style: solid;
+  }
+
+  .epi-border-right::after,
+  .epi-border-mobile-right::after {
+    border-right-width: 2px;
+    border-right-style: solid;
+  }
+
+  .epi-border-bottom::after,
+  .epi-border-mobile-bottom::after {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+
+  .epi-border-left::after,
+  .epi-border-mobile-left::after {
+    border-left-width: 2px;
+    border-left-style: solid;
+  }
+  /* .epi-border::after {
     border-width: 1px;
     border-style: solid;
   }
@@ -3200,7 +3235,7 @@ details-disclosure > details {
     border-right-style: solid;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-  }
+  } */
 }
 
 .button.epi-button {
