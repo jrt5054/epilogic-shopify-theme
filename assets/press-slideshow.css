@@ -100,4 +100,8 @@ slideshow-component .slideshow__controls.epi-press-slider {
     line-height: 2.4rem;
     padding: 0 2rem;
   }
+
+  .press-text p {
+    margin-bottom: 5rem;
+  }
 }
