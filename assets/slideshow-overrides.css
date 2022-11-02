@@ -25,3 +25,10 @@ slideshow-component .slideshow__controls .slider-button--next.epi-slideshow {
 .slideshow__text .banner__text p:last-child {
   margin-top: 2rem;
 }
+
+
+@media screen and (max-width: 749px) {
+  .banner__text p {
+    display: none;
+  }
+}

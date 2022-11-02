@@ -182,15 +182,6 @@
         "padding_bottom": 0
       }
     },
-    "5b285c51-d532-4a2b-b461-34625b367803": {
-      "type": "section-divider",
-      "settings": {
-        "divider_text": "reimagine the routine",
-        "divider_link": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "166420258197c62037": {
       "type": "repeating-blocks",
       "settings": {
@@ -206,7 +197,6 @@
     "1664201045c8115ce7",
     "16642009820d7d0ec6",
     "1658176646f57ea837",
-    "5b285c51-d532-4a2b-b461-34625b367803",
     "166420258197c62037"
   ]
 }
