@@ -3287,3 +3287,7 @@ details-disclosure > details {
 .epi-border-mobile-left::after {
   z-index: 2;
 }
+
+.card__badge {
+  display: none;
+}
