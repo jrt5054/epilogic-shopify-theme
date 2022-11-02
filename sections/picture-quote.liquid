@@ -1,6 +1,4 @@
 {{ 'picture-quote.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
 .section-{{ section.id }}-padding {
@@ -38,7 +36,8 @@
             >
           </div>
           <div class="picture-quote-upper-text epi-border-desktop-right epi-border-desktop-bottom epi-border-mobile-right epi-border-mobile-bottom">
-            {{ block.settings.quote_upper }}
+            <div class="quote-name">{{ block.settings.quote_name }}</div>
+            <div class="quote-text">{{ block.settings.quote_upper }}</div>
           </div>
         </div>
         {% comment %} <div class="picture-quote-lower">
@@ -136,6 +135,11 @@
           "type": "image_picker",
           "id": "image_upper",
           "label": "Upper Image"
+        },
+        {
+          "type": "text",
+          "id": "quote_name",
+          "label": "Quote Name"
         },
         {
           "type": "richtext",
