@@ -14,8 +14,31 @@
 }
 {%- endstyle -%}
 <div class="color-background-1 gradient">
-  <div class="section-{{ section.id }}-padding">
-    
+  <div class="section-{{ section.id }}-padding science-based-section">
+    <div class="science-based-fluff">
+      <div class="science-based-fluff-heading-text-wrapper">
+        <div class="science-based-fluff-heading">
+          {{ section.settings.fluff_heading }}
+        </div>
+        <div class="science-based-fluff-text">
+          {{ section.settings.fluff_text }}
+        </div>
+      </div>
+      <div class="science-based-fluff-button">
+        <p>read more</p>
+      </div>
+    </div>
+    <div class="science-based-about">
+      <div class="science-based-about-heading">
+        {{ section.settings.about_heading }}
+      </div>
+      <div class="science-based-about-text">
+        {{ section.settings.about_text }}
+      </div>
+      <div class="science-based-about-readmore">
+        <p>read more</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -25,6 +48,32 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Section Content"
+    },
+    {
+      "type": "richtext",
+      "id": "fluff_heading",
+      "label": "Left Heading",
+      "default": "<p>science based. fluff free.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "fluff_text",
+      "label": "Left Text"
+    },
+    {
+      "type": "text",
+      "id": "about_heading",
+      "label": "Right Heading",
+      "default": "About"
+    },
+    {
+      "type": "richtext",
+      "id": "about_text",
+      "label": "Right Text"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
@@ -37,7 +86,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 40
+      "default": 0
     },
     {
       "type": "range",
@@ -47,7 +96,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 52
+      "default": 0
     }
   ],
   "presets": [

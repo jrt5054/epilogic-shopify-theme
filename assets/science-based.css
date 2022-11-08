@@ -1,0 +1,96 @@
+.science-based-section {
+  display: flex;
+}
+
+.science-based-section p {
+  margin: 0;
+}
+
+.science-based-fluff,
+.science-based-about {
+  padding: 64px;
+}
+
+.science-based-fluff {
+  background-color: rgb(var(--color-epi-gray-2));
+  width: 60%;
+}
+
+.science-based-fluff-heading {
+  font-family: 'VTCDuBois-Bold', serif;
+  text-transform: uppercase;
+}
+
+.science-based-about-heading {
+  font-family: 'Merchant-Regular', serif;
+  text-transform: uppercase;
+}
+
+.science-based-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: rgb(var(--color-epi-green));
+}
+
+.science-based-about-readmore {
+  color: rgb(var(--color-epi-white));
+  background-color: rgb(var(--color-epi-black));
+  height: 166px;
+  width: 166px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+@media screen and (min-width: 750px) {
+  .science-based-section {
+    flex-direction: row;
+    height: 575px;
+  }
+
+  .science-based-fluff-heading {
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+  }
+
+  .science-based-fluff-text {
+    width: 50%;
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .science-based-about-heading {
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+  }
+
+  .science-based-about-text {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .science-based-section {
+    flex-direction: column;
+  }
+
+  .science-based-fluff-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .science-based-about-heading {
+    font-size: 4.6rem;
+    line-height: 7.7rem;
+  }
+
+  .science-based-about-text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
