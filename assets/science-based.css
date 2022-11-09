@@ -34,6 +34,22 @@
   background-color: rgb(var(--color-epi-green));
 }
 
+.science-based-about a {
+  display: flex;
+  align-items: center;
+}
+
+.science-based-about-heading-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.science-based-about > * {
+  height: 50%;
+}
+
 .science-based-about-readmore {
   color: rgb(var(--color-epi-white));
   background-color: rgb(var(--color-epi-black));
@@ -43,6 +59,11 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.science-based-about-text {
+  text-align: center;
 }
 
 
@@ -71,6 +92,15 @@
   .science-based-about-text {
     font-size: 2rem;
     line-height: 2.6rem;
+  }
+
+  .science-based-about-readmore p {
+    opacity: 0;
+    transition: all ease 0.2s;
+  }
+
+  .science-based-about-readmore:hover p {
+    opacity: 100%;
   }
 }
 
