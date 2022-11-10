@@ -2,8 +2,6 @@
 function checkerboardOrSwap(numberToSwap) {
   let cards = document.querySelectorAll(".checkerboard-product");
   cards.forEach((element, index) => {
-    console.log(element.classList);
-    console.log(index);
     let swapNumber = index % numberToSwap;
     if (swapNumber == 0) {
       let images = element.querySelectorAll("img");
