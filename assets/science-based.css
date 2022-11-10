@@ -14,7 +14,12 @@
 .science-based-fluff {
   background-color: rgb(var(--color-epi-gray-2));
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 
 .science-based-fluff-heading {
   font-family: 'VTCDuBois-Bold', serif;
@@ -42,7 +47,7 @@
 .science-based-about-heading-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -64,6 +69,15 @@
 
 .science-based-about-text {
   text-align: center;
+}
+
+.science-based-fluff-button a {
+  background-color: rgb(var(--color-epi-black));
+  color: rgb(var(--color-epi-white));
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 
