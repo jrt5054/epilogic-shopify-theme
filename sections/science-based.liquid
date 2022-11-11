@@ -17,27 +17,31 @@
   <div class="section-{{ section.id }}-padding science-based-section">
     <div class="science-based-fluff">
       <div class="science-based-fluff-heading-text-wrapper">
-        <div class="science-based-fluff-heading">
+        <h3 class="science-based-fluff-heading">
           {{ section.settings.fluff_heading }}
-        </div>
+        </h3>
         <div class="science-based-fluff-text">
           {{ section.settings.fluff_text }}
         </div>
       </div>
       <div class="science-based-fluff-button">
-        <p>read more</p>
+        <a href="/pages/about" class="full-unstyled-link epi-cursor-hover_readmore">read more</a>
       </div>
     </div>
     <div class="science-based-about">
-      <div class="science-based-about-heading">
-        {{ section.settings.about_heading }}
+      <div class="science-based-about-heading-text-wrapper">
+        <h3 class="science-based-about-heading">
+          {{ section.settings.about_heading }}
+        </h3>
+        <div class="science-based-about-text">
+          {{ section.settings.about_text }}
+        </div>
       </div>
-      <div class="science-based-about-text">
-        {{ section.settings.about_text }}
-      </div>
-      <div class="science-based-about-readmore">
-        <p>read more</p>
-      </div>
+      <a href="/pages/about" class="full-unstyled-link epi-cursor-hover_readmore science-based-about-readmore-button">
+        <div class="science-based-about-readmore">
+          <p>read more</p>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -61,7 +65,8 @@
     {
       "type": "richtext",
       "id": "fluff_text",
-      "label": "Left Text"
+      "label": "Left Text",
+      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>"
     },
     {
       "type": "text",
@@ -72,7 +77,8 @@
     {
       "type": "richtext",
       "id": "about_text",
-      "label": "Right Text"
+      "label": "Right Text",
+      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>"
     },
     {
       "type": "header",

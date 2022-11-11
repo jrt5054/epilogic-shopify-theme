@@ -6,15 +6,19 @@
   margin: 0;
 }
 
-.science-based-fluff,
-.science-based-about {
-  padding: 64px;
+.science-based-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .science-based-fluff {
   background-color: rgb(var(--color-epi-gray-2));
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 
 .science-based-fluff-heading {
   font-family: 'VTCDuBois-Bold', serif;
@@ -30,8 +34,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
   background-color: rgb(var(--color-epi-green));
+}
+
+.science-based-about a {
+  display: flex;
+  align-items: center;
+}
+
+.science-based-about-heading-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.science-based-about > * {
+  height: 50%;
 }
 
 .science-based-about-readmore {
@@ -43,13 +62,32 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.science-based-about-text {
+  text-align: center;
+}
+
+.science-based-fluff-button a {
+  background-color: rgb(var(--color-epi-black));
+  color: rgb(var(--color-epi-white));
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 
 @media screen and (min-width: 750px) {
   .science-based-section {
     flex-direction: row;
-    height: 575px;
+    min-height: 575px;
+  }
+
+  .science-based-fluff,
+  .science-based-about {
+    padding: 64px;
   }
 
   .science-based-fluff-heading {
@@ -63,6 +101,14 @@
     line-height: 2.6rem;
   }
 
+  .science-based-about {
+    width: 40%;
+  }
+
+  .science-based-fluff {
+    width: 60%;
+  }
+
   .science-based-about-heading {
     font-size: 6.4rem;
     line-height: 7.7rem;
@@ -72,12 +118,27 @@
     font-size: 2rem;
     line-height: 2.6rem;
   }
+
+  .science-based-about-readmore p {
+    opacity: 0;
+    transition: all ease 0.2s;
+  }
+
+  .science-based-about-readmore:hover p {
+    opacity: 100%;
+  }
 }
 
 @media screen and (max-width: 749px) {
   .science-based-section {
     flex-direction: column;
   }
+
+  .science-based-fluff,
+  .science-based-about {
+    padding: 20px;
+  }
+
 
   .science-based-fluff-heading {
     font-size: 4rem;
@@ -89,8 +150,17 @@
     line-height: 7.7rem;
   }
 
-  .science-based-about-text {
+  .science-based-fluff-button {
+    margin-top: 4rem;
+  }
+
+  .science-based-about-text,
+  .science-based-fluff-text {
     font-size: 1.8rem;
     line-height: 2.2rem;
+  }
+
+  .science-based-about-readmore-button {
+    margin: 3rem 0;
   }
 }
