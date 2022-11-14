@@ -3,3 +3,11 @@
   /* border-color: var(--awt-selected-plan-border-color); */
   /* background-color: var(--awt-selected-plan-background); */
 }
+
+.awt-style-1 .bundleapp-wrapper .bundleapp-plan-selector-group {
+  margin-bottom: 0;
+}
+
+.awt-style-1 .bundleapp-wrapper .bundleapp-plan-selector-group:not(.bundleapp-plan-selector-group--selected) {
+  border-width: 0;
+}
