@@ -51,21 +51,11 @@
             "address_line_2": "",
             "address_line_3": "NEW YORK, NY 10128"
           }
-        },
-        "f26e0b6c-bf6c-4684-8370-ead796e44e37": {
-          "type": "text",
-          "settings": {
-            "store_name": "T.A.",
-            "address_line_1": "332 W 13TH ST",
-            "address_line_2": "",
-            "address_line_3": "NEW YORK, NY 10014"
-          }
         }
       },
       "block_order": [
         "54186e7c-e52c-488b-9d9f-fca49fd893e4",
-        "8bae7919-324f-4e00-90f7-4677dda2f72e",
-        "f26e0b6c-bf6c-4684-8370-ead796e44e37"
+        "8bae7919-324f-4e00-90f7-4677dda2f72e"
       ],
       "settings": {
         "state": "New York",
