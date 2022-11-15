@@ -2409,7 +2409,7 @@ a.header__icon {
 }
 
 #shopify-section-header {
-  z-index: 3;
+  z-index: 10;
 }
 
 .shopify-section-header-sticky {
@@ -2417,8 +2417,16 @@ a.header__icon {
   top: 0;
 }
 
-.shopify-section-header-sticky header {
-  background-color: blue;
+.shopify-section-header-sticky header .header-background:empty {
+  display: block;
+}
+
+.shopify-section-header-sticky header .header-background {
+  height: 57px;
+  width: 100%;
+  background-color: rgb(var(--color-epi-background-yellow));
+  position: absolute;
+  z-index: -1;
 }
 
 .shopify-section-header-hidden {
