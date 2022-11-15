@@ -2390,6 +2390,11 @@ input[type='checkbox'] {
 
 /* section-header */
 
+.header__heading svg {
+  position: relative;
+  top: 5px;
+}
+
 .header__icon h5 {
   font-family: 'VTCDuBois-Bold', serif;
   font-size: 1.4rem;
