@@ -36,6 +36,23 @@ ul.grid.epilogic-product-grid-lower {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 750px) {
+  .new-addition-text-header sup {
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .new-addition-text-header sup {
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+  }
+}
+
+
 .new-addition-image img {
   height: 100%;
   width: 100%;
