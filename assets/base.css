@@ -2390,7 +2390,7 @@ input[type='checkbox'] {
 
 /* section-header */
 
-.header__heading svg {
+.header__heading-link svg {
   position: relative;
   top: 5px;
 }
