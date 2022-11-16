@@ -10,8 +10,10 @@ function checkerboardOrSwap(numberToSwap) {
   });
 }
 
-if (window.innerWidth < 750) {
-  checkerboardOrSwap(3);
-} else {
-  checkerboardOrSwap(2);
-}
+window.addEventListener("load", () => {
+  if (window.innerWidth < 750) {
+    checkerboardOrSwap(3);
+  } else {
+    checkerboardOrSwap(2);
+  }
+});

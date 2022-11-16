@@ -27,8 +27,10 @@
   assign animation_time = total_length | divided_by: speed | append: 's'
 -%}
 
-{%- assign only_single_products = section.settings.ordered_collection.products | where: "type", "single" -%}
-{%- assign only_bundle_products = section.settings.ordered_collection.products | where: "type", "bundle" -%}
+{%- assign custom_collection = collection -%}
+
+{%- assign only_single_products = custom_collection.products | where: "type", "single" -%}
+{%- assign only_bundle_products = custom_collection.products | where: "type", "bundle" -%}
 
 {%- style -%}
   @keyframes marquee {
@@ -66,9 +68,9 @@
               <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
             </h2>
             <div class="select">
-              {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+              {%- assign sort_by = custom_collection.sort_by | default: custom_collection.default_sort_by -%}
               <select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message">
-                {%- for option in collection.sort_options -%}
+                {%- for option in custom_collection.sort_options -%}
                   <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                 {%- endfor -%}
               </select>
@@ -83,12 +85,12 @@
         <div class="product-count-vertical light" role="status">
           <h2 class="product-count__text text-body">
             <span id="ProductCountDesktop">
-              {%- if collection.results_count -%}
-                {{ 'templates.search.results_with_count' | t: terms: collection.terms, count: collection.results_count }}
-              {%- elsif collection.products_count == collection.all_products_count -%}
-                {{ 'products.facets.product_count_simple' | t: count: collection.products_count }}
+              {%- if custom_collection.results_count -%}
+                {{ 'templates.search.results_with_count' | t: terms: custom_collection.terms, count: custom_collection.results_count }}
+              {%- elsif custom_collection.products_count == custom_collection.all_products_count -%}
+                {{ 'products.facets.product_count_simple' | t: count: custom_collection.products_count }}
               {%- else -%}
-                {{ 'products.facets.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+                {{ 'products.facets.product_count' | t: product_count: custom_collection.products_count, count: custom_collection.all_products_count }}
               {%- endif -%}
             </span>
           </h2>
@@ -107,24 +109,25 @@
     <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-collection-filters" data-id="{{ section.id }}">
-        {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
+        {% render 'facets', results: custom_collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
       </aside>
     {%- endif -%}
 
     <div class="product-grid-container" id="ProductGridContainer">
-      {%- paginate collection.products by section.settings.products_per_page -%}
-        {%- if collection.products.size == 0 -%}
+      {%- paginate custom_collection.products by section.settings.products_per_page -%}
+        {%- if custom_collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
             <div class="title-wrapper center">
               <h2 class="title title--primary">
                 {{ 'sections.collection_template.empty' | t }}<br>
-                {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+                {{ 'sections.collection_template.use_fewer_filters_html' | t: link: custom_collection.url, class: "underlined-link link" }}
               </h2>
             </div>
           </div>
         {%- else -%}
           <div class="collection">
+            {% comment %} {{ custom_collection.products | json}} {% endcomment %}
             <div class="loading-overlay gradient"></div>
     
             <ul id="product-grid" data-id="{{ section.id }}" class="
@@ -294,11 +297,6 @@
   "name": "t:sections.main-collection-product-grid.name",
   "class": "section",
   "settings": [
-    {
-      "type": "collection",
-      "id": "ordered_collection",
-      "label": "Ordered Collection"
-    },    
     {
       "type": "range",
       "id": "products_per_page",
