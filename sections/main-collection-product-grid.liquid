@@ -218,10 +218,10 @@
               <li class="grid__item main-grid-new-addition epi-border-desktop-right epi-border-desktop-left epi-border-mobile-top epi-border-mobile-right epi-border-mobile-left">
                 <div class="new-addition-text epi-border-desktop-right epi-border-mobile-bottom">
                   <div class="new-addition-text-header">
-                    cell service <sup>TM</sup>
+                    {{ section.settings.new_addition_header | replace: 'Cell ServiceTM', 'Cell Service<sup>TM</sup> ' }}
                   </div>
                   <div class="new-addition-text-text">
-                    {{ section.settings.new_addition_text }}
+                    {{ section.settings.new_addition_text | replace: 'Cell ServiceTM', 'Cell Service<sup>TM</sup> ' }}
                   </div>
                   <div class="new-addition-link">
                     <a href="{{ section.settings.new_addition_product.url }}" class="button button--primary new-addition-button">
@@ -341,9 +341,14 @@
       "label": "New Addition Section Image"
     },
     {
+      "type": "text",
+      "id": "new_addition_header",
+      "label": "New Addition Header"
+    },
+    {
       "type": "richtext",
       "id": "new_addition_text",
-      "label": "New Addition text",
+      "label": "New Addition Text",
       "default": "<p>We all have growth factors. They repair our bodies and nurture cell turnover, restoring skin to its optimal health. When we're young we have a lot. As we get older, we have fewer — hence Master Plan, which is clinically proven to improve hydration, firmness and elasticity.</p>"
     },
     {
