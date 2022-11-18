@@ -36,11 +36,9 @@ window.addEventListener("load", () => {
     gridColors(3, pattern_option_1, true);
     gridColors(3, pattern_option_2, true);
     gridColors(2, pattern_option_3, false);
-    console.log("mobile");
   } else {
     gridColors(2, pattern_option_1, true);
     gridColors(3, pattern_option_2, false);
     gridColors(3, pattern_option_3, false);
-    console.log(alternate_pattern);
   }
 });
