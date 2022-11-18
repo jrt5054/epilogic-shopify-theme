@@ -133,13 +133,12 @@
             <ul id="product-grid" data-id="{{ section.id }}" class="
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ section.settings.columns_desktop }}-col-desktop epilogic-product-grid-upper">
-              {%- for product in only_single_products -%}
+              {%- for single_product in only_single_products -%}
                 {%- liquid
-                  assign odd_check = forloop.index | modulo: 2
-                  if odd_check != 0
-                    assign odd_position = true
+                  if forloop.index <= 4
+                    assign color_pattern = "color-pattern-opt-1"
                   else
-                  assign odd_position = false
+                    assign color_pattern = "color-pattern-opt-2"
                   endif
                 -%}
                 {% assign lazy_load = false %}
@@ -148,7 +147,7 @@
                 {%- endif -%}
                 <li class="grid__item epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-desktop-top epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
                   {% render 'card-product-main-product-grid',
-                    card_product: product,
+                    card_product: single_product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
@@ -156,7 +155,7 @@
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id,
-                    is_odd: odd_position
+                    color_pattern: color_pattern
                   %}
                 </li>
                 {% if forloop.index == 6 %}
@@ -251,33 +250,26 @@
                     >
                 </div>
               </li>
-              {% comment %} {%- for product in only_bundle_products -%}
-                {%- liquid
-                  assign odd_check = forloop.index | modulo: 2
-                  if odd_check != 0
-                    assign odd_position = true
-                  else
-                  assign odd_position = false
-                  endif
-                -%}
+              {%- for bundle_product in only_bundle_products -%}
+                {% assign color_pattern = "color-pattern-opt-3" %}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="grid__item epi-bundle-item">
                   {% render 'card-product-main-product-grid',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
+                    card_product: bundle_product,
+                    media_aspect_ratio: 1.5,
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id,
-                    is_odd: odd_position
+                    color_pattern: color_pattern
                   %}
                 </li>
-              {%- endfor -%} {% endcomment %}
+              {%- endfor -%}
             </ul>
             
             {%- if paginate.pages > 1 -%}
