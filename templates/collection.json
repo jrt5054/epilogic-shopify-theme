@@ -40,7 +40,6 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "ordered_collection": "all",
         "products_per_page": 24,
         "columns_desktop": 4,
         "grid_image_1": "shopify:\/\/shop_images\/Shop_All_1.png",
@@ -49,6 +48,7 @@
         "new_addition_header": "Cell ServiceTM",
         "new_addition_text": "<p>We all have growth factors. They repair our bodies and nurture cell turnover to improve hydration, firmness and elasticity. When we’re young we have a lot. When we get older, we have fewer - hence Cell ServiceTM ingredient technology in Master Plan. Cell ServiceTM  is our signature bioactive, clinically vetted stem cell-derived growth factor and potent peptide complex that taps into skin’s ability to heal itself, boosting elasticity and firmness.<\/p>",
         "new_addition_product": "master-plan",
+        "extra_image": "shopify:\/\/shop_images\/blog-hyperpigmentation-image-2.jpg",
         "image_ratio": "portrait",
         "show_secondary_image": false,
         "show_vendor": false,

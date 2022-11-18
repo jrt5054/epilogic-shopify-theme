@@ -117,7 +117,8 @@ ul.grid.epilogic-product-grid-lower {
   }
 
   .grid--2-col-tablet-down .grid__item.main-grid-new-addition,
-  .grid--4-col-desktop .grid__item.epi-grid-picture {
+  .grid--4-col-desktop .grid__item.epi-grid-picture,
+  .grid--4-col-desktop .grid__item.eextra-image {
     width: 100%;
     max-width: 100%;
   }
@@ -159,4 +160,10 @@ ul.grid.epilogic-product-grid-lower {
 
 .collection ul li {
   position: relative;
+}
+
+.extra-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

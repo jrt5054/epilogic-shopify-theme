@@ -145,7 +145,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-desktop-top epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
+                <li class="grid__item epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
                   {% render 'card-product-main-product-grid',
                     card_product: single_product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -256,7 +256,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item epi-bundle-item">
+                <li class="grid__item epi-bundle-item epi-border-desktop-left epi-border-desktop-top epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
                   {% render 'card-product-main-product-grid',
                     card_product: bundle_product,
                     media_aspect_ratio: 1.5,
@@ -269,7 +269,29 @@
                     color_pattern: color_pattern
                   %}
                 </li>
+                {% assign extra_image = forloop.length | modulo: 2 %}
               {%- endfor -%}
+                {% if extra_image != 0 %}
+                  <li class="grid__item epi-bundle-item extra-image epi-border-desktop-left epi-border-desktop-top epi-border-desktop-right">
+                    <img
+                      srcset="{%- if section.settings.extra_image.width >= 165 -%}{{ section.settings.extra_image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if section.settings.extra_image.width >= 360 -%}{{ section.settings.extra_image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if section.settings.extra_image.width >= 533 -%}{{ section.settings.extra_image | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if section.settings.extra_image.width >= 720 -%}{{ section.settings.extra_image | image_url: width: 720 }} 720w,{%- endif -%}
+                        {%- if section.settings.extra_image.width >= 940 -%}{{ section.settings.extra_image | image_url: width: 940 }} 940w,{%- endif -%}
+                        {%- if section.settings.extra_image.width >= 1066 -%}{{ section.settings.extra_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                        {{ section.settings.extra_image | image_url }} {{ section.settings.extra_image.width }}w"
+                      src="{{ section.settings.extra_image | image_url: width: 533 }}"
+                      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                      alt="{{ section.settings.extra_image.alt | escape }}"
+                      class="motion-reduce"
+                      loading="lazy"
+                      width="{{ section.settings.extra_image.width }}"
+                      height="{{ section.settings.extra_image.height }}"
+                      >
+                  </li>
+                {% endif %}
+              
             </ul>
             
             {%- if paginate.pages > 1 -%}
@@ -345,6 +367,15 @@
       "type": "product",
       "id": "new_addition_product",
       "label": "Product Link"
+    },
+    {
+      "type": "header",
+      "content": "Bundles"
+    },
+    {
+      "type": "image_picker",
+      "id": "extra_image",
+      "label": "Image to fill empty space"
     },
     {
       "type": "header",
