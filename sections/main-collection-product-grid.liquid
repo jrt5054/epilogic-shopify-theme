@@ -30,7 +30,7 @@
 {%- assign custom_collection = collection -%}
 
 {%- assign only_single_products = custom_collection.products | where: "type", "single" -%}
-{%- assign only_bundle_products = custom_collection.products | where: "type", "bundle" -%}
+{% comment %} {%- assign only_bundle_products = custom_collection.products | where: "type", "bundle" -%} {% endcomment %}
 
 {%- style -%}
   @keyframes marquee {
