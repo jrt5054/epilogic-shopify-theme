@@ -49,7 +49,7 @@
                 {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width }}w"
               src="{{ card_collection.featured_image | image_url: width: 1500 }}"
               sizes="
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | divided_by: 2 }}px,
               (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
               calc(100vw - 3rem)"
               alt=""
@@ -69,7 +69,7 @@
                 {{ card_collection.metafields.collections.lifestyle_image | image_url }} {{ card_collection.metafields.collections.lifestyle_image.width }}w"
               src="{{ card_collection.metafields.collections.lifestyle_image | image_url: width: 1500 }}"
               sizes="
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
               (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
               calc(100vw - 3rem)"
               alt=""
