@@ -167,3 +167,7 @@ ul.grid.epilogic-product-grid-lower {
   width: 100%;
   object-fit: cover;
 }
+
+.card__inner {
+  height: 100%;
+}
