@@ -365,11 +365,11 @@ a.product__text {
 }
 
 .product__accordion {
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .product__accordion .accordion__content {
-  padding-right: 2rem;
+  padding-right: 3rem;
 }
 
 .product .price .badge {
@@ -1331,14 +1331,12 @@ a.product__text {
 
 .accordion__content.epi-product-info {
   margin-bottom: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .product-info-background-image {
   height: 100%;
-  
   overflow: hidden;
-  
   right: 0;
   z-index: -1;
   padding: 0;
@@ -1407,4 +1405,18 @@ div form.installment {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.summary__title h2 {
+  font-family: 'VTCDuBois-RegularNarrow', serif;
+}
+
+.summary__title h2 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.accordion__content p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
