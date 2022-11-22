@@ -431,11 +431,11 @@
   background-color: rgb(var(--color-epi-background-pink));
 }
 
-.header-background:empty {
+.contact-header-background:empty {
   display: block;    
 }
 
-.header-background {
+.contact-header-background {
   height: 6rem;
   width: 100%;
   background-color: rgb(var(--color-epi-background-pink));
