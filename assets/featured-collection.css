@@ -8,3 +8,7 @@ slider-component.featured-collection-list {
   margin: 0;
   max-width: none;
 }
+
+ul.product-grid li {
+  position: relative;
+}

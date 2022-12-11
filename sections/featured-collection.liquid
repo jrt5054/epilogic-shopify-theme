@@ -61,15 +61,25 @@
       <ul id="Slider-{{ section.id }}" class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %} featured-collection-list epi-border-top epi-border-left" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           {%- liquid
-            assign odd_check = forloop.index | modulo: 2
-            if odd_check != 0
-              assign odd_position = true
+            if forloop.index <= 4
+              assign color_pattern = "color-pattern-opt-1"
             else
-            assign odd_position = false
+              assign color_pattern = "color-pattern-opt-2"
             endif
           -%}
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
-            {% render 'card-product-featured-collection',
+          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %} epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
+            {% render 'card-product-main-product-grid',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              lazy_load: true,
+              show_quick_add: section.settings.enable_quick_add,
+              section_id: section.id,
+              color_pattern: color_pattern
+            %}
+            {% comment %} {% render 'card-product-featured-collection',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
@@ -78,7 +88,7 @@
               show_quick_add: section.settings.enable_quick_add,
               section_id: section.id,
               is_odd: odd_position
-            %}
+            %} {% endcomment %}
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
@@ -114,6 +124,8 @@
     {%- endif -%}
   </div>
 </div>
+
+<script src="{{ 'checkerboard.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
