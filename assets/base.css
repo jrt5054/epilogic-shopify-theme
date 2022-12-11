@@ -2431,6 +2431,7 @@ a.header__icon {
   width: 100%;
   background-color: rgb(var(--color-epi-background-yellow));
   position: absolute;
+  left: 0;
   z-index: -1;
 }
 
