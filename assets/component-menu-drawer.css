@@ -383,12 +383,14 @@ ul header-menu details ul {
 
 .mobile-header-new-product-1,
 .mobile-header-new-product-2,
+.mobile-header-new-product-3,
 .header-new-product-shop-all {
   width: 30%;
 }
 
 .mobile-header-new-product-1 img,
-.mobile-header-new-product-2 img {
+.mobile-header-new-product-2 img,
+.mobile-header-new-product-3 img {
   height: auto;  
   width: 100%;
 }
