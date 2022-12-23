@@ -1254,6 +1254,7 @@ a.product__text {
   .product__title h1 {
     font-size: 3.2rem;
     line-height: 2.4rem;
+    text-align: center;
   }
 
   .epilogic-product-subtitle {

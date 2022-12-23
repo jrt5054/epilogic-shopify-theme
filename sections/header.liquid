@@ -165,11 +165,21 @@
                                     %}
                                   </div>
                                 </div>
-                                <div class="header-new-product-shop-all">
-                                  <a href="/collections/all" class="full-unstyled-link">
-                                    shop all
-                                  </a>
-                                </div>
+                                {% if section.settings.header_new_product_3 != blank %}
+                                  <div class="mobile-header-new-product-3">
+                                    <div class="mobile-header-new-product-content">
+                                      {% render 'card-product-header',
+                                        card_product: section.settings.header_new_product_3
+                                      %}
+                                    </div>
+                                  </div>
+                                {% else %}
+                                  <div class="header-new-product-shop-all">
+                                    <a href="/collections/all" class="full-unstyled-link">
+                                      shop all
+                                    </a>
+                                  </div>
+                                {% endif %}
                               </div>
                             {%- else -%}
                             <div id="link-{{ link.title | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
@@ -354,10 +364,17 @@
                               %}
                             </div>
                           </div>
-                          <div class="header-new-product-1">
+                          <div class="header-new-product-2">
                             <div class="card-header-product-wrapper">
                               {% render 'card-product-header',
                                 card_product: section.settings.header_new_product_2
+                              %}
+                            </div>
+                          </div>
+                          <div class="header-new-product-2">
+                            <div class="card-header-product-wrapper">
+                              {% render 'card-product-header',
+                                card_product: section.settings.header_new_product_3
                               %}
                             </div>
                           </div>
@@ -691,6 +708,11 @@
       "type": "product",
       "id": "header_new_product_2",
       "label": "Header New Product 2"
+    },
+    {
+      "type": "product",
+      "id": "header_new_product_3",
+      "label": "Header New Product 3"
     }
   ]
 }

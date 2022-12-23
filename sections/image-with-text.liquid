@@ -1,3 +1,4 @@
+{% if product.gift_card? == false and section.settings.show_breakdown_image == false %}
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {% comment %} 
@@ -203,6 +204,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 
 {% schema %}
 {
