@@ -1,4 +1,4 @@
-{% if product.gift_card? == false %}
+{% unless product.gift_card? == true and request.page_type == 'product' %}
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {% comment %} 
@@ -204,7 +204,7 @@
     </div>
   </div>
 </div>
-{% endif %}
+{% endunless %}
 
 {% schema %}
 {
