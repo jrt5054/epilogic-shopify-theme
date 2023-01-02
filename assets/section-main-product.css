@@ -1346,7 +1346,7 @@ a.product__text {
 
 .product-info-background-image img {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
 }
 
@@ -1356,7 +1356,7 @@ ul.product__media-list.epi-product-image-list {
 
 @media screen and (min-width: 750px) {
   .product-info-background-image {
-    width: 50%;
+    width: 100%;
     position: fixed;
     top: 0;
   }
