@@ -63,3 +63,20 @@
 .blog-card-wrapper {
   padding: 0 1.7rem 1.7rem 1.7rem;
 }
+
+.epi-blog-tags-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(var(--color-epi-black));
+  color: rgb(var(--color-epi-white));
+  padding: 2rem 0
+}
+
+.epi-blog-tags {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blog-tag:hover {
+  text-decoration: underline;
+}

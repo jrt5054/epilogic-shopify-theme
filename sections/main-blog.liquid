@@ -16,9 +16,20 @@
   }
 {%- endstyle -%}
 
+{%- assign blog_tags = blog.all_tags -%}
+  
 {%- paginate blog.articles by 12 -%}
   <div class="main-blog section-{{ section.id }}-padding">
-
+    {% if section.settings.show_blog_filters %}
+      <div class="epi-blog-tags-wrapper">
+        <div class="epi-blog-tags page-width">
+          <a href="/blogs/doctors-notes/" class="blog-tag full-unstyled-link">View All</a>
+          {% for tag in blog_tags %}
+            <a href="/blogs/doctors-notes/tagged/{{ tag }}" class="blog-tag full-unstyled-link">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+  {% endif %}
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         {%- liquid
@@ -65,6 +76,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_blog_filters",
+      "label": "Show Blog Filters",
+      "default": false
+    },
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"
