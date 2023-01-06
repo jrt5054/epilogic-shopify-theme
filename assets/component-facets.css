@@ -832,7 +832,7 @@ input.mobile-facets__checkbox {
 }
 
 .mobile-facets__label > svg {
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
   position: relative;
   z-index: 2;
   margin-right: 1.2rem;
@@ -841,8 +841,8 @@ input.mobile-facets__checkbox {
 
 .mobile-facets__label .icon-checkmark {
   position: absolute;
-  top: 1.9rem;
-  left: 2.8rem;
+  /* top: 1.9rem;
+  left: 2.8rem; */
   visibility: hidden;
 }
 
