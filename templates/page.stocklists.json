@@ -189,6 +189,39 @@
       "settings": {
         "show_top_border": true
       }
+    },
+    "a03f76ea-673a-4dc3-b451-56014e6a6066": {
+      "type": "stocklist-state",
+      "blocks": {
+        "cbf1cf01-b288-4c76-b4a1-2178b16a4168": {
+          "type": "text",
+          "settings": {
+            "store_name": "FORMULA FIG",
+            "address_line_1": "2050 W 4TH AVE",
+            "address_line_2": "",
+            "address_line_3": "VANCOUVER"
+          }
+        },
+        "19233f43-831f-4bac-8a4f-aa23a54a814b": {
+          "type": "text",
+          "settings": {
+            "store_name": "FORMULA FIG",
+            "address_line_1": "50 OSSINGTON AVE",
+            "address_line_2": "",
+            "address_line_3": "TORONTO"
+          }
+        }
+      },
+      "block_order": [
+        "cbf1cf01-b288-4c76-b4a1-2178b16a4168",
+        "19233f43-831f-4bac-8a4f-aa23a54a814b"
+      ],
+      "settings": {
+        "state": "CANADA",
+        "color_scheme": "stocklists",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -199,6 +232,7 @@
     "3179489c-7695-411a-9bb3-62c5a3fcc168",
     "fed2f64b-4fcf-4384-9522-58f041cecaea",
     "16640409529b20012c",
-    "8e89f61e-3773-4d78-9906-769846ac0b12"
+    "8e89f61e-3773-4d78-9906-769846ac0b12",
+    "a03f76ea-673a-4dc3-b451-56014e6a6066"
   ]
 }

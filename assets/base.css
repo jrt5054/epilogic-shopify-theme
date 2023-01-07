@@ -3309,3 +3309,7 @@ details-disclosure > details {
 .card__badge {
   display: none;
 }
+
+svg.epi-filter-icons {
+  overflow: visible;
+}
