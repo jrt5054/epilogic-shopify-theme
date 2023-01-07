@@ -88,6 +88,7 @@
         },
         "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "true-calm",
             "slide_link": "",
@@ -206,7 +207,7 @@
     "16637976921c274cfd": {
       "type": "image-banner",
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/epilogic-skincare-model_acd8fdf4-dad5-4c8f-896a-c73876abfabc.jpg",
+        "image_2": "shopify:\/\/shop_images\/tc-best.gif",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
