@@ -5,6 +5,7 @@
       "blocks": {
         "1658159431897185c8-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "",
             "slide_link": "shopify:\/\/collections\/all",
@@ -25,6 +26,7 @@
         },
         "1658159431897185c8-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "the-total-package",
             "slide_link": "",
@@ -45,6 +47,7 @@
         },
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "master-plan",
             "slide_link": "",
@@ -62,12 +65,55 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "left"
           }
+        },
+        "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
+          "type": "slide",
+          "settings": {
+            "featured_product_on_slide": "master-plan",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/test.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "featured_product_on_slide": "true-calm",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/tc-best.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "1658159431897185c8-0",
         "1658159431897185c8-1",
-        "dd41c71e-62cb-4590-85b2-2a286b24a0a3"
+        "dd41c71e-62cb-4590-85b2-2a286b24a0a3",
+        "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed",
+        "cc37ac14-65b3-45d7-8fed-c7f71274e876"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -160,8 +206,9 @@
     },
     "16637976921c274cfd": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/epilogic-skincare-model_acd8fdf4-dad5-4c8f-896a-c73876abfabc.jpg",
+        "image_2": "shopify:\/\/shop_images\/woman.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -172,6 +219,43 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "39185908-aed5-4a4b-b3bd-26652ec68023": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15621869895820__39185908-aed5-4a4b-b3bd-26652ec68023-16730543627d93ed04-0": {
+          "type": "slide",
+          "settings": {
+            "featured_product_on_slide": "",
+            "slide_link": "shopify:\/\/products\/true-calm",
+            "image": "shopify:\/\/shop_images\/tc-best.gif",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15621869895820__39185908-aed5-4a4b-b3bd-26652ec68023-16730543627d93ed04-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "1664905047dd6c265f": {
@@ -386,6 +470,7 @@
     "featured_collection",
     "6885135d-6ee1-4ee6-8cbb-af9634f75763",
     "16637976921c274cfd",
+    "39185908-aed5-4a4b-b3bd-26652ec68023",
     "1664905047dd6c265f",
     "166404188942f9e548",
     "166396197322c3a763",
