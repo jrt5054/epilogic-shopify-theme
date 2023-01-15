@@ -12,3 +12,19 @@ slider-component.featured-collection-list {
 ul.product-grid li {
   position: relative;
 }
+
+.product-card-subtitle p {
+  margin: 0;
+}
+
+@media screen and (max-width: 460px) {
+  .card__media img {
+    transform: scale(1.1);
+    top: -15px !important; 
+  }
+
+  .product-card-tag {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}
