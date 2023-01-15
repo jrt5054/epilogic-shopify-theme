@@ -64,6 +64,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "show_blog_filters": true,
         "layout": "grid",
         "image_height": "medium",
         "padding_top": 0,
