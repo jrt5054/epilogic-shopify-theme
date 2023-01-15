@@ -28,6 +28,13 @@
             <a href="/blogs/doctors-notes/tagged/{{ tag }}" class="blog-tag full-unstyled-link">{{ tag }}</a>
           {% endfor %}
         </div>
+        <details class="epi-blog-tags_mobile page-width">
+          <summary>Filters {% render 'icon-caret' %}</summary>
+          <a href="/blogs/doctors-notes/" class="blog-tag_mobile full-unstyled-link">View All</a>
+          {% for tag in blog_tags %}
+            <a href="/blogs/doctors-notes/tagged/{{ tag }}" class="blog-tag_mobile full-unstyled-link">{{ tag }}</a>
+          {% endfor %}
+      </details>
       </div>
   {% endif %}
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
