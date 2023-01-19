@@ -1,3 +1,4 @@
+{% unless product.type == 'bundle' and section.settings.hide_for_bundle == true %}
 {%- style -%}
   .divider-wrapper {
     display: flex;
@@ -55,12 +56,20 @@
   {%- render 'icon-arrow' -%}
 </div>
 
+{% endunless %}
+
 {% schema %}
 {
   "name": "Section Divider",
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_for_bundle",
+      "label": "Hide Section for Bundle",
+      "default": false
+    },
     {
       "type": "text",
       "id": "divider_text",

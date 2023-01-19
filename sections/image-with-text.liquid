@@ -1,4 +1,7 @@
 {% unless product.gift_card? == true and request.page_type == 'product' %}
+  {% unless product.type == 'bundle' and section.settings.hide_for_bundle == true %}
+    
+  
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {% comment %} 
@@ -205,12 +208,19 @@
   </div>
 </div>
 {% endunless %}
+{% endunless %}
 
 {% schema %}
 {
   "name": "t:sections.image-with-text.name",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_for_bundle",
+      "label": "Hide Section for Bundle",
+      "default": false
+    },
     {
       "type": "checkbox",
       "id": "show_top_border_mobile",
