@@ -150,6 +150,10 @@
   display: block;
 }
 
+.product-form__error-message-wrapper {
+  display: none !important;
+}
+
 .product-form__error-message-wrapper:not([hidden]) {
   display: flex;
   align-items: flex-start;
