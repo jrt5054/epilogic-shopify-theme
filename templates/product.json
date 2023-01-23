@@ -66,6 +66,16 @@
             "content": "<p>{{ product.metafields.epilogic.product_ingedients | metafield_tag }}<\/p>",
             "page": ""
           }
+        },
+        "3ff2e65d-7236-459a-8ddb-33d9a1ec2f8a": {
+          "type": "collapsible_tab_bundle",
+          "settings": {
+            "heading": "THE EPI.LOGIC ROUTINE",
+            "show_background_color": true,
+            "icon": "none",
+            "content": "<p>{{ product.metafields.epilogic.bundle_routine | metafield_tag }}<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -78,7 +88,8 @@
         "description",
         "buy_buttons",
         "784a15ce-7758-4137-8d6a-f317bb130c76",
-        "8019405c-ea8f-428e-aee2-27d262a51499"
+        "8019405c-ea8f-428e-aee2-27d262a51499",
+        "3ff2e65d-7236-459a-8ddb-33d9a1ec2f8a"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -113,6 +124,7 @@
         "a9ac0687-4950-463b-9166-ad0cb168adad"
       ],
       "settings": {
+        "hide_for_bundle": true,
         "show_top_border_mobile": false,
         "show_top_border_desktop": false,
         "separate_text": true,
@@ -163,6 +175,7 @@
         "7e386f05-1b5d-4b29-a2f7-4cca00d36ab4"
       ],
       "settings": {
+        "hide_for_bundle": false,
         "show_top_border_mobile": false,
         "show_top_border_desktop": false,
         "separate_text": false,
@@ -273,6 +286,7 @@
     "5aac0244-353e-4b6e-a7e3-4a6666da194b": {
       "type": "section-divider",
       "settings": {
+        "hide_for_bundle": true,
         "divider_text": "use it with",
         "divider_link": "",
         "padding_top": 40,
@@ -299,6 +313,7 @@
     "a57b7031-a221-43fc-8eb3-46bd351de3e6": {
       "type": "section-divider",
       "settings": {
+        "hide_for_bundle": false,
         "divider_text": "doctor's notes",
         "divider_link": "shopify:\/\/blogs\/doctors-notes",
         "padding_top": 40,
