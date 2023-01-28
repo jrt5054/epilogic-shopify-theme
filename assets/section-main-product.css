@@ -1425,3 +1425,13 @@ div form.installment {
   font-size: 1.3rem;
   line-height: 1.8rem;
 }
+
+.epi-variant-picker,
+.epi-variant-picker fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+.epi-variant-picker legend {
+  text-align: center;
+}

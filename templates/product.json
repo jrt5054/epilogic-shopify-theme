@@ -41,6 +41,12 @@
           "settings": {
           }
         },
+        "ddd9b2df-c85f-40b0-8b68-ca5ca167e6c1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -86,6 +92,7 @@
         "60047dfa-acc4-426b-8b2d-e44eb21bbbab",
         "4fa1ef0a-f8dd-4b9e-9194-e2c110f2044a",
         "description",
+        "ddd9b2df-c85f-40b0-8b68-ca5ca167e6c1",
         "buy_buttons",
         "784a15ce-7758-4137-8d6a-f317bb130c76",
         "8019405c-ea8f-428e-aee2-27d262a51499",
