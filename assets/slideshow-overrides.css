@@ -31,4 +31,9 @@ slideshow-component .slideshow__controls .slider-button--next.epi-slideshow {
   .banner__text p {
     display: none;
   }
+
+  button.slideshow__autoplay {
+    visibility: hidden;
+    pointer-events: none;
+  }
 }

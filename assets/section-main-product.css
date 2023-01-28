@@ -33,7 +33,7 @@
 
 .product__info-wrapper .product__info-container.product__info-container--sticky > *:not(.product__accordion):not(.product-form-block) {
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -1424,4 +1424,14 @@ div form.installment {
 .accordion__content p {
   font-size: 1.3rem;
   line-height: 1.8rem;
+}
+
+.epi-variant-picker,
+.epi-variant-picker fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+.epi-variant-picker legend {
+  text-align: center;
 }
