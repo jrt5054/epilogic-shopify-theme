@@ -570,6 +570,10 @@
   .breakdown-ingredients {
     margin-bottom: 2rem;
   }
+
+  .image-with-text__media--the-breakdown {
+    min-height: 20rem;
+  }
 }
 
 .breakdown-ingredients {
