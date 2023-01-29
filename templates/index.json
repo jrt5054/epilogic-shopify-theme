@@ -3,16 +3,16 @@
     "16581594311840984f": {
       "type": "slideshow",
       "blocks": {
-        "1658159431897185c8-0": {
+        "1658159431897185c8-1": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "featured_product_on_slide": "",
-            "slide_link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_1_4019c827-7867-48f8-8590-f09178e76807.jpg",
-            "heading": "<p>Beauty Beyond Barriers<\/p>",
+            "featured_product_on_slide": "double-feature",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/websitebannerDF.jpg",
+            "heading": "<p>No reaction, just results.<\/p>",
             "heading_size": "h1",
-            "subheading": "<p>Luxury clinical skincare designed for melanin-rich and hyperpigmentation-prone skin<\/p>",
+            "subheading": "<p>Meet Double Feature.<\/p>",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -24,16 +24,57 @@
             "text_alignment_mobile": "left"
           }
         },
-        "1658159431897185c8-1": {
+        "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "featured_product_on_slide": "the-total-package",
+            "featured_product_on_slide": "double-feature",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_2_17395fd5-7f75-476a-91e0-76b2748788c4.jpg",
-            "heading": "<p>Tis’ the season for extra hydration<\/p>",
+            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_d555844f-a6e6-4e96-9bbc-6a9dfe12bce1.gif",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "<p>THE TOTAL PACKAGE<\/p><p><em>Fortifying Peptide Cream<\/em><\/p><p>PEPTIDES + BAKUCHIOL + NIACINAMIDE + MILK THISTLE<\/p>",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
+          "type": "slide",
+          "settings": {
+            "featured_product_on_slide": "master-plan",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/test.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "1658159431897185c8-0": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "featured_product_on_slide": "",
+            "slide_link": "shopify:\/\/collections\/all",
+            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_1_4019c827-7867-48f8-8590-f09178e76807.jpg",
+            "heading": "<p>Beauty Beyond Barriers<\/p>",
+            "heading_size": "h1",
+            "subheading": "<p>Luxury clinical skincare designed for melanin-rich and hyperpigmentation-prone skin<\/p>",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -65,55 +106,14 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "left"
           }
-        },
-        "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
-          "type": "slide",
-          "settings": {
-            "featured_product_on_slide": "master-plan",
-            "slide_link": "",
-            "image": "shopify:\/\/shop_images\/test.png",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "featured_product_on_slide": "true-calm",
-            "slide_link": "",
-            "image": "shopify:\/\/shop_images\/tc-best.gif",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
-        "1658159431897185c8-0",
         "1658159431897185c8-1",
-        "dd41c71e-62cb-4590-85b2-2a286b24a0a3",
+        "cc37ac14-65b3-45d7-8fed-c7f71274e876",
         "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed",
-        "cc37ac14-65b3-45d7-8fed-c7f71274e876"
+        "1658159431897185c8-0",
+        "dd41c71e-62cb-4590-85b2-2a286b24a0a3"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -366,6 +366,7 @@
         "1663961973a778e767-1"
       ],
       "settings": {
+        "hide_for_bundle": false,
         "show_top_border_mobile": false,
         "show_top_border_desktop": false,
         "separate_text": true,
@@ -388,6 +389,7 @@
     "1663848200cce2702d": {
       "type": "section-divider",
       "settings": {
+        "hide_for_bundle": false,
         "divider_text": "Doctor's Notes",
         "divider_link": "shopify:\/\/blogs\/doctors-notes",
         "padding_top": 52,
@@ -410,6 +412,7 @@
     "16638521984266bd8d": {
       "type": "section-divider",
       "settings": {
+        "hide_for_bundle": false,
         "divider_text": "From The Community",
         "divider_link": "",
         "padding_top": 40,
