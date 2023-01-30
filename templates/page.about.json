@@ -60,6 +60,7 @@
       ],
       "settings": {
         "hide_for_bundle": false,
+        "tm_superscript": false,
         "show_top_border_mobile": true,
         "show_top_border_desktop": true,
         "separate_text": true,
@@ -101,6 +102,7 @@
       ],
       "settings": {
         "hide_for_bundle": false,
+        "tm_superscript": false,
         "show_top_border_mobile": false,
         "show_top_border_desktop": false,
         "separate_text": false,
@@ -133,7 +135,7 @@
         "1664201045643ef114-1": {
           "type": "text",
           "settings": {
-            "text": "<p>epi.logic skincare plays an integral role in the Surface, Shape and Structure™ philosophy that underpins Dr. Jeanniton’s work at <a href=\"https:\/\/brooklynfaceandeye.com\/\" target=\"_blank\" title=\"https:\/\/brooklynfaceandeye.com\/\">Brooklyn Face & Eye<\/a>. This signature approach to facial rejuvenation conscientiously considers each element of your face to enhance and maintain your natural beauty while aligning with your lifestyle and aesthetic vision.<\/p>",
+            "text": "<p>epi.logic skincare plays an integral role in the Surface, Shape and StructureTM philosophy that underpins Dr. Jeanniton’s work at <a href=\"https:\/\/brooklynfaceandeye.com\/\" target=\"_blank\" title=\"https:\/\/brooklynfaceandeye.com\/\">Brooklyn Face & Eye<\/a>. This signature approach to facial rejuvenation conscientiously considers each element of your face to enhance and maintain your natural beauty while aligning with your lifestyle and aesthetic vision.<\/p>",
             "text_style": "surface-text"
           }
         }
@@ -144,6 +146,7 @@
       ],
       "settings": {
         "hide_for_bundle": false,
+        "tm_superscript": true,
         "show_top_border_mobile": false,
         "show_top_border_desktop": false,
         "separate_text": false,

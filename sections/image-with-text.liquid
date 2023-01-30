@@ -151,7 +151,7 @@
             {%- when 'caption' -%}
               <p class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
             {%- when 'text' -%}
-              <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="image-with-text__text rte {{ block.settings.text_style }} {% if section.settings.tm_superscript %} tm-superscript{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
                 <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
@@ -210,6 +210,11 @@
 {% endunless %}
 {% endunless %}
 
+{% if section.settings.tm_superscript %}
+  <script src="{{ 'superscript.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+
 {% schema %}
 {
   "name": "t:sections.image-with-text.name",
@@ -219,6 +224,12 @@
       "type": "checkbox",
       "id": "hide_for_bundle",
       "label": "Hide Section for Bundle",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "tm_superscript",
+      "label": "Use superscript JS",
       "default": false
     },
     {
