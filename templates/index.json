@@ -25,6 +25,7 @@
         },
         "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "double-feature",
             "slide_link": "",
@@ -227,8 +228,8 @@
           "type": "slide",
           "settings": {
             "featured_product_on_slide": "",
-            "slide_link": "shopify:\/\/products\/true-calm",
-            "image": "shopify:\/\/shop_images\/tc-best.gif",
+            "slide_link": "shopify:\/\/products\/double-feature",
+            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_d555844f-a6e6-4e96-9bbc-6a9dfe12bce1.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
