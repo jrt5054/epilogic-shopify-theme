@@ -5,7 +5,6 @@
       "blocks": {
         "1658159431897185c8-1": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "featured_product_on_slide": "double-feature",
             "slide_link": "",
@@ -26,7 +25,6 @@
         },
         "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "featured_product_on_slide": "double-feature",
             "slide_link": "",
@@ -47,6 +45,7 @@
         },
         "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "master-plan",
             "slide_link": "",
@@ -367,6 +366,7 @@
       ],
       "settings": {
         "hide_for_bundle": false,
+        "tm_superscript": false,
         "show_top_border_mobile": false,
         "show_top_border_desktop": false,
         "separate_text": true,
