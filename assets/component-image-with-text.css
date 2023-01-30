@@ -596,3 +596,7 @@
 .the-logic-tag p {
   margin: 0;
 }
+
+.tm-superscript sup {
+  font-size: 0.5em;
+}
