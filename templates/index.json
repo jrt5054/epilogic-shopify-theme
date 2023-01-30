@@ -8,10 +8,10 @@
           "settings": {
             "featured_product_on_slide": "double-feature",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/websitebannerDF.jpg",
-            "heading": "<p>No reaction, just results.<\/p>",
+            "image": "shopify:\/\/shop_images\/BANNER_BEST.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "<p>Meet Double Feature.<\/p>",
+            "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
