@@ -171,3 +171,28 @@ ul.grid.epilogic-product-grid-lower {
 .card__inner {
   height: 100%;
 }
+
+.product-card-subtitle p {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .product-card-tag {
+    margin-top: 7px;
+    margin-right: 12px;
+  }
+
+  .single-product-cards .card__media img {
+    top: -30px !important;
+    height: 110% !important;
+  }
+
+  .bundle-product-cards .card__information {
+    padding-bottom: 5px;
+  }
+}
+
+.single-product-cards .price,
+.bundle-product-cards .price {
+  margin-left: 10px !important;
+}

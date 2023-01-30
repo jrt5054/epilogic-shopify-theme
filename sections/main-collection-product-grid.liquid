@@ -146,7 +146,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
+                <li class="grid__item epi-border-desktop-left epi-border-desktop-top epi-border-desktop-bottom epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top single-product-cards">
                   {% render 'card-product-main-product-grid',
                     card_product: single_product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -260,7 +260,7 @@
                     assign lazy_load = true 
                   endif 
                 -%}
-                <li class="grid__item epi-bundle-item epi-border-desktop-left epi-border-desktop-top epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top">
+                <li class="grid__item epi-bundle-item epi-border-desktop-left epi-border-desktop-top epi-border-mobile-left epi-border-mobile-top epi-border-mobile-top bundle-product-cards">
                   {% render 'card-product-main-product-grid',
                     card_product: bundle_product,
                     media_aspect_ratio: 1.5,
