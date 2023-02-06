@@ -3,6 +3,26 @@
     "16581594311840984f": {
       "type": "slideshow",
       "blocks": {
+        "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
+          "type": "slide",
+          "settings": {
+            "featured_product_on_slide": "daily-dose",
+            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_20285ca8-d50e-467d-bd0b-3cebd26c1b2d.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "1658159431897185c8-1": {
           "type": "slide",
           "settings": {
@@ -21,27 +41,6 @@
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
             "text_alignment_mobile": "left"
-          }
-        },
-        "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "featured_product_on_slide": "daily-dose",
-            "slide_link": "",
-            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_20285ca8-d50e-467d-bd0b-3cebd26c1b2d.gif",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
           }
         },
         "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
@@ -109,8 +108,8 @@
         }
       },
       "block_order": [
-        "1658159431897185c8-1",
         "cc37ac14-65b3-45d7-8fed-c7f71274e876",
+        "1658159431897185c8-1",
         "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed",
         "1658159431897185c8-0",
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3"
@@ -228,8 +227,8 @@
           "type": "slide",
           "settings": {
             "featured_product_on_slide": "",
-            "slide_link": "shopify:\/\/products\/double-feature",
-            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_d555844f-a6e6-4e96-9bbc-6a9dfe12bce1.gif",
+            "slide_link": "shopify:\/\/products\/daily-dose",
+            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_copy_0ff25925-8cd2-481f-b849-07e9e7d017fe.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
