@@ -5,6 +5,7 @@
       "blocks": {
         "cc37ac14-65b3-45d7-8fed-c7f71274e876": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "daily-dose",
             "slide_link": "",
@@ -25,6 +26,7 @@
         },
         "1658159431897185c8-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "double-feature",
             "slide_link": "",
@@ -45,11 +47,10 @@
         },
         "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "featured_product_on_slide": "master-plan",
+            "featured_product_on_slide": "clean-reveal",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/test.png",
+            "image": "shopify:\/\/shop_images\/epilogic_CR_launch_landing.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
