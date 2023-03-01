@@ -25,8 +25,7 @@ function gridColors(numberToSwap, elementArray, tan_first) {
         element.classList.toggle("hidden");
       });
     };
-  });
-  console.log("function ran");
+  });  
 }
 
 
