@@ -47,6 +47,7 @@
         },
         "e82f3be9-0a34-4d2b-b984-5fbc5c9c77ed": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "featured_product_on_slide": "clean-reveal",
             "slide_link": "",
@@ -88,14 +89,13 @@
         },
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "featured_product_on_slide": "master-plan",
+            "featured_product_on_slide": "eye-contact",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_3_8b54e70f-2676-4aa8-88ea-1d235d3ee1a3.jpg",
-            "heading": "<p>Tis’ the season for extra hydration<\/p>",
-            "heading_size": "h1",
-            "subheading": "<p>MASTER PLAN<br\/><em>Collagen Renew Growth Factor Serum<\/em><\/p><p><em>CELL SERVICE™ + HYALURONIC ACID + SEA KELP BIOFERMENT + SKIN-LOVING ADAPTOGENS<\/em><\/p>",
+            "image": "shopify:\/\/shop_images\/Untitled-1.gif",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -117,7 +117,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "slide_height": "medium",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 7,
