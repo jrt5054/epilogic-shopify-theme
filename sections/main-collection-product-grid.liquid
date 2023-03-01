@@ -267,7 +267,7 @@
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
                     show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
+                    lazy_load: false,
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id,
                     color_pattern: color_pattern
@@ -309,7 +309,7 @@
   </div>
 </div>
 
-<script src="{{ 'checkerboard.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'checkerboard-main-product-grid.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
