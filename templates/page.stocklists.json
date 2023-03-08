@@ -51,11 +51,21 @@
             "address_line_2": "",
             "address_line_3": "NEW YORK, NY 10128"
           }
+        },
+        "a4956fac-887d-481e-961f-e6ed2288518f": {
+          "type": "text",
+          "settings": {
+            "store_name": "SAKS FIFTH AVENUE",
+            "address_line_1": "611 5th Ave",
+            "address_line_2": "",
+            "address_line_3": "New York, NY 10022"
+          }
         }
       },
       "block_order": [
         "54186e7c-e52c-488b-9d9f-fca49fd893e4",
-        "8bae7919-324f-4e00-90f7-4677dda2f72e"
+        "8bae7919-324f-4e00-90f7-4677dda2f72e",
+        "a4956fac-887d-481e-961f-e6ed2288518f"
       ],
       "settings": {
         "state": "New York",
@@ -141,10 +151,20 @@
             "address_line_2": "",
             "address_line_3": ""
           }
+        },
+        "c0c79641-bc82-455e-9156-a61364bd5e30": {
+          "type": "text",
+          "settings": {
+            "store_name": "Thirteenlune.com",
+            "address_line_1": "",
+            "address_line_2": "",
+            "address_line_3": ""
+          }
         }
       },
       "block_order": [
-        "ec722fad-6749-4ff4-aaca-9dd037937974"
+        "ec722fad-6749-4ff4-aaca-9dd037937974",
+        "c0c79641-bc82-455e-9156-a61364bd5e30"
       ],
       "settings": {
         "state": "Online",
