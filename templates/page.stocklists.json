@@ -37,9 +37,9 @@
         "54186e7c-e52c-488b-9d9f-fca49fd893e4": {
           "type": "text",
           "settings": {
-            "store_name": "BROOKLYN FACE & EYE by appointment only",
-            "address_line_1": "115 PROSPECT PARK WEST",
-            "address_line_2": "",
+            "store_name": "BROOKLYN FACE & EYE",
+            "address_line_1": "by appointment only",
+            "address_line_2": "115 PROSPECT PARK WEST",
             "address_line_3": "BROOKLYN, NY"
           }
         },
