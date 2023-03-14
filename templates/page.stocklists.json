@@ -134,7 +134,40 @@
         "d71ac0d7-213d-4c99-b16a-f59adee7a389"
       ],
       "settings": {
-        "state": "CANADA",
+        "state": "canada",
+        "color_scheme": "stocklists",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "902c110d-bc21-4c34-a592-b59b93d158d6": {
+      "type": "stocklist-state",
+      "blocks": {
+        "2d127b35-167c-4543-a120-a1e92cbd7819": {
+          "type": "text",
+          "settings": {
+            "store_name": "",
+            "address_line_1": "",
+            "address_line_2": "",
+            "address_line_3": ""
+          }
+        },
+        "caa5ea09-0d66-4185-afdb-b9660bb5bdc7": {
+          "type": "text",
+          "settings": {
+            "store_name": "PALM HEIGHTS",
+            "address_line_1": "747 West Bay Road",
+            "address_line_2": "Seven Mile Beach",
+            "address_line_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "2d127b35-167c-4543-a120-a1e92cbd7819",
+        "caa5ea09-0d66-4185-afdb-b9660bb5bdc7"
+      ],
+      "settings": {
+        "state": "grand cayman",
         "color_scheme": "stocklists",
         "padding_top": 40,
         "padding_bottom": 52
@@ -250,6 +283,7 @@
     "166403850947f3cfbb",
     "16640393739e2deb23",
     "3179489c-7695-411a-9bb3-62c5a3fcc168",
+    "902c110d-bc21-4c34-a592-b59b93d158d6",
     "fed2f64b-4fcf-4384-9522-58f041cecaea",
     "16640409529b20012c",
     "8e89f61e-3773-4d78-9906-769846ac0b12",
