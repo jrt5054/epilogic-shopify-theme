@@ -194,6 +194,14 @@
             "press_text_copy": "<p>\"Unlike a simple hyaluronic acid serum that helps to plump up the skin (and reduce the appearance of wrinkles on the surface), consistent use of a collagen serum can help to rebuild and strengthen the skin’s connective tissues from within. Insert–Master Plan...It’s a trailblazing product that should be on everyone’s skincare shelf.\"<br\/><\/p>",
             "press_link": ""
           }
+        },
+        "542dcfef-900c-464f-b90e-9bc6ce15eed1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fd1ac165-af4a-4064-a6df-ebe46159251c.png",
+            "press_text_copy": "<p>\"With a whopping 100% (!!) of testers giving this moisturizer an enthusiastic green light, epi.logic’s The Total Package Fortifying Peptide Cream is unanimously and officially VIOLET CODE APPROVED, earning a place on THE SHELVES, and our vanities.\"<\/p>",
+            "press_link": ""
+          }
         }
       },
       "block_order": [
@@ -201,7 +209,8 @@
         "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1",
         "2adc9509-ad3d-403f-b345-74b1972caeaa",
         "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c",
-        "61872538-17b7-4a17-9201-ecbbee9f13d2"
+        "61872538-17b7-4a17-9201-ecbbee9f13d2",
+        "542dcfef-900c-464f-b90e-9bc6ce15eed1"
       ],
       "settings": {
         "layout": "full_bleed",
