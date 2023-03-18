@@ -202,6 +202,14 @@
             "press_text_copy": "<p>\"With a whopping 100% (!!) of testers giving this moisturizer an enthusiastic green light, epi.logic’s The Total Package Fortifying Peptide Cream is unanimously and officially VIOLET CODE APPROVED, earning a place on THE SHELVES, and our vanities.\"<\/p>",
             "press_link": ""
           }
+        },
+        "9ce111f3-2e15-40df-aa64-0bba6204d08d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WSJ.png",
+            "press_text_copy": "<p>\"Made with rosehip seed oil, True Calm is a gentle face wash by Chaneave Jeanniton, a New York-based oculofacial plastic surgeon known for her eye aesthetic work; her skincare line epi.logic, has earned a following for its effective, paired-down formulas and chic packaging.\"<\/p>",
+            "press_link": ""
+          }
         }
       },
       "block_order": [
@@ -210,7 +218,8 @@
         "2adc9509-ad3d-403f-b345-74b1972caeaa",
         "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c",
         "61872538-17b7-4a17-9201-ecbbee9f13d2",
-        "542dcfef-900c-464f-b90e-9bc6ce15eed1"
+        "542dcfef-900c-464f-b90e-9bc6ce15eed1",
+        "9ce111f3-2e15-40df-aa64-0bba6204d08d"
       ],
       "settings": {
         "layout": "full_bleed",
