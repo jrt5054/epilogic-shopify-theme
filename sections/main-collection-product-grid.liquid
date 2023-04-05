@@ -218,6 +218,7 @@
                 </li>
                 {% endif %}
               {%- endfor -%}
+              {%  if section.settings.show_new_addition %}
               <li class="grid__item main-grid-new-addition epi-border-desktop-right epi-border-desktop-left epi-border-mobile-top epi-border-mobile-right epi-border-mobile-left">
                 <div class="new-addition-text epi-border-desktop-right epi-border-mobile-bottom">
                   <div class="new-addition-text-header">
@@ -251,7 +252,7 @@
                     >
                 </div>
               </li>
-              
+              {% endif %}
               {%- for bundle_product in only_bundle_products -%}
                 {%- liquid
                   assign color_pattern = "color-pattern-opt-3"
@@ -352,6 +353,12 @@
       "type": "header",
       "content": "New Addition Section Image"
     },
+    {
+      "type": "checkbox",
+      "id": "show_new_addition",
+      "default": true,
+      "label": "Show New Addition"
+    },    
     {
       "type": "image_picker",
       "id": "new_addition_image",
