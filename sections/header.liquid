@@ -32,6 +32,9 @@
     header-drawer {
       display: none;
     }
+    .header-new-product-shop-all.shop-tray {
+      padding: 2.8rem 0;
+    }
   }
 
   .menu-drawer-container {
@@ -226,6 +229,36 @@
                             </div>
                           {%- endif -%}
                           </details>
+
+                        {%- elsif link.title == 'Shop' -%}
+                          <details id="Details-menu-drawer-menu-item-{{ forloop.index }}"">
+                            <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+                              {{ link.title | escape }}
+                              {% render 'icon-arrow' %}
+                              {% render 'icon-caret' %}
+                            </summary>
+                              <div class="mobile-header-new-product-wrapper">
+                                {%- for block in section.blocks -%}
+                                  {%- case block.type -%}
+                                    {%- when 'shop_tray' -%}
+                                      <div class="mobile-header-new-product-1">
+                                        <div class="obile-header-new-product-content">
+                                          <img
+                                            src="{{ block.settings.image | image_url: width: 533 }}"
+                                            alt="{{ block.settings.image.alt | escape }}"
+                                            loading="lazy"
+                                            width="{{ block.settings.image.width }}"
+                                            height="{{ block.settings.image.height }}"
+                                          >
+                                          <a href="{{ block.settings.link }}" class="full-unstyled-link epi-cursor-hover_shopnow">
+                                            <div class="header-product-title">{{ block.settings.heading }}</div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  {%- endcase -%}
+                                {%- endfor -%}                              
+                              </div>
+                          </details>
                         {%- else -%}
                           <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
                             {{ link.title | escape }}
@@ -416,6 +449,40 @@
                     {%- endif -%}
                   </details>
                 </header-menu>
+              {%- elsif link.title == 'Shop' -%}
+                <header-menu>
+                  <details id="Details-HeaderMenu-{{ forloop.index }}" class="{% if link.title == 'New' %} detail-new-products{% endif %}">
+                    <summary class="header__menu-item list-menu__item link focus-inset">
+                      <span class="{% if link.child_active %}header__active-menu-item {% endif %}epi-cursor-hover_shopnow epi-header-items">{{ link.title | escape }}</span>
+                    </summary>
+                    <div class="header-new-products shop epi-border">
+                      <div class="header-new-product-wrapper">
+                        {%- for block in section.blocks -%}
+                          {%- case block.type -%}
+                            {%- when 'shop_tray' -%}
+                              <div class="header-new-product-1">
+                                <div class="card-header-product-wrapper">
+                                  <img
+                                    src="{{ block.settings.image | image_url: width: 533 }}"
+                                    alt="{{ block.settings.image.alt | escape }}"
+                                    loading="lazy"
+                                    width="{{ block.settings.image.width }}"
+                                    height="{{ block.settings.image.height }}"
+                                  >
+                                  <a href="{{ block.settings.link }}" class="full-unstyled-link epi-cursor-hover_shopnow">
+                                    <div class="header-product-title">{{ block.settings.heading }}</div>
+                                  </a>
+                                </div>
+                              </div>
+                          {%- endcase -%}
+                        {%- endfor -%}
+                      </div>
+                      <div class="header-new-product-shop-all shop-tray">
+
+                      </div>  
+                    </div>
+                  </details>
+                </header-menu>              
               {%- else -%}
                 <a href="{{ link.url }}" class="
                   {% if link.title == 'Shop' %}
@@ -713,6 +780,29 @@
       "type": "product",
       "id": "header_new_product_3",
       "label": "Header New Product 3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "shop_tray",
+      "name": "Shop Tray Items",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
     }
   ]
 }
