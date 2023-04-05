@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "165817321535e740ec": {
+      "type": "image-banner",
+      "blocks": {
+        "1658173215ab6ec11c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Singularly Powerful. <\/p><p>Designed to Combine<\/p>",
+            "heading_size": "collection-hero"
+          }
+        }
+      },
+      "block_order": [
+        "1658173215ab6ec11c-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/shop_all_header_141fd51f-5732-444b-b6e9-567982816bf1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "grid_image_1": "shopify:\/\/shop_images\/Shop_All_1.png",
+        "grid_image_2": "shopify:\/\/shop_images\/Shop_All_2.png",
+        "new_addition_image": "shopify:\/\/shop_images\/epilogic-master-plan-liquid-dot_d7c958b4-8e0a-48f5-baef-09fabb1bf15a.jpg",
+        "new_addition_header": "Cell ServiceTM",
+        "new_addition_text": "<p>We all have growth factors. They repair our bodies and nurture cell turnover to improve hydration, firmness and elasticity. When we’re young we have a lot. When we get older, we have fewer - hence Cell ServiceTM ingredient technology in Master Plan. Cell ServiceTM  is our signature bioactive, clinically vetted stem cell-derived growth factor and potent peptide complex that taps into skin’s ability to heal itself, boosting elasticity and firmness.<\/p>",
+        "new_addition_product": "master-plan",
+        "extra_image": "shopify:\/\/shop_images\/blog-hyperpigmentation-image-2.jpg",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "animation_speed": 50,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e463191b-20b8-44bf-8f83-29850a7d8676": {
+      "type": "repeating-blocks",
+      "settings": {
+        "show_top_border": true
+      }
+    }
+  },
+  "order": [
+    "165817321535e740ec",
+    "banner",
+    "product-grid",
+    "e463191b-20b8-44bf-8f83-29850a7d8676"
+  ]
+}
