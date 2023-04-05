@@ -120,6 +120,37 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "5bef38e5-edfb-4f46-8750-e846dd338861": {
+            "type": "shop_tray",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/epilogic-sensitive-skin-grey.jpg",
+              "heading": "Shop All",
+              "link": "shopify:\/\/collections\/all"
+            }
+          },
+          "e9eddf3b-0844-4ce2-a41b-9712f94a53a4": {
+            "type": "shop_tray",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TC-EB-MP-TTP-grey.jpg",
+              "heading": "Shop Bundles",
+              "link": "shopify:\/\/collections\/bundles"
+            }
+          },
+          "c0ffe8b0-245d-4d7d-9a22-62fd319024a2": {
+            "type": "shop_tray",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/e.gift_card-grey.jpg",
+              "heading": "Shop Gift Card",
+              "link": "shopify:\/\/products\/e-gift-card-epi-logic"
+            }
+          }
+        },
+        "block_order": [
+          "5bef38e5-edfb-4f46-8750-e846dd338861",
+          "e9eddf3b-0844-4ce2-a41b-9712f94a53a4",
+          "c0ffe8b0-245d-4d7d-9a22-62fd319024a2"
+        ],
         "settings": {
           "enable_sticky_header": true,
           "menu": "main-menu",
