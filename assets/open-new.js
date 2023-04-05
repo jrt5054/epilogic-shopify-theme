@@ -1,32 +1,30 @@
-const menuElements = document.querySelectorAll("span.epi-header-items");
-const newElement = document.querySelector(".new-element");
-const newProductDetailsOpenNew = document.querySelector("details.detail-new-products");
-const newProductDivOpenNew = document.querySelector(".header-new-products");
+const menuElements = document.querySelectorAll("nav.header__inline-menu details");
 
+function epiLogicCloseMenuDetails() {
 
-let clicked = false;
+  detailElements.forEach((detailElement) => {
+    if (detailElement.hasAttribute('open')) { 
+      detailElement.removeAttribute('open')
+    }
+  });
+}
 
 menuElements.forEach(element => {
-  if (element.innerHTML == "New") {
-    element.addEventListener('mouseenter', (event) => {
-      if (clicked == false) {
-        newElement.click();
-        clicked = true;
-      }
+  element.addEventListener('mouseover', (event) => {
+    element.setAttribute("open", true);
+    element.addEventListener('mouseleave', (event) => {
+      setTimeout(function(){
+        if (!element.querySelector(':hover')) {
+          element.removeAttribute("open");
+        }
+      }, 150);
     });
-  } else {
-    element.addEventListener('mouseenter', (event) => {
-      if (newProductDetailsOpenNew.open == true) {
-        newElement.click();
-      clicked = false;
+  });
+  element.addEventListener('mouseleave', (event) => {
+    setTimeout(function(){
+      if (!element.querySelector(':hover')) {
+        element.removeAttribute("open");
       }
-    });
-  }
+    }, 150);
+  });
 })
-
-newProductDivOpenNew.addEventListener('mouseleave', (event) => {
-  if (newProductDetailsOpenNew.open == true) {
-    newElement.click();
-  clicked = false;
-  }
-});
