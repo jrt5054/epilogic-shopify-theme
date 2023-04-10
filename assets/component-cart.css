@@ -173,6 +173,10 @@ cart-items {
   margin-top: 1rem;
 }
 
+.cart__blocks .picky-widget {
+  font-size: 18px;
+}
+
 .cart__dynamic-checkout-buttons div[role='button'] {
   border-radius: var(--buttons-radius-outset) !important;
 }
