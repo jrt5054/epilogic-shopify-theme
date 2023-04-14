@@ -644,6 +644,18 @@
     document.addEventListener('DOMContentLoaded', function() {
 
       console.log('loaded')
+      const mediaItems = document.querySelectorAll('.deferred-media');
+      console.log(mediaItems)
+      mediaItems.forEach((mediaItem) => {
+        console.log(mediaItem)
+        let thisButton = mediaItem.querySelector('button')
+        mediaItem.addEventListener('click', () => {
+          console.log('clicked')
+          if (thisButton) {
+            thisButton.click()
+          }
+        });
+      });
       
       function isIE() {
         const ua = window.navigator.userAgent;
@@ -664,17 +676,7 @@
         hiddenInput.value = event.currentTarget.value;
       });
 
-      const mediaItems = document.querySelectorAll('.deferred-media');
-      mediaItems.forEach((mediaItem) => {
-        console.log(mediaItem)
-        let thisButton = mediaItem.querySelector('button')
-        mediaItem.addEventListener('click', () => {
-          console.log('clicked')
-          if (thisButton) {
-            thisButton.click()
-          }
-        });
-      });
+
     
     });
   </script>
