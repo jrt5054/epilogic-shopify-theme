@@ -243,14 +243,14 @@
                                     {%- when 'shop_tray' -%}
                                       <div class="mobile-header-new-product-1">
                                         <div class="mobile-header-new-product-content">
-                                          <img
-                                            src="{{ block.settings.image | image_url: width: 533 }}"
-                                            alt="{{ block.settings.image.alt | escape }}"
-                                            loading="lazy"
-                                            width="{{ block.settings.image.width }}"
-                                            height="{{ block.settings.image.height }}"
-                                          >
                                           <a href="{{ block.settings.link }}" class="full-unstyled-link epi-cursor-hover_shopnow">
+                                            <img
+                                              src="{{ block.settings.image | image_url: width: 533 }}"
+                                              alt="{{ block.settings.image.alt | escape }}"
+                                              loading="lazy"
+                                              width="{{ block.settings.image.width }}"
+                                              height="{{ block.settings.image.height }}"
+                                            >
                                             <div class="header-product-title">{{ block.settings.heading }}</div>
                                           </a>
                                         </div>
