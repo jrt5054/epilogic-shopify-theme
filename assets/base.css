@@ -3315,5 +3315,5 @@ svg.epi-filter-icons {
 }
 
 @media screen and (max-width: 749px) {
-.epi-product-media-list .product__media-item--full {display:none;}
+.epi-product-image-list.contains-media .product__media-item--full {display:none;}
 }
