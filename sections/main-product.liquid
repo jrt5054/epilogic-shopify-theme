@@ -660,6 +660,14 @@
       document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
         hiddenInput.value = event.currentTarget.value;
       });
+
+      const mediaButtons = document.querySelectorAll('deferred-media button');
+      mediaButtons.forEach((button) => {
+        mediaButtons.addEventListener('click', () => {
+          console.log("forEach worked");
+        });
+      });
+    
     });
   </script>
 
