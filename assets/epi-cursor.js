@@ -15,7 +15,7 @@ const hoverAllLinks = document.querySelectorAll('a');
 const hoverAllButtons = document.querySelectorAll('button');
 const hoverDetails = document.querySelectorAll('details:not(header-menu *)');
 
-document.addEventListener('mousemove', function(e){
+/*document.addEventListener('mousemove', function(e){
   let x = e.clientX;
   let y = e.clientY;
 
@@ -36,7 +36,7 @@ document.addEventListener('mousemove', function(e){
 
   textShopNow.style.left = x + 'px';
   textShopNow.style.top = y + 'px';
-});
+});*/
 
 // Click functions
 
