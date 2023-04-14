@@ -663,6 +663,7 @@
 
       const mediaItems = document.querySelectorAll('deferred-media');
       mediaItems.forEach((mediaItem) => {
+        console.log(mediaItem)
         let thisButton = mediaItem.querySelector('button')
         mediaItem.addEventListener('click', () => {
           console.log('clicked')
