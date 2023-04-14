@@ -3313,3 +3313,7 @@ details-disclosure > details {
 svg.epi-filter-icons {
   overflow: visible;
 }
+
+@media screen and (max-width: 749px) {
+.epi-product-media-list .product__media-item--full {display:none;}
+}
