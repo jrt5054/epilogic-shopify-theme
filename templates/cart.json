@@ -19,11 +19,23 @@
           "type": "buttons",
           "settings": {
           }
+        },
+        "cc8e0cd4-c56c-40e8-8c1f-a8e24887cd17": {
+          "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "locale_option": "geolocation",
+            "locale_fallback": "",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "0"
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "cc8e0cd4-c56c-40e8-8c1f-a8e24887cd17"
       ],
       "settings": {
       }
