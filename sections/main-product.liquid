@@ -665,6 +665,7 @@
       mediaItems.forEach((mediaItem) => {
         let thisButton = mediaItem.querySelector('button')
         mediaItem.addEventListener('click', () => {
+          console.log('clicked')
           if (thisButton) {
             thisButton.click()
           }
