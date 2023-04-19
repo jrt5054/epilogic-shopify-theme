@@ -43,6 +43,15 @@
             "address_line_3": "BROOKLYN, NY"
           }
         },
+        "54e5eca1-6b74-454d-a619-553007cadf11": {
+          "type": "text",
+          "settings": {
+            "store_name": "bergdorf goodman",
+            "address_line_1": "754 fifth ave",
+            "address_line_2": "",
+            "address_line_3": "new york, ny"
+          }
+        },
         "8bae7919-324f-4e00-90f7-4677dda2f72e": {
           "type": "text",
           "settings": {
@@ -56,7 +65,7 @@
           "type": "text",
           "settings": {
             "store_name": "SAKS FIFTH AVENUE",
-            "address_line_1": "611 5th Ave",
+            "address_line_1": "611 fifth ave",
             "address_line_2": "",
             "address_line_3": "New York, NY"
           }
@@ -64,6 +73,7 @@
       },
       "block_order": [
         "54186e7c-e52c-488b-9d9f-fca49fd893e4",
+        "54e5eca1-6b74-454d-a619-553007cadf11",
         "8bae7919-324f-4e00-90f7-4677dda2f72e",
         "a4956fac-887d-481e-961f-e6ed2288518f"
       ],
