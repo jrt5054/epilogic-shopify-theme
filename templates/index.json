@@ -90,9 +90,9 @@
         "dd41c71e-62cb-4590-85b2-2a286b24a0a3": {
           "type": "slide",
           "settings": {
-            "featured_product_on_slide": "eye-contact",
-            "slide_link": "",
-            "image": "shopify:\/\/shop_images\/Untitled-2.gif",
+            "featured_product_on_slide": "",
+            "slide_link": "shopify:\/\/collections\/bundles",
+            "image": "shopify:\/\/shop_images\/mom5.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
