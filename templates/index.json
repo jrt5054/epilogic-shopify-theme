@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16581594311840984f": {
@@ -9,7 +18,7 @@
           "settings": {
             "featured_product_on_slide": "daily-dose",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_20285ca8-d50e-467d-bd0b-3cebd26c1b2d.gif",
+            "image": "shopify://shop_images/ezgif.com-gif-maker_8_20285ca8-d50e-467d-bd0b-3cebd26c1b2d.gif",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -30,7 +39,7 @@
           "settings": {
             "featured_product_on_slide": "double-feature",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/DF2.jpg",
+            "image": "shopify://shop_images/DF2.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -51,7 +60,7 @@
           "settings": {
             "featured_product_on_slide": "clean-reveal",
             "slide_link": "",
-            "image": "shopify:\/\/shop_images\/epilogic_CR_launch_landing.jpg",
+            "image": "shopify://shop_images/epilogic_CR_launch_landing.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -71,11 +80,11 @@
           "disabled": true,
           "settings": {
             "featured_product_on_slide": "",
-            "slide_link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/epilogic_Beauty_Beyond_Barriers_1_4019c827-7867-48f8-8590-f09178e76807.jpg",
-            "heading": "<p>Beauty Beyond Barriers<\/p>",
+            "slide_link": "shopify://collections/all",
+            "image": "shopify://shop_images/epilogic_Beauty_Beyond_Barriers_1_4019c827-7867-48f8-8590-f09178e76807.jpg",
+            "heading": "<p>Beauty Beyond Barriers</p>",
             "heading_size": "h1",
-            "subheading": "<p>Luxury clinical skincare designed for melanin-rich and hyperpigmentation-prone skin<\/p>",
+            "subheading": "<p>Luxury clinical skincare designed for melanin-rich and hyperpigmentation-prone skin</p>",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -91,8 +100,8 @@
           "type": "slide",
           "settings": {
             "featured_product_on_slide": "",
-            "slide_link": "shopify:\/\/collections\/bundles",
-            "image": "shopify:\/\/shop_images\/mom5.gif",
+            "slide_link": "shopify://collections/bundles",
+            "image": "shopify://shop_images/mom5.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -158,57 +167,57 @@
         "28ae4786-d056-409c-a825-b7650eb1ec9b": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vogue_9a793eac-8666-477a-8bc5-dc61c69ee7ac.png",
-            "press_text_copy": "<p>\"Epi.logic skincare’s Rosehip cleanser is perfect for sensitive skin as it’s filled with nourishing ingredients like rosehip seed oil, aloe, and hyaluronic acid, making it the perfect concoction to take skin from dry and inflamed to hydrated and supple.\"<\/p>",
-            "press_link": "https:\/\/www.vogue.com\/slideshow\/how-seasonal-allergies-affect-your-skin-and-what-to-do-about-it"
+            "image": "shopify://shop_images/Vogue_9a793eac-8666-477a-8bc5-dc61c69ee7ac.png",
+            "press_text_copy": "<p>\"Epi.logic skincare’s Rosehip cleanser is perfect for sensitive skin as it’s filled with nourishing ingredients like rosehip seed oil, aloe, and hyaluronic acid, making it the perfect concoction to take skin from dry and inflamed to hydrated and supple.\"</p>",
+            "press_link": "https://www.vogue.com/slideshow/how-seasonal-allergies-affect-your-skin-and-what-to-do-about-it"
           }
         },
         "template--15753422274700__6885135d-6ee1-4ee6-8cbb-af9634f75763-16671550508049d358-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/refinery-29.png",
-            "press_text_copy": "<p>\"Looks like water, smells like nothing, contains over 300 epidermal growth factors, potent peptides, and hyaluronic acid to transform and renew tired skin.\"<\/p>",
-            "press_link": "https:\/\/www.refinery29.com\/en-us\/skin-care-awards-2020"
+            "image": "shopify://shop_images/refinery-29.png",
+            "press_text_copy": "<p>\"Looks like water, smells like nothing, contains over 300 epidermal growth factors, potent peptides, and hyaluronic acid to transform and renew tired skin.\"</p>",
+            "press_link": "https://www.refinery29.com/en-us/skin-care-awards-2020"
           }
         },
         "2adc9509-ad3d-403f-b345-74b1972caeaa": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/into-the-gloss.png",
-            "press_text_copy": "<p>I wanted a hydrating toner that would keep my skin dewy after cleansing. Epi.Logic’s Even Balance Toner takes off anything I missed and leaves my skin with a nice, hydrated sheen… though I prefer to splash it on and tap it in like an essence. My skin loves the extra hydration.\"<\/p>",
-            "press_link": "https:\/\/intothegloss.com\/2019\/11\/best-beauty-products-for-november-2019\/"
+            "image": "shopify://shop_images/into-the-gloss.png",
+            "press_text_copy": "<p>I wanted a hydrating toner that would keep my skin dewy after cleansing. Epi.Logic’s Even Balance Toner takes off anything I missed and leaves my skin with a nice, hydrated sheen… though I prefer to splash it on and tap it in like an essence. My skin loves the extra hydration.\"</p>",
+            "press_link": "https://intothegloss.com/2019/11/best-beauty-products-for-november-2019/"
           }
         },
         "1a6bc908-a2b0-4795-9dfe-e4247ae86f2c": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/instyle.png",
-            "press_text_copy": "<p>\"It rejuvenates, hydrates, firms, and evens out skin tone in just one step.\" <\/p>",
-            "press_link": "https:\/\/www.instyle.com\/beauty\/best-firming-serum-epilogic-master-plan"
+            "image": "shopify://shop_images/instyle.png",
+            "press_text_copy": "<p>\"It rejuvenates, hydrates, firms, and evens out skin tone in just one step.\" </p>",
+            "press_link": "https://www.instyle.com/beauty/best-firming-serum-epilogic-master-plan"
           }
         },
         "61872538-17b7-4a17-9201-ecbbee9f13d2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ELLE-logo.png",
-            "press_text_copy": "<p>\"Unlike a simple hyaluronic acid serum that helps to plump up the skin (and reduce the appearance of wrinkles on the surface), consistent use of a collagen serum can help to rebuild and strengthen the skin’s connective tissues from within. Insert–Master Plan...It’s a trailblazing product that should be on everyone’s skincare shelf.\"<br\/><\/p>",
-            "press_link": "https:\/\/www.elle.com\/beauty\/makeup-skin-care\/a43024557\/epi-logic-master-plan-serum-review\/"
+            "image": "shopify://shop_images/ELLE-logo.png",
+            "press_text_copy": "<p>\"Unlike a simple hyaluronic acid serum that helps to plump up the skin (and reduce the appearance of wrinkles on the surface), consistent use of a collagen serum can help to rebuild and strengthen the skin’s connective tissues from within. Insert–Master Plan...It’s a trailblazing product that should be on everyone’s skincare shelf.\"<br/></p>",
+            "press_link": "https://www.elle.com/beauty/makeup-skin-care/a43024557/epi-logic-master-plan-serum-review/"
           }
         },
         "542dcfef-900c-464f-b90e-9bc6ce15eed1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fd1ac165-af4a-4064-a6df-ebe46159251c.png",
-            "press_text_copy": "<p>\"With a whopping 100% (!!) of testers giving this moisturizer an enthusiastic green light, epi.logic’s The Total Package Fortifying Peptide Cream is unanimously and officially VIOLET CODE APPROVED, earning a place on THE SHELVES, and our vanities.\"<\/p>",
-            "press_link": "https:\/\/www.violetgrey.com\/en-us\/violet-files\/reviews\/epilogic-the-total-package-moisturizer"
+            "image": "shopify://shop_images/fd1ac165-af4a-4064-a6df-ebe46159251c.png",
+            "press_text_copy": "<p>\"With a whopping 100% (!!) of testers giving this moisturizer an enthusiastic green light, epi.logic’s The Total Package Fortifying Peptide Cream is unanimously and officially VIOLET CODE APPROVED, earning a place on THE SHELVES, and our vanities.\"</p>",
+            "press_link": "https://www.violetgrey.com/en-us/violet-files/reviews/epilogic-the-total-package-moisturizer"
           }
         },
         "9ce111f3-2e15-40df-aa64-0bba6204d08d": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WSJ.png",
-            "press_text_copy": "<p>\"Made with rosehip seed oil, True Calm is a gentle face wash by Chaneave Jeanniton, a New York-based oculofacial plastic surgeon known for her eye aesthetic work; her skincare line epi.logic, has earned a following for its effective, paired-down formulas and chic packaging.\"<\/p>",
-            "press_link": "https:\/\/www.wsj.com\/articles\/valentines-day-gift-guide-color-beauty-wellness-11675305763"
+            "image": "shopify://shop_images/WSJ.png",
+            "press_text_copy": "<p>\"Made with rosehip seed oil, True Calm is a gentle face wash by Chaneave Jeanniton, a New York-based oculofacial plastic surgeon known for her eye aesthetic work; her skincare line epi.logic, has earned a following for its effective, paired-down formulas and chic packaging.\"</p>",
+            "press_link": "https://www.wsj.com/articles/valentines-day-gift-guide-color-beauty-wellness-11675305763"
           }
         }
       },
@@ -235,7 +244,7 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/woman.png",
+        "image_2": "shopify://shop_images/woman.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -255,8 +264,8 @@
           "type": "slide",
           "settings": {
             "featured_product_on_slide": "",
-            "slide_link": "shopify:\/\/products\/daily-dose",
-            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_8_copy_0ff25925-8cd2-481f-b849-07e9e7d017fe.gif",
+            "slide_link": "shopify://products/daily-dose",
+            "image": "shopify://shop_images/ezgif.com-gif-maker_8_copy_0ff25925-8cd2-481f-b849-07e9e7d017fe.gif",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -277,9 +286,9 @@
           "settings": {
             "featured_product_on_slide": "",
             "slide_link": "",
-            "heading": "<p>Image slide<\/p>",
+            "heading": "<p>Image slide</p>",
             "heading_size": "h1",
-            "subheading": "<p>Tell your brand's story through images<\/p>",
+            "subheading": "<p>Tell your brand's story through images</p>",
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
@@ -350,7 +359,7 @@
         "166404188902abb026-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "serums"
+            "collection": "serums-treatments"
           }
         },
         "166404188902abb026-1": {
@@ -404,7 +413,7 @@
         "1663961973a778e767-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A board-certified oculofacial plastic surgeon dedicated to holistic facial refinement, Dr. Chaneve Jeanniton created epi.logic skincare by uniting patient needs with her medical expertise. Doubling down on empirical data and eliminating potentially reactive additives<\/p>",
+            "text": "<p>A board-certified oculofacial plastic surgeon dedicated to holistic facial refinement, Dr. Chaneve Jeanniton created epi.logic skincare by uniting patient needs with her medical expertise. Doubling down on empirical data and eliminating potentially reactive additives</p>",
             "text_style": "skincare-evolved-text"
           }
         }
@@ -421,7 +430,7 @@
         "separate_text": true,
         "show_breakdown_image": false,
         "show_three_dots": false,
-        "image": "shopify:\/\/shop_images\/epilogic-clinical-skincare.jpg",
+        "image": "shopify://shop_images/epilogic-clinical-skincare.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -440,7 +449,7 @@
       "settings": {
         "hide_for_bundle": false,
         "divider_text": "Doctor's Notes",
-        "divider_link": "shopify:\/\/blogs\/doctors-notes",
+        "divider_link": "shopify://blogs/doctors-notes",
         "padding_top": 52,
         "padding_bottom": 52
       }
@@ -474,28 +483,28 @@
         "3e946ad9-1516-4636-b84f-0fe29dacdd40": {
           "type": "picture_quote",
           "settings": {
-            "image_upper": "shopify:\/\/shop_images\/unnamed.jpg",
+            "image_upper": "shopify://shop_images/unnamed.jpg",
             "quote_name": "",
-            "quote_upper": "<h5><a href=\"https:\/\/www.instagram.com\/miesha.frempong\/\" title=\"https:\/\/www.instagram.com\/miesha.frempong\/\">@mieshafrempong<\/a><\/h5><p>\"Master Plan serum improves my skin so much I use less make up and feel comfortable going makeup free.\"<br\/><\/p>",
+            "quote_upper": "<h5><a href=\"https://www.instagram.com/miesha.frempong/\" title=\"https://www.instagram.com/miesha.frempong/\">@mieshafrempong</a></h5><p>\"Master Plan serum improves my skin so much I use less make up and feel comfortable going makeup free.\"<br/></p>",
             "quote_lower": ""
           }
         },
         "c468889e-8a9d-472d-a5e6-2e3e13380383": {
           "type": "picture_quote",
           "settings": {
-            "image_upper": "shopify:\/\/shop_images\/user-2_cropped.jpg",
+            "image_upper": "shopify://shop_images/user-2_cropped.jpg",
             "quote_name": "",
-            "quote_upper": "<h5><a href=\"https:\/\/www.instagram.com\/kelseydashmarie\/\" title=\"https:\/\/www.instagram.com\/kelseydashmarie\/\">@kelseydashmarie<\/a><\/h5><p>\"I love Master Plan and can see the difference after putting it on. My breakouts have been getting a lot better. I'm working on getting rid of my hyperpigmentation. I think Master Plan is helping with my dark spots.\"<\/p>",
-            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "quote_upper": "<h5><a href=\"https://www.instagram.com/kelseydashmarie/\" title=\"https://www.instagram.com/kelseydashmarie/\">@kelseydashmarie</a></h5><p>\"I love Master Plan and can see the difference after putting it on. My breakouts have been getting a lot better. I'm working on getting rid of my hyperpigmentation. I think Master Plan is helping with my dark spots.\"</p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         },
         "8aedafb8-ed3d-44d7-a5dc-d9e7bd9ad401": {
           "type": "picture_quote",
           "settings": {
-            "image_upper": "shopify:\/\/shop_images\/unnamed_1.jpg",
+            "image_upper": "shopify://shop_images/unnamed_1.jpg",
             "quote_name": "",
-            "quote_upper": "<h5><a href=\"https:\/\/www.instagram.com\/shanihillian\/\" title=\"https:\/\/www.instagram.com\/shanihillian\/\">@shanihillian<\/a><\/h5><p>(on Master Plan)<br\/>\"I’ve enjoyed this serum.  it makes my skin feel more hydrated, tighter and brighter. Very light, texture is great and not irritating at all.\"<\/p>",
-            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "quote_upper": "<h5><a href=\"https://www.instagram.com/shanihillian/\" title=\"https://www.instagram.com/shanihillian/\">@shanihillian</a></h5><p>(on Master Plan)<br/>\"I’ve enjoyed this serum.  it makes my skin feel more hydrated, tighter and brighter. Very light, texture is great and not irritating at all.\"</p>",
+            "quote_lower": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         }
       },
